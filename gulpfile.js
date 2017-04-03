@@ -32,10 +32,10 @@ gulp.task('style', function() {
         sort: false
       })
     ]))
-    .pipe(sourcemap.write())
     .pipe(gulp.dest('build/css'))
     .pipe(cssmin())
     .pipe(rename('style.min.css'))
+    .pipe(sourcemap.write('.'))
     .pipe(gulp.dest('build/css'))
     .pipe(server.stream());
 });
@@ -71,10 +71,10 @@ gulp.task('scripts', function () {
     .pipe(plumber())
     .pipe(sourcemap.init({largeFile: true}))
     .pipe(concat('main.js', {newLine: ';'}))
-    .pipe(sourcemap.write())
     .pipe(gulp.dest('./build/js'))
     .pipe(uglify())
     .pipe(rename('main.min.js'))
+    .pipe(sourcemap.write('.', {addComents: true}))
     .pipe(gulp.dest('./build/js'))
     .pipe(server.reload({stream: true}));
 });
@@ -82,7 +82,8 @@ gulp.task('scripts', function () {
 gulp.task('copy', function () {
   return gulp.src([
     'fonts/**/*',
-    'js/vendors/*'
+    'js/vendors/*',
+    'css/vendor/*'
     ],
     {
     base: '.'
