@@ -1,3 +1,4 @@
 @mixin letter-spacing($font-size, $tracking) {
-  letter-spacing: 1px*(($font-size*$tracking)/1000);
+  letter-spacing: ($font-size*$tracking)/1000;
 }
+

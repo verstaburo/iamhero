@@ -2,32 +2,11 @@
 @import 'variables';
 @import 'mixins';
 @import 'global';
-
-h1, h2, h3, h4, h5{
-  font-family: 'Museo Sans';
-  font-style: normal;
-  font-size: 70px;
-}
-
-h1 {
-  font-weight: 100;
-}
-
-h2 {
-  font-weight: 300;
-}
-
-h3 {
-  font-weight: 500;
-}
-
-h4 {
-  font-weight: 700;
-}
-
-h5 {
-  font-weight: 900;
-}
-
+@import 'blocks/text-block';
+@import 'blocks/logo';
+@import 'blocks/page-footer';
+@import 'blocks/footer-menu';
+@import 'blocks/socials';
+@import 'blocks/social';
 
 

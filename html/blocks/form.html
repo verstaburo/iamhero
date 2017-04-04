@@ -1,0 +1,35 @@
+<form action="" class="form {class}">
+  <div class="form__container container">
+    <div class="form__describe text-block {text-block-class}">
+      <h2 class="text-block__title {text-title-class}">
+        {text-title-content}
+      </h2>
+      <div class="text-block__content {text-class}">
+        <p>
+          {text content}
+        </p>
+      </div>
+    </div>
+    <div class="form__content">
+      <div class="form__radiofield">
+        <div class="form__radio">
+          <input type="radio" value="{radio-value}" name="{radio-name}" id="{radio-id}" class="form__radioitem">
+          <label class="form__radiolabel" for="{radio-id}">
+            {radio-label}
+          </label>
+        </div>
+      </div>
+      <label class="form__inputlabel" for="{input-id}">
+        {input-label}
+        <input type="{input-type}" name="{input-name}" id="{input-id}" placeholder="{input-placeholder}">
+      </label>
+      <div class="form__textarea">
+        <label class="form__textarealabel" for="{textarea-id}">
+          {textarea-label}
+        </label>  
+        <textarea id="{textarea-id}" placeholder="{textarea-placeholder}"></textarea>
+      </div>
+      <button class="form__submit btn {btn-class}" type="submit">{btn-value}</button>
+    </div>
+  </div>
+</form>

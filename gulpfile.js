@@ -58,10 +58,10 @@ gulp.task('images', function () {
 
 gulp.task('svgsprite', function () {
   return gulp.src('images/svg/*.svg')
-    .pipe(svgmin())
-    .pipe(svgstore({
-      inlineSvg: true
+    .pipe(svgmin({
+      plugins: [{removeUselessDefs: false}]
     }))
+    .pipe(svgstore({inlineSvg: true}))
     .pipe(rename('sprite.svg'))
     .pipe(gulp.dest('build/images'));
 });

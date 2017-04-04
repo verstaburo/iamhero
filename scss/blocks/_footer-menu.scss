@@ -1,0 +1,26 @@
+.footer-menu {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+
+  &__title {
+    font-weight: 700;
+    line-height: (51/25)*1em;
+    color: $footerTitleFontColor;
+  }
+
+  &__item {
+    @include letter-spacing($textSize, -40);
+
+    font-size: $textSize;
+    line-height: (51/22)*1em;
+    text-align: left;
+    color: $footerTextFontColor;
+
+    a {
+      text-decoration: none;
+    }
+  }
+}

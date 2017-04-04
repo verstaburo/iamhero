@@ -1,0 +1,19 @@
+.socials {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  align-content: flex-start;
+  flex-wrap: wrap;
+  margin-top: 23px;
+  margin-bottom: 23px;
+  
+  &__item {
+    margin-right: 34.6px;
+    
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}

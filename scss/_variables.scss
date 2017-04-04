@@ -1,4 +1,17 @@
+//Fonts
 $mainFontFamily: 'Museo Sans', 'Arial', sans-serif;
+$textSize: 22px;
+$textSizeSmall: 17px;
+$textSizeBig: 25px;
+$textSizeHuge: 30px;
+$textSizePreregForm: 33px;
+$titleSizeH1: 70px;
+$titleSizeH2: 50px;
+$titleSizeH3: 40px;
+$titleSizeH4: 25px;
+$titleSizeH5: 18px;
+
+//Colors
 $mainFontColorDark: #374851;
 $mainFontColorLight: #fff;
 $footerTitleFontColor: #a8b3bf;
@@ -20,3 +33,8 @@ $bgFooterMenuColor: #e7eaed;
 $bgSocialColor: #394b60;
 $bgCommunicationColorIcon: #207f80;
 
+//Media Queries
+$mobile: (max-width: 639px);
+$tablet: (max-width: 1024px);
+$tablet2: (max-width: 1279px);
+$desktop: (max-width: 1920px);
