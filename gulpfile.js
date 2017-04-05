@@ -48,7 +48,7 @@ gulp.task('html', function () {
 });
 
 gulp.task('images', function () {
-  return gulp.src('images/**/*.{jpg, png, gif}')
+  return gulp.src('images/**/*.{jpg,png,gif}')
     .pipe(imagemin([
       imagemin.optipng({optimizationLevel: 3}),
       imagemin.jpegtran({progressive: true})

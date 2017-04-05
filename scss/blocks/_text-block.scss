@@ -26,6 +26,7 @@
     }
 
     &_mainpage {
+      margin-bottom: 70px;
       font-size: $titleSizeH1;
     }
   }
@@ -43,11 +44,23 @@
 
     &_huge {
       @include letter-spacing($textSizeHuge, -40);
+
       font-size: $textSizeHuge;
     }
 
     &_huger {
+      @include letter-spacing($textSizeHuger, -40);
+
       font-size: $textSizeHuger;
+      line-height: 1.2em;
+    }
+
+    p {
+      padding: 0 5px;
+      font-size: inherit;
+      line-height: inherit;
+      letter-spacing: inherit;
+      color: inherit;
     }
   }
 

@@ -1,0 +1,112 @@
+.lead {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 1920px;
+  margin: 0 auto;
+  min-height: 1058px;
+
+  &__item {
+    position: relative;
+    box-sizing: border-box;
+    width: 50%;
+
+    &::before {
+      position: absolute;
+      content: '';
+      top: 0;
+      width: 12px;
+      height: 470px;
+      z-index: 4;
+    }
+
+    &_hero {
+      background-color: $additionalColorBlue;
+
+      &::before {
+        background-color: $additionalColorBlue;
+        left: 180px;
+      }
+    }
+
+    &_employer {
+      padding-left: 14px;
+      background-color: $additionalColorGreen;
+
+      &::before {
+        background-color: $additionalColorGreen;
+        left: 190px;
+      }
+    }
+  }
+
+  &__btn {
+    position: relative;
+    display: inline-block;
+    z-index: 4;
+  }
+
+  &__bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 1058px;
+    z-index: 1;
+  }
+
+  &__bg-img {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+
+    img {
+      position: absolute;
+      top: 0;
+      z-index: 2;
+    }
+
+    &_hero {
+      img {
+        left: 0;
+      }
+    }
+
+    &_employer {
+      img {
+        right: 0;
+      }
+    }
+
+    &::before {
+      position: absolute;
+      top: 0;
+      left: 0;
+      content: '';
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.4);
+      z-index: 3;
+    }
+  }
+
+  &__text {
+    position: relative;
+    padding: 484px 260px 0 176px;
+    z-index: 4;
+  }
+
+  &__logo {
+    position: absolute;
+    top: 294px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    z-index: 10;
+  }
+
+}

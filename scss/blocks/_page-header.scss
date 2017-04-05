@@ -1,0 +1,16 @@
+.page-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: $bgMenuColor;
+  background-image: $mainGradient;
+  background-repeat: no-repeat;
+
+  &__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+}
