@@ -1,1 +1,1 @@
-var somth2;
+svg4everybody();

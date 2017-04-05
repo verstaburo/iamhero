@@ -1,41 +1,60 @@
 .text-block {
+  &_start {
+    text-align: left;
+  }
+
+  &_centered {
+    text-align: center;
+  }
+
+  &_end {
+    text-align: right;
+  }
+
   &_light {
     color: $mainFontColorLight;
   }
-  
+
   &_dark {
     color: $mainFontColorDark;
   }
-  
+
   &__title {
     i {
       color: $additionalColorGreen;
       font-style: normal;
     }
-    
+
     &_mainpage {
       font-size: $titleSizeH1;
     }
   }
-  
+
   &__content {
     font-size: $textSize;
-    
+
     &_small {
       font-size: $textSizeSmall;
     }
-    
+
     &_big {
       font-size: $textSizeBig;
     }
-    
+
     &_huge {
       @include letter-spacing($textSizeHuge, -40);
       font-size: $textSizeHuge;
     }
-    
-    &_form-prereg {
-      font-size: $textSizePreregForm;
+
+    &_huger {
+      font-size: $textSizeHuger;
     }
+  }
+
+  &__item {
+    font-size: inherit;
+    letter-spacing: inherit;
+    line-height: inherit;
+    color: inherit;
   }
 }

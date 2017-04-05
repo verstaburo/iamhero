@@ -1,0 +1,33 @@
+.page-section {
+  &__container {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    /*@media #{$tablet} {
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+    }*/
+  }
+
+  &_centered {
+    .page-section__container {
+      justify-content: center;
+    }
+  }
+
+  &_start {
+    .page-section__container {
+      justify-content: flex-start;
+    }
+  }
+
+  &_end {
+    .page-section__container {
+      justify-content: flex-end;
+    }
+  }
+}
