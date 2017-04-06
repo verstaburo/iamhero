@@ -1,0 +1,57 @@
+.btn {
+  @include letter-spacing($btnTextSize);
+
+  box-sizing: border-box;
+  padding-top: 10px;
+  padding-left: 28px;
+  padding-right: 28px;
+  padding-bottom: 10px;
+  font-family: $mainFontFamily;
+  font-size: $btnTextSize;
+  line-height: normal;
+  font-weight: 700;
+  color: $mainFontColorDark;
+  text-align: center;
+  border-radius: 25px;
+  border: 3px solid $additionalColorGreen;
+  transition: all 0.25s ease-in-out;
+
+  &:hover {
+    background-color: $additionalColorGreen;
+  }
+
+  &:active {
+    background-color: $mainFontColorDark;
+    color: $mainFontColorLight;
+  }
+
+  &_light {
+    color: $mainFontColorLight;
+
+    &:hover {
+      color: $mainFontColorDark;
+    }
+
+    &:active {
+      color: $mainFontColorLight;
+    }
+  }
+
+  &_fw500 {
+    font-weight: 500;
+  }
+
+  &_white {
+    border-color: $bgColor;
+
+    &:hover {
+      color: $mainFontColorDark;
+      background-color: $bgColor;
+    }
+
+    &:active {
+      color: $mainFontColorDark;
+      background-color: $bgColor;
+    }
+  }
+}

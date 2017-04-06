@@ -5,7 +5,7 @@
   <body class="page">
 [snp tpl="html/blocks/header_mainpage.html" ]
   <!-- Employer block begin -->
-  <section class="page-section page-section_start we-for-employer">
+  <section class="page-section page-section_start we-for-employer" hidden>
     <div class="container page-section__container we-for-employer__container">
       <div class="text-block text-block_dark text-block_start we-for-employer__text">
         <h2 class="text-block__title text-block__title_mainpage">The revolution of online recruiting</h2>
@@ -15,13 +15,13 @@
           </p>
         </div>
       </div>
-      <div class="page-section__bg-img"><img src="images/we_for_employer_bg.jpg" alt=""></div>
     </div>
+    <div class="page-section__bg-img"><img src="images/we_for_employer_bg.jpg" alt=""></div>
   </section>
 
-  <section class="page-section page-section_end employer-work">
+  <section class="page-section page-section_end employer-work" hidden>
     <div class="container page-section__container employer-work__container">
-      <div class="text-block text-block_light text-block_start">
+      <div class="text-block text-block_light text-block_start employer-work__text">
         <h2 class="text-block__title text-block__title_mainpage">
           Post, search &amp; match
         </h2>
@@ -31,15 +31,35 @@
             We want to give you results that fits you best. You’re welcome to try out:
           </p>
           <ul class="text-block__list employer-work__list">
-            <li class="text-block__item employer-work__item employer-work__item_posting">posting job offer</li>
-            <li class="text-block__item employer-work__item employer-work__item_search">search heroes</li>
-            <li class="text-block__item ememployer-work__item employer-work__item_explore">explore best match technology</li>
-            <li class="text-block__item employer-work__item employer-work__item_score">explore user score</li>
+            <li class="text-block__item employer-work__item">
+              <svg class="employer-work__icon employer-work__icon_posting">
+                <use xlink:href="images/sprite.svg#icon_posting"></use>
+              </svg>
+              posting job offer
+            </li>
+            <li class="text-block__item employer-work__item">
+              <svg class="employer-work__icon employer-work__icon_search">
+                <use xlink:href="images/sprite.svg#icon_search"></use>
+              </svg>
+              search heroes
+            </li>
+            <li class="text-block__item employer-work__item">
+              <svg class="employer-work__icon employer-work__icon_explore">
+                <use xlink:href="images/sprite.svg#icon_explore"></use>
+              </svg>
+              explore best match technology
+            </li>
+            <li class="text-block__item employer-work__item">
+              <svg class="employer-work__icon employer-work__icon_score">
+                <use xlink:href="images/sprite.svg#icon_score"></use>
+              </svg>
+              explore user score
+            </li>
           </ul>
         </div>
       </div>
-      <div class="page-section__bg-img"><img src="images/employer_work_bg.jpg" alt=""></div>
     </div>
+    <div class="page-section__bg-img"><img src="images/employer_work_bg.jpg" alt=""></div>
   </section>
   <!-- Employer block end -->
 
@@ -60,11 +80,11 @@
           </p>
         </div>
       </div>
-      <div class="page-section__bg-img we-for-hero__collage">
+      <div class="page-section__img we-for-hero__collage">
+        <div class="we-for-hero__collage-item"><img src="images/hero_collage_2.png" alt=""></div>
         <div class="we-for-hero__collage-item"><img src="images/hero_collage_1.png" alt=""></div>
-        <div class="we-for-hero__collage-item"><img src="images/hero_collage_2.png" alt=""></div>
-        <div class="we-for-hero__collage-item"><img src="images/hero_collage_2.png" alt=""></div>
         <div class="we-for-hero__collage-item"><img src="images/hero_collage_3.png" alt=""></div>
+        <div class="we-for-hero__collage-item"><img src="images/hero_collage_2.png" alt=""></div>
         <div class="we-for-hero__collage-item"><img src="images/hero_collage_4.png" alt=""></div>
       </div>
     </div>
@@ -83,8 +103,8 @@
           </p>
         </div>
       </div>
-      <div class="page-section__bg-img"><img src="images/hero_work_bg.jpg" alt=""></div>
     </div>
+    <div class="page-section__bg-img"><img src="images/hero_work_bg.jpg" alt=""></div>
   </section>
   <!-- Job seeker block end -->
 
@@ -94,19 +114,16 @@
         <h2 class="text-block__title text-block__title_mainpage">
           Communication &amp; interviews online
         </h2>
-        <text-block__content class="text-block__content_huge">
+        <div class="text-block__content text-block__content_huge">
           <p>
             Forget about offline interviews. Communicate &amp; get interviews  with your employer online.
             It will save your time. We promise.
           </p>
-        </text-block__content>
+        </div>
       </div>
       <div class="communication__images">
         <div class="communication__img">
-          <svg class="communication__mask">
-            <use xlink:href=""></use>
-          </svg>
-          <img src="" alt="">
+          <img src="images/communication.png" alt="">
         </div>
         <ul class="communication__list">
           <li class="communication__item communication__item_video">Video chat</li>
@@ -118,7 +135,7 @@
       <div class="text-block text-block_dark text-block_centered communication__text-bottom">
         <div class="text-block__content text-block__content_huge">
           <p>Are you excited as we are? C’mon, let’s move further!</p>
-          <a href="" class="communication__link">Explore more features</a>
+          <a href="" class="communication__link" hidden>Explore more features</a>
         </div>
       </div>
     </div>
@@ -133,6 +150,7 @@
         <button class="intro-video__btn btn_light btn_white">Play video</button>
       </div>
     </div>
+    <div class="page-section__bg-img"><img src="images/intro_video_bg.jpg" alt=""></div>
   </section>
 
   <section class="page-section page-section_centered resume-examples">

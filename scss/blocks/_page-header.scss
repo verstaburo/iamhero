@@ -7,10 +7,25 @@
   background-image: $mainGradient;
   background-repeat: no-repeat;
 
-  &__container {
+  &__wrapper {
+    position: relative;
+    max-width: 1920px;
+    width: 100%;
+    margin: 0 auto;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-start;
+    box-sizing: border-box;
+    padding-left: 150px;
+  }
+
+  &__logo {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 150px;
+    height: 116px;
+    background-color: $bgMenuColor;
   }
 }

@@ -1,0 +1,173 @@
+.user-menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+
+  &__toggle {
+    display: none;
+  }
+
+  &__list {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-left: 22px;
+    padding-right: 22px;
+  }
+
+  &__item {
+    display: inline-block;
+    margin-right: 48px;
+    font-size: 0;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  &__link {
+    @include letter-spacing($menuTextSize);
+
+    display: inline-block;
+    padding: 12px 10px 16px;
+    font-family: $mainFontFamily;
+    font-size: $menuTextSize;
+    font-weight: 300;
+    line-height: 1.2em;
+    color: $mainFontColorLight;
+    text-decoration: none;
+
+    &:hover {
+      background-color: $bgHeaderMenuItemHover;
+    }
+  }
+
+  &__switch-btn {
+    @include letter-spacing($menuTextSize);
+
+    position: relative;
+    padding: 12px 34px 16px 22px;
+    min-width: 252px;
+    width: 252px;
+    font-family: $mainFontFamily;
+    font-size: $menuTextSize;
+    font-weight: 500;
+    line-height: 1.2em;
+    color: $mainFontColorLight;
+
+    &::before,
+    &::after {
+      position: absolute;
+      content: '';
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+
+    &::before {
+      background-image: url('/images/switch_btn_bg.jpg');
+      background-repeat: no-repeat;
+      background-position: 0 0;
+      z-index: 1;
+    }
+
+    &::after {
+      background-color: #000;
+      opacity: 0.49;
+      z-index: 2;
+      transition: all 0.25s ease-in-out;
+    }
+
+    &:hover::after {
+      opacity: 0.69;
+    }
+
+    span {
+      position: relative;
+      z-index: 3;
+    }
+
+    .page-header_no-switch-btn & {
+      display: none;
+    }
+  }
+
+  &__arrow {
+    position: absolute;
+    right: 16px;
+    top: 50%;
+    width: 26px;
+    height: 22px;
+    fill: $additionalColorGreen;
+    transform: translate(0, -50%);
+    z-index: 3;
+  }
+}
+
+
+//.main-menu {
+//  display: flex;
+//  flex-direction: row;
+//  justify-content: flex-start;
+//  align-items: flex-start;
+//  flex-grow: 1;
+//  box-sizing: border-box;
+//
+//  &__burger {
+//    display: none;
+//  }
+//
+//  &__list {
+//    box-sizing: border-box;
+//    padding-left: 28px;
+//    width: 100%;
+//    display: flex;
+//    justify-content: flex-start;
+//    align-items: flex-start;
+//    align-content: flex-start;
+//    flex-wrap: wrap;
+//
+//    .page-header_no-switch-btn {
+//      justify-content: center;
+//    }
+//  }
+//
+//  &__item {
+//    display: inline-block;
+//    margin-right: 53px;
+//    font-size: 0;
+//
+//    &:last-child {
+//      margin-right: 0;
+//    }
+//
+//  }
+//
+//  &__link {
+//    @include letter-spacing($menuTextSize);
+//
+//    display: inline-block;
+//    padding: 12px 10px 16px;
+//    font-family: $mainFontFamily;
+//    font-size: $menuTextSize;
+//    font-weight: 300;
+//    line-height: 1.2em;
+//    color: $mainFontColorLight;
+//    text-decoration: none;
+//
+//    &:hover {
+//      background-color: $bgHeaderMenuItemHover;
+//    }
+//
+//    .main-menu__item.active & {
+//      color: $additionalColorGreen;
+//
+//      &:hover {
+//        background-color: transparent;
+//      }
+//    }
+//  }
+//}

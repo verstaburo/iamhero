@@ -1,0 +1,56 @@
+.employer-work {
+  min-height: 844px;
+
+  &__text {
+    width: 50%;
+    padding-top: 92px;
+    padding-left: 154px;
+    padding-right: 50px;
+  }
+
+  &__list {
+    margin-top: 82px;
+  }
+
+  &__item {
+    position: relative;
+    box-sizing: border-box;
+    margin-bottom: 9px;
+    padding-left: 48px;
+    font-size: $textSizeBiger;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+  }
+
+  &__icon {
+    position: absolute;
+    top: 8px;
+    left: 6px;
+
+    &_posting {
+      top: 10px;
+      width: 23px;
+      height: 24px;
+    }
+
+    &_search {
+      width: 24px;
+      height: 24px;
+    }
+
+    &_explore {
+      top: 10px;
+      width: 24px;
+      height: 24px;
+    }
+
+    &_score {
+      width: 25px;
+      height: 24px;
+    }
+  }
+
+  & .page-section__bg-img {
+    background-color: $bgHeaderMenuItemHover;
+  }
+}

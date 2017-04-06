@@ -1,0 +1,61 @@
+.we-for-hero {
+  min-height: 956px;
+  overflow: hidden;
+
+  &__container {
+    position: relative;
+  }
+
+  &__text {
+    padding-top: 146px;
+    padding-right: 260px;
+    width: 50%;
+    z-index: 2;
+  }
+
+  &__collage {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    align-content: flex-start;
+    flex-wrap: wrap;
+    width: 100%;
+    top: -444px;
+    right: -532px;
+    z-index: 1;
+  }
+
+  &__collage-item {
+    width: 50%;
+
+    &:nth-child(1) {
+      margin: 0 25%;
+      width: 50%;
+    }
+
+    &:nth-child(2) {
+      margin-top: -220px;
+      margin-left: -400px;
+    }
+
+    &:nth-child(3) {
+      margin-top: -238px;
+      margin-right: -60px;
+      margin-left: 54px;
+    }
+
+    &:nth-child(4) {
+      margin-top: -238px;
+      margin-right: -60px;
+      margin-left: 54px;
+    }
+
+    &:nth-child(5) {
+      margin-top: -238px;
+      margin-right: -60px;
+      margin-left: 54px;
+    }
+  }
+}

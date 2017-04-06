@@ -1,10 +1,16 @@
 .text-block {
+  box-sizing: border-box;
+
   &_start {
     text-align: left;
   }
 
   &_centered {
     text-align: center;
+
+    & .text-block__title_mainpage {
+      padding-right: 0;
+    }
   }
 
   &_end {
@@ -28,11 +34,13 @@
     &_mainpage {
       margin-bottom: 70px;
       font-size: $titleSizeH1;
+      padding-right: 50px;
     }
   }
 
   &__content {
     font-size: $textSize;
+    line-height: 1.2em;
 
     &_small {
       font-size: $textSizeSmall;
@@ -56,6 +64,7 @@
     }
 
     p {
+      margin-bottom: 34px;
       padding: 0 5px;
       font-size: inherit;
       line-height: inherit;
@@ -67,6 +76,7 @@
   &__item {
     font-size: inherit;
     letter-spacing: inherit;
+    font-weight: 100;
     line-height: inherit;
     color: inherit;
   }
