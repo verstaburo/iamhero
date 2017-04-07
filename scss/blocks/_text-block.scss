@@ -3,18 +3,30 @@
 
   &_start {
     text-align: left;
+
+    & .text-block__title_mainpage {
+      margin-bottom: 70px;
+      padding-right: 50px;
+    }
   }
 
   &_centered {
     text-align: center;
 
     & .text-block__title_mainpage {
+      padding-left: 48px;
       padding-right: 0;
+      margin-bottom: 40px;
     }
   }
 
   &_end {
     text-align: right;
+
+    & .text-block__title_mainpage {
+      margin-bottom: 70px;
+      padding-right: 50px;
+    }
   }
 
   &_light {
@@ -32,9 +44,7 @@
     }
 
     &_mainpage {
-      margin-bottom: 70px;
       font-size: $titleSizeH1;
-      padding-right: 50px;
     }
   }
 
@@ -79,5 +89,20 @@
     font-weight: 100;
     line-height: inherit;
     color: inherit;
+  }
+
+  &__link {
+    font-size: inherit;
+    color: inherit;
+    line-height: inherit;
+    font-weight: 500;
+    text-decoration: none;
+    padding-bottom: 2px;
+    border-bottom: 2px solid $additionalColorGreen;
+    transition: all 0.25s ease-in-out;
+
+    &:hover {
+      color: $linkHoverColor;
+    }
   }
 }
