@@ -74,6 +74,8 @@
     }
 
     p {
+      box-sizing: border-box;
+      width: 100%;
       margin-bottom: 34px;
       padding: 0 5px;
       font-size: inherit;

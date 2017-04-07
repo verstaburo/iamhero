@@ -8,10 +8,14 @@
   flex-wrap: wrap;
   margin-top: 23px;
   margin-bottom: 23px;
-  
+
   &__item {
-    margin-right: 34.6px;
-    
+    margin-right: 33px;
+
+    a {
+      font-size: 0;
+    }
+
     &:last-child {
       margin-right: 0;
     }

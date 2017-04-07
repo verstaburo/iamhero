@@ -279,12 +279,17 @@ a {
 select,
 input,
 textarea {
-  padding: 10px;
-  text-align: left;
+  @include letter-spacing($formTextSize);
+
+  padding: 12px 20px;
   margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 14px;
+  font-size: $formTextSize;
+  line-height: 1.2em;
+  font-weight: 300;
+  text-align: left;
+  border-radius: 25px;
+  border: 1px solid $formBorderColor;
+  background-color: transparent;
   display: inline-block;
 }
 

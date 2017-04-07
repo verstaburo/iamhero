@@ -5,10 +5,37 @@
     box-sizing: border-box;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: flex-start;
-    min-height: 474px;
-    padding-top: 66px;
+    min-height: 514px;
+    padding-top: 65px;
+    padding-left: 45px;
+    padding-right: 4px;
     padding-bottom: 52px;
+  }
+
+  &__logo {
+    margin-right: 93px;
+  }
+
+  &__menu {
+    margin-right: 100px;
+
+    &_info {
+      margin-right: 130px;
+    }
+
+    &_employer {
+      margin-right: 118px;
+    }
+
+    &_social {
+      margin-left: auto;
+      margin-right: 0;
+
+      & .footer-menu__title {
+        margin-left: -5px;
+      }
+    }
   }
 }
