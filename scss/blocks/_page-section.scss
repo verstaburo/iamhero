@@ -11,11 +11,11 @@
     align-items: flex-start;
     padding-bottom: 10px;
 
-    /*@media #{$tablet} {
+    @media #{$tablet2} {
       flex-direction: column;
       justify-content: flex-start;
       align-items: center;
-    }*/
+    }
   }
 
   &_centered {
@@ -33,6 +33,10 @@
   &_end {
     .page-section__container {
       justify-content: flex-end;
+
+      @media #{$tablet2} {
+        justify-content: flex-start;
+      }
     }
   }
 

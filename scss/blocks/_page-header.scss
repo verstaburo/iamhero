@@ -18,6 +18,12 @@
     align-items: flex-start;
     box-sizing: border-box;
     padding-left: 150px;
+
+    @media #{$tablet2} {
+      padding-left: 0;
+      align-items: center;
+      padding: 5px 5%;
+    }
   }
 
   &__logo {
@@ -27,5 +33,11 @@
     width: 150px;
     height: 116px;
     background-color: $bgMenuColor;
+
+    @media #{$tablet2} {
+      position: relative;
+      order: 2;
+      background-color: transparent;
+    }
   }
 }

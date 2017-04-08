@@ -4,8 +4,16 @@
   justify-content: space-between;
   align-items: flex-start;
 
+  @media #{$tablet2} {
+    order: 3;
+  }
+
   &__toggle {
     display: none;
+
+    @media #{$tablet2} {
+      display: inline-block;
+    }
   }
 
   &__list {
@@ -15,6 +23,10 @@
     align-items: flex-start;
     padding-left: 22px;
     padding-right: 22px;
+
+    @media #{$tablet2} {
+      display: none;
+    }
   }
 
   &__item {
@@ -56,6 +68,10 @@
     font-weight: 500;
     line-height: 1.2em;
     color: $mainFontColorLight;
+
+    @media #{$tablet2} {
+      display: none;
+    }
 
     &::before,
     &::after {
@@ -106,68 +122,3 @@
     z-index: 3;
   }
 }
-
-
-//.main-menu {
-//  display: flex;
-//  flex-direction: row;
-//  justify-content: flex-start;
-//  align-items: flex-start;
-//  flex-grow: 1;
-//  box-sizing: border-box;
-//
-//  &__burger {
-//    display: none;
-//  }
-//
-//  &__list {
-//    box-sizing: border-box;
-//    padding-left: 28px;
-//    width: 100%;
-//    display: flex;
-//    justify-content: flex-start;
-//    align-items: flex-start;
-//    align-content: flex-start;
-//    flex-wrap: wrap;
-//
-//    .page-header_no-switch-btn {
-//      justify-content: center;
-//    }
-//  }
-//
-//  &__item {
-//    display: inline-block;
-//    margin-right: 53px;
-//    font-size: 0;
-//
-//    &:last-child {
-//      margin-right: 0;
-//    }
-//
-//  }
-//
-//  &__link {
-//    @include letter-spacing($menuTextSize);
-//
-//    display: inline-block;
-//    padding: 12px 10px 16px;
-//    font-family: $mainFontFamily;
-//    font-size: $menuTextSize;
-//    font-weight: 300;
-//    line-height: 1.2em;
-//    color: $mainFontColorLight;
-//    text-decoration: none;
-//
-//    &:hover {
-//      background-color: $bgHeaderMenuItemHover;
-//    }
-//
-//    .main-menu__item.active & {
-//      color: $additionalColorGreen;
-//
-//      &:hover {
-//        background-color: transparent;
-//      }
-//    }
-//  }
-//}

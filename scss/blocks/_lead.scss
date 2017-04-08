@@ -36,13 +36,13 @@
       padding-left: 130px;
     }
 
-    @media #{$tablet2} {
+    @media #{$tablet} {
       width: 100%;
     }
 
-    @media #{$tablet} {
+    @media #{$tablet2} {
       padding: 0 10%;
-      max-height: 876px;
+      min-height: 876px;
     }
 
     &::before {

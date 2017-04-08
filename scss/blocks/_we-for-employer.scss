@@ -9,5 +9,10 @@
   &__text {
     width: 50%;
     padding-right: 58px;
+
+    @media #{$tablet2} {
+      padding-right: 0;
+      width: 100%;
+    }
   }
 }

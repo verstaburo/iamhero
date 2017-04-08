@@ -12,6 +12,10 @@
   &__item {
     margin-right: 33px;
 
+    @media #{$mobile} {
+      margin-right: 20px;
+    }
+
     a {
       font-size: 0;
     }
