@@ -9,6 +9,26 @@
     height: 92px;
   }
 
+  &_lead {
+    width: 220px;
+    height: 157px;
+
+    @media #{$tablet2} {
+      width: 165px;
+      height: 117px;
+    }
+  }
+
+  &_header {
+    width: 110px;
+    height: 77px;
+
+    @media #{$tablet} {
+      width: 96px;
+      height: 68px;
+    }
+  }
+
   &__img {
     position: absolute;
     top: 50%;

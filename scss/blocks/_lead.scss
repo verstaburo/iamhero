@@ -9,6 +9,12 @@
   max-width: 1920px;
   margin: 0 auto;
   min-height: 1058px;
+  overflow: hidden;
+
+  @media #{$tablet} {
+    flex-direction: column;
+    min-height: 876px;
+  }
 
   &__item {
     position: relative;
@@ -17,14 +23,26 @@
     justify-content: space-between;
     align-items: flex-start;
     box-sizing: border-box;
-    padding: 0 260px 176px 182px;
+    padding: 0 13.5% 0 182px;
     width: 50%;
     min-height: 1058px;
     transition: all 0.25s ease-in-out;
 
+    @media #{$desktop2} {
+      padding-right: 5%;
+    }
+
     @media #{$desktop} {
-      padding-left: 60px;
-      padding-right: 60px;
+      padding-left: 130px;
+    }
+
+    @media #{$tablet2} {
+      width: 100%;
+    }
+
+    @media #{$tablet} {
+      padding: 0 10%;
+      max-height: 876px;
     }
 
     &::before {
@@ -58,9 +76,6 @@
         left: 4px;
         background-color: $additionalColorBlue;
       }
-
-      /*&:hover {
-      }*/
     }
 
     &_employer {
@@ -73,15 +88,13 @@
       & .lead__text::before {
         background-color: $additionalColorGreen;
       }
-
-      /*&:hover {
-      }*/
     }
   }
 
   &__btn {
     position: relative;
     margin-left: 5px;
+    margin-bottom: auto;
     visibility: hidden;
     opacity: 0;
     transform: translateY(200px);
@@ -142,8 +155,17 @@
 
   &__text {
     position: relative;
+    margin-bottom: 42px;
     padding-top: 484px;
     z-index: 4;
+
+    @media #{$tablet2} {
+      margin-bottom: 20px;
+    }
+
+    @media #{$tablet} {
+      padding-top: 338px;
+    }
 
     &::before {
       position: absolute;
@@ -152,6 +174,14 @@
       left: 0;
       width: 12px;
       height: 470px;
+
+      @media #{$tablet} {
+        height: 324px;
+      }
+    }
+
+    & .text-block__title_mainpage {
+      padding-right: 0;
     }
   }
 
@@ -161,6 +191,13 @@
     left: 50%;
     transform: translate(-50%, 0);
     z-index: 10;
+
+    @media #{$tablet} {
+      top: 48px;
+      left: auto;
+      right: 9%;
+      transform: none;
+    }
   }
 
 }

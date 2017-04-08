@@ -163,8 +163,25 @@ footer {
   margin: 0 auto;
   padding-left: 43px;
 
+  @media #{$desktop2} {
+    padding-left: 0;
+    width: 1340px;
+  }
+
   @media #{$desktop} {
     width: 1240px
+  }
+
+  @media #{$tablet2} {
+    width: 960px;
+  }
+
+  @media #{$tablet} {
+    width: 600px;
+  }
+
+  @media #{$mobile} {
+   width: 290px;
   }
 }
 

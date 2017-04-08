@@ -6,6 +6,10 @@
   border-radius: 50%;
   background-color: transparent;
 
+  &:hover {
+    background-color: $additionalColorGreen;
+  }
+
   &__link {
     position: relative;
     box-sizing: border-box;
