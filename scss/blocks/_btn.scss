@@ -18,6 +18,11 @@
   cursor: pointer;
   transition: all 0.25s ease-in-out;
 
+  @media #{$mobile} {
+    font-size: 0.75*$btnTextSize;
+    padding: 7px 24px;
+  }
+
   &:hover {
     background-color: $additionalColorGreen;
   }

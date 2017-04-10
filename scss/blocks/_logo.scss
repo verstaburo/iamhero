@@ -17,6 +17,11 @@
       width: 165px;
       height: 117px;
     }
+
+    @media #{$mobile} {
+      width: 82px;
+      height: 58px;
+    }
   }
 
   &_header {
@@ -61,6 +66,11 @@
       @media #{$tablet} {
         width: 165px;
         height: 117px;
+      }
+
+      @media #{$mobile} {
+        width: 82px;
+        height: 58px;
       }
     }
   }
