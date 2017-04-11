@@ -1,6 +1,10 @@
 .crowdfunding {
   min-height: 719px;
 
+  @media #{$mobile} {
+    min-height: 358px;
+  }
+
   &__text {
     padding-top: 102px;
     padding-right: 190px;
@@ -14,6 +18,15 @@
     @media #{$desktop} {
       width: 70%;
       padding-right: 10%;
+    }
+
+    @media #{$tablet} {
+      width: 100%;
+      padding-top: 94px;
+      padding-left: 16px;
+      padding-right: 12px;
+      padding-bottom: 10px;
+      text-align: left;
     }
 
     p {

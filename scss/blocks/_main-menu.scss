@@ -12,10 +12,69 @@
   }
 
   &__burger {
+    position: relative;
     display: none;
+    font-size: 0;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    padding: 0;
+    width: 35px;
+    height: 30px;
 
     @media #{$tablet2} {
       display: inline-block;
+    }
+
+    @media #{$tablet} {
+      width: 30px;
+      height: 26px;
+    }
+
+    @media #{$mobile} {
+      width: 18px;
+      height: 14px;
+    }
+  }
+
+  &__burger-item {
+    display: block;
+    width: 35px;
+    height: 2px;
+    background-color: $bgColor;
+
+    &::before,
+    &::after {
+      position: absolute;
+      content: '';
+      left: 0;
+      width: 35px;
+      height: 2px;
+      background-color: $bgColor;
+
+      @media #{$tablet} {
+        width: 30px;
+      }
+
+      @media #{$mobile} {
+        width: 18px;
+      }
+    }
+
+    &::before {
+      top: 0;
+    }
+
+    &::after {
+      bottom: 0;
+    }
+
+    @media #{$tablet} {
+      width: 30px;
+    }
+
+    @media #{$mobile} {
+      width: 18px;
     }
   }
 

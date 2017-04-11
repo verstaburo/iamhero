@@ -8,6 +8,10 @@
   border: 1px solid $formBorderColor;
   padding: 5px;
 
+  @media #{$mobile} {
+    padding: 3px;
+  }
+
   &__item {
     box-sizing: border-box;
     padding: 7px 20px;
@@ -26,6 +30,8 @@
   }
 
   &__label {
+    @include letter-spacing($formTextSize);
+
     box-sizing: border-box;
     font-size: $formTextSize;
     font-weight: 500;
@@ -33,6 +39,12 @@
     color: $mainFontColorLight;
     border-bottom: 1px solid $formBorderFocus;
     transition: all 0.25s ease-in-out;
+
+    @media #{$mobile} {
+      @include letter-spacing($textSizeMobile);
+
+      font-size: $textSizeMobile;
+    }
 
     &:hover {
       color: $additionalColorGreen;

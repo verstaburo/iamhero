@@ -9,11 +9,23 @@
   margin-top: 23px;
   margin-bottom: 23px;
 
+  @media #{$desktop2} {
+    min-width: 320px;
+  }
+
+  @media #{$tablet2} {
+    min-width: 0px;
+  }
+
+  @media #{$tablet} {
+    margin-top: 16px;
+  }
+
   &__item {
     margin-right: 33px;
 
-    @media #{$mobile} {
-      margin-right: 20px;
+    @media #{$tablet} {
+      margin-right: 25px;
     }
 
     a {

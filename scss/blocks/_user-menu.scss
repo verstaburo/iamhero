@@ -10,9 +10,34 @@
 
   &__toggle {
     display: none;
+    font-size: 0;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+    overflow: hidden;
+    padding: 0;
 
     @media #{$tablet2} {
       display: inline-block;
+    }
+  }
+
+  &__icon {
+    width: 50px;
+    height: 50px;
+    fill: transparent;
+    stroke: $bgColor;
+    stroke-width: 2px;
+
+    @media #{$tablet} {
+      width: 40px;
+      height: 40px;
+    }
+
+    @media #{$mobile} {
+      width: 22px;
+      height: 22px;
     }
   }
 

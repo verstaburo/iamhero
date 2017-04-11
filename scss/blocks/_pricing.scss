@@ -5,6 +5,10 @@
     margin-bottom: 60px;
   }
 
+  @media #{$tablet} {
+    margin-bottom: 40px;
+  }
+
   &__container {
     display: flex;
     flex-direction: row;
@@ -16,11 +20,21 @@
     margin-top: -160px;
     overflow: visible;
 
+    @media #{$desktop} {
+      flex-direction: row !important;
+      justify-content: space-between !important;
+    }
+
     @media #{$tablet} {
       flex-direction: column;
       align-items: center;
       padding: 0;
       margin-top: 0;
+    }
+
+    @media #{$mobile} {
+      width: 100%;
+      margin: 0;
     }
   }
 
@@ -36,10 +50,15 @@
     box-shadow: 0 1px 5px 0 rgba($pricingTableShadow, 0.35);
 
     @media #{$tablet} {
+      margin-bottom: 2px;
       width: 100%;
     }
 
     &_special {
+      @media #{$tablet} {
+        margin-bottom: 18px;
+      }
+
       & .pricing__header h3 {
         color: $additionalColorGreen;
       }
@@ -47,13 +66,26 @@
   }
 
   &__header {
+    box-sizing: border-box;
     padding: 24px 40px 0;
     width: 100%;
 
+    @media #{$mobile} {
+      padding: 36px 9% 0;
+    }
+
     h3 {
+      box-sizing: border-box;
+      width: 100%;
       font-weight: 700;
       text-align: left;
       color: $mainFontColorDark;
+
+      @media #{$tablet} {
+        @include letter-spacing($pricingHeaderTextMobile);
+
+        font-size: $pricingHeaderTextMobile;
+      }
     }
   }
 
@@ -68,8 +100,19 @@
     padding-right: 36px;
     padding-bottom: 42px;
 
+    @media #{$mobile} {
+      padding-left: 9%;
+      padding-right: 9%;
+      padding-bottom: 30px;
+    }
+
     .pricing__table_special & {
       padding-right: 46px;
+
+      @media #{$mobile} {
+        padding-right: 10%;
+        padding-bottom: 34px;
+      }
     }
   }
 
@@ -95,6 +138,20 @@
     font-weight: 300;
     color: $mainFontColorDark;
 
+    @media #{$mobile} {
+      @include letter-spacing($textSizeMobile);
+
+      font-size: $textSizeMobile;
+      padding-top: 20px;
+      min-height: 25px;
+    }
+
+    .pricing__table_special & {
+      @media #{$mobile} {
+        padding-top: 34px;
+      }
+    }
+
     &_service {
       text-align: left;
     }
@@ -103,6 +160,12 @@
       text-align: center;
       font-size: $textSizeBig;
       font-weight: 300;
+
+      .pricing__table_regular & {
+        @media #{$tablet} {
+          text-align: right;
+        }
+      }
     }
 
     &_crossed {
@@ -148,6 +211,13 @@
     background-repeat: no-repeat;
     background-position: 0 0;
 
+    @media #{$mobile} {
+      @include letter-spacing(($textSizeMobile - 1));
+
+      padding: 12px 9%;
+      font-size: ($textSizeMobile - 1);
+    }
+
     p {
       font-family: inherit;
       font-size: inherit;
@@ -159,9 +229,24 @@
   }
 
   &__btn {
+    box-sizing: border-box;
+
     @media #{$desktop2} {
       padding-left: 48px;
       padding-right: 48px;
+    }
+
+    @media #{$desktop} {
+      padding-left: 24px;
+      padding-right: 24px;
+    }
+
+    @media #{$mobile} {
+      @include letter-spacing($textSizeTiny);
+
+      padding: 9px 24px;
+      width: 100%;
+      font-size: $textSizeTiny;
     }
   }
 }

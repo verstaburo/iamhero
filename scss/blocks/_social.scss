@@ -6,6 +6,11 @@
   border-radius: 50%;
   background-color: transparent;
 
+  @media #{$tablet} {
+    width: 46px;
+    height: 46px;
+  }
+
   &:hover {
     background-color: $additionalColorGreen;
   }
@@ -29,11 +34,21 @@
     &_facebook {
       width: 14px;
       height: 27px;
+
+      @media #{$tablet} {
+        width: 12px;
+        height: 24px;
+      }
     }
 
     &_twitter {
       width: 29px;
       height: 23px;
+
+      @media #{$tablet} {
+        width: 26px;
+        height: 20px;
+      }
     }
 
     &_instagram {
@@ -41,11 +56,21 @@
       height: 23px;
       fill: transparent;
       stroke: $bgSocialColor;
+
+      @media #{$tablet} {
+        width: 20px;
+        height: 20px;
+      }
     }
 
     &_youtube {
       width: 25px;
       height: 18px;
+
+      @media #{$tablet} {
+        width: 22px;
+        height: 15px;
+      }
     }
   }
 }

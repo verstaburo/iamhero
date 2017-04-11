@@ -165,6 +165,7 @@ footer {
 
   @media #{$desktop2} {
     padding-left: 0;
+    padding-right: 0;
     width: 1340px;
   }
 
@@ -225,31 +226,37 @@ h5 {
 
 // Стили заголовков (удалить лишнее)
 h1 {
-  @include letter-spacing($titleSizeH1, -40);
+  @include letter-spacing($titleSizeH1);
 
   font-size: $titleSizeH1;
 }
 
 h2 {
-  @include letter-spacing($titleSizeH2, -40);
+  @include letter-spacing($titleSizeH2);
 
   font-size: $titleSizeH2;
 }
 
 h3 {
-  @include letter-spacing($titleSizeH3, -40);
+  @include letter-spacing($titleSizeH3);
 
   font-size: $titleSizeH3;
 }
 
 h4 {
-  @include letter-spacing($titleSizeH4, -40);
+  @include letter-spacing($titleSizeH4);
 
   font-size: $titleSizeH4;
+
+  @media #{$mobile} {
+    @include letter-spacing($menuTextSize);
+
+    font-size: $menuTextSize;
+  }
 }
 
 h5 {
-  @include letter-spacing($titleSizeH5, -40);
+  @include letter-spacing($titleSizeH5);
 
   font-size: $titleSizeH5;
 }
@@ -271,7 +278,7 @@ p.big {
 }
 
 p.huge {
-  @include letter-spacing($textSizeHuge, -40);
+  @include letter-spacing($textSizeHuge);
   font-size: $textSizeHuge;
 }
 
@@ -308,6 +315,13 @@ textarea {
   border: 1px solid $formBorderColor;
   background-color: transparent;
   display: inline-block;
+
+  @media #{$mobile} {
+    @include letter-spacing($textSizeMobile);
+
+    font-size: $textSizeMobile;
+    padding: 10px 16px;
+  }
 }
 
 .button {

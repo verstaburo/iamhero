@@ -14,9 +14,25 @@
     padding-bottom: 52px;
 
     @media #{$tablet2} {
+      justify-content: space-between;
+      flex-wrap: wrap;
+      align-content: flex-start;
+    }
+
+    @media #{$tablet} {
       flex-direction: column;
       justify-content: flex-start;
       align-items: flex-start;
+    }
+
+    @media #{$tablet} {
+      padding-top: 14px;
+      padding-bottom: 16px;
+    }
+
+    @media #{$tablet} {
+      padding-left: 15px;
+      padding-right: 15px;
     }
   }
 
@@ -24,20 +40,56 @@
     margin-right: 93px;
 
     @media #{$tablet2} {
+      width: 100%;
+      margin-right: 0;
+      margin-bottom: 28px;
+    }
+
+    @media #{$tablet} {
+      width: auto;
       margin: 0;
       align-self: center;
+    }
+
+    @media #{$tablet} {
+      margin-bottom: 28px;
     }
   }
 
   &__menu {
     margin-right: 100px;
 
+    @media #{$tablet2} {
+      width: 50%;
+      margin-right: 0;
+      margin-bottom: 40px;
+    }
+
+    @media #{$tablet} {
+      width: auto;
+      margin-right: 0;
+    }
+
     &_info {
       margin-right: 130px;
+
+      @media #{$tablet} {
+        margin-bottom: 60px;
+      }
     }
 
     &_employer {
       margin-right: 118px;
+
+      @media #{$tablet} {
+        margin-bottom: 40px;
+      }
+    }
+
+    &_hero {
+      @media #{$tablet} {
+        margin-bottom: 58px;
+      }
     }
 
     &_social {
@@ -46,10 +98,19 @@
 
       @media #{$tablet2} {
         margin-left: 0;
+        margin-right: 0;
+      }
+
+      @media #{$tablet} {
+        margin-left: 0;
       }
 
       & .footer-menu__title {
         margin-left: -5px;
+
+        @media #{$tablet} {
+          margin-left: 0;
+        }
       }
     }
   }
