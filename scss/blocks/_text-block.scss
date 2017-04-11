@@ -105,6 +105,23 @@
       }
     }
 
+    &_gigantic {
+      @include letter-spacing($textSizeGigantic);
+
+      font-size: $textSizeGigantic;
+      line-height: 1.2em;
+
+      @media #{$mobile} {
+        @include letter-spacing($textSize);
+
+        font-size: $textSize;
+      }
+
+      p {
+        padding: 0;
+      }
+    }
+
     p {
       box-sizing: border-box;
       width: 100%;

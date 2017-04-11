@@ -1,0 +1,28 @@
+.crowdfunding {
+  min-height: 719px;
+
+  &__text {
+    padding-top: 102px;
+    padding-right: 190px;
+    padding-bottom: 170px;
+    width: 50%;
+
+    @media #{$desktop2} {
+      padding-right: 10%;
+    }
+
+    @media #{$desktop} {
+      width: 70%;
+      padding-right: 10%;
+    }
+
+    p {
+      padding: 0;
+    }
+
+    b {
+      display: block;
+      font-weight: 700;
+    }
+  }
+}

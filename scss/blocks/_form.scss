@@ -147,9 +147,13 @@
     }
 
     & .form__text {
-      padding-top: 0;
-      justify-content: center;
-      text-align: center;
+      text-align: left;
+
+      @media #{$tablet} {
+        padding-top: 0;
+        justify-content: center;
+        text-align: center;
+      }
     }
 
     & .form__inputlabel,

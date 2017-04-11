@@ -1,0 +1,167 @@
+.pricing {
+  margin-bottom: 122px;
+
+  @media #{$desktop} {
+    margin-bottom: 60px;
+  }
+
+  &__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
+    align-content: stretch;
+    flex-wrap: wrap;
+    padding: 0 48px;
+    margin-top: -160px;
+    overflow: visible;
+
+    @media #{$tablet} {
+      flex-direction: column;
+      align-items: center;
+      padding: 0;
+      margin-top: 0;
+    }
+  }
+
+  &__table {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: stretch;
+    margin-bottom: 42px;
+    width: 48%;
+    background-color: $bgColor;
+    box-shadow: 0 1px 5px 0 rgba($pricingTableShadow, 0.35);
+
+    @media #{$tablet} {
+      width: 100%;
+    }
+
+    &_special {
+      & .pricing__header h3 {
+        color: $additionalColorGreen;
+      }
+    }
+  }
+
+  &__header {
+    padding: 24px 40px 0;
+    width: 100%;
+
+    h3 {
+      font-weight: 700;
+      text-align: left;
+      color: $mainFontColorDark;
+    }
+  }
+
+  &__body {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    padding-left: 40px;
+    padding-right: 36px;
+    padding-bottom: 42px;
+
+    .pricing__table_special & {
+      padding-right: 46px;
+    }
+  }
+
+  &__row {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items:flex-start;
+    width: 100%;
+  }
+
+  &__cell {
+    @include letter-spacing($textSize);
+
+    box-sizing: border-box;
+    display: table-cell;
+    padding-top: 32px;
+    width: 33%;
+    min-height: 70px;
+    font-family: $mainFontFamily;
+    font-size: $textSize;
+    font-weight: 300;
+    color: $mainFontColorDark;
+
+    &_service {
+      text-align: left;
+    }
+
+    &_price {
+      text-align: center;
+      font-size: $textSizeBig;
+      font-weight: 300;
+    }
+
+    &_crossed {
+      color: $pricingCrossedText;
+      font-weight: 300;
+
+      b {
+        position: relative;
+        color: inherit;
+        font-weight: inherit;
+      }
+
+      b::before {
+        position: absolute;
+        content: '';
+        top: 50%;
+        left: 0;
+        width: 100%;
+        height: 2px;
+        background-color: $additionalColorGreen;
+        transform: translate(0, -50%);
+      }
+    }
+
+    &_link {
+      text-align: right;
+    }
+  }
+
+  &__footer {
+    @include letter-spacing($textSize);
+
+    box-sizing: border-box;
+    padding: 26px 42px;
+    width: 100%;
+    font-family: $mainFontFamily;
+    font-size: $textSize;
+    line-height: (45/22)*1em;
+    font-weight: 700;
+    color: $mainFontColorLight;
+    background-color: $bgMenuColor;
+    background-image: $mainGradient;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+
+    p {
+      font-family: inherit;
+      font-size: inherit;
+      line-height: inherit;
+      font-weight: inherit;
+      color: inherit;
+      letter-spacing: inherit;
+    }
+  }
+
+  &__btn {
+    @media #{$desktop2} {
+      padding-left: 48px;
+      padding-right: 48px;
+    }
+  }
+}

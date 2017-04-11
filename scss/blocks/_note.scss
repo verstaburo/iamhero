@@ -1,0 +1,40 @@
+.note {
+  font-family: $mainFontFamily;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: flex-start;
+  width: 100%;
+
+  &__text {
+    @include letter-spacing($textSizeBig);
+
+    width: 50%;
+    text-align: right;
+    font-size: $textSizeBig;
+    font-weight: 100;
+    line-height: 1.2em;
+    color: $mainFontColorDark;
+
+    @media #{$tablet2} {
+      width: 70%;
+    }
+
+    @media #{$tablet} {
+      width: 100%;
+    }
+  }
+
+  &__star {
+    @include letter-spacing($noteStarSize);
+
+    margin-right: 14px;
+    text-align: right;
+    font-size: $noteStarSize;
+    font-weight: 100;
+    line-height: 1.2em;
+    color: $additionalColorGreen;
+    vertical-align: text-top;
+  }
+}

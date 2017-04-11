@@ -24,6 +24,11 @@
     padding-left: 22px;
     padding-right: 22px;
 
+    .page-header_no-switch-btn & {
+      padding-left: 32px;
+      padding-right: 32px;
+    }
+
     @media #{$tablet2} {
       display: none;
     }
@@ -33,6 +38,10 @@
     display: inline-block;
     margin-right: 48px;
     font-size: 0;
+
+    .page-header_no-switch-btn & {
+      margin-right: 40px;
+    }
 
     &:last-child {
       margin-right: 0;
