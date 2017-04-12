@@ -2,6 +2,14 @@
   position: relative;
   min-height: 342px;
 
+  @media #{$tablet} {
+    min-height: 1135px;
+  }
+
+  @media #{$mobile} {
+    min-height: 567px;
+  }
+
   &::before {
     position: absolute;
     top: 0;
@@ -20,12 +28,40 @@
     align-items: flex-start;
     padding-top: 126px;
     z-index: 2;
+
+    @media #{$tablet2} {
+      flex-direction: row;
+      justify-content: center;
+      align-items: flex-start;
+    }
+
+    @media #{$tablet} {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding-top: 16px;
+      min-height: 1135px;
+    }
+
+    @media #{$mobile} {
+      min-height: 567px;
+    }
   }
 
   &__item {
     box-sizing: border-box;
     width: 50%;
     z-index: 3;
+
+    @media #{$tablet} {
+      width: 100%;
+    }
+
+    &_text {
+      @media #{$tablet2} {
+        width: 60%;
+      }
+    }
 
     &_play {
       padding-top: 20px;
@@ -34,16 +70,72 @@
       flex-direction: row;
       justify-content: center;
       align-items: flex-start;
+
+      @media #{$tablet2} {
+        padding-right: 25px;
+        width: 40%;
+      }
+
+      @media #{$tablet} {
+        padding-top: 26px;
+        padding-right: 0;
+      }
     }
   }
 
   &__text {
     padding-left: 24px;
+
+    @media #{$tablet} {
+      padding-left: 0;
+      text-align: center;
+    }
+
+    & .text-block__title_mainpage {
+      @media #{$tablet} {
+        @include letter-spacing(($titleSizeH1 - 10px));
+
+        margin-bottom: 0;
+        font-size: ($titleSizeH1 - 10px);
+      }
+
+      @media #{$mobile} {
+        @include letter-spacing(($titleSizeH1 - 10px)/2);
+
+        font-size: ($titleSizeH1 - 10px)/2;
+      }
+    }
   }
 
   &__playblock {
     position: relative;
     padding-left: 65px;
+
+    @media #{$tablet} {
+      padding-left: 90px;
+    }
+
+    @media #{$mobile} {
+      padding-left: 65px;
+    }
+  }
+
+  &__btn {
+    @media #{$tablet} {
+      @include letter-spacing($titleSizeH3);
+
+      font-size: $titleSizeH3;
+      padding: 10px 44px;
+      border-radius: 50px;
+    }
+
+    @media #{$mobile} {
+      @include letter-spacing($titleSizeH3/2);
+
+      font-size: $titleSizeH3/2;
+      padding: 10px 44px;
+      border-radius: 25px;
+    }
   }
 
   &__play-btn {
@@ -53,12 +145,15 @@
     width: 50px;
     height: 50px;
     transform: translate(0, -50%);
-  }
 
-  &__bg-img {
-    img {
-      top: -80px;
-      margin: 0 auto;
+    @media #{$tablet} {
+      width: 75px;
+      height: 75px;
+    }
+
+    @media #{$mobile} {
+      width: 50px;
+      height: 50px;
     }
   }
 }

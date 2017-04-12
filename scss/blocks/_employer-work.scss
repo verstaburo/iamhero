@@ -1,25 +1,87 @@
 .employer-work {
   min-height: 844px;
 
+  @media #{$tablet} {
+    min-height: 1170px;
+  }
+
+  @media #{$mobile} {
+    min-height: 585px;
+  }
+
+  &__container {
+    padding-top: 92px;
+
+    @media #{$tablet} {
+      padding-top: 88px;
+    }
+
+    @media #{$mobile} {
+      padding: 44px 14px 0;
+    }
+  }
+
   &__text {
     width: 50%;
-    padding-top: 92px;
     padding-left: 154px;
     padding-right: 50px;
+
+    @media #{$desktop} {
+      padding-left: 0;
+    }
+
+    @media #{$tablet2} {
+      align-self: flex-end;
+    }
+
+    @media #{$tablet} {
+      width: 100%;
+      padding-right: 0;
+      align-self: flex-start;
+    }
+
+    & .text-block__title_mainpage {
+      @media #{$mobile} {
+        margin-bottom: 32px;
+      }
+    }
+
+    & .text-block__content {
+      @media #{$mobile} {
+        line-height: 1.35em;
+      }
+    }
   }
 
   &__list {
     margin-top: 82px;
+
+    @media #{$mobile} {
+      margin-top: 30px;
+    }
   }
 
   &__item {
+    @include letter-spacing($textSizeBiger);
+
     position: relative;
     box-sizing: border-box;
     margin-bottom: 9px;
     padding-left: 48px;
     font-size: $textSizeBiger;
-    background-repeat: no-repeat;
-    background-position: 0 0;
+
+    @media #{$tablet} {
+      margin-bottom: 50px;
+      padding-left: 80px;
+    }
+
+    @media #{$mobile} {
+      @include letter-spacing($textSizeBiger/2);
+
+      margin-bottom: 35px;
+      padding-left: 44px;
+      font-size: $textSizeBiger/2;
+    }
   }
 
   &__icon {
@@ -27,30 +89,101 @@
     top: 8px;
     left: 6px;
 
+    @media #{$tablet} {
+      top: 0;
+      left: 3px;
+    }
+
+    @media #{$mobile} {
+      top: 4px;
+      left: 4px;
+    }
+
     &_posting {
       top: 10px;
       width: 23px;
       height: 24px;
+
+      @media #{$tablet} {
+        width: 53px;
+        height: 53px;
+      }
+
+      @media #{$mobile} {
+        top: 5px;
+        width: 26.5px;
+        height: 26.5px;
+      }
     }
 
     &_search {
       width: 24px;
       height: 24px;
+
+      @media #{$tablet} {
+        width: 55px;
+        height: 55px;
+      }
+
+      @media #{$mobile} {
+        top: -1px;
+        width: 27.5px;
+        height: 27.5px;
+      }
     }
 
     &_explore {
       top: 10px;
       width: 24px;
       height: 24px;
+
+      @media #{$tablet} {
+        width: 55px;
+        height: 55px;
+      }
+
+      @media #{$mobile} {
+        top: 0;
+        left: 7px;
+        width: 27.5px;
+        height: 27.5px;
+      }
     }
 
     &_score {
       width: 25px;
       height: 24px;
+
+      @media #{$tablet} {
+        top: -8px;
+        width: 58px;
+        height: 55px;
+      }
+
+      @media #{$mobile} {
+        top: -8px;
+        width: 29px;
+        height: 27.5px;
+      }
     }
   }
 
-  & .page-section__bg-img {
+  &__bg {
     background-color: $bgHeaderMenuItemHover;
+
+    @media #{$tablet} {
+
+      &::before {
+        position: absolute;
+        content: '';
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: $bgHeaderMenuItemHover;
+        opacity: 0.7;
+        z-index: 1;
+      }
+    }
   }
 }

@@ -17,6 +17,7 @@
     box-sizing: border-box;
     overflow: hidden;
     padding: 0;
+    cursor: pointer;
 
     @media #{$tablet2} {
       display: inline-block;

@@ -29,7 +29,7 @@
     padding: 0 13.5% 0 182px;
     width: 50%;
     min-height: 1058px;
-    transition: all 1.25s ease-in-out;
+    transition: height 1.25s ease-in-out, width 1.25s ease-in-out, opacity 1.25s ease-in-out, padding 1.25s ease-in-out;
 
     @media #{$desktop2} {
       padding-right: 5%;
@@ -130,8 +130,22 @@
       }
 
       &:hover {
+        width: calc(50% + 300px);
+        padding-right: calc(13.5% + 110px);
+
+        @media #{$desktop2} {
+          padding-right: calc(5% + 110px);
+        }
+
+        @media #{$tablet2} {
+          width: calc(50% + 240px);
+          padding-right: calc(10% + 82px);
+        }
+
         @media #{$tablet} {
           min-height: 872px;
+          padding-right: 10%;
+          width: 100%;
         }
 
         @media #{$mobile} {
@@ -178,8 +192,22 @@
       }
 
       &:hover {
+        width: calc(50% + 300px);
+        padding-left: calc(190px + 110px);
+
+        @media #{$desktop} {
+          padding-left: calc(130px + 110px);
+        }
+
+        @media #{$tablet2} {
+          width: calc(50% + 240px);
+          padding-left: calc(10% + 82px);
+        }
+
         @media #{$tablet} {
           min-height: 872px;
+          width: 100%;
+          padding-left: 10%;
         }
 
         @media #{$mobile} {
@@ -316,6 +344,7 @@
       left: 0;
       width: 12px;
       height: 470px;
+      transition: height 0.50s ease-in-out;
 
       @media #{$tablet} {
         height: 72px;

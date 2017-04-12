@@ -1,11 +1,79 @@
 .hero-work {
   min-height: 758px;
 
+  @media #{$tablet} {
+    min-height: 1137px;
+  }
+
+  @media #{$mobile} {
+    min-height: 568px;
+  }
+
+  &__container {
+    @media #{$tablet} {
+      padding: 0 32px;
+      padding-bottom: 456px;
+    }
+
+    @media #{$mobile} {
+      padding: 0 16px;
+      padding-bottom: 228px;
+    }
+  }
+
   &__text {
     padding-top: 110px;
     padding-left: 128px;
     padding-right: 162px;
     width: 50%;
+
+    @media #{$desktop2} {
+      padding-right: 100px;
+      padding-left: 100px;
+    }
+
+    @media #{$desktop} {
+      padding-right: 60px;
+      padding-left: 60px;
+    }
+
+    @media #{$tablet2} {
+      align-self: flex-end;
+      padding-right: 40px;
+      padding-left: 40px;
+    }
+
+    @media #{$tablet} {
+      align-self: flex-start;
+      width: 100%;
+      padding-top: 92px;
+      padding-right: 0;
+      padding-left: 0;
+    }
+
+    @media #{$mobile} {
+      padding-top: 46px;
+    }
+
+    & .text-block__title_mainpage {
+      @media #{$tablet} {
+        margin-bottom: 48px;
+      }
+
+      @media #{$mobile} {
+        margin-bottom: 24px;
+      }
+    }
+
+    p {
+      @media #{$tablet} {
+        margin-bottom: 32px;
+      }
+
+      @media #{$mobile} {
+        margin-bottom: 16px;
+      }
+    }
   }
 
   & .page-section__bg-img {

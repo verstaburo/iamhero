@@ -2,8 +2,24 @@
   box-sizing: border-box;
   min-height: 796px;
 
+  @media #{$tablet} {
+    min-height: 606px;
+  }
+
   &__container {
     padding-top: 202px;
+
+    @media #{$desktop} {
+      padding-top: 100px;
+    }
+
+    @media #{$tablet} {
+      padding: 72px 16px 510px;
+    }
+
+    @media #{$mobile} {
+      padding-bottom: 210px;
+    }
   }
 
   &__text {
@@ -12,7 +28,46 @@
 
     @media #{$tablet2} {
       padding-right: 0;
+      width: 55%;
+      align-self: flex-start;
+    }
+
+    @media #{$tablet} {
+      padding-right: 0;
       width: 100%;
+    }
+
+    & .text-block__title_mainpage {
+      @media #{$tablet} {
+        padding-right: 40px;
+        margin-bottom: 24px;
+      }
+    }
+
+    & .text-block__content {
+      @media #{$tablet} {
+        background-color: rgba($bgColor, 0.5);
+      }
+
+      @media #{$mobile} {
+        line-height: 1.35em;
+      }
+    }
+  }
+
+  &__bg {
+    top: 0;
+    right: 0;
+
+    @media #{$tablet} {
+      top: 100%;
+      height: 511px;
+      transform: translate(0, -100%);
+      overflow: visible;
+    }
+
+    @media #{$mobile} {
+      height: 260px;
     }
   }
 }

@@ -2,6 +2,18 @@
   min-height: 956px;
   overflow: hidden;
 
+  @media #{$tablet} {
+    min-height: 1036px;
+  }
+
+  @media #{$mobile} {
+    min-height: 518px;
+  }
+
+  @media #{$mobile} {
+    min-height: 518px;
+  }
+
   &__container {
     position: relative;
   }
@@ -12,55 +24,96 @@
     width: 50%;
     z-index: 2;
 
+    @media #{$desktop2} {
+      padding-right: 150px;
+    }
+
+    @media #{$desktop} {
+      padding-left: 20px;
+      padding-right: 100px;
+    }
+
     @media #{$tablet2} {
+      padding-left: 0;
       padding-right: 0;
+      align-self: flex-start;
+    }
+
+    @media #{$tablet} {
       width: 100%;
+      padding-top: 264px;
+      padding-left: 28px;
+      padding-right: 32px;
+    }
+
+    @media #{$mobile} {
+      padding-top: 132px;
+      padding-left: 14px;
+      padding-right: 16px;
+    }
+
+    p {
+      @media #{$mobile} {
+        margin-bottom: 18px;
+      }
     }
   }
 
   &__collage {
+    position: relative;
     position: absolute;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: flex-start;
-    align-content: flex-start;
-    flex-wrap: wrap;
+//    display: flex;
+//    flex-direction: row;
+//    justify-content: center;
+//    align-items: flex-start;
+//    align-content: flex-start;
+//    flex-wrap: wrap;
+    width: 88%;
+    height: auto;
+    overflow: hidden;
+    top: -52%;
+    right: -9%;
+    z-index: -1;
+
+    @media #{$tablet} {
+     // right: 0;
+    }
+  }
+
+  &__img {
     width: 100%;
-    top: -444px;
-    right: -532px;
-    z-index: 1;
+    height: auto;
   }
 
-  &__collage-item {
-    width: 50%;
-
-    &:nth-child(1) {
-      margin: 0 25%;
-      width: 50%;
-    }
-
-    &:nth-child(2) {
-      margin-top: -220px;
-      margin-left: -400px;
-    }
-
-    &:nth-child(3) {
-      margin-top: -238px;
-      margin-right: -60px;
-      margin-left: 54px;
-    }
-
-    &:nth-child(4) {
-      margin-top: -238px;
-      margin-right: -60px;
-      margin-left: 54px;
-    }
-
-    &:nth-child(5) {
-      margin-top: -238px;
-      margin-right: -60px;
-      margin-left: 54px;
-    }
-  }
+//  &__collage-item {
+//    width: 976;
+//    height: 524;
+//
+//    &:nth-child(1) {
+//      margin: 0 25%;
+//    }
+//
+//    &:nth-child(2) {
+//      margin-top: -220px;
+//      margin-left: -400px;
+//    }
+//
+//    &:nth-child(3) {
+//      margin-top: -238px;
+//      margin-right: -60px;
+//      margin-left: 54px;
+//    }
+//
+//    &:nth-child(4) {
+//      margin-top: -238px;
+//      margin-right: -60px;
+//      margin-left: 54px;
+//    }
+//
+//    &:nth-child(5) {
+//      margin-top: -238px;
+//      margin-right: -60px;
+//      margin-left: 54px;
+//    }
+//  }
 }

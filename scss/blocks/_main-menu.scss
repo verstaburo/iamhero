@@ -21,6 +21,7 @@
     padding: 0;
     width: 35px;
     height: 30px;
+    cursor: pointer;
 
     @media #{$tablet2} {
       display: inline-block;
@@ -42,6 +43,7 @@
     width: 35px;
     height: 2px;
     background-color: $bgColor;
+    transition: width 0.25s ease-in-out;
 
     &::before,
     &::after {
@@ -51,6 +53,7 @@
       width: 35px;
       height: 2px;
       background-color: $bgColor;
+      transition: transform 0.25s ease-in-out;
 
       @media #{$tablet} {
         width: 30px;
@@ -75,6 +78,16 @@
 
     @media #{$mobile} {
       width: 18px;
+    }
+
+    .main-menu__burger.opened & {
+      &::before {
+        transform: rotate(45deg);
+      }
+
+      &::after {
+        transform: rotate(-45deg);
+      }
     }
   }
 

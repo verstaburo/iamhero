@@ -5,15 +5,10 @@
     text-align: left;
 
     & .text-block__title_mainpage {
-      margin-bottom: 70px;
       padding-right: 50px;
 
       @media #{$desktop2} {
         padding-right: 0;
-      }
-
-      @media #{$mobile} {
-        margin-bottom: 35px;
       }
     }
   }
@@ -22,12 +17,14 @@
     text-align: center;
 
     & .text-block__title_mainpage {
-      padding-left: 48px;
-      padding-right: 0;
       margin-bottom: 40px;
 
-      @media #{$desktop2} {
-        padding-left: 0;
+      @media #{$tablet} {
+        margin-bottom: 32px;
+      }
+
+      @media #{$mobile} {
+        margin-bottom: 16px;
       }
     }
   }
@@ -36,7 +33,6 @@
     text-align: right;
 
     & .text-block__title_mainpage {
-      margin-bottom: 70px;
       padding-right: 50px;
 
       @media #{$desktop2} {
@@ -60,9 +56,11 @@
     }
 
     &_mainpage {
+      margin-bottom: 70px;
       font-size: $titleSizeH1;
 
       @media #{$mobile} {
+        margin-bottom: 35px;
         font-size: $titleSizeH1/2;
       }
     }
