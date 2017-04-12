@@ -85,35 +85,30 @@
     height: auto;
   }
 
-//  &__collage-item {
-//    width: 976;
-//    height: 524;
-//
-//    &:nth-child(1) {
-//      margin: 0 25%;
-//    }
-//
-//    &:nth-child(2) {
-//      margin-top: -220px;
-//      margin-left: -400px;
-//    }
-//
-//    &:nth-child(3) {
-//      margin-top: -238px;
-//      margin-right: -60px;
-//      margin-left: 54px;
-//    }
-//
-//    &:nth-child(4) {
-//      margin-top: -238px;
-//      margin-right: -60px;
-//      margin-left: 54px;
-//    }
-//
-//    &:nth-child(5) {
-//      margin-top: -238px;
-//      margin-right: -60px;
-//      margin-left: 54px;
-//    }
-//  }
+  &__bg {
+    top: 0;
+    right: 0;
+    height: 810px;
+    overflow: visible;
+
+    @media #{$tablet} {
+      height: 346px;
+    }
+
+    @media #{$mobile} {
+      height: 173px;
+    }
+
+    @media (min-width: 475px) and (max-width: 639px) {
+      transform: translate(60px, 0);
+    }
+
+    @media (min-width: 925px) and (max-width: 1024px) {
+      transform: translate(150px, 0);
+    }
+
+    @media (min-width: 1024px) and #{$desktop} {
+      transform: translate(150px, -40px);
+    }
+  }
 }

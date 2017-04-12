@@ -1,16 +1,16 @@
 # iamhero
 ---
 запуск сборки для разработки
-'npm start'
+`npm start`
 ---
 запуск сборки билда 
-'npm run build'
+`npm run build`
 ---
 В папку 'images/svg' ложим 'svg-файлы', котрые будем подключать инлайн через спрайт, конструкцией типа
-'''html
+```html
 <svg class = "smth-img">
   <use xlink:href="images/sprite.svg#icon-id-name"></use>
 </svg>
-'''
+```
 ---
 
