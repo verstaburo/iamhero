@@ -50,6 +50,8 @@
   }
 
   &__title {
+    margin-bottom: 50px;
+
     i {
       color: $additionalColorGreen;
       font-style: normal;
@@ -156,6 +158,24 @@
 
     &:hover {
       color: $linkHoverColor;
+    }
+  }
+
+  &__slogan {
+
+    &_big {
+      @include letter-spacing($textSizeSlogan);
+
+      font-size: $textSizeSlogan;
+      line-height: 1.2em;
+    }
+
+    &_bold {
+      font-weight: 700;
+
+      p {
+        font-weight: inherit;
+      }
     }
   }
 }

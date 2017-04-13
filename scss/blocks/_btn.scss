@@ -76,4 +76,18 @@
     padding-left: 64px;
     padding-right: 64px;
   }
+
+  &_large {
+    padding-top: 16px;
+    padding-bottom: 16px;
+    padding-left: 86px;
+    padding-right: 86px;
+  }
+
+  &_big {
+    @include letter-spacing($btnBigTextSize);
+
+    font-size: $btnBigTextSize;
+    border-radius: 50px;
+  }
 }
