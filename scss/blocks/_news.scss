@@ -8,6 +8,7 @@ h1.news_page {
   font-weight: 100;
   color: #374851;
   padding-bottom: 30px;
+  padding-top: 111px;
 }
 ul.cathegory {
   margin-left: 240px;
@@ -100,15 +101,16 @@ ul.cathegory a {
   bottom: 10px;
   left: 44px;
 }
-.block_2st {
+.block_2nd {
   position: absolute;
-  top: 393px;
-  left:1199px;
+  top: -13px;
+  left:2199px;
   width: 773px;
   height: 516px;
+  border: 2px solid red;
 }
-.block_2st .mask,
-.block_3st .mask {
+.block_2nd .mask,
+.block_3rd .mask {
   position: absolute;
   width: 334px;
   bottom: 60px;
@@ -116,8 +118,8 @@ ul.cathegory a {
   background-color: black;
   opacity: 0.6;
 }
-.block_2st h6,
-.block_3st h6 {
+.block_2nd h6,
+.block_3rd h6 {
   position: absolute;
   font-size: 26px;
   bottom:130px;
@@ -127,8 +129,8 @@ ul.cathegory a {
   width: 280px;
   line-height: 1.3em;
 }
-.block_2st .data,
-.block_3st .data {
+.block_2nd .data,
+.block_3rd .data {
   position: absolute;
   color: #25ffc4;
   font-size: 11px;
@@ -136,7 +138,7 @@ ul.cathegory a {
   bottom: 75px;
   left: 35px;
 }
-.block_3st {
+.block_3rd {
   position: absolute;
   top: 883px;
   left:1199px;
@@ -176,4 +178,9 @@ ul.cathegory a {
 }
 .text-bold p {
   font-weight: 500;
+}
+@media screen and (max-width: 1690px) {
+  .container {
+    margin-left:
+  }
 }
