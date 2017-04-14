@@ -1,61 +1,35 @@
-@font-face {
-  font-family: 'MuseoSans';
-  src: url('../font/MuseoSansCyrl.otf');
-  font-weight: 100;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'MuseoSans';
-  src: url('../font/MuseoSansCyrl_0.otf');
-  font-weight: 300;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'MuseoSans';
-  src: url('../font/MuseoSansCyrl_1.otf');
-  font-weight: 500;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'MuseoSans';
-  src: url('../font/MuseoSansCyrl_2.otf');
-  font-weight: 700;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'MuseoSans';
-  src: url('../font/MuseoSansCyrl_3.otf');
-  font-weight: 900;
-  font-style: normal;
+.page-content {
+  margin-left: -40px;
 }
 h1.news_page {
-  font-size: 67px;
-  margin-left: 380px;
-  margin-top: 125px;
+  font-size: 70px;
+  margin-left: 245px;
+  margin-top: 121px;
   font-weight: 100;
   color: #374851;
+  padding-bottom: 30px;
 }
 ul.cathegory {
-  margin-left: 330px;
-  margin-top: -30px;
+  margin-left: 240px;
+
 }
 ul.cathegory li {
   display: inline;
   list-style-type: none;
-  padding-left: 10px;
-
-
+  padding-left: 12px;
 }
 ul.cathegory a {
   text-decoration: none;
   color: black;
-  border: 1px solid grey;
+  border: 1px solid #d9d9d9;
   border-radius: 30px;
   padding: 5px 10px;
+  font-size: 15px;
+  font-weight: 100;
 }
 .opacity {
   position: absolute;
-  margin-left: 1020px;
+  margin-left: 850px;
   margin-top: 30px;
   width: 100px;
   height: 30px;
@@ -65,8 +39,8 @@ ul.cathegory a {
   padding: 10px;
 }
 .bread_crumbs {
-  margin-left: 335px;
-  margin-top: 47px;
+  margin-left: 230px;
+  margin-top: 52px;
 }
 .bread_crumbs li {
   display: inline;
@@ -74,6 +48,9 @@ ul.cathegory a {
   font-size: 14px;
   font-weight: 100;
   margin-left: 10px;
+  padding-left: 10px;
+  letter-spacing: -0.5px;
+
 }
 .bread_crumbs a {
   text-decoration: none;
@@ -81,25 +58,39 @@ ul.cathegory a {
 }
 .bread_crumbs span {
   color:#87949b;
-  margin-left: 5px;
+  margin-left: 10px;
 }
 .another-cathegory {
-
+  font-size: 17px;
+  color:#87949b;
+  margin-left: 1066px;
+  margin-top: -17px;
 }
 .block_1st {
   position: relative;
-  margin-left: 382px;
-  margin-top: 22px;
+  margin-left: 249px;
+  margin-top: 17px;
   width: 773px;
   height: 516px;
+
 }
 .block_1st h6 {
   position: absolute;
-  font-size: 47px;
-  top: 185px;
+  font-size: 46px;
+  bottom:50px;
   left:40px;
   font-weight: 100;
   color: white;
+  line-height: 1.25em;
+  letter-spacing: -0.6px;
+}
+.block_1st .mask{
+  position: absolute;
+  width: 773px;
+  height: 516px;
+  -webkit-box-shadow: inset -2px -200px 55px -5px rgba(0,0,0,0.69);
+  -moz-box-shadow: inset -2px -200px 55px -5px rgba(0,0,0,0.69);
+  box-shadow: inset -2px -200px 55px -5px rgba(0,0,0,0.69);
 }
 .block_1st .data {
   position: absolute;
@@ -129,7 +120,7 @@ ul.cathegory a {
 .block_3st h6 {
   position: absolute;
   font-size: 26px;
-  bottom:70px;
+  bottom:130px;
   left:28px;
   font-weight: 100;
   color: white;
@@ -152,63 +143,37 @@ ul.cathegory a {
   width: 773px;
   height: 516px;
 }
-
 .text_page {
-  width: 680px;
-  margin-left: 425px;
+  width: 690px;
+  margin-left: 295px;
   margin-top: 54px;
-  font-size: 17px;
-  font-weight: 100;
   color: #6d7f77;
   line-height: 1.3em;
+  padding-bottom: 60px;
+}
+.text_page p {
+  font-size: 17px;
+  font-weight: 300;
+  padding-bottom: 25px;
 }
 .text_page ul {
-  margin-left: -38px;
-  margin-top: 32px;
+  margin-left: 1px;
+  margin-top: 15px;
+  font-size: 17px;
+  font-weight: 100;
 }
 .text_page li {
   list-style: none;
-  background: url('/iamhero/images/marker.png') no-repeat 0 15px;
+  background: url('/images/marker.png') no-repeat 0 15px;
   padding-left: 35px;
   line-height: 2.4em;
 }
-.text-bold {
+.text-bold  {
   width: 690px;
   font-weight: 500;
   margin-top: 30px;
   padding-bottom: 33px;
 }
-.menu-bottom {
-  background: linear-gradient(to right, #435970, #1c212e);
-  height: 447px;
-  padding-left: 190px;
-}
-.menu-bottom h3 {
-  padding-top: 80px;
-  font-size: 70px;
-  font-weight: 100;
-  color: white;
-  letter-spacing: -2px;
-}
-.menu-bottom span {
-  color: #25ffc4;
-}
-.menu-bottom p {
-  font-size: 33px;
-  margin-top: -134px;
-  margin-left: 5px;
-  font-weight:  100;
-  letter-spacing: -1px;
-}
-.wrapper {
-  margin-left: 357px;
-  margin-top: -9px;
-}
-.wrapper input {
-  background: none;
-  border: 1px solid white;
-  border-radius: 30px;
-  font-size: 20px;
-  padding: 12px 22px 13px 50px;
-
+.text-bold p {
+  font-weight: 500;
 }
