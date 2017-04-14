@@ -28,13 +28,6 @@
   font-weight: 900;
   font-style: normal;
 }
-html, body {
-  margin: 0px auto;
-  padding: 0px;
-  width: 100%;
-  font-family: 'MuseoSans', sans-serif;
-}
-
 h1.news_page {
   font-size: 67px;
   margin-left: 380px;
@@ -219,4 +212,3 @@ ul.cathegory a {
   padding: 12px 22px 13px 50px;
 
 }
-@import 'blocks/tmp_news';
