@@ -2,12 +2,26 @@
   position: relative;
   min-height: 790px;
 
+  @media #{$tablet2} {
+    min-height: 930px;
+  }
+
   &__container {
     padding-top: 226px;
+
+    @media #{$tablet2} {
+      padding-top: 120px;
+    }
   }
 
   &__text {
+    position: relative;
     width: 33%;
+
+    @media #{$tablet2} {
+      align-self: flex-start;
+      width: 50%;
+    }
   }
 
   &__collage {
@@ -15,5 +29,20 @@
     top: -32px;
     right: 1210px;
     z-index: 10;
+
+    @media (min-width: 1691px) and (max-width: 1820px) {
+      right: 1110px;
+    }
+
+    @media #{$desktop2} {
+      right: 910px;
+    }
+
+    @media #{$tablet2} {
+      position: relative;
+      top: -200px;
+      left: auto;
+      right: -110px;
+    }
   }
 }
