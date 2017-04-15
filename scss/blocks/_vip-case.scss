@@ -1,15 +1,22 @@
 .case {
 	padding: 200px 0 0 0;
-	flex-direction:column;
 	color: $mainFontColorDark;
+	&__container {
+		flex-direction:column;
+	}
 	&__heading {
 		margin-bottom: 50px;
 		text-align: center;
 		min-width: 100%;
+		@media #{$tablet} {
+			margin-bottom: 30px;
+		}
 	}
 	&__description {
 		min-width: 100%;
 		text-align: center;
+		display: block;
+		margin-bottom: 100px;
 	}
 	&__main-container {
 		position: relative;

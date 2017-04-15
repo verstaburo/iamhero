@@ -179,7 +179,7 @@
 		color: $discountTableHeading;
 	}
 	&__r-footer {
-		background: url(../images/vip-price-footer.jpg);
+		background: $mainGradient;
 		background-size: cover;
 		font-size: 15px;
 		color: #fff;
