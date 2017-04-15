@@ -1,0 +1,12 @@
+.companies {
+  &__list {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  &__item {
+    padding-right: 52px;
+  }
+}
