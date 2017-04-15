@@ -1,0 +1,164 @@
+.about-description {
+	position: relative;
+	overflow: hidden;
+}
+
+.about-description__container {
+	padding: 0;
+	padding-top: 112px;
+	padding-bottom: 112px;
+
+	@media #{$mobile} {
+		padding-top: 81px;
+		padding-bottom: 81px;		
+	}
+}
+
+.about-description__content-item_flex {
+	display: flex;
+	justify-content: flex-start;
+
+	@media #{$mobile} {
+		display: block;
+	}
+}
+
+.about-description__content-item:nth-child(1) {
+	margin-bottom: 71px;
+
+	@media #{$mobile} {
+		margin-bottom: 19px;
+	}
+
+	& p {
+		max-width: 54%;
+
+		@media #{$mobile} {
+			max-width: 100%;
+		}
+	}
+}
+.about-description__content-item:nth-child(2) {
+	max-width: 55%;
+	margin-bottom: 45px;
+
+	@media #{$mobile} {
+		max-width: 100%;
+		margin-bottom: 5px;
+	}
+}
+.about-description__content-item:nth-child(3) {
+	max-width: 45%;
+	margin-bottom: 609px;
+
+	@media #{$mobile} {
+		max-width: 100%;
+		margin-bottom: 302px;
+	}
+}
+.about-description__content-item:nth-child(4) {
+	flex-flow: column nowrap;
+	align-items: flex-end;
+	width: 100%;
+	text-align: right;
+
+	& p {
+		max-width: 70%;
+		font-size: 50px;
+
+		@media #{$mobile} {
+			max-width: 100%;
+			font-size: 26px;
+		}
+
+		&:nth-child(2) {
+			margin-bottom: 75px;
+
+			@media #{$mobile} {
+				margin-bottom: 28px;
+			}
+		}
+	}
+
+	& .about-description__comment {
+		display: flex;
+		justify-content: flex-end;
+		font-size: 25px;
+
+		@media #{$mobile} {
+			font-size: 15px;
+		}
+
+		& > div:nth-child(1) {
+			display: flex;
+			flex-flow: column nowrap;
+			justify-content: center;
+			align-items: flex-end;
+			margin-right: 32px;
+
+			@media #{$mobile} {
+				margin-right: 23px;
+			}
+		}
+
+		& > div:nth-child(2) {
+			width: 85px;
+			height: 85px;
+			margin-right: 5px;
+			border-radius: 20px;
+			box-shadow: 0px 130px 30px -26px #000;
+			overflow: hidden;
+
+			@media #{$mobile} {
+				width: 88px;
+				height: 88px;
+			}
+		}
+	}
+}
+
+.about-description__text {
+	font-size: 25px;
+	
+	@media #{$mobile} {
+		font-size: 15px;
+	}
+
+	&_big {
+		font-size: 50px;
+		white-space: nowrap;
+		margin-right: 4.7%;
+
+		@media #{$mobile} {
+			display: inline-block;
+			font-size: 35px;
+			white-space: normal;
+			margin-right: 0;	
+			margin-bottom: 45px;
+		}
+	}
+
+	&_bold {
+		font-weight: 300;
+	}
+}
+
+.about-description__bg {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: -1;
+
+	& img {
+		width: 144%;
+		margin-left: -22%; /* (width% - 100):2 */
+		margin-top: -5%;
+
+		@media #{$mobile} {
+			width: 400%;
+			margin-left: -150%;
+			margin-top: 70%;
+		}
+	}
+}

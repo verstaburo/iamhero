@@ -1,0 +1,33 @@
+.tour-working {
+  min-height: 900px;
+
+  &__container {
+    padding-top: 284px;
+  }
+
+  &__text {
+    width: 45%;
+    padding-left: 154px;
+    padding-right: 40px;
+
+    & .text-block__content {
+      padding-right: 120px;
+    }
+  }
+
+  &__img {
+    position: relative;
+    box-sizing: border-box;
+    position: absolute;
+    top: 44px;
+    left: 0;
+    width: 1111px;
+    height: 745px;
+    overflow: hidden;
+
+    img {
+      width: 1111px;
+      height: 745px;
+    }
+  }
+}

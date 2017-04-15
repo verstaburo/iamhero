@@ -73,10 +73,14 @@
     line-height: 1.2em;
 
     &_small {
+      @include letter-spacing($textSizeSmall);
+
       font-size: $textSizeSmall;
     }
 
     &_big {
+      @include letter-spacing($textSizeBig);
+
       font-size: $textSizeBig;
     }
 
