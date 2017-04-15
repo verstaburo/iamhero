@@ -1,0 +1,58 @@
+.about-partners__container {
+	padding: 0;
+	padding-top: 296.5px;
+	padding-bottom: 364px;
+
+	@media #{$mobile} {
+		padding-top: 15px;
+		padding-bottom: 82px;
+	}
+}
+
+.about-partners__text {
+	max-width: 60%;
+	font-size: 50px;
+	margin-bottom: 100px;
+
+	@media #{$mobile} {
+		max-width: 100%;
+		font-size: 26px;
+		margin-bottom: 34px;
+	}
+
+	&_bold {
+		font-weight: 300;
+	}
+}
+
+.about-partners__logos {
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+
+	@media #{$mobile} {
+		flex-flow: row wrap;
+	}
+
+	& > div {
+		width: 12%;
+		margin-right: 5%;
+
+		@media #{$mobile} {
+			width: 30%;
+			margin-right: 20%;
+		}
+
+		&:last-child {
+			margin-right: 0;
+
+			@media #{$mobile} {
+				margin-right: 20%;
+			}
+		}
+
+		& img {
+			width: 100%;
+		}
+	}
+}
