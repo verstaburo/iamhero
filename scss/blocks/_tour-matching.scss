@@ -5,11 +5,21 @@
   &__container {
     position: relative;
     padding-top: 134px;
+
+    @media #{$tablet2} {
+      padding-bottom: 90px;
+    }
   }
 
   &__text {
     width: 40%;
     padding-right: 70px;
+
+    @media #{$tablet2} {
+      padding-top: 72px;
+      width: 100%;
+      padding-right: 0;
+    }
   }
 
   &__img {
@@ -20,9 +30,30 @@
     height: 580px;
     overflow: hidden;
 
+    @media #{$desktop2} {
+      right: auto;
+      position: relative;
+      width: 60%;
+    }
+
+    @media #{$tablet2} {
+      width: 100%;
+    }
+
     img {
       width: 923px;
       height: 580px;
+
+      @media #{$desktop2} {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: 0 auto;
+        width: 100%;
+        height: auto;
+      }
     }
   }
 }

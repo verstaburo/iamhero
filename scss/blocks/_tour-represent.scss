@@ -3,11 +3,30 @@
 
   &__container {
     padding-top: 160px;
+
+    @media #{$tablet2} {
+      padding-top: 80px;
+    }
   }
 
   &__text {
     width: 50%;
     padding-left: 138px;
     padding-right: 180px;
+
+    @media #{$desktop} {
+      padding-left: 60px;
+      padding-right: 90px;
+    }
+
+    @media #{$tablet2} {
+      align-self: flex-end;
+    }
+
+    @media #{$tablet} {
+      width: 100%;
+      align-self: flex-start;
+      padding-left: 0;
+    }
   }
 }
