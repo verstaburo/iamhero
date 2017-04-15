@@ -1,0 +1,19 @@
+.tour-resume {
+  position: relative;
+  min-height: 790px;
+
+  &__container {
+    padding-top: 226px;
+  }
+
+  &__text {
+    width: 33%;
+  }
+
+  &__collage {
+    position: absolute;
+    top: -32px;
+    right: 1210px;
+    z-index: 10;
+  }
+}

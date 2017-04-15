@@ -1,0 +1,26 @@
+.tour-dashboard {
+  position: relative;
+  min-height: 850px;
+
+  &__container {
+    padding-top: 280px;
+  }
+
+  &__text {
+    width: 33%;
+  }
+
+  &__bg {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 980px;
+    height: 688px;
+    overflow: hidden;
+
+    img {
+      width: 980px;
+      height: 688px;
+    }
+  }
+}

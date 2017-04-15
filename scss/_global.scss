@@ -263,6 +263,8 @@ h5 {
 
 // Стили абзацев (удалить лишнее)
 p {
+  box-sizing: border-box;
+  width: 100%;
   font-family: $mainFontFamily;
   font-size: $textSize;
   font-weight: 100;

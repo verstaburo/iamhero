@@ -1,0 +1,28 @@
+.tour-matching {
+  position: relative;
+  min-height: 774px;
+
+  &__container {
+    position: relative;
+    padding-top: 134px;
+  }
+
+  &__text {
+    width: 40%;
+    padding-right: 70px;
+  }
+
+  &__img {
+    position: absolute;
+    top: 0;
+    right: -24px;
+    width: 923px;
+    height: 580px;
+    overflow: hidden;
+
+    img {
+      width: 923px;
+      height: 580px;
+    }
+  }
+}

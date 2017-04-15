@@ -1,0 +1,61 @@
+.tour-accounts {
+  min-height: 1300px;
+
+  &__container {
+    align-content: flex-start;
+    flex-wrap: wrap;
+    padding-top: 208px;
+  }
+
+  &__text {
+    box-sizing: border-box;
+    width: 50%;
+
+    &_hero {
+      margin-right: 50%;
+      margin-bottom: 190px;
+      padding-right: 310px;
+    }
+
+    &_superhero {
+      margin-left: 50%;
+      padding-left: 152px;
+      padding-right: 60px;
+
+      & .text-block__link {
+        display: inline-block;
+        margin-top: 16px;
+        padding-left: 5px;
+        font-weight: 300;
+      }
+    }
+  }
+
+  &__title {
+    position: relative;
+
+    &::before {
+      position: absolute;
+      content: '';
+      top: 50%;
+      left: -30px;
+      width: 13px;
+      height: 36px;
+      border-radius: 10px;
+      transform: translate(0, -50%);
+    }
+
+    &_hero {
+      &::before {
+        background-color: $markHeroAccount;
+      }
+    }
+
+    &_superhero {
+      &::before {
+        left: -34px;
+        background-color: $markSuperheroAccount;
+      }
+    }
+  }
+}
