@@ -1,0 +1,67 @@
+
+.about-slogan {
+	position: relative;
+	overflow: hidden;
+}
+
+.about-slogan__container {
+	padding: 0;
+	padding-top: 105px;
+	padding-bottom: 141px;
+
+	@media #{$mobile} {
+		padding-top: 157px;
+		padding-bottom: 129px;
+	}
+}
+
+.about-slogan__text {
+	font-size: 30px;
+
+	@media #{$mobile} {
+		font-size: 16.55px;
+	}	
+
+	&_quote {
+		margin-bottom: 89px;
+		max-width: 40%;
+		font-size: 50px;
+
+		@media #{$mobile} {
+			margin-bottom: 37px;
+			max-width: 100%;
+			font-size: 22px;
+		}
+	}
+
+	& span {
+		color: #25ffc4;
+	}
+	& a {
+		display: inline-block;
+		border-bottom: 1px solid #25ffc4;
+	}
+}
+
+.about-slogan__bg {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: -1;
+
+	@media #{$mobile} {
+		width: 100%;
+		height: 120%;
+	}
+
+	& img {
+		width: 100%;
+
+		@media #{$mobile} {
+			width: auto;
+			height: 100%;
+			margin-left: -100%;
+		}
+	}
+}
