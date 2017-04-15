@@ -1,0 +1,27 @@
+.about-donate__container {
+	padding: 0;
+	margin-bottom: 170px;
+	background-color: green;
+}
+
+.about-donate__title {
+	font-size: 50px;
+	margin-bottom: 43px;
+}
+
+.about-donate__text {
+	font-size: 25px;
+	margin-bottom: 67px;
+}
+
+.about-donate__pics {
+	display: flex;
+	justify-content: flex-start;
+
+	& > div {
+		width: 260px;
+		margin-right: 2.4%;
+		background-color: red;
+	}
+}
+
