@@ -1,27 +1,47 @@
 .about-team {
 	margin-bottom: 143px;
+
+	@media #{$mobile} {
+		margin-bottom: 80px;
+	}
 }
 
 .about-team__container {
 	padding: 0;
-	background-color: yellow;
 }
 
 .about-team__title {
 	font-size: 50px;
 	margin-bottom: 64px;
+
+	@media #{$mobile} {
+		font-size: 30px;
+		margin-bottom: 37px;
+	}
 }
 
 .about-team__text {
 	font-size: 25px;
 	max-width: 40%;
 	margin-bottom: 79px;
+
+	@media #{$mobile} {
+		font-size: 15px;
+		max-width: 100%;
+		margin-bottom: 33px;
+	}
 }
 
 .about-team__photos {
 	display: flex;
 	flex-flow: row wrap;
 	justify-content: space-between;
+
+	@media #{$mobile} {
+		flex-flow: column nowrap;
+		align-items: center;
+		justify-content: flex-start;
+	}
 }
 
 .about-team__photo {
@@ -29,12 +49,22 @@
 	margin-right: 12.5%;
 	margin-bottom: 94px;
 
+	@media #{$mobile} {
+		width: 100%;
+		margin-right: 0;
+		margin-bottom: 36px;
+	}
+
 	& > * {
 		display: block;
 	}
 
 	& div {
 		margin-bottom: 26px;
+
+		@media #{$mobile} {
+			margin-bottom: 22px;
+		}
 
 		& img {
 			width: 100%;
@@ -45,12 +75,20 @@
 		font-size: 25px;
 		font-weight: 100;
 		margin-bottom: 2px;
+
+		@media #{$mobile} {
+			font-size: 17px;
+		}
 	}
 
 	& span {
 		font-size: 17px;
 		font-weight: 500;
 		color: #98a9b3;
+
+		@media #{$mobile} {
+			font-size: 12px;
+		}
 	}
 
 	&:nth-child(n+3) {

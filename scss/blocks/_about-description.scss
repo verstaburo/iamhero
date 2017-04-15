@@ -7,7 +7,6 @@
 	padding: 0;
 	padding-top: 112px;
 	padding-bottom: 112px;
-	/*background-color: yellow;*/
 
 	@media #{$mobile} {
 		padding-top: 81px;
@@ -108,7 +107,7 @@
 			margin-right: 5px;
 			border-radius: 20px;
 			box-shadow: 0px 130px 30px -26px #000;
-			background-color: red;
+			overflow: hidden;
 
 			@media #{$mobile} {
 				width: 88px;
@@ -153,7 +152,13 @@
 
 	& img {
 		width: 144%;
-		margin-left: -22%; /* (144 - 100):2 */
+		margin-left: -22%; /* (width% - 100):2 */
 		margin-top: -5%;
+
+		@media #{$mobile} {
+			width: 400%;
+			margin-left: -150%;
+			margin-top: 70%;
+		}
 	}
 }

@@ -2,7 +2,6 @@
 	padding: 0;
 	padding-top: 296.5px;
 	padding-bottom: 364px;
-	background-color: green;
 
 	@media #{$mobile} {
 		padding-top: 15px;
@@ -31,11 +30,29 @@
 	align-items: center;
 	justify-content: flex-start;
 
+	@media #{$mobile} {
+		flex-flow: row wrap;
+	}
+
 	& > div {
-		margin-right: 4.9%;
+		width: 12%;
+		margin-right: 5%;
+
+		@media #{$mobile} {
+			width: 30%;
+			margin-right: 20%;
+		}
 
 		&:last-child {
 			margin-right: 0;
+
+			@media #{$mobile} {
+				margin-right: 20%;
+			}
+		}
+
+		& img {
+			width: 100%;
 		}
 	}
 }
