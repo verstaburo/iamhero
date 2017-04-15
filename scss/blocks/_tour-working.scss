@@ -3,6 +3,14 @@
 
   &__container {
     padding-top: 284px;
+
+    @media #{$tablet2} {
+      flex-direction: row;
+    }
+
+    @media #{$tablet} {
+      flex-direction: column;
+    }
   }
 
   &__text {
@@ -10,8 +18,26 @@
     padding-left: 154px;
     padding-right: 40px;
 
+    @media #{$desktop2} {
+      width: 30%;
+      padding-left: 5%;
+      padding-right: 0;
+    }
+
+    @media #{$tablet2} {
+      align-self: flex-end;
+    }
+
+    @media #{$tablet2} {
+      align-self: flex-start;
+    }
+
     & .text-block__content {
       padding-right: 120px;
+
+      @media #{$desktop2} {
+        padding-right: 0;
+      }
     }
   }
 
@@ -25,9 +51,24 @@
     height: 745px;
     overflow: hidden;
 
+    @media #{$desktop2} {
+      width: 70%;
+    }
+
     img {
       width: 1111px;
       height: 745px;
+
+      @media #{$desktop2} {
+        position: absolute;
+        top: 0;
+        bottom: 9px;
+        left: 0;
+        right: 0;
+        margin: auto;
+        width: 100%;
+        height: auto;
+      }
     }
   }
 }

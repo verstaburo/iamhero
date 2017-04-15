@@ -1,0 +1,28 @@
+.describe {
+	padding: 235px 0 235px 0;
+	min-height: 817px;
+	@media #{$tablet} {
+		padding: 60px 0 350px 0;
+		min-height: 100%;
+	}
+
+	.page-section__bg-img {
+		@media #{$tablet} {
+			height: 365px;
+			top: auto; 
+			bottom: 0;
+		}
+	}
+
+	&__container {
+		justify-content: flex-end;
+	}
+	
+	&__text {
+		padding: 0;
+	}
+
+	&__title {
+		margin-bottom: 50px;
+	}
+}

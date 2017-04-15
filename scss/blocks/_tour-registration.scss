@@ -4,12 +4,33 @@
   &__container {
     min-height: 608px;
     padding-bottom: 50px;
+
+    @media #{$tablet2} {
+      flex-direction: row;
+    }
+
+    @media #{$tablet} {
+      flex-direction: column;
+      padding-top: 50px;
+      padding-bottom: 20px;
+    }
   }
 
   &__text {
     padding-right: 10px;
     width: 30%;
     align-self: flex-end;
+
+    @media #{$tablet2} {
+      width: 40%;
+    }
+
+    @media #{$tablet} {
+      margin-bottom: 30px;
+      width: 100%;
+      align-self: flex-start;
+      padding-right: 0;
+    }
   }
 
   &__companies {
@@ -17,5 +38,15 @@
     padding-bottom: 14px;
     width: 70%;
     align-self: flex-end;
+
+    @media #{$tablet2} {
+      width: 60%;
+    }
+
+    @media #{$tablet} {
+      padding-left: 0;
+      width: 100%;
+      align-self: flex-start;
+    }
   }
 }
