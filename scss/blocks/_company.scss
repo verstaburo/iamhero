@@ -1,0 +1,14 @@
+.company {
+  display: inline-block;
+
+  &_linkedin {
+    width: 241px;
+    height: 62px;
+  }
+
+  &_xing {
+    width: 214px;
+    height: 85px;
+    transform: translate(0, -30px);
+  }
+}

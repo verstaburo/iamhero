@@ -1,0 +1,21 @@
+.tour-registration {
+  min-height: 608px;
+
+  &__container {
+    min-height: 608px;
+    padding-bottom: 50px;
+  }
+
+  &__text {
+    padding-right: 10px;
+    width: 30%;
+    align-self: flex-end;
+  }
+
+  &__companies {
+    padding-left: 8px;
+    padding-bottom: 14px;
+    width: 70%;
+    align-self: flex-end;
+  }
+}

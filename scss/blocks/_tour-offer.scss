@@ -1,0 +1,33 @@
+.tour-offer {
+  min-height: 710px;
+
+  &__container {
+    position: relative;
+    flex-wrap: wrap;
+    align-content: space-between;
+    min-height: 710px;
+    padding-top: 214px;
+    padding-bottom: 122px;
+    padding-left: 40px;
+  }
+
+  &__text {
+    width: 100%;
+    padding-right: 100px;
+  }
+
+  &__icon {
+    box-sizing: border-box;
+    padding-left: 16px;
+    margin-right: auto;
+    width: 53px;
+    height: 45px;
+    transform: rotate(90deg);
+  }
+
+  &__arrow {
+    width: 53px;
+    height: 45px;
+    fill: $additionalColorBlue;
+  }
+}
