@@ -1,6 +1,14 @@
 .tour-registration {
   min-height: 608px;
 
+  @media #{$tablet} {
+    min-height: 848px;
+  }
+
+  @media #{$mobile} {
+    min-height: 424px;
+  }
+
   &__container {
     min-height: 608px;
     padding-bottom: 50px;
@@ -11,8 +19,16 @@
 
     @media #{$tablet} {
       flex-direction: column;
-      padding-top: 50px;
+      padding-top: 130px;
       padding-bottom: 20px;
+      min-height: 848px;
+    }
+
+    @media #{$mobile} {
+      padding-top: 65px;
+      padding-left: 14px;
+      padding-right: 14px;
+      min-height: 424px;
     }
   }
 
@@ -26,10 +42,25 @@
     }
 
     @media #{$tablet} {
-      margin-bottom: 30px;
+      margin-bottom: 72px;
       width: 100%;
       align-self: flex-start;
-      padding-right: 0;
+      padding-right: 20px;
+    }
+    
+    @media #{$mobile} {
+      margin-bottom: 36px;
+      padding-right: 10px;
+    }
+    
+    & .text-block__content {
+      @media #{$tablet} {
+        padding-left: 6px;
+      }
+      
+      @media #{$mobile} {
+        padding-left: 3px;
+      }
     }
   }
 

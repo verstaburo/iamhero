@@ -5,12 +5,32 @@
   @media #{$tablet2} {
     min-height: 930px;
   }
+  
+  @media #{$tablet} {
+    min-height: 1040px;
+  }
+  
+  @media #{$mobile} {
+    min-height: 520px;
+  }
 
   &__container {
     padding-top: 226px;
 
     @media #{$tablet2} {
       padding-top: 120px;
+    }
+    
+    @media #{$tablet} {
+      padding-top: 188px;
+      padding-left: 28px;
+      padding-right: 28px;
+    }
+    
+    @media #{$mobile} {
+      padding-top: 94px;
+      padding-left: 14px;
+      padding-right: 14px;
     }
   }
 
@@ -21,6 +41,10 @@
     @media #{$tablet2} {
       align-self: flex-start;
       width: 50%;
+    }
+    
+    @media #{$tablet} {
+      width: 100%;
     }
   }
 
@@ -43,6 +67,22 @@
       top: -200px;
       left: auto;
       right: -110px;
+    }
+    
+    @media #{$tablet} {
+      top: -40px;
+      left: -188px;
+      right: auto;
+    }
+    
+    @media (min-width: 500px) and #{$mobile} {
+      left: 40px;
+    }
+    
+    @media #{$mobile} {
+      top: -56px;
+      left: -104px;
+      right: auto;
     }
   }
 }

@@ -235,6 +235,12 @@ h2 {
   @include letter-spacing($titleSizeH2);
 
   font-size: $titleSizeH2;
+
+  @media #{$mobile} {
+    @include letter-spacing($titleSizeH2/2);
+
+    font-size: $titleSizeH2/2;
+  }
 }
 
 h3 {
