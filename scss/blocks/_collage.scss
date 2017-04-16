@@ -96,17 +96,26 @@
     }
 
     &_hero::before {
-      height: 714px;
+      height: 0;
       top: 0;
       left: 0;
       transition: height 1.25s ease-in-out;
     }
 
+    &_hero.js-line-active::before {
+      height: 714px;
+    }
+
 
     &_hero::after {
       top: 910px;
-      height: 160px;
+      height: 0;
       left: 0px;
+      transition: height 1.25s ease-in-out;
+    }
+
+    &_hero.js-line-active::after {
+      height: 160px;
     }
 
     &_superhero::before,
@@ -117,12 +126,22 @@
     &_superhero::before {
       top: 868px;
       right: 0;
+      height: 0;
+      transition: height 1.25s ease-in-out;
+    }
+
+    &_superhero.js-line-active::before {
       height: 182px;
     }
 
     &_superhero::after {
       top: 1224px;
       right: 0;
+      height: 0;
+      transition: height 1.25s ease-in-out;
+    }
+
+    &_superhero.js-line-active::after {
       height: 414px;
     }
   }

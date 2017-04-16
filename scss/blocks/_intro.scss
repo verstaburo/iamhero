@@ -60,6 +60,8 @@
       height: 12px;
       background-color: $additionalColorBlue;
       transform: translate(0, -50%);
+      cursor: default;
+      z-index: -1;
     }
   }
 }

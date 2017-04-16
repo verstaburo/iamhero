@@ -43,7 +43,7 @@
     width: 35px;
     height: 2px;
     background-color: $bgColor;
-    transition: width 0.25s ease-in-out;
+    transition: width 0.25s ease-in-out, opacity 0.25s ease-in-out;
 
     &::before,
     &::after {
@@ -80,12 +80,16 @@
       width: 18px;
     }
 
-    .main-menu__burger.opened & {
+    .main-menu__burger.js-menu-opened & {
+      background-color: transparent;
+
       &::before {
+        top: 50%;
         transform: rotate(45deg);
       }
 
       &::after {
+        bottom: 50%;
         transform: rotate(-45deg);
       }
     }
@@ -96,18 +100,36 @@
     padding-left: 28px;
     width: 100%;
     display: flex;
+    flex-direction: row;
     justify-content: flex-start;
     align-items: flex-start;
     align-content: flex-start;
     flex-wrap: wrap;
 
     @media #{$tablet2} {
-      display: none;
+      padding-left: 0;
+      width: 0;
+      height: 0;
+      overflow: hidden;
     }
 
     .page-header_no-switch-btn &{
       padding-left: 210px;
       justify-content: center;
+    }
+
+    &.js-menu-opened {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 100%;
+      height: auto;
+      flex-direction: column;
+      align-items: center;
+      overflow: visible;
+      background-color: $bgMenuColor;
+      background-image: $mainGradient;
+      z-index: 100;
     }
   }
 
@@ -115,6 +137,11 @@
     display: inline-block;
     margin-right: 53px;
     font-size: 0;
+
+    @media #{$tablet2} {
+      width: 100%;
+      margin-right: 0;
+    }
 
     .page-header_no-switch-btn & {
       margin-right: 30px;
@@ -137,6 +164,11 @@
     line-height: 1.2em;
     color: $mainFontColorLight;
     text-decoration: none;
+
+    @media #{$tablet2} {
+      width: 100%;
+      text-align: center;
+    }
 
     &:hover {
       background-color: $bgHeaderMenuItemHover;

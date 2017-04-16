@@ -46,6 +46,7 @@
     box-sizing: border-box;
     display: flex;
     justify-content: space-between;
+    flex-direction: row;
     align-items: flex-start;
     padding-left: 22px;
     padding-right: 22px;
@@ -57,6 +58,21 @@
 
     @media #{$tablet2} {
       display: none;
+    }
+
+    &.js-user-opened {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 100%;
+      height: auto;
+      background-color: $bgMenuColor;
+      background-image: $mainGradient;
+      z-index: 100;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      overflow: visible;
     }
   }
 
