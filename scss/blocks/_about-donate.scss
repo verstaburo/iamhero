@@ -2,7 +2,7 @@
 	padding: 0;
 	margin-bottom: 170px;
 
-	@media #{$mobile} {
+	@media #{$tablet} {
 		margin-bottom: 80px;
 	}
 }
@@ -11,7 +11,7 @@
 	font-size: 50px;
 	margin-bottom: 43px;
 
-	@media #{$mobile} {
+	@media #{$tablet} {
 		font-size: 30px;
 		margin-bottom: 31px;
 	}
@@ -21,7 +21,7 @@
 	font-size: 25px;
 	margin-bottom: 67px;
 
-	@media #{$mobile} {
+	@media #{$tablet} {
 		font-size: 15px;
 		margin-bottom: 36px;
 	}
@@ -31,7 +31,7 @@
 	display: flex;
 	justify-content: flex-start;
 
-	@media #{$mobile} {
+	@media #{$tablet} {
 		flex-flow: column nowrap;
 		align-items: center;
 		justify-content: flex-start;
@@ -41,14 +41,14 @@
 		width: 260px;
 		margin-right: 2.4%;
 
-		@media #{$mobile} {
+		@media #{$tablet} {
 			width: 100%;
 			margin-right: 0;
 			margin-bottom: 68px;
 		}
 
 		& img {
-			@media #{$mobile} {
+			@media #{$tablet} {
 				width: 100%;
 			}
 		}

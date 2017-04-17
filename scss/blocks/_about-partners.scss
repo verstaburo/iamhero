@@ -3,7 +3,7 @@
 	padding-top: 296.5px;
 	padding-bottom: 364px;
 
-	@media #{$mobile} {
+	@media #{$tablet} {
 		padding-top: 15px;
 		padding-bottom: 82px;
 	}
@@ -14,7 +14,7 @@
 	font-size: 50px;
 	margin-bottom: 100px;
 
-	@media #{$mobile} {
+	@media #{$tablet} {
 		max-width: 100%;
 		font-size: 26px;
 		margin-bottom: 34px;
@@ -30,7 +30,7 @@
 	align-items: center;
 	justify-content: flex-start;
 
-	@media #{$mobile} {
+	@media #{$desktop2} {
 		flex-flow: row wrap;
 	}
 
@@ -38,15 +38,21 @@
 		width: 12%;
 		margin-right: 5%;
 
-		@media #{$mobile} {
+		@media #{$desktop2} {
+			width: 25%;
+			margin-bottom: 30px;
+		}
+
+		@media #{$tablet} {
 			width: 30%;
 			margin-right: 20%;
+
 		}
 
 		&:last-child {
 			margin-right: 0;
 
-			@media #{$mobile} {
+			@media #{$tablet} {
 				margin-right: 20%;
 			}
 		}
