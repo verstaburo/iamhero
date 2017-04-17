@@ -1,5 +1,8 @@
 .resume {
-	padding: 60px 0 350px 0;
+	padding: 280px 0 350px 0;
+	&__container {
+		padding-left: 28px
+	}
 	@media #{$tablet} {
 		padding: 80px 0;
 	}
