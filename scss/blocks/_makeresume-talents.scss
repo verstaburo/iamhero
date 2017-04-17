@@ -1,0 +1,19 @@
+.makeresume-talents {
+  &__container {
+    padding-left: 44px;
+    padding-right: 70px;
+    padding-bottom: 70px;
+  }
+
+  &__text {
+    .text-block__content b {
+      display: none;
+      font-weight: inherit;
+
+      @media #{$tablet2} {
+        display: inline;
+        font-weight: 500;
+      }
+    }
+  }
+}

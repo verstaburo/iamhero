@@ -51,7 +51,7 @@
 
   &__title {
     margin-bottom: 50px;
-    
+
     @media #{$mobile} {
       margin-bottom: 22px;
     }
@@ -69,6 +69,17 @@
         margin-bottom: 35px;
         font-size: $titleSizeH1/2;
       }
+    }
+
+    &_h2big {
+      @include letter-spacing($titleSizeH2_big);
+
+      font-size: $titleSizeH2_big;
+      margin-bottom: 24px;
+    }
+
+    &_medium {
+      font-weight: 500;
     }
   }
 
@@ -137,6 +148,10 @@
       }
     }
 
+    &_16em {
+      line-height: 1.64em;
+    }
+
     p {
       box-sizing: border-box;
       width: 100%;
@@ -153,12 +168,37 @@
     }
   }
 
+  &__list {
+
+    &_disk {
+      li::before {
+        content: '\2022';
+        display: inline;
+        line-height: inherit;
+        margin-right: 10px;
+      }
+    }
+
+    &_dash {
+      li::before {
+        display: inline;
+        content: '\2013';
+        line-height: inherit;
+        margin-right: 10px;
+      }
+    }
+  }
+
   &__item {
     font-size: inherit;
     letter-spacing: inherit;
     font-weight: 100;
     line-height: inherit;
     color: inherit;
+
+    &_medium {
+      font-weight: 500;
+    }
   }
 
   &__link {

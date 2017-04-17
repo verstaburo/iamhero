@@ -1,0 +1,25 @@
+.makeresume-benefits {
+  &__container {
+    padding-bottom: 26px;
+  }
+
+  &__text {
+    & .text-block__content:first-of-type {
+      padding-top: 10px;
+    }
+  }
+
+  &__item {
+    width: 70%;
+    margin-bottom: 76px;
+
+    & .text-block__title {
+      margin-bottom: 32px;
+      padding-left: 4px;
+    }
+
+    & .text-block__content {
+
+    }
+  }
+}
