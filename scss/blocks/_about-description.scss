@@ -1,6 +1,5 @@
 .about-description {
 	position: relative;
-	overflow: hidden;
 }
 
 .about-description__container {
@@ -64,7 +63,8 @@
 	}
 
 	@media #{$mobile} {
-		max-width: 100%;
+		max-width: 80%;
+		margin-bottom: 0;
 	}
 }
 .about-description__content-item:nth-child(4) { /*image*/
@@ -74,6 +74,17 @@
 	height: 500px;
 	margin-top: -5%;
 	margin-bottom: 100px;
+
+	@media #{$mobile} {
+		margin-top: -30%;
+		margin-bottom: -30%;
+	}
+
+	& img {
+		@media #{$mobile} {
+			width: 500%;
+		}		
+	}
 }
 .about-description__content-item:nth-child(5) {
 	flex-flow: column nowrap;
