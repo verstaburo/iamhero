@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 [snp tpl="html/blocks/head.html" page_title="" keywords="" description="" ]
-  <body class="page">
-[snp tpl="html/blocks/header.html" class="" link1="#" link1_text="" link2="#" link2_text="" link3="#" link3_text="" dop_item="" ]
-  <main class="page-content about-page-content_width">
+<body class="page">
+	[snp tpl="html/blocks/header.html" class="" link1="#" link1_text="" link2="#" link2_text="" link3="#" link3_text="" dop_item="" ]
+	<main class="page-content about-page-content_width">
 
 		<section class="page-section page-section_start about-slogan">
 			<div class="container page-section__container  about-slogan__container">
 
-        <div class="about-slogan__content">
+				<div class="about-slogan__content">
 					<p class="about-slogan__text about-slogan__text_quote">&#34;We work on the most exciting way for job seekers to introduce thmselves & employees to attract job seekers in a smart way.<br><span>And we love it</span>&#34;</p>
 					<p class="about-slogan__text">Have an idea how to get things better? <a href="#">Drop Us a line!</a></p>
 				</div>
@@ -18,42 +18,44 @@
 			<div class="about-slogan__bg">
 				<img src="images/about_slogan-bg.jpg" alt="">
 			</div>
+			<div class="about-slogan__bg about-slogan__bg_blured">
+				<img src="images/about_slogan-bg.jpg" alt="">
+			</div>
 		</section>
 
 		<section class="page-section page-section_start about-description">
 			<div class="container page-section__container about-description__container">
 
-        <div class="about-description__content">
-        	<div class="about-description__content-item about-description__content-item_flex">
+				<div class="about-description__content">
+					<div class="about-description__content-item about-description__content-item_flex">
 						<span class="about-description__text about-description__text_big">I am Hero!</span>
 						<p class="about-description__text">I am Hero is the service that you deserve. Heroes can access missions in a new and refresshing way, built to connect those who need and those who can.</p>
 					</div>
-        	<div class="about-description__content-item">
-        		<p class="about-description__text">We see everyone as Heroes.</p>
-        		<p class="about-description__text about-description__text_bold">Professional individuals capable of delivering what is needed, when it is needed.</p>
+					<div class="about-description__content-item">
+						<p class="about-description__text">We see everyone as Heroes.</p>
+						<p class="about-description__text about-description__text_bold">Professional individuals capable of delivering what is needed, when it is needed.</p>
 					</div>
-        	<div class="about-description__content-item">
-        		<p class="about-description__text">May be two more sentences could be added here just for capacity. Also it's important to mention that the team of professionals are involved in the project united by bright idea.</p>
+					<div class="about-description__content-item">
+						<p class="about-description__text">May be two more sentences could be added here just for capacity. Also it's important to mention that the team of professionals are involved in the project united by bright idea.</p>
 					</div>
-        	<div class="about-description__content-item about-description__content-item_flex">
-        		<p class="about-description__text">Together, we are all Herows. In the modern world there is a lack of responsible and taleneted professionals.</p>
-        		<p class="about-description__text about-description__text_bold">Together, we can revolt and transform society.</p>
+					<div class="about-description__content-item">
+						<img src="images/about_ipads.png" alt="">
+					</div>
+					<div class="about-description__content-item about-description__content-item_flex">
+						<p class="about-description__text">Together, we are all Herows. In the modern world there is a lack of responsible and taleneted professionals.</p>
+						<p class="about-description__text about-description__text_bold">Together, we can revolt and transform society.</p>
 						<div class="about-description__comment">
-								<div>
-									<b>Michael Berlant</b>
-									<span>I AM HERO founder</span>
-								</div>
-								<div>
-									<img src="images/about_avatar.jpg" alt="">
-								</div>
+							<div>
+								<b>Michael Berlant</b>
+								<span>I AM HERO founder</span>
+							</div>
+							<div>
+								<img src="images/about_avatar.jpg" alt="">
+							</div>
 						</div>
 					</div>
 				</div>
 
-			</div>
-
-    	<div class="about-description__bg">
-    		<img src="images/about_ipads.png" alt="">
 			</div>
 		</section>
 
@@ -133,9 +135,23 @@
 			</div>
 		</section>
 
-  </main>
-[snp tpl="html/blocks/form-prereg.html" ]
-[snp tpl="html/blocks/footer.html" ]
-[snp tpl="html/blocks/scripts.html" ]
-  </body>
+		<svg height="0">
+			<defs>
+				<filter id="about-slogan__blur-half" x="0" y="0" width="50%" height="100%">
+					<feGaussianBlur in="SourceGraphic" stdDeviation="9"/>
+				</filter>
+				<filter id="about-slogan__blur-full" x="0" y="0" width="100%" height="100%">
+					<feGaussianBlur in="SourceGraphic" stdDeviation="9"/>
+				</filter>
+				<filter id="about-team__grayscale">
+					<feColorMatrix type="matrix" values="1 1 1 0 0 1 1 1 0 0 1 1 1 0 0 0 0 0 1 0"/>
+				</filter>
+			</defs>
+		</svg>
+
+	</main>
+	[snp tpl="html/blocks/form-prereg.html" ]
+	[snp tpl="html/blocks/footer.html" ]
+	[snp tpl="html/blocks/scripts.html" ]
+</body>
 </html>
