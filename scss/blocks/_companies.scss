@@ -4,9 +4,27 @@
     flex-direction: row;
     justify-content: flex-start;
     align-items: flex-start;
+    
+    @media #{$tablet} {
+      flex-direction: column;
+      padding-left: 8px;
+    }
+    
+    @media #{$mobile} {
+      padding-left: 4px;
+    }
   }
 
   &__item {
     padding-right: 52px;
+    
+    @media #{$tablet} {
+      padding-right: 0;
+      margin-bottom: 44px;
+    }
+    
+    @media #{$mobile} {
+      margin-bottom: 22px;
+    }
   }
 }
