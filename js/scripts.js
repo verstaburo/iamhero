@@ -77,3 +77,25 @@ if(superheroAccountElem) {
     }
   }, false);
 }
+
+window.sr = ScrollReveal();
+var tourCollageReveal1 = {delay: 100, distance: '-500px', easing: 'cubic-bezier(0.3, 0.5, 0.1, 1)', scale: 1, mobile: false, duration: 1500};
+var tourCollageReveal2 = {delay: 500, distance: '-500px', easing: 'cubic-bezier(0.3, 0.5, 0.1, 1)', scale: 1, mobile: false, duration: 1500};
+var tourCollageReveal3 = {delay: 1000, distance: '-500px', easing: 'cubic-bezier(0.3, 0.5, 0.1, 1)', scale: 1, mobile: false, duration: 1500};
+var tourCollageReveal4 = {delay: 1500, distance: '-500px', easing: 'cubic-bezier(0.3, 0.5, 0.1, 1)', scale: 1, mobile: false, duration: 1500};
+
+var mainResumesBlock1 = {delay: 100, distance: '500px', easing: 'cubic-bezier(0.3, 0.5, 0.1, 1)', scale: 1, mobile: false, duration: 3000};
+var mainResumesBlock2 = {delay: 1000, distance: '500px', easing: 'cubic-bezier(0.3, 0.5, 0.1, 1)', scale: 1, mobile: false, duration: 3000};
+var mainResumesBlock3 = {delay: 1500, distance: '500px', easing: 'cubic-bezier(0.3, 0.5, 0.1, 1)', scale: 1, mobile: false, duration: 3000};
+
+
+sr.reveal('.collage__img_resume1', tourCollageReveal1);
+sr.reveal('.collage__img_resume2', tourCollageReveal2);
+sr.reveal('.collage__img_resume3', tourCollageReveal3);
+sr.reveal('.collage__img_resume4', tourCollageReveal4);
+
+sr.reveal('.resume-examples__img_1', mainResumesBlock2);
+sr.reveal('.resume-examples__img_2', mainResumesBlock1);
+sr.reveal('.resume-examples__img_3', mainResumesBlock3);
+
+
