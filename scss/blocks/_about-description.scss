@@ -4,12 +4,12 @@
 
 .about-description__container {
 	padding: 0;
-	padding-top: 112px;
-	padding-bottom: 112px;
+	padding-top: 110px;
+	padding-bottom: 110px;
 
 	@media #{$tablet} {
-		padding-top: 81px;
-		padding-bottom: 81px;		
+		padding-top: 67px;
+		padding-bottom: 82px;		
 	}
 }
 
@@ -34,15 +34,15 @@
 	}
 
 	& p {
-		max-width: 54%;
+		max-width: 59%;
 
 		@media #{$tablet} {
-			max-width: 100%;
+			max-width: 93%;
 		}
 	}
 }
 .about-description__content-item:nth-child(2) {
-	max-width: 60%;
+	max-width: 61%;
 	margin-bottom: 45px;
 
 	@media #{$tablet} {
@@ -55,7 +55,7 @@
 	}
 }
 .about-description__content-item:nth-child(3) {
-	max-width: 45%;
+	max-width: 50%;
 
 	@media #{$tablet} {
 		max-width: 60%;
@@ -63,7 +63,7 @@
 	}
 
 	@media #{$mobile} {
-		max-width: 80%;
+		max-width: 90%;
 		margin-bottom: 0;
 	}
 }
@@ -72,17 +72,18 @@
 	justify-content: center;
 	align-items: center;
 	height: 500px;
-	margin-top: -5%;
-	margin-bottom: 100px;
+	margin-top: -4%;
+	margin-left: 4%;
+	margin-bottom: 164px;
 
 	@media #{$mobile} {
-		margin-top: -30%;
-		margin-bottom: -30%;
+		margin-top: -36%;
+		margin-bottom: -26%;
 	}
 
 	& img {
 		@media #{$mobile} {
-			width: 500%;
+			width: 513%;
 		}		
 	}
 }
@@ -93,11 +94,11 @@
 	text-align: right;
 
 	& p {
-		max-width: 70%;
+		max-width: 72%;
 		font-size: 50px;
 
 		@media #{$tablet} {
-			max-width: 100%;
+			max-width: 95%;
 			font-size: 26px;
 		}
 
@@ -127,6 +128,7 @@
 			margin-right: 32px;
 
 			@media #{$tablet} {
+				padding-top: 13px;
 				margin-right: 23px;
 			}
 		}
@@ -156,15 +158,16 @@
 
 	&_big {
 		font-size: 50px;
+		font-weight: 100;
 		white-space: nowrap;
-		margin-right: 4.7%;
+		margin-right: 4.0%;;
 
 		@media #{$tablet} {
 			display: inline-block;
 			font-size: 35px;
 			white-space: normal;
 			margin-right: 0;	
-			margin-bottom: 45px;
+			margin-bottom: 35px;
 		}
 	}
 
