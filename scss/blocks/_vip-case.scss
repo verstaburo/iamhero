@@ -1,40 +1,26 @@
 .case {
-<<<<<<< HEAD
-	padding: 200px 0 0 0;
-	color: $mainFontColorDark;
-	&__container {
-		flex-direction:column;
-=======
 	padding: 210px 0 0 0;
 	color: $mainFontColorDark;
 	&__container {
 		flex-direction:column;
 		padding-left: 0;
->>>>>>> d5932e8... contacts & fix
 	}
 	&__heading {
 		margin-bottom: 60px;
 		text-align: center;
 		min-width: 100%;
-<<<<<<< HEAD
 		@media #{$tablet} {
 			margin-bottom: 30px;
 		}
-=======
 		font-size: 50px;
->>>>>>> d5932e8... contacts & fix
 	}
 	&__description {
 		width: 62%;
 		text-align: center;
 		display: block;
-<<<<<<< HEAD
-		margin-bottom: 100px;
-=======
 		margin: 0 auto;
 		margin-bottom: 110px;
 		font-size: 25px;
->>>>>>> d5932e8... contacts & fix
 	}
 	&__main-container {
 		position: relative;
