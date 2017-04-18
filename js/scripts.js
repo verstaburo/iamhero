@@ -1,4 +1,6 @@
+document.createElement( "picture" );
 svg4everybody();
+
 
 //radio buttons in form_prereg
 document.onload = (function () {

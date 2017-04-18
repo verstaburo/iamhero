@@ -94,10 +94,6 @@
       opacity: 0;
     }
 
-    &:hover {
-
-    }
-
     &_hero {
       &::before {
         background-image: linear-gradient(to top, $additionalColorBlue 0, transparent 526px);
@@ -130,18 +126,6 @@
       }
 
       &:hover {
-//        width: calc(50% + 300px);
-//        padding-right: calc(13.5% + 110px);
-//
-//        @media #{$desktop2} {
-//          padding-right: calc(5% + 110px);
-//        }
-//
-//        @media #{$tablet2} {
-//          width: calc(50% + 240px);
-//          padding-right: calc(10% + 82px);
-//        }
-//
         @media #{$tablet} {
           min-height: 872px;
           padding-right: 10%;
@@ -240,17 +224,6 @@
       }
 
       &:hover {
-//        width: calc(50% + 300px);
-//        padding-left: calc(190px + 110px);
-//
-//        @media #{$desktop} {
-//          padding-left: calc(130px + 110px);
-//        }
-//
-//        @media #{$tablet2} {
-//          width: calc(50% + 240px);
-//          padding-left: calc(10% + 82px);
-//        }
 
         @media #{$tablet} {
           min-height: 872px;
