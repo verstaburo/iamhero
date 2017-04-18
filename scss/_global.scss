@@ -229,6 +229,12 @@ h1 {
   @include letter-spacing($titleSizeH1);
 
   font-size: $titleSizeH1;
+
+  @media #{$mobile} {
+    @include letter-spacing($titleSizeH1/2);
+
+    font-size: $titleSizeH1/2;
+  }
 }
 
 h2 {
@@ -265,6 +271,12 @@ h5 {
   @include letter-spacing($titleSizeH5);
 
   font-size: $titleSizeH5;
+
+  @media #{$mobile} {
+    @include letter-spacing($textSizeMobileBig);
+
+    font-size: $textSizeMobileBig;
+  }
 }
 
 // Стили абзацев (удалить лишнее)
