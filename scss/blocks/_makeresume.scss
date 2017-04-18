@@ -3,15 +3,40 @@
     padding-top: 152px;
     padding-left: 40px;
     padding-bottom: 68px;
+
+    @media #{$mobile} {
+      padding-top: 56px;
+      padding-left: 16px;
+      padding-right: 16px;
+      padding-bottom: 14px;
+    }
   }
 
   &__text {
     .text-block__title {
       margin-bottom: 70px;
+
+      @media #{$mobile} {
+        margin-bottom: 24px;
+      }
     }
 
     .text-block__content {
       padding-right: 40px;
+
+      @media #{$mobile} {
+        @include letter-spacing($textSizeSmall + 1);
+
+        padding-right: 10px;
+        font-size: $textSizeSmall + 1;
+        line-height: 1.23em;
+      }
+
+      p {
+        @media #{$mobile} {
+          margin-bottom: 15px;
+        }
+      }
     }
   }
 }

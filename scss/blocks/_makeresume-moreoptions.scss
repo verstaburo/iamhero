@@ -1,18 +1,31 @@
 .makeresume-moreoptions {
   &__container {
-
+    padding-bottom: 66px;
   }
 
   &__text {
+    .text-block__title {
+      margin-bottom: 30px;
+    }
+
     .text-block__item {
       @include letter-spacing($textSize);
 
-      margin-bottom: 33px;
+      margin-bottom: 37px;
+      padding-left: 48px;
+
+      @media #{$mobile} {
+        padding-left: 24px;
+      }
 
       &::before {
         font-size: 30px;
-        margin-left: 4px;
-        margin-right: 26px;
+        top: -1px;
+        left: 4px;
+
+        @media #{$mobile} {
+          font-size: 11px;
+        }
       }
     }
   }
