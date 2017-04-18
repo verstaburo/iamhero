@@ -1,15 +1,67 @@
 .tour-registration {
   min-height: 608px;
 
+  @media #{$tablet} {
+    min-height: 848px;
+  }
+
+  @media #{$mobile} {
+    min-height: 424px;
+  }
+
   &__container {
     min-height: 608px;
     padding-bottom: 50px;
+
+    @media #{$tablet2} {
+      flex-direction: row;
+    }
+
+    @media #{$tablet} {
+      flex-direction: column;
+      padding-top: 130px;
+      padding-bottom: 20px;
+      min-height: 848px;
+    }
+
+    @media #{$mobile} {
+      padding-top: 65px;
+      padding-left: 14px;
+      padding-right: 14px;
+      min-height: 424px;
+    }
   }
 
   &__text {
     padding-right: 10px;
     width: 30%;
     align-self: flex-end;
+
+    @media #{$tablet2} {
+      width: 40%;
+    }
+
+    @media #{$tablet} {
+      margin-bottom: 72px;
+      width: 100%;
+      align-self: flex-start;
+      padding-right: 20px;
+    }
+    
+    @media #{$mobile} {
+      margin-bottom: 36px;
+      padding-right: 10px;
+    }
+    
+    & .text-block__content {
+      @media #{$tablet} {
+        padding-left: 6px;
+      }
+      
+      @media #{$mobile} {
+        padding-left: 3px;
+      }
+    }
   }
 
   &__companies {
@@ -17,5 +69,15 @@
     padding-bottom: 14px;
     width: 70%;
     align-self: flex-end;
+
+    @media #{$tablet2} {
+      width: 60%;
+    }
+
+    @media #{$tablet} {
+      padding-left: 0;
+      width: 100%;
+      align-self: flex-start;
+    }
   }
 }

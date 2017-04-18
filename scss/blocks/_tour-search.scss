@@ -2,27 +2,143 @@
   position: relative;
   min-height: 988px;
 
+  @media #{$desktop} {
+    min-height: 788px;
+  }
+
+  @media #{$tablet} {
+    min-height: 1220px;
+  }
+
+  @media #{$mobile} {
+    min-height: 660px;
+  }
+
   &__container {
     padding-top: 248px;
+
+    @media #{$desktop} {
+      padding-top: 150px;
+    }
+
+    @media #{$tablet} {
+      padding-top: 136px;
+    }
+
+    @media #{$mobile} {
+      padding-top: 68px;
+    }
   }
 
   &__text {
     width: 45%;
     padding-left: 58px;
     padding-right: 60px;
+
+    @media #{$desktop2} {
+      padding-left: 78px;
+      padding-right: 10px;
+    }
+
+    @media #{$tablet2} {
+      width: 100%;
+      padding-left: 0;
+      padding-right: 0;
+    }
+
+    @media #{$tablet} {
+      padding-left: 28px;
+      padding-right: 80px;
+    }
+
+    @media #{$mobile} {
+      padding-left: 14px;
+      padding-right: 40px;
+    }
+
+    p {
+      @media #{$tablet} {
+        padding-left: 4px;
+      }
+
+      @media #{$mobile} {
+        margin-bottom: 15px;
+        padding-left: 2px;
+      }
+    }
   }
 
   &__bg {
+    position: relative;
     position: absolute;
     top: 0;
     left: 0;
     width: 938px;
     height: 688px;
-    overflow: hidden;
+
+    @media #{$desktop2} {
+      width: 56%;
+    }
+
+    @media #{$tablet2} {
+      position: relative;
+      width: 72%;
+      margin-right: 28%;
+    }
+
+    @media #{$tablet} {
+      width: 90%;
+      margin-right: 10%;
+    }
+
+    @media (min-width: 495px) and #{$mobile} {
+      width: 73%;
+      margin-right: 27%;
+      height: 322px;
+    }
+
+    @media (max-width: 494px) {
+      width: 95%;
+      margin-right: 5%;
+      height: 322px;
+    }
+
+     &::before {
+      position: absolute;
+      content: '';
+      top: 100%;
+      right: 0;
+      width: 100%;
+      height: 90px;
+      background-image: url(../images/tour_dropshadow.png);
+      background-repeat: no-repeat;
+      background-position: 50% 0;
+      background-size: contain;
+      z-index: 10;
+
+      @media #{$mobile} {
+        height: 45px;
+      }
+    }
 
     img {
       width: 938px;
       height: 688px;
+
+      @media #{$desktop2} {
+        position: absolute;
+        top: 0;
+        right: 0;
+      }
+
+      @media #{$tablet} {
+        height: 644px;
+      }
+
+      @media #{$mobile} {
+        width: 469px;
+        height: 322px;
+      }
     }
   }
 }

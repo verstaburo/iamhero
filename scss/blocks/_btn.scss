@@ -82,6 +82,11 @@
     padding-bottom: 16px;
     padding-left: 86px;
     padding-right: 86px;
+
+    @media #{$mobile} {
+      padding-left: 42px;
+      padding-right: 42px;
+    }
   }
 
   &_big {
@@ -89,5 +94,11 @@
 
     font-size: $btnBigTextSize;
     border-radius: 50px;
+
+    @media #{$mobile} {
+      @include letter-spacing($btnBigTextSize/2);
+
+      font-size: $btnBigTextSize/2;
+    }
   }
 }

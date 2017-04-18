@@ -52,6 +52,10 @@
   &__title {
     margin-bottom: 50px;
 
+    @media #{$mobile} {
+      margin-bottom: 22px;
+    }
+
     i {
       color: $additionalColorGreen;
       font-style: normal;
@@ -66,11 +70,35 @@
         font-size: $titleSizeH1/2;
       }
     }
+
+    &_h2big {
+      @include letter-spacing($titleSizeH2_big);
+
+      font-size: $titleSizeH2_big;
+      margin-bottom: 24px;
+
+      @media #{$mobile} {
+        @include letter-spacing($titleSizeH2_big/2);
+
+        font-size: $titleSizeH2_big/2;
+      }
+    }
+
+    &_medium {
+      font-weight: 500;
+    }
   }
 
   &__content {
     font-size: $textSize;
     line-height: 1.2em;
+
+    @media #{$mobile} {
+      @include letter-spacing($textSizeMobileBig);
+
+      font-size: $textSizeMobileBig;
+      line-height: 1.4em;
+    }
 
     &_small {
       @include letter-spacing($textSizeSmall);
@@ -82,6 +110,13 @@
       @include letter-spacing($textSizeBig);
 
       font-size: $textSizeBig;
+
+      @media #{$mobile} {
+        @include letter-spacing($textSizeMobile);
+
+        font-size: $textSizeMobile;
+        line-height: 1.5em;
+      }
     }
 
     &_huge {
@@ -126,6 +161,10 @@
       }
     }
 
+    &_16em {
+      line-height: 1.64em;
+    }
+
     p {
       box-sizing: border-box;
       width: 100%;
@@ -142,12 +181,51 @@
     }
   }
 
+  &__list {
+
+    &_disk {
+      li {
+        position: relative;
+        padding-left: 44px;
+      }
+
+      li::before {
+        position: absolute;
+        top: 0;
+        left: 0;
+        content: '\2022';
+        display: inline;
+        line-height: inherit;
+      }
+    }
+
+    &_dash {
+      li {
+        position: relative;
+        padding-left: 44px;
+      }
+
+      li::before {
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: inline;
+        content: '\2013';
+        line-height: inherit;
+      }
+    }
+  }
+
   &__item {
     font-size: inherit;
     letter-spacing: inherit;
     font-weight: 100;
     line-height: inherit;
     color: inherit;
+
+    &_medium {
+      font-weight: 500;
+    }
   }
 
   &__link {
@@ -172,6 +250,12 @@
 
       font-size: $textSizeSlogan;
       line-height: 1.2em;
+
+      @media #{$mobile} {
+        @include letter-spacing($textSizeSlogan/2);
+
+        font-size: $textSizeSlogan/2;
+      }
     }
 
     &_bold {
@@ -179,6 +263,18 @@
 
       p {
         font-weight: inherit;
+      }
+    }
+  }
+
+  &__img {
+    &_left {
+      float: left;
+      margin-right: 30px;
+      margin-bottom: 30px;
+
+      @media #{$tablet} {
+        float: none;
       }
     }
   }

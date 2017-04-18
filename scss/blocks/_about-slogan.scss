@@ -1,0 +1,111 @@
+
+.about-slogan {
+	position: relative;
+	overflow: hidden;
+	color: $mainFontColorLight;
+}
+
+.about-slogan__content {
+	/*text-shadow: 53px 0px 30px rgba(0, 0, 0, 1);*/
+}
+
+.about-slogan__container {
+	display: block;
+	padding: 0;
+	padding-top: 100px;
+	padding-bottom: 132px;
+
+	@media #{$tablet} {
+		padding-top: 157px;
+		padding-bottom: 129px;
+	}
+}
+
+.about-slogan__text {
+	font-size: 30px;
+
+	@media #{$tablet} {
+		font-size: 16.55px;
+	}	
+
+	&_quote {
+		margin-bottom: 79px;
+		max-width: 620px;	
+		font-size: 50px;
+
+		@media #{$tablet} {
+			margin-bottom: 37px;
+			max-width: 100%;
+			font-size: 22px;
+		}
+	}
+
+	& span {
+		color: #25ffc4;
+	}
+	& a {
+		display: inline-block;
+		border-bottom: 1px solid #25ffc4;
+	}
+}
+
+.about-slogan__bg {
+	display: flex;
+	justify-content: center;
+	position: absolute;
+	top: -8%;
+	left: 0;
+	width: 100%;
+	z-index: -2;
+
+	&::before {
+		content: "";
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 200%;
+		height: 110%;
+		background-color: rgba(0,0,0,.19);
+	}
+
+	@media #{$tablet} {
+		top: 0;
+		width: 100%;
+		height: 100%;
+	}
+
+	& img {
+		@media #{$tablet} {	
+			width: auto;
+			height: 160%;
+		}
+
+		@media #{$mobile} {	
+			height: 125%;
+		}
+	}
+
+	&_blured {
+		z-index: -1;
+
+/*		&::before {	
+			width: 40%;
+			background-color: rgba(0,0,0,.3);
+			z-index: 10;
+
+			@media #{$tablet} {
+				width: 100%;
+			}
+		}*/
+
+/*		& img {
+			filter: blur(15px); 
+			filter: url(#about-slogan__blur-half);
+			filter:progid:DXImageTransform.Microsoft.Blur(PixelRadius='15');
+
+			@media #{$tablet} {
+				filter: url(#about-slogan__blur-full);
+			}
+		}*/
+	}
+}
