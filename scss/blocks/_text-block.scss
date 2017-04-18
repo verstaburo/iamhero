@@ -92,6 +92,8 @@
   &__content {
     font-size: $textSize;
     line-height: 1.2em;
+    box-sizing: border-box;
+    width: 100%;
 
     @media #{$mobile} {
       @include letter-spacing($textSizeMobileBig);
