@@ -1,0 +1,17 @@
+.makeresume {
+  &__container {
+    padding-top: 152px;
+    padding-left: 40px;
+    padding-bottom: 68px;
+  }
+
+  &__text {
+    .text-block__title {
+      margin-bottom: 70px;
+    }
+
+    .text-block__content {
+      padding-right: 40px;
+    }
+  }
+}

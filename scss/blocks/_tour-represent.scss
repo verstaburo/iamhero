@@ -1,11 +1,27 @@
 .tour-represent {
   min-height: 608px;
 
+  @media #{$tablet} {
+    min-height: 1022px;
+  }
+
+  @media #{$mobile} {
+    min-height: 511px;
+  }
+
   &__container {
     padding-top: 160px;
 
     @media #{$tablet2} {
       padding-top: 80px;
+    }
+
+    @media #{$tablet} {
+      padding-top: 272px;
+    }
+
+    @media #{$mobile} {
+      padding-top: 136px;
     }
   }
 
@@ -26,7 +42,23 @@
     @media #{$tablet} {
       width: 100%;
       align-self: flex-start;
-      padding-left: 0;
+      padding-left: 32;
+      padding-right: 180px;
+    }
+
+    @media #{$mobile} {
+      padding-left: 16px;
+      padding-right: 90px;
+    }
+
+    & .text-block__title {
+      @media #{$tablet} {
+        margin-bottom: 28px;
+      }
+
+      @media #{$mobile} {
+        margin-bottom: 14px;
+      }
     }
   }
 }
