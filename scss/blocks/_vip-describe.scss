@@ -1,6 +1,9 @@
 .describe {
 	padding: 235px 0 235px 0;
 	min-height: 817px;
+	&__container {
+		padding-left: 95px
+	}
 	@media #{$tablet} {
 		padding: 60px 0 350px 0;
 		min-height: 100%;

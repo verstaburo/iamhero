@@ -1,6 +1,11 @@
 .makeresume-services {
   &__container {
     padding-bottom: 70px;
+    padding-left: 50px;
+    @media #{$tablet} {
+      padding-left: 15px;
+      padding-bottom: 45px
+    }
   }
 
   &__list {
@@ -40,6 +45,19 @@
 
     .text-block__title {
       margin-bottom: 14px;
+      
+    }
+  }
+  .text-block__title  {
+    @media #{$tablet} {
+      margin-bottom: 6px;
+    }
+  }
+  .text-block__content p {
+    @media #{$tablet} {
+      margin-bottom: 12px;
+      line-height: 1.4;
+      letter-spacing: -.3px;
     }
   }
 }

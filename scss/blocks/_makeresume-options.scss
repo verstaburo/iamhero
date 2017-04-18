@@ -1,6 +1,11 @@
 .makeresume-options {
   &__container {
     padding-bottom: 69px;
+    padding-left: 50px;
+    @media #{$tablet} {
+      padding-left: 12px;
+      padding-bottom: 10px
+    }
   }
 
   &__text {
@@ -21,6 +26,11 @@
           font-size: 22px;
         }
       }
+    }
+  }
+  .text-block__title {
+    @media #{$mobile} {
+      margin-bottom: 20px;
     }
   }
 }
