@@ -138,3 +138,16 @@ if(heroBlock && employerBlock) {
     employerBlock.classList.toggle('js-employer-hover-active');
   }, false);
 }
+
+//dropdown menu news-category
+ 
+$(function() {
+ 
+    var dd = new DropDown( $('.news-category') );
+ 
+    $(document).click(function() {
+        // all dropdowns
+        $('.news-category').removeClass('activated');
+    });
+ 
+});
