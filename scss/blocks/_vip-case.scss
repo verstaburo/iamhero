@@ -1,6 +1,9 @@
 .case {
 	padding: 210px 0 0 0;
 	color: $mainFontColorDark;
+	@media #{$tablet} {
+		padding-top: 80px;
+	}
 	&__container {
 		flex-direction:column;
 		padding-left: 0;
@@ -10,6 +13,10 @@
 		text-align: center;
 		min-width: 100%;
 		font-size: 50px;
+		@media #{$tablet} {
+			margin-bottom: 30px;
+			font-size:36px;
+		}
 	}
 	&__description {
 		width: 62%;
@@ -18,6 +25,10 @@
 		margin: 0 auto;
 		margin-bottom: 110px;
 		font-size: 25px;
+		@media #{$tablet}{
+			width: 100%;
+			font-size: 22px;
+		}
 	}
 	&__main-container {
 		position: relative;
@@ -48,10 +59,15 @@
 		position: absolute;
 		display: block;
 		white-space: nowrap;
-		left: 50%;
-		transform: translateX(-50%);
+		left: -200px;
 		@media #{$tablet} {
-			left: -200px;
+			left: 50%;
+			transform: translateX(-50%);
+		}
+		@media #{$mobile} {
+			left: 50%;
+			margin-left: -890px;
+			transform: translateX(0%);
 		}
 	}
 	&__grid-col {

@@ -109,6 +109,9 @@
 			height: 100%;
 			object-fit:cover;
 		}
+		@media #{$tablet}{
+			height: auto;
+		}
 	}
 	&__youtube-link {
 		display: block;
@@ -171,7 +174,7 @@
 			content: '';
 			top: 50%;
 			margin-top: -6px;
-			right: calc(-50% - 26px);
+			right: calc(-50% - 188px);
 			width: 100%;
 			height: 12px;
 			background-color: #1451ff;
