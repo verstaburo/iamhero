@@ -4,49 +4,35 @@
   <body class="page">
 [snp tpl="html/blocks/header.html" class="" link1="#" link1_text="" link2="#" link2_text="" link3="#" link3_text="" link4_visible="hidden" link4="#" link4_text="" dop_item="" ]
   <main class="page-content">
-    <section>
+    <section class="news-detail">
       <div class="container">
-        <h1 class="news_page">News</h1>
-          <ul class="cathegory">
-            <li><a href="#">Cathegory 1</a></li>
-            <li><a href="#">Cathegory 2</a></li>
-            <li><a href="#">Cathegory 3</a></li>
-            <li><a href="#">Cathegory 4</a></li>
-            <li><a href="#">Cathegory 5</a></li>
-            <li><a href="#">Cathegory 6</a></li>
-          </ul>
-          <div class="opacity">
-          </div>
-          <div class="bread_crumbs">
-            <ul>
-              <li><a href="#">Main page</a><span> > </span></li>
-              <li><a href="#">News</a><span> > </span></li>
-              <li><a href="#">Cathegory 1</a><span> > </span></li>
-              <li><a href="#">More than 50 000 employers. Iamhero facing the
-                remarkable growth</a></li>
+        <div class="news-top-menu">
+          <h1 class="news_page">News</h1>
+            <ul class="class">
+              <li class="btn bnt_dark"><a href="#">Select cathegory <i class="switcher"></i></a></li>
+              <li class="btn bnt_dark active"><a href="#">Cathegory 1</a></li>
+              <li class="btn bnt_dark"><a href="#">Cathegory 2</a></li>
+              <li class="btn bnt_dark"><a href="#">Cathegory 3</a></li>
+              <li class="btn bnt_dark"><a href="#">Cathegory 4</a></li>
+              <li class="btn bnt_dark"><a href="#">Cathegory 5</a></li>
+              <li class="btn bnt_dark"><a href="#">Cathegory 6</a></li>
             </ul>
           </div>
-          <p class="another-cathegory">Another articles in cathegory:</p>
-          <div class="image_block">
-            <div class="block_1st">
-              <div class="mask"></div>
+          <div class="content">
+            <div class="bread_crumbs">
+              <ul>
+                <li><a href="#">Main page</a><span> > </span></li>
+                <li><a href="#">News</a><span> > </span></li>
+                <li><a href="#">Cathegory 1</a><span> > </span></li>
+                <li><a href="#">More than 50 000 employers. Iamhero facing the
+                  remarkable growth</a></li>
+              </ul>
+            </div>
+            <a href="#" class="images_block block_first">
               <h6>More than 50 000 employers. Iamhero facing the remarkable growth</h6>
-              <span class="data">27 / 12 / 2016</span>
-              <img src="../images/1st_block.jpg" width="773" height="516" alt="i am hero">
-            </div>
-            <div class="block_2nd">
-              <div class="mask"></div>
-              <h6>We are starting to work in Italy headhunting workers worldwide!</h6>
-              <span class="data">27 / 12 / 2016</span>
-              <img src="../images/2nd_block.jpg" width="335" height="456" alt="i am hero">
-            </div>
-            <div class="block_3rd">
-              <div class="mask"></div>
-              <h6>S7 Airlines headhunting through Iamhero. 1500 positions right now</h6>
-              <span class="data">27 / 12 / 2016</span>
-              <img src="../images/3rd_block.jpg" width="335" height="456" alt="i am hero">
-            </div>
-          </div>
+              <p class="data">27 / 12 / 2016</p>
+              <img src="../images/1st_block.jpg"  alt="i am hero">
+            </a>
             <div class="text_page">
               <p>Der Unterricht findet für die Teilnehmer auch innerhalb der
                 gesetzlichen Schulferien statt, da sonst ein Zeitrahmen
@@ -76,7 +62,22 @@
                     da unsere Kurse recht begehrt sind.</p>
               </div>
             </div>
+          </div>
+          <div class="sidebar">
+            <div class="another-cathegory"><p>Another articles in cathegory:</p></div>
+            <a href="#" class="images_block second">
+              <h6>We are starting to work in Italy headhunting workers worldwide!</h6>
+              <p>27 / 12 / 2016</p>
+              <img src="../images/2nd_block.jpg" width="335" height="456" alt="i am hero">
+            </a>
+            <a href="#" class="images_block third">
+              <h6>S7 Airlines headhunting through Iamhero. 1500 positions right now</h6>
+              <p>27 / 12 / 2016</p>
+              <img src="../images/3rd_block.jpg" width="335" height="456" alt="i am hero">
+            </a>
+          </div>
         </div>
+      </div>
     </section>
   </main>
 [snp tpl="html/blocks/form-prereg.html" ]
