@@ -34,6 +34,7 @@
     width: 150px;
     height: 116px;
     background-color: $bgMenuColor;
+    z-index: 100;
 
     @media #{$tablet2} {
       position: relative;
