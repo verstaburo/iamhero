@@ -1,6 +1,14 @@
 .tour-offer {
   min-height: 710px;
 
+  @media #{$tablet} {
+    min-height: 1142px;
+  }
+
+  @media #{$mobile} {
+    min-height: 571px;
+  }
+
   &__container {
     position: relative;
     flex-wrap: wrap;
@@ -9,11 +17,46 @@
     padding-top: 214px;
     padding-bottom: 122px;
     padding-left: 40px;
+
+    @media #{$tablet2} {
+      justify-content: space-between !important;
+      align-items: flex-start;
+      padding: 268px 32px 244px;
+    }
+
+    @media #{$tablet} {
+      min-height: 1142px;
+      padding: 268px 32px 244px;
+    }
+
+    @media #{$mobile} {
+      min-height: 571px;
+      padding: 134px 16px 122px;
+    }
   }
 
   &__text {
     width: 100%;
     padding-right: 100px;
+
+    @media #{$tablet} {
+      padding-right: 0;
+    }
+
+    & .text-block__slogan_big {
+      @media #{$tablet} {
+        @include letter-spacing(($textSizeSlogan - 6px));
+
+        font-size: ($textSizeSlogan - 6px);
+        line-height: 1.35em;
+      }
+
+      @media #{$mobile} {
+        @include letter-spacing(($textSizeSlogan - 6px)/2);
+
+        font-size: ($textSizeSlogan - 6px)/2;
+      }
+    }
   }
 
   &__icon {
@@ -23,11 +66,31 @@
     width: 53px;
     height: 45px;
     transform: rotate(90deg);
+
+    @media #{$tablet} {
+      width: 72px;
+      height: 60px;
+    }
+
+    @media #{$mobile} {
+      width: 36px;
+      height: 30px;
+    }
   }
 
   &__arrow {
     width: 53px;
     height: 45px;
     fill: $additionalColorBlue;
+
+    @media #{$tablet} {
+      width: 72px;
+      height: 60px;
+    }
+
+    @media #{$mobile} {
+      width: 36px;
+      height: 30px;
+    }
   }
 }

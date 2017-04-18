@@ -1,0 +1,19 @@
+.makeresume-options {
+  &__container {
+    padding-bottom: 74px;
+  }
+
+  &__text {
+    .text-block__item {
+      @include letter-spacing($textSize);
+
+      margin-bottom: 33px;
+
+      &::before {
+        font-size: 30px;
+        margin-left: 4px;
+        margin-right: 26px;
+      }
+    }
+  }
+}

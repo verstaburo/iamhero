@@ -6,11 +6,23 @@
     min-height: 650px;
   }
 
+  @media #{$mobile} {
+    min-height: 1160px;
+  }
+
+  @media #{$mobile} {
+    min-height: 620px;
+  }
+
   &__container {
     padding-top: 280px;
 
     @media #{$desktop} {
-      padding-top: 150px;
+      padding-top: 212px;
+    }
+
+    @media #{$mobile} {
+      padding-top: 106px;
     }
   }
 
@@ -19,6 +31,24 @@
 
     @media #{$tablet2} {
       width: 100%;
+    }
+
+    @media #{$tablet} {
+      padding-left: 32px;
+      padding-right: 72px;
+      margin-bottom: 4px;
+    }
+
+     @media #{$mobile} {
+      padding-left: 16px;
+      padding-right: 36px;
+      margin-bottom: 2px;
+    }
+
+    p {
+      @media #{$mobile} {
+        margin-bottom: 15px;
+      }
     }
   }
 
@@ -29,7 +59,6 @@
     right: 0;
     width: 980px;
     height: 688px;
-    overflow: hidden;
 
     @media #{$desktop2} {
       width: 56%;
@@ -37,8 +66,43 @@
 
     @media #{$tablet2} {
       position: relative;
-      width: 80%;
-      margin-left: 20%;
+      width: 75%;
+      margin-left: 25%;
+    }
+
+    @media #{$tablet} {
+      width: 90%;
+      margin-left: 10%;
+    }
+
+    @media (min-width: 510px) and #{$mobile} {
+      width: 75%;
+      margin-left: 25%;
+      height: 344px;
+    }
+
+    @media (max-width: 509px) {
+      width: 95%;
+      margin-left: 5%;
+      height: 344px;
+    }
+
+    &::before {
+      position: absolute;
+      content: '';
+      top: 100%;
+      left: 0;
+      width: 100%;
+      height: 90px;
+      background-image: url(../images/tour_dropshadow.png);
+      background-repeat: no-repeat;
+      background-position: 50% 0;
+      background-size: contain;
+      z-index: 10;
+
+      @media #{$mobile} {
+        height: 45px;
+      }
     }
 
     img {
@@ -49,16 +113,21 @@
         position: absolute;
         top: 0;
         left: 0;
-        right: 0;
+        /*right: 0;
         bottom: 0;
         min-width: 100%;
         height: auto;
         width: 0;
-        margin: 0 auto;
+        margin: 0 auto;*/
       }
 
-      @media #{$desktop2} {
+      @media #{$mobile} {
+        height: 640px;
+      }
 
+      @media #{$mobile} {
+        width: 490px;
+        height: 320px;
       }
     }
   }
