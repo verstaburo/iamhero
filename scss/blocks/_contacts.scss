@@ -80,7 +80,10 @@
 		font-size: 17px;
 		border-bottom: 1px solid #25ffc4;
 		&:hover {
-			border-bottom-color: transparent;
+			color: #0a0a0b;
+			.contacts__link-icon {
+				opacity: .5
+			}
 		}
 	}
 	&__link-icon {
@@ -89,6 +92,7 @@
 		left: 0;
 		top: 50%;
 		transform: translateY(-50%);
+		transition: all .25s ease-in-out;
 		&.dialog {
 			width: 24px;
 			height: 22px;
