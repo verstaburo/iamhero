@@ -19,7 +19,7 @@
     border-radius: 20px;
     text-align: center;
 
-    &.checked {
+    &.js-radio-checked {
       background-color: $bgColor;
 
       & .switch__label {

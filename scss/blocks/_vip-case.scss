@@ -1,19 +1,39 @@
 .case {
-	padding: 200px 0 0 0;
-	flex-direction:column;
+	padding: 210px 0 0 0;
 	color: $mainFontColorDark;
+	@media #{$tablet} {
+		padding-top: 80px;
+	}
+	&__container {
+		flex-direction:column;
+		padding-left: 0;
+	}
 	&__heading {
-		margin-bottom: 50px;
+		margin-bottom: 60px;
 		text-align: center;
 		min-width: 100%;
+		font-size: 50px;
+		@media #{$tablet} {
+			margin-bottom: 30px;
+			font-size:36px;
+		}
 	}
 	&__description {
-		min-width: 100%;
+		width: 62%;
 		text-align: center;
+		display: block;
+		margin: 0 auto;
+		margin-bottom: 110px;
+		font-size: 25px;
+		@media #{$tablet}{
+			width: 100%;
+			font-size: 22px;
+		}
 	}
 	&__main-container {
 		position: relative;
 		height: 1000px;
+		margin-bottom: 60px;
 		&:before {
 			content: '';
 			position: absolute;
@@ -39,10 +59,15 @@
 		position: absolute;
 		display: block;
 		white-space: nowrap;
-		left: 50%;
-		transform: translateX(-50%);
+		left: -200px;
 		@media #{$tablet} {
-			left: -200px;
+			left: 50%;
+			transform: translateX(-50%);
+		}
+		@media #{$mobile} {
+			left: 50%;
+			margin-left: -890px;
+			transform: translateX(0%);
 		}
 	}
 	&__grid-col {
