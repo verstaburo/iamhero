@@ -1,4 +1,5 @@
 .page-header {
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -33,6 +34,7 @@
     width: 150px;
     height: 116px;
     background-color: $bgMenuColor;
+    z-index: 100;
 
     @media #{$tablet2} {
       position: relative;

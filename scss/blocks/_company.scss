@@ -3,12 +3,43 @@
 
   &_linkedin {
     width: 241px;
-    height: 62px;
+    height: 62px;    
+    
+    @media #{$mobile} {
+      width: 120.5px;
+      height: 31px;
+    }
+    
+    img {
+      width: 241px;
+      height: 62px;    
+
+      @media #{$mobile} {
+        width: 120.5px;
+        height: 31px;
+      }
+    }
   }
 
   &_xing {
     width: 214px;
     height: 85px;
     transform: translate(0, -30px);
+    
+    @media #{$mobile} {
+      width: 107px;
+      height: 42.5px;
+      transform: translate(0);
+    }
+    
+    img {
+      width: 214px;
+      height: 85px;
+
+      @media #{$mobile} {
+        width: 107px;
+        height: 42.5px;
+      }
+    }
   }
 }

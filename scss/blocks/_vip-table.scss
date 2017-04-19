@@ -1,5 +1,5 @@
 .versus-table {
-	padding: 120px 0 65px 0;
+	padding: 160px 0 65px 0;
 	color: $formFontColorDarkest;
 	font-size: 16px;
 
@@ -29,21 +29,22 @@
 	&__row {
 		display: flex;
 		flex-direction: row;
-		padding-top: 70px;
+		padding-top: 95px;
+    	padding-left: 10px;
 		width: 100%;
 		@media #{$tablet} {
 			flex-direction: column;
 		}
 	}
 	&__left-section {
-		width: 60%;
+		width: 55%;
 		@media #{$tablet} {
 			width: 100%;
 		}
 	}
 
 	&__right-section {
-		width: 45%;
+		width: 40%;
 		@media #{$tablet} {
 			width: 100%;
 		}
@@ -79,11 +80,11 @@
 		font-weight: 100;
 	}
 	&__t-col {
-		width: 20%;
+		width: 30%;
 		text-align: center;
 		padding: 15px 0;
 		&:first-child {
-			width: 60%;
+			width: 30%;
 			text-align: left;
 		}
 	}
@@ -179,7 +180,7 @@
 		color: $discountTableHeading;
 	}
 	&__r-footer {
-		background: url(../images/vip-price-footer.jpg);
+		background: $mainGradient;
 		background-size: cover;
 		font-size: 15px;
 		color: #fff;

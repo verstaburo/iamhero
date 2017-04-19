@@ -1,0 +1,41 @@
+.makeresume-benefits {
+  &__container {
+    padding-left: 50px;
+    padding-bottom: 26px;
+    @media #{$tablet} {
+      padding-left: 12px;
+    }
+  }
+
+  &__text {
+    & .text-block__content:first-of-type {
+      padding-top: 10px;
+      @media #{$tablet} {
+        padding-top: 0;
+      }
+    }
+  }
+
+  &__item {
+    width: 70%;
+    margin-bottom: 76px;
+
+    @media #{$tablet2} {
+      width: 100%;
+    }
+
+    & .text-block__title {
+      margin-bottom: 32px;
+      padding-left: 4px;
+      @media #{$tablet} {
+        margin-bottom: 20px;
+      }
+    }
+    
+  }
+  & .text-block__content {
+    @media #{$tablet} {
+      padding-top: 0;
+    }
+  }
+}

@@ -1,0 +1,41 @@
+.makeresume-talents {
+  &__container {
+    padding-left: 55px;
+    padding-right: 70px;
+    padding-bottom: 70px;
+
+    @media #{$mobile} {
+      padding-left: 16px;
+      padding-right: 44px;
+      padding-bottom: 28px;
+    }
+  }
+
+  &__text {
+    .text-block__title {
+      @media #{$mobile} {
+        margin-bottom: 24px;
+      }
+    }
+
+    .text-block__content {
+      b {
+        display: none;
+        font-size: inherit;
+        font-weight: inherit;
+        letter-spacing: inherit;
+
+        @media #{$tablet2} {
+          display: inline;
+          font-weight: 500;
+        }
+      }
+
+      p {
+        @media #{$mobile} {
+          margin-bottom: 22px;
+        }
+      }
+    }
+  }
+}

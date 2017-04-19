@@ -24,6 +24,7 @@
 
     & .text-block__title_mainpage {
       margin-bottom: 18px;
+      padding-right: 40px;
 
       @media #{$mobile} {
         margin-bottom: 10px;
@@ -55,6 +56,9 @@
     }
   }
 
+  ::-webkit-input-placeholder,
+  :-ms-input-placeholder,
+  ::-ms-input-placeholder,  
   ::placeholder {
     letter-spacing: inherit;
     font-family: inherit;
@@ -83,6 +87,9 @@
   }
 
   &_dark {
+    ::-webkit-input-placeholder,
+    :-ms-input-placeholder,
+    ::-ms-input-placeholder,
     ::placeholder {
       color: $formFontColorDarkest;
     }
@@ -101,6 +108,9 @@
   }
 
   &_light {
+    ::-webkit-input-placeholder,
+    :-ms-input-placeholder,
+    ::-ms-input-placeholder,
     ::placeholder {
       color: $formFontColorLight;
     }
@@ -201,6 +211,11 @@
 
       input {
         width: 100%;
+        min-height: 50px;
+        
+        @media #{$mobile} {
+          min-height: 38px;
+        }
       }
     }
 
