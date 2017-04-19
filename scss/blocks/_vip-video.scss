@@ -51,8 +51,11 @@
 		}
 	}
 	&__btn {
+    display: inline-block;
     position: relative;
-		margin-left: -15px;
+    margin-top: 10px;
+		margin-left: 40px;
+    padding: 14px 38px;
 
     @media #{$desktop2} {
       margin-left: 10px;

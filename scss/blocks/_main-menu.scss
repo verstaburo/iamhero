@@ -43,7 +43,7 @@
     width: 35px;
     height: 2px;
     background-color: $bgColor;
-    transition: width 0.5s ease-in-out, opacity 0.5s ease-in-out, background 0.5s ease-in-out;
+    transition: width 0.5s ease-in-out, opacity 0.5s ease-in-out;
 
     &::before,
     &::after {
