@@ -7,13 +7,18 @@
 	&__container {
 		position: relative;
 		z-index: 1;
+    @media #{$mobile} {
+      box-sizing: border-box;
+      padding-left: 8%;
+      padding-right: 8%;
+    }
 	}
 	&__map-section {
 		z-index: -1;
 	}
 	&__top-line {
 		width: 100%;
-		padding-top: 90px;
+		padding-top: 94px;
 		margin-left: 220px;
 		display: flex;
 		flex-direction: row;
@@ -32,6 +37,9 @@
 		@media #{$tablet} {
 			flex-direction: column;
 		}
+    @media #{$mobile} {
+      padding-top: 48px;
+    }
 	}
 	&__heading {
 		display: flex;
@@ -46,11 +54,15 @@
 			}
 		}
 		h3 {
-			font-size: 16px;
+			font-size: $textSizeSmaller;
 			letter-spacing: 0;
 			margin-top: 55px;
 			@media #{$tablet} {
 				margin-top: 0;
+			}
+      
+      @media #{$mobile} {
+        font-size: 13px;
 			}
 		}
 	}
@@ -60,6 +72,9 @@
 		font-weight: 100;
 		@media #{$tablet} {
 			margin-top: 30px;
+		}
+    @media #{$mobile} {
+			font-size: $textSizeSmaller;
 		}
 	}
 	&__links {
@@ -78,8 +93,15 @@
 		transition: all .25s ease-in-out;
 		font-size: 17px;
 		border-bottom: 1px solid #25ffc4;
+    
+    @media #{$mobile} {
+      font-size: $textSizeMobileBig;
+    }
 		&:hover {
-			border-bottom-color: transparent;
+			color: #0a0a0b;
+			.contacts__link-icon {
+				opacity: .5
+			}
 		}
 	}
 	&__link-icon {
@@ -88,6 +110,7 @@
 		left: 0;
 		top: 50%;
 		transform: translateY(-50%);
+		transition: all .25s ease-in-out;
 		&.dialog {
 			width: 24px;
 			height: 22px;
@@ -103,16 +126,30 @@
 	}
 	&__map {
 		position: relative;
-		padding-left: 0;
-		z-index: -1;
-		text-align: center;
-		margin-top: -80px;
-		margin-bottom: -80px;
-		@media #{$mobile} {
-			height: 400px;
-		}
+    max-width: 1408px;
+    width: 100%;
+    height: 624px;
+    overflow: hidden;
+    
+    @media #{$tablet} {
+      height: 600px;
+    }
+    
+    @media #{$mobile} {
+      height: 300px;
+      overflow: visible;
+    }
+    
 		img {
-			width: 100%;
+      position: absolute;//
+      top: 0;//
+      left: 0;//
+      right: 0;//
+      bottom: 0;//
+			min-width: 100%;//
+      min-height: 100%;//
+      width: 0;//
+      margin: auto 0;//
 			@media #{$mobile} {
 				height: 100%;
 				width: auto;
@@ -142,9 +179,15 @@
 	&__feedback-container {
 		position: relative;
 		z-index: 1;
+    
+    @media #{$mobile} {
+      box-sizing: border-box;
+      padding-left: 8%;
+      padding-right: 8%;
+    }
 	}
 	&__feedback-form {
-		margin-bottom: 55px;
+		margin-bottom: 48px;
 	}
 	&__form-element {
 		box-sizing: border-box;

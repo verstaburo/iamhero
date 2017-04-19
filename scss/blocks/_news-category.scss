@@ -1,0 +1,193 @@
+.news-category {
+  @media #{$tablet} {
+    position: relative;
+    width: 254px;
+    border: 2px solid #dadada;
+    border-radius: 25px;
+    margin-bottom: 0px;
+    z-index: 100;
+  }
+
+   &.activated {
+    @media #{$tablet} {
+      border-color: $additionalColorGreen;
+      margin-bottom: 2px;
+      border-bottom-width: 0;
+      border-bottom-left-radius: 0;
+      border-bottom-right-radius: 0;
+    }
+  }
+
+  &__field {
+    @include letter-spacing($menuTextSize);
+
+    display: none;
+    font-size: $menuTextSize;
+    font-weight: 300;
+    color: $mainFontColorDark;
+    background-color: $bgColor;
+    padding: 12px 28px;
+    box-sizing: border-box;
+    border-radius: 25px;
+
+    @media #{$tablet} {
+      position: relative;
+      display: inline-block;
+      width: 100%;
+      cursor: pointer;
+    }
+
+    @media #{$mobile} {
+      @include letter-spacing($textSizeMobileBig);
+
+      font-size: $textSizeMobileBig;
+      padding: 10px 14px;
+    }
+
+    .activated & {
+      border-bottom-left-radius: 0;
+      border-bottom-right-radius: 0;
+    }
+
+    &::after {
+      @media #{$tablet} {
+        position: absolute;
+        content: '';
+        top: 50%;
+        right: 32px;
+        width: 10px;
+        height: 10px;
+        border: 1px solid $mainFontColorDark;
+        border-top-width: 0;
+        border-left-width: 0;
+        transform: translate(0, -50%) rotate(45deg);
+      }
+
+      @media #{$mobile} {
+        width: 8px;
+        height: 8px;
+        right: 16px;
+      }
+
+      .news-category:hover & {
+        border-color: $additionalColorGreen;
+      }
+    }
+  }
+
+  &__list {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    transition: background 0.25s ease-in-out, opacity 0.25s ease-in-out, height 0.25s ease-in-out;
+    z-index: 100;
+
+    @media #{$tablet} {
+      position: absolute;
+      top: 100%;
+      left: -2px;
+      width: 0;
+      height: 0;
+      overflow: hidden;
+      opacity: 0;
+      flex-direction: column;
+      align-items: center;
+      background-color: $bgColor;
+    }
+
+    .activated & {
+      @media #{$tablet} {
+        border: 2px solid $additionalColorGreen;
+        border-top-width: 0;
+        border-bottom-left-radius: 25px;
+        border-bottom-right-radius: 25px;
+        width: calc(100% + 4px);
+        height: auto;
+        overflow: hidden;
+        opacity: 1;
+      }
+    }
+  }
+
+  &__item {
+    @include letter-spacing($textSizeSmaller);
+
+    display: inline-block;
+    box-sizing: border-box;
+    margin-right: 14px;
+    font-size: $textSizeSmaller;
+    font-weight: 300;
+    color: $mainFontColorDark;
+    background-color: $bgColor;
+    border-width: 2px;
+    border-style: solid;
+    border-color: #dadada;
+    border-radius: 15px;
+
+    @media #{$tablet} {
+      @include letter-spacing($menuTextSize);
+
+      margin-right: 0;
+      font-size: $menuTextSize;
+      border: none;
+      border-radius: 0;
+      width: 100%;
+    }
+
+    @media #{$mobile} {
+      @include letter-spacing($textSizeMobileBig);
+
+      font-size: $textSizeMobileBig;
+    }
+
+    &::last-child {
+      margin-right: 0;
+    }
+
+    &:hover {
+      background-color: $additionalColorGreen;
+      border-color: $additionalColorGreen;
+    }
+
+    &.active {
+      color: $mainFontColorLight;
+      background-color: $mainFontColorDark;
+      border-color: $mainFontColorDark;
+
+      @media #{$tablet} {
+        color: $mainFontColorDark;
+        background-color: $bgColor;
+        border: none;
+      }
+
+      &:hover {
+        @media #{$tablet} {
+          background-color: $additionalColorGreen;
+        }
+      }
+    }
+
+    a {
+      display: inline-block;
+      padding: 5px 9px;
+      font-size: inherit;
+      letter-spacing: inherit;
+      font-weight: inherit;
+      color: inherit;
+      line-height: inherit;
+      text-decoration: none;
+
+      @media #{$tablet} {
+        padding: 12px 20px;
+        width: 100%;
+        text-align: left;
+      }
+
+      @media #{$mobile} {
+        padding: 10px 14px;
+      }
+    }
+  }
+}

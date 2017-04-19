@@ -1,10 +1,10 @@
 .makeresume-services {
   &__container {
     padding-bottom: 70px;
-    padding-left: 50px;
-    @media #{$tablet} {
+    
+    @media #{$mobile} {
       padding-left: 15px;
-      padding-bottom: 45px
+      padding-bottom: 35px
     }
   }
 
@@ -28,7 +28,12 @@
     @media #{$tablet} {
       width: 100%;
       margin-right: 0;
+      margin-bottom: 10px;
       text-align: left;
+    }
+    
+    @media #{$mobile} {
+      margin-bottom: 2px;
     }
 
     &:first-child {
@@ -49,12 +54,12 @@
     }
   }
   .text-block__title  {
-    @media #{$tablet} {
+    @media #{$mobile} {
       margin-bottom: 6px;
     }
   }
   .text-block__content p {
-    @media #{$tablet} {
+    @media #{$mobile} {
       margin-bottom: 12px;
       line-height: 1.4;
       letter-spacing: -.3px;

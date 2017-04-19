@@ -1,8 +1,8 @@
 .makeresume-options {
   &__container {
     padding-bottom: 69px;
-    padding-left: 50px;
-    @media #{$tablet} {
+    
+    @media #{$mobile} {
       padding-left: 12px;
       padding-bottom: 10px
     }

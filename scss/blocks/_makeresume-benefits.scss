@@ -1,8 +1,8 @@
 .makeresume-benefits {
   &__container {
-    padding-left: 50px;
     padding-bottom: 26px;
-    @media #{$tablet} {
+    
+    @media #{$mobile} {
       padding-left: 12px;
     }
   }
@@ -10,7 +10,8 @@
   &__text {
     & .text-block__content:first-of-type {
       padding-top: 10px;
-      @media #{$tablet} {
+      
+      @media #{$mobile} {
         padding-top: 0;
       }
     }
@@ -27,14 +28,16 @@
     & .text-block__title {
       margin-bottom: 32px;
       padding-left: 4px;
-      @media #{$tablet} {
+      
+      @media #{$mobile} {
         margin-bottom: 20px;
       }
     }
     
   }
+  
   & .text-block__content {
-    @media #{$tablet} {
+    @media #{$mobile} {
       padding-top: 0;
     }
   }

@@ -2,21 +2,23 @@
 <html lang="en">
 [snp tpl="html/blocks/head.html" page_title="" keywords="" description="" ]
   <body class="page">
-[snp tpl="html/blocks/header.html" class="" link1="#" link1_text="" link2="#" link2_text="" link3="#" link3_text="" link4_visible="hidden" link4="#" link4_text="" dop_item="" ]
+[snp tpl="html/blocks/header.html" class="" link1="#" link1_text="I am Hero" link2="#" link2_text="Take a tour" link3="#" link3_text="Superhero" link4_visible="visible" link4="#" link4_text="Examples" dop_item="" ]
   <main class="page-content">
     <section class="news-detail">
       <div class="news-container">
         <div class="news-top-menu">
           <h1 class="news_page">News</h1>
-            <ul class="class">
-              <li class="btn bnt_dark"><a href="#">Select cathegory <i class="switcher"></i></a></li>
-              <li class="btn bnt_dark active"><a href="#">Cathegory 1</a></li>
-              <li class="btn bnt_dark"><a href="#">Cathegory 2</a></li>
-              <li class="btn bnt_dark"><a href="#">Cathegory 3</a></li>
-              <li class="btn bnt_dark"><a href="#">Cathegory 4</a></li>
-              <li class="btn bnt_dark"><a href="#">Cathegory 5</a></li>
-              <li class="btn bnt_dark"><a href="#">Cathegory 6</a></li>
-            </ul>
+            <div class="news-category" >
+              <span class="news-category__field">Select cathegory</span> 
+              <ul class="news-category__list">
+                <li class="news-category__item active"><a href="#">Cathegory 1</a></li>
+                <li class="news-category__item"><a href="#">Cathegory 2</a></li>
+                <li class="news-category__item"><a href="#">Cathegory 3</a></li>
+                <li class="news-category__item"><a href="#">Cathegory 4</a></li>
+                <li class="news-category__item"><a href="#">Cathegory 5</a></li>
+                <li class="news-category__item"><a href="#">Cathegory 6</a></li>
+              </ul>
+            </div>
           </div>
           <div class="content">
             <div class="bread_crumbs">
@@ -77,7 +79,6 @@
             </a>
           </div>
         </div>
-      </div>
     </section>
   </main>
 [snp tpl="html/blocks/form-prereg.html" ]

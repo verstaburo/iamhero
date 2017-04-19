@@ -10,8 +10,9 @@
 		font-size: 50px;
 		font-weight: 700;
 		margin-bottom: 50px;
-		text-align: center;
+		text-align: left;
 		@media #{$tablet} {
+      align-self: flex-start;
 			font-size: 30px;
 		}
 	}
@@ -19,7 +20,7 @@
 		font-size: 50px;
 		font-weight: 100;
 		max-width: 75%;
-		text-align: center;
+		text-align: left;
 
 		@media #{$tablet} {
 			max-width: 100%;
@@ -132,7 +133,7 @@
 			font-size: 25px;
 		}
 	}
-	
+
 	&__r-row {
 		font-weight: 300;
 		font-size: 22px;
