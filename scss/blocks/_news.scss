@@ -2,6 +2,12 @@
   display: none;
 }
 .news-container {
+<<<<<<< HEAD
+  margin: 0 auto;
+  width: 1180px;
+}
+ .news-detail__container .content {
+=======
   box-sizing: border-box;
   padding-left: 12px;
   width: 1180px;
@@ -9,10 +15,11 @@
 }
 
 .news-container .content {
+>>>>>>> origin/master
   width: 773px;
   float: left;
 }
-.images_block  {
+.news-container .images_block  {
   position: relative;
 }
 .news-detail .cathegory-dropdown {
