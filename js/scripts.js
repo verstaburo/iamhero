@@ -110,7 +110,7 @@ var fooReveal1 = {delay: 100, distance: '100px', easing: 'cubic-bezier(0.3, 0.5,
 var fooReveal2 = {delay: 200, distance: '100px', easing: 'cubic-bezier(0.3, 0.5, 0.1, 1)', scale: 1, mobile: false, duration: 1000};
 
 sr.reveal('.page-section ', fooReveal1);
-sr.reveal('.text-block__title, .text-block__content p, .text-block__link, .text-block__slogan, .text-block__item, .communication__img, .intro-video__item, .footer-menu__title, .footer-menu__item, .logo_footer, .pricing__header, .pricing__body, .pricing__footer, .note, .companies, .tour-working__img, .tour-accounts__img, .tour-dashboard__bg, .tour-search__bg, .tour-matching__img, .form__radiofield, .form__inputlabel, .about-slogan__text, .about-description__text, .about-description__comment, .about-partners__text, .about-partners__item, .about-team__title, .about-team__photo, .about-team__text, .about-donate__title, .about-donate__text, .about-donate__pics div, .video p, .video b, .page-section .btn, .video__youtube-content, .video__youtube-link, .video h2, .case h2, .case p, .case__grid-element, .versus-table h2, .versus-table p, .versus-table__t-row, .versus-table__r-row, .contacts__col, .contact__contact-link, .contacts__form-element', fooReveal2);
+sr.reveal('.text-block__title, .text-block__content p, .text-block__link, .text-block__slogan, .text-block__item, .communication__img, .intro-video__item, .footer-menu__title, .footer-menu__item, .logo_footer, .pricing__header, .pricing__body, .pricing__footer, .note, .companies, .tour-working__img, .tour-accounts__img, .tour-dashboard__bg, .tour-search__bg, .tour-matching__img, .form__radiofield, .form__inputlabel, .about-slogan__text, .about-description__text, .about-description__comment, .about-partners__text, .about-partners__item, .about-team__title, .about-team__photo, .about-team__text, .about-donate__title, .about-donate__text, .about-donate__pics div, .video p, .video b, .page-section .btn, .video__youtube-content, .video__youtube-link, .video h2, .case h2, .case p, .case__grid-element, .versus-table h2, .versus-table p, .versus-table__t-row, .versus-table__r-row, .contacts__col, .contact__contact-link, .contacts__form-element, .news-detail h1, .news-category, .bread_crumbs, .images_block, .images_block h6, .images_block p, .text_page p, .text-bold p, .another-cathegory, .news_page, .follow', fooReveal2);
 
 //animation increase blocks in header at index.html page
 
@@ -122,7 +122,7 @@ if(heroBlock && employerBlock) {
     heroBlock.classList.toggle('js-hero-hover-active');
     employerBlock.classList.toggle('js-employer-hover-none');
   }, false);
-  
+
   heroBlock.addEventListener('mouseleave', function (event) {
     heroBlock.classList.toggle('js-hero-hover-active');
     employerBlock.classList.toggle('js-employer-hover-none');
@@ -140,14 +140,14 @@ if(heroBlock && employerBlock) {
 }
 
 //dropdown menu news-category
- 
+
 $(function() {
- 
+
     var dd = new DropDown( $('.news-category') );
- 
+
     $(document).click(function() {
         // all dropdowns
         $('.news-category').removeClass('activated');
     });
- 
+
 });
