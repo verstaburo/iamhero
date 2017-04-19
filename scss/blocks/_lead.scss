@@ -29,7 +29,7 @@
     padding: 0 13.5% 0 182px;
     width: 50%;
     min-height: 1058px;
-    transition: height 1.25s ease-in-out, width 1.25s ease-in-out, opacity 1.25s ease-in-out, padding 1.25s ease-in-out;
+    transition: height 1.25s ease-in-out, min-height 1.25s ease-in-out, max-height 1.25s ease-in-out, width 1.25s ease-in-out, opacity 1.25s ease-in-out, padding 1.25s ease-in-out;
 
     @media #{$desktop2} {
       padding-right: 5%;

@@ -12,7 +12,6 @@
   }
 
   &__burger {
-    position: relative;
     display: none;
     font-size: 0;
     background-color: transparent;
@@ -39,11 +38,12 @@
   }
 
   &__burger-item {
+    position: absolute;
     display: block;
     width: 35px;
     height: 2px;
     background-color: $bgColor;
-    transition: width 0.25s ease-in-out, opacity 0.25s ease-in-out;
+    transition: width 0.5s ease-in-out, opacity 0.5s ease-in-out, background 0.5s ease-in-out;
 
     &::before,
     &::after {
@@ -53,7 +53,7 @@
       width: 35px;
       height: 2px;
       background-color: $bgColor;
-      transition: transform 0.25s ease-in-out;
+      transition: transform 0.5s ease-in-out;
 
       @media #{$tablet} {
         width: 30px;
@@ -65,11 +65,27 @@
     }
 
     &::before {
-      top: 0;
+      top: -12px;
+      
+      @media #{$tablet} {
+        top: -10px;
+      }
+      
+      @media #{$mobile} {
+        top: -4px;
+      }
     }
 
     &::after {
-      bottom: 0;
+      bottom: -12px;
+      
+      @media #{$tablet} {
+        bottom: -10px;
+      }
+      
+      @media #{$mobile} {
+        bottom: -4px;
+      }
     }
 
     @media #{$tablet} {
@@ -82,14 +98,15 @@
 
     .main-menu__burger.js-menu-opened & {
       background-color: transparent;
+      width: 1px;
 
       &::before {
-        top: 50%;
+        top: 0;
         transform: rotate(45deg);
       }
 
       &::after {
-        bottom: 50%;
+        bottom: 0;
         transform: rotate(-45deg);
       }
     }
@@ -108,6 +125,7 @@
 
     @media #{$tablet2} {
       padding-left: 0;
+      opacity: 0;
       display: none;
     }
 
@@ -133,6 +151,7 @@
       background-color: $bgMenuColor;
       background-image: $mainGradient;
       z-index: 100;
+      opacity: 1;
     }
   }
 
