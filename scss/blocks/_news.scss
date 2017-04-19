@@ -1,7 +1,10 @@
-.news-detail__container {
-  width: 1180px;
+.news-container .news-top-menu li.btn.bnt_dark:first-child {
+  display: none;
 }
-.news-detail__container .content {
+.news-container {
+  1180px;
+
+ .news-detail__container .content {
   width: 773px;
   float: left;
 }
