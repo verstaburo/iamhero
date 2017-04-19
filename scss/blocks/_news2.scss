@@ -9,7 +9,7 @@
 }
 .news-list .container {
   width: 1540px;
-  margin-left: -24px;
+  //margin-left: -24px;
 
   @media screen and (max-width: 1024px) {
     width: 960px;
@@ -276,6 +276,7 @@
  -webkit-transform: scale(1.08);
  -moz-transform: scale(1.08);
  -o-transform: scale(1.08);
+  transform: scale(1.08);
 }
 .news-list .follow {
   position: relative;
