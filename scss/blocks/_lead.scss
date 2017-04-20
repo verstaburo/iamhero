@@ -107,6 +107,25 @@
         background-color: $additionalColorBlue;
       }
 
+      @media (min-width: 1921px) {
+        padding-right: 260px;
+        padding-left: 0;
+      }
+
+      & .lead__text {
+        @media (min-width: 1921px) {
+          margin-left: auto;
+          width: 518px;
+        }
+      }
+
+      & .lead__btn {
+        @media (min-width: 1921px) {
+          margin-right: 337px;
+          margin-left: auto;
+        }
+      }
+
       & .lead__text::before {
         left: 4px;
         background-color: $additionalColorBlue;
@@ -150,6 +169,10 @@
         width: calc(50% + 130px);
         padding-right: calc(13.5% + 130px);
 
+        @media (min-width: 1921px) {
+          padding-right: calc(260px + 130px);
+        }
+
         @media #{$desktop2} {
           padding-right: calc(5% + 130px);
         }
@@ -172,7 +195,7 @@
 
       &.js-hero-hover-none {
         width: calc(50% - 130px);
-        padding-right: calc(13.5% - 130px);
+        padding-right: calc(260px - 130px);
 
         @media #{$desktop2} {
           padding-right: calc(5% - 130px);
@@ -198,6 +221,11 @@
     &_employer {
       padding-left: 190px;
 
+      @media (min-width: 1921px) {
+        padding-left: 190px;
+        padding-right: 0;
+      }
+
       &::before {
         background-image: linear-gradient(to top, $additionalColorGreen 0, transparent 526px);
 
@@ -208,6 +236,13 @@
 
       &::after {
         background-color: $additionalColorGreen;
+      }
+
+      & .lead__text {
+        @media (min-width: 1921px) {
+          margin-right: auto;
+          width: 510px;
+        }
       }
 
       & .lead__text::before {
