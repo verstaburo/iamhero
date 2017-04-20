@@ -44,7 +44,7 @@
     }
 
     & .text-block__title_mainpage {
-      padding-left: 34px;
+      padding-left: 20px;
       padding-right: 100px;
 
       @media #{$desktop2} {
@@ -54,8 +54,8 @@
 
     & .text-block__content {
       box-sizing: border-box;
-      padding-left: 10px;
-      padding-right: 100px;
+      padding-left: 4px;
+      padding-right: 95px;
 
       @media #{$desktop2} {
         padding: 0;
@@ -143,7 +143,7 @@
 
     & .communication__text-top {
       padding-top: 198px;
-      padding-left: 172px;
+      padding-left: 102px;
       padding-right: 146px;
       margin-bottom: 12px;
 
@@ -168,8 +168,21 @@
       }
     }
 
+    & .communication__text-bottom {
+      padding-right: 130px;
+
+      @media #{$desktop2} {
+        padding-right: 0;
+      }
+    }
+
     & .communication__images {
       margin-bottom: 84px;
+      margin-left: -86px;
+
+      @media #{$desktop2} {
+        margin-left: 0;
+      }
 
       @media #{$tablet} {
         margin-bottom: 64px;

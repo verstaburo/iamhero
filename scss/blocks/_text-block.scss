@@ -5,7 +5,7 @@
     text-align: left;
 
     & .text-block__title_mainpage {
-      padding-right: 50px;
+      padding-right: 60px;
 
       @media #{$desktop2} {
         padding-right: 0;
@@ -64,6 +64,7 @@
     &_mainpage {
       margin-bottom: 70px;
       font-size: $titleSizeH1;
+      letter-spacing: -2.7px;
 
       @media #{$mobile} {
         margin-bottom: 35px;

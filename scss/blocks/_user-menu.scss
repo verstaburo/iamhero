@@ -94,7 +94,7 @@
     @include letter-spacing($menuTextSize);
 
     display: inline-block;
-    padding: 12px 10px 16px;
+    padding: 10px 10px 18px;
     font-family: $mainFontFamily;
     font-size: $menuTextSize;
     font-weight: 300;
@@ -111,7 +111,7 @@
     @include letter-spacing($menuTextSize);
 
     position: relative;
-    padding: 12px 34px 16px 22px;
+    padding: 10px 34px 18px 22px;
     min-width: 252px;
     width: 252px;
     font-family: $mainFontFamily;

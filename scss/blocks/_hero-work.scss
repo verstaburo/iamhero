@@ -56,6 +56,12 @@
     }
 
     & .text-block__title_mainpage {
+      padding-right: 50px;
+
+      @media #{$desktop2} {
+        padding-right: 0;
+      }
+
       @media #{$tablet} {
         margin-bottom: 48px;
       }

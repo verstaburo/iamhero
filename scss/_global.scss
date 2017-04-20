@@ -226,9 +226,10 @@ h5 {
 
 // Стили заголовков (удалить лишнее)
 h1 {
-  @include letter-spacing($titleSizeH1);
+  /*@include letter-spacing($titleSizeH1);*/
 
   font-size: $titleSizeH1;
+  letter-spacing: -2.7px;
 
   @media #{$mobile} {
     @include letter-spacing($titleSizeH1/2);
