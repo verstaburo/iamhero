@@ -1,6 +1,10 @@
 .page-footer {
   background-color: $bgFooterMenuColor;
 
+  @media #{$tablet} {
+    background-color: #fff;
+  }
+
   &__container {
     box-sizing: border-box;
     display: flex;

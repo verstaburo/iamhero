@@ -145,7 +145,7 @@
           }
         }
       }
-      
+
       &.js-hero-hover-active {
         width: calc(50% + 130px);
         padding-right: calc(13.5% + 130px);
@@ -244,7 +244,7 @@
           }
         }
       }
-      
+
       &.js-employer-hover-active {
         width: calc(50% + 130px);
         padding-left: calc(190px + 130px);
@@ -268,7 +268,7 @@
           min-height: 438px;
         }
       }
-        
+
       &.js-employer-hover-none {
         width: calc(50% - 130px);
         padding-left: calc(190px - 130px);
@@ -453,7 +453,7 @@
 
   &__logo {
     position: absolute;
-    top: 294px;
+    top: 214px;
     left: 50%;
     transform: translate(-50%, 0);
     z-index: 10;

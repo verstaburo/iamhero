@@ -8,6 +8,12 @@
     z-index: 100;
   }
 
+  .news-detail .news-category {
+    @media #{$tablet} {
+      margin-left: 10px;
+    }
+  }
+
    &.activated {
     @media #{$tablet} {
       border-color: $additionalColorGreen;
