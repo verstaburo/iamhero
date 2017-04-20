@@ -159,12 +159,15 @@
       }
 
       @media #{$tablet} {
-        padding-top: 58px;
+        padding-top: 57px;
         margin-bottom: 12px;
       }
 
       @media #{$mobile} {
         margin-bottom: 6px;
+        padding-left: 9px;
+        padding-right: 14px;
+        line-height: 1.2em;
       }
     }
 
@@ -173,6 +176,15 @@
 
       @media #{$desktop2} {
         padding-right: 0;
+      }
+
+      @media #{$mobile} {
+        padding-left: 40px;
+        padding-right: 43px;
+
+        p {
+          line-height: 1.2em;
+        }
       }
     }
 

@@ -33,7 +33,8 @@
 
     @media #{$mobile} {
       width: 18px;
-      height: 14px;
+      height: 18px;
+      margin-top: -4px;
     }
   }
 
@@ -66,25 +67,25 @@
 
     &::before {
       top: -12px;
-      
+
       @media #{$tablet} {
         top: -10px;
       }
-      
+
       @media #{$mobile} {
-        top: -4px;
+        top: -6px;
       }
     }
 
     &::after {
       bottom: -12px;
-      
+
       @media #{$tablet} {
         bottom: -10px;
       }
-      
+
       @media #{$mobile} {
-        bottom: -4px;
+        bottom: -6px;
       }
     }
 
@@ -164,11 +165,11 @@
       width: 100%;
       margin-right: 0;
     }
-    
+
     &.hidden {
       display: none;
     }
-    
+
     &.visible {
       display: inline-block;
     }
