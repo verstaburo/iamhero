@@ -35,6 +35,7 @@
       @media #{$mobile} {
         padding: 0 30px;
         margin-bottom: 10px;
+        line-height: 1.2em;
       }
     }
   }
@@ -58,7 +59,7 @@
 
   ::-webkit-input-placeholder,
   :-ms-input-placeholder,
-  ::-ms-input-placeholder,  
+  ::-ms-input-placeholder,
   ::placeholder {
     letter-spacing: inherit;
     font-family: inherit;
@@ -212,7 +213,7 @@
       input {
         width: 100%;
         min-height: 50px;
-        
+
         @media #{$mobile} {
           min-height: 38px;
         }

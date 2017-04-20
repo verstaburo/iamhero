@@ -36,6 +36,10 @@
         padding-left: 0;
         padding-right: 0;
       }
+
+      @media #{$mobile} {
+        letter-spacing: -1.4px;
+      }
     }
 
     .text-block__content {
@@ -43,6 +47,11 @@
 
       @media #{$desktop2} {
         padding-left: 0;
+      }
+
+      @media #{$mobile} {
+        line-height: 1.2em;
+        padding: 0 23px 0 22px;
       }
     }
   }
@@ -158,10 +167,6 @@
       @media #{$mobile} {
         margin-bottom: 0px;
         padding: 0 23px 0 22px;
-
-        p {
-          line-height: 1.2em;
-        }
       }
 
       .text-block__title_mainpage {
