@@ -110,6 +110,10 @@
   margin-top: 46px;
   width: 100%;
   box-sizing: border-box;
+
+  @media #{$tablet} {
+    display: none;
+  }
 }
 .content .bread_crumbs li {
   display: inline;
@@ -294,7 +298,7 @@
   .news-detail .content .text_page {
     paddig-left: 20px;
     padding-right: 20px;
-    margin-top: 10px;
+    margin-top: 30px;
   }
   .news-detail .content .text-bold {
     margin-top: 32px;
@@ -387,11 +391,10 @@
     margin: 0;
     width: 320px;
   }
-  .content .bread_crumbs {
-    display: none;
-  }
+
   .news-detail .content .text_page {
     margin: 8px 0;
+    margin-top: 30px;
     padding-left: 32px;
     padding-right: 32px;
   }
