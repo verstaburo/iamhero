@@ -44,10 +44,9 @@
     }
 
     @media #{$mobile} {
-      @include letter-spacing($textSizeMobileBig);
-
       font-size: $textSizeMobileBig;
-      padding: 10px 14px;
+      letter-spacing: -1.3px;
+      padding: 10px 13px;
     }
 
     .activated & {
