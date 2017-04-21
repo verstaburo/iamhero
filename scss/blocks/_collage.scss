@@ -24,6 +24,10 @@
     height: 1753px;
     z-index: -1;
     overflow: hidden;
+
+    @media (min-width: 1921px) {
+      overflow: visible;
+    }
   }
 
   &__img {
@@ -32,8 +36,6 @@
     &_resume1 {
       top: 0;
       left: 0;
-      /*animation: fall 1.5s ease-in-out 1;
-      animation-delay: 0s;*/
       width: 1210px;
       height: 668px;
 
@@ -145,13 +147,14 @@
 
       img {
         position: absolute;
-        width: 1920px;
+        width: 2636px;
         height: 1753px;
         top: 0;
-        left: 0;
+        left: -287px;
 
         @media #{$mobile} {
-          width: 960px;
+          left: -144px;
+          width: 1318px;
           height: 876px;
         }
       }
@@ -161,19 +164,19 @@
   &__line {
     position: relative;
     position: absolute;
-    top: 74px;
-    left: 0;
+    top: 0px;
+    left: 109px;
     width: 550px;
     height: 2600px;
     transform: skewX(-55.9deg);
 
     @media #{$tablet} {
-      left: -128px;
+      left: -19px;
     }
 
     @media #{$mobile} {
-      top: 37px;
-      left: -64px;
+      top: 0;
+      left: -12px;
       width: 275px;
       height: 1300px;
     }
@@ -205,22 +208,22 @@
     }
 
     &_hero.js-line-active::before {
-      height: 714px;
+      height: 788px;
 
       @media #{$mobile} {
-        height: 357px;
+        height: 394px;
       }
     }
 
 
     &_hero::after {
-      top: 910px;
+      top: 984px;
       height: 0;
       left: 0px;
       transition: height 1.25s ease-in-out;
 
       @media #{$mobile} {
-        top: 455px;
+        top: 492px;
       }
     }
 
@@ -238,13 +241,13 @@
     }
 
     &_superhero::before {
-      top: 868px;
+      top: 940px;
       right: 0;
       height: 0;
       transition: height 1.25s ease-in-out;
 
       @media #{$mobile} {
-        top: 434px;
+        top: 471px;
       }
     }
 
@@ -257,13 +260,13 @@
     }
 
     &_superhero::after {
-      top: 1224px;
+      top: 1296px;
       right: 0;
       height: 0;
       transition: height 1.25s ease-in-out;
 
       @media #{$mobile} {
-        top: 612px;
+        top: 649px;
       }
     }
 
