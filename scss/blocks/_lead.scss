@@ -6,14 +6,13 @@
   align-items: stretch;
   box-sizing: border-box;
   width: 100%;
-  //max-width: 1920px;
   margin: 0 auto;
-  min-height: 1058px;
+  height: 100vh; //1058px
   overflow: hidden;
 
   @media #{$tablet} {
     flex-direction: column;
-    min-height: 0;
+    height: auto;
   }
 
   @media #{$mobile} {
@@ -23,32 +22,30 @@
     position: relative;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center/*space-between*/;
     align-items: flex-start;
     box-sizing: border-box;
-    padding: 0 13.5% 0 182px;
+    padding: 0 9.5%/*0 13.5% 0 182px*/;
     width: 50%;
-    min-height: 1058px;
+    //min-height: 1058px;
     transition: height 1.25s ease-in-out, min-height 1.25s ease-in-out, max-height 1.25s ease-in-out, width 1.25s ease-in-out, opacity 1.25s ease-in-out, padding 1.25s ease-in-out;
 
     @media #{$desktop2} {
-      padding-right: 5%;
+      padding-right: 9.5%;
     }
 
     @media #{$desktop} {
-      padding-left: 130px;
+      padding-left: 9.5px;
     }
 
     @media #{$tablet2} {
-      padding: 0 10%;
-      min-height: 876px;
+      padding: 0 9.5%;
+      //min-height: 876px;
     }
 
     @media #{$tablet} {
+      overflow: hidden;
       width: 100%;
-    }
-
-    @media #{$tablet} {
       min-height: 264px;
       height: 264px;
     }
@@ -110,26 +107,26 @@
       }
 
       @media (min-width: 1921px) {
-        padding-right: 260px;
-        padding-left: 0;
+        /*padding-right: 260px;
+        padding-left: 0;*/
       }
 
       & .lead__text {
-        @media (min-width: 1921px) {
+        /*@media (min-width: 1921px) {
           margin-left: auto;
           width: 518px;
-        }
+        }*/
       }
 
       & .lead__btn {
-        @media (min-width: 1921px) {
+        /*@media (min-width: 1921px) {
           margin-right: 337px;
           margin-left: auto;
-        }
+        }*/
       }
 
       & .lead__text::before {
-        left: 4px;
+        left: 0;
         background-color: $additionalColorBlue;
 
         @media #{$tablet} {
@@ -150,7 +147,7 @@
         @media #{$tablet} {
           height: 872px;
           min-height: 872px;
-          padding-right: 10%;
+          padding-right: 9.5%;
           width: 100%;
         }
 
@@ -171,25 +168,25 @@
 
       &.js-hero-hover-active {
         width: calc(50% + 130px);
-        padding-right: calc(13.5% + 130px);
+        padding-right: calc(9.5% + 130px);
 
         @media (min-width: 1921px) {
-          padding-right: calc(260px + 130px);
+          padding-right: calc(9.5px + 130px);
         }
 
         @media #{$desktop2} {
-          padding-right: calc(5% + 130px);
+          padding-right: calc(9.5% + 130px);
         }
 
         @media #{$tablet2} {
           width: calc(50% + 102px);
-          padding-right: calc(10% + 102px);
+          padding-right: calc(9.5% + 102px);
         }
 
         @media #{$tablet} {
           height: 872px;
           min-height: 872px;
-          padding-right: 10%;
+          padding-right: 9.5%;
           width: 100%;
         }
 
@@ -201,20 +198,20 @@
 
       &.js-hero-hover-none {
         width: calc(50% - 130px);
-        padding-right: calc(260px - 130px);
+        padding-right: calc(9.5% - 130px);
 
         @media #{$desktop2} {
-          padding-right: calc(5% - 130px);
+          padding-right: calc(9.5% - 130px);
         }
 
         @media #{$tablet2} {
           width: calc(50% - 102px);
-          padding-right: calc(10% - 102px);
+          padding-right: calc(9.5% - 102px);
         }
 
         @media #{$tablet} {
           width: 100%;
-          padding-right: 10%;
+          padding-right: 9.5%;
           min-height: 264px;
         }
 
@@ -225,12 +222,12 @@
     }
 
     &_employer {
-      padding-left: 190px;
+      //padding-left: 190px;
 
-      @media (min-width: 1921px) {
-        padding-left: 190px;
+      /*@media (min-width: 1921px) {
+        padding-left: 9.5%;
         padding-right: 0;
-      }
+      }*/
 
       &::before {
         background-image: linear-gradient(to top, $additionalColorGreen 0, transparent 526px);
@@ -245,10 +242,10 @@
       }
 
       & .lead__text {
-        @media (min-width: 1921px) {
+        /*@media (min-width: 1921px) {
           margin-right: auto;
           width: 510px;
-        }
+        }*/
       }
 
       & .lead__text::before {
@@ -270,7 +267,7 @@
           height: 872px;
           min-height: 872px;
           width: 100%;
-          padding-left: 10%;
+          padding-left: 9.5%;
         }
 
         @media #{$mobile} {
@@ -290,22 +287,22 @@
 
       &.js-employer-hover-active {
         width: calc(50% + 130px);
-        padding-left: calc(190px + 130px);
+        padding-left: calc(9.5% + 130px);
 
         @media #{$desktop} {
-          padding-left: calc(130px + 130px);
+          padding-left: calc(9.5% + 130px);
         }
 
         @media #{$tablet2} {
           width: calc(50% + 102px);
-          padding-left: calc(10% + 102px);
+          padding-left: calc(9.5% + 102px);
         }
 
         @media #{$tablet} {
           height: 872px;
           min-height: 872px;
           width: 100%;
-          padding-left: 10%;
+          padding-left: 9.5%;
         }
 
         @media #{$mobile} {
@@ -316,20 +313,20 @@
 
       &.js-employer-hover-none {
         width: calc(50% - 130px);
-        padding-left: calc(190px - 130px);
+        padding-left: calc(9.5% - 130px);
 
         @media #{$desktop} {
-          padding-left: calc(130px - 130px);
+          padding-left: calc(9.5% - 130px);
         }
 
         @media #{$tablet2} {
           width: calc(50% - 102px);
-          padding-left: calc(10% - 102px);
+          padding-left: calc(9.5% - 102px);
         }
 
         @media #{$tablet} {
           width: 100%;
-          padding-left: 10%;
+          padding-left: 9.5%;
           min-height: 264px;
         }
 
@@ -343,11 +340,12 @@
   &__btn {
     position: relative;
     margin-left: 5px;
-    margin-bottom: auto;
+    //margin-bottom: auto;
+    align-self: flex-start;
     visibility: hidden;
     opacity: 0;
     transform: translateY(200px);
-    transition: transform 1s ease-in-out, opacity 1s ease-in-out;
+    transition: transform 1s ease-in-out, opacity 1s ease-in-out, background 0.25s ease-in-out, color 0.25s ease-in-out;
     z-index: 5;
 
     @media #{$tablet} {
@@ -395,29 +393,26 @@
   &__bg-img {
     position: relative;
     width: 100%;
-    height: 100%;
+    height: 100vh;
     overflow: hidden;
+
+    @media #{$tablet} {
+      height: 100%;
+      min-height: 100%;
+    }
 
     img {
       position: absolute;
       top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
       min-width: 100%;
       min-height: 100%;
       width: 0;
+      margin: auto;
       object-fit: cover;
       z-index: 2;
-    }
-
-    &_hero {
-      img {
-        left: 0;
-      }
-    }
-
-    &_employer {
-      img {
-        right: 0;
-      }
     }
 
     &::before {
@@ -435,7 +430,7 @@
   &__text {
     position: relative;
     margin-bottom: 42px;
-    padding-top: 484px;
+    //padding-top: 484px;
     z-index: 4;
     transition: padding 1.25s ease-in-out;
 
@@ -445,29 +440,30 @@
 
     @media #{$tablet} {
       margin-bottom: 12px;
-      padding-top: 88px;
+      //padding-top: 88px;
     }
 
     @media #{$mobile} {
-      padding-top: 44px;
+      //padding-top: 44px;
     }
 
     &::before {
       position: absolute;
       content: '';
-      top: 0;
+      bottom: calc(100% + 14px);
       left: 0;
       width: 12px;
-      height: 470px;
+      height: 200%/*470px*/;
       transition: height 1.25s ease-in-out;
 
       @media #{$tablet} {
-        height: 72px;
+//        height: 72px;
       }
 
       @media #{$mobile} {
         width: 6px;
-        height: 36px;
+        bottom: calc(100% + 8px);
+//        height: 36px;
       }
     }
 
@@ -478,20 +474,20 @@
     .lead__item_hero:hover &,
     .lead__item_employer:hover & {
       @media #{$tablet} {
-        padding-top: 338px;
+        //padding-top: 338px;
       }
 
       @media #{$mobile} {
-        padding-top: 169px;
+        //padding-top: 169px;
       }
 
       &::before {
         @media #{$tablet} {
-          height: 324px;
+          //height: 324px;
         }
 
         @media #{$mobile} {
-          height: 160px;
+          //height: 160px;
         }
       }
     }
