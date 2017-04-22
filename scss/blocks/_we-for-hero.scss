@@ -1,26 +1,40 @@
 .we-for-hero {
-  min-height: 956px;
   overflow: hidden;
 
-  @media #{$tablet} {
+/*  @media #{$tablet} {
     min-height: 1036px;
   }
 
   @media #{$mobile} {
     min-height: 518px;
-  }
-
-  @media #{$mobile} {
-    min-height: 518px;
-  }
+  }*/
 
   &__container {
     position: relative;
+    box-sizing: border-box;
+    padding-top: 146px;
+    padding-bottom: 98px;
+
+    @media #{$desktop} {
+      padding-top: 102px;
+      padding-bottom: 69px;
+    }
+
+    @media #{$tablet} {
+      padding-top: 264px;
+      padding-bottom: 264px;
+    }
+
+    @media #{$mobile} {
+      padding-top: 132px;
+      padding-bottom: 132px;
+    }
   }
 
   &__text {
-    padding-top: 146px;
-    padding-right: 260px;
+    box-sizing: border-box;
+    padding-left: 43px;
+    padding-right: 250px;
     width: 50%;
     z-index: 2;
 
@@ -41,15 +55,13 @@
 
     @media #{$tablet} {
       width: 100%;
-      padding-top: 264px;
       padding-left: 28px;
-      padding-right: 32px;
+      padding-right: 28px;
     }
 
     @media #{$mobile} {
-      padding-top: 132px;
       padding-left: 14px;
-      padding-right: 16px;
+      padding-right: 14px;
     }
 
     p {
