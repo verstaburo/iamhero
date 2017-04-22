@@ -48,65 +48,20 @@
 }
 
 .about-slogan__bg {
-	display: flex;
-	justify-content: center;
-	position: absolute;
-	top: -8%;
-	left: 0;
-	width: 100%;
-	z-index: -2;
-
 	&::before {
-		content: "";
+		content: '';
 		position: absolute;
 		top: 0;
 		left: 0;
-		width: 200%;
-		height: 110%;
-		background-color: rgba(0,0,0,.19);
-		z-index: 5;
-	}
-
-	& img {
-		z-index: 1;
-
-		@media #{$tablet} {
-			width: auto;
-			height: 160%;
-		}
-
-		@media #{$mobile} {
-			height: 125%;
-		}
-	}
-
-	@media #{$tablet} {
-		top: 0;
 		width: 100%;
 		height: 100%;
-	}
+		background-color: rgba(0,0,0,.19);
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.3) 45.3%, rgba(0, 0, 0, 0.19) 47.3%, rgba(0, 0, 0, 0.19) 100%);
+		z-index: 2;
 
-	&_blured {
-		z-index: -1;
-
-		&::before {
-			width: 50%;
-			background-color: rgba(0,0,0,.3);
-
-			@media #{$tablet} {
-				width: 100%;
-			}
-		}
-
-		& img {
-			width: 200%;
-			filter: blur(15px);
-			filter: url(#about-slogan__blur-half);
-			filter:progid:DXImageTransform.Microsoft.Blur(PixelRadius='15');
-
-			@media #{$tablet} {
-				filter: url(#about-slogan__blur-full);
-			}
-		}
+    @media #{$tablet} {
+      background-color: rgba(0, 0, 0, 0.37);
+      background-image: none;
+    }
 	}
 }

@@ -29,15 +29,15 @@
 
 .about-partners__logos {
 	display: flex;
-	align-items: center;
-	justify-content: flex-start;
+  flex-direction: row;
+	align-items: flex-start;
+	justify-content: center;
+  flex-wrap: wrap;
 
-	@media #{$desktop2} {
-		flex-flow: row wrap;
-	}
 
 	& .about-partners__item {
-		width: 12%;
+    margin-right: 0 ;
+		/*width: 12%;
 		margin-right: 6%;
 
 		@media #{$desktop2} {
@@ -61,6 +61,6 @@
 
 		& img {
 			width: 100%;
-		}
+		}*/
 	}
 }

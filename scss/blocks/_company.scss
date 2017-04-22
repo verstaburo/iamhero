@@ -3,16 +3,16 @@
 
   &_linkedin {
     width: 241px;
-    height: 62px;    
-    
+    height: 62px;
+
     @media #{$mobile} {
       width: 120.5px;
       height: 31px;
     }
-    
+
     img {
       width: 241px;
-      height: 62px;    
+      height: 62px;
 
       @media #{$mobile} {
         width: 120.5px;
@@ -25,13 +25,13 @@
     width: 214px;
     height: 85px;
     transform: translate(0, -30px);
-    
+
     @media #{$mobile} {
       width: 107px;
       height: 42.5px;
       transform: translate(0);
     }
-    
+
     img {
       width: 214px;
       height: 85px;
@@ -39,6 +39,126 @@
       @media #{$mobile} {
         width: 107px;
         height: 42.5px;
+      }
+    }
+  }
+
+  &_audi {
+    width: 181px;
+    height: 101px;
+
+    @media #{$mobile} {
+      width: 92px;
+      height: 52px;
+    }
+
+    img {
+      width: 181px;
+      height: 101px;
+
+      @media #{$mobile} {
+        width: 92px;
+        height: 52px;
+      }
+    }
+  }
+
+  &_airbnb {
+    width: 200px;
+    height: 62px;
+
+    @media #{$mobile} {
+      width: 102px;
+      height: 32px;
+    }
+
+    img {
+      width: 200px;
+      height: 62px;
+
+      @media #{$mobile} {
+        width: 102px;
+        height: 32px;
+      }
+    }
+  }
+
+  &_paypal {
+    width: 248px;
+    height: 60px;
+
+    @media #{$mobile} {
+      width: 126px;
+      height: 31px;
+    }
+
+    img {
+      width: 248px;
+      height: 60px;
+
+      @media #{$mobile} {
+        width: 126px;
+        height: 31px;
+      }
+    }
+  }
+
+  &_fox {
+    width: 136px;
+    height: 59px;
+
+    @media #{$mobile} {
+      width: 69px;
+      height: 30px;
+    }
+
+    img {
+      width: 136px;
+      height: 59px;
+
+      @media #{$mobile} {
+        width: 69px;
+        height: 30px;
+      }
+    }
+  }
+
+  &_soundcloud {
+    width: 149px;
+    height: 84px;
+
+    @media #{$mobile} {
+      width: 76px;
+      height: 43px;
+    }
+
+    img {
+      width: 149px;
+      height: 84px;
+
+      @media #{$mobile} {
+        width: 76px;
+        height: 43px;
+      }
+    }
+  }
+
+  &_facebook {
+    width: 193px;
+    height: 73px;
+
+    @media #{$mobile} {
+      width: 97px;
+      height: 37px;
+    }
+
+    img {
+      width: 193px;
+      height: 73px;
+
+      @media #{$mobile} {
+        width: 97px;
+        height: 37px;
       }
     }
   }
