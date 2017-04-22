@@ -1,7 +1,7 @@
 .makeresume-options {
   &__container {
     padding-bottom: 69px;
-    
+
     @media #{$mobile} {
       padding-left: 12px;
       padding-bottom: 10px
@@ -10,9 +10,8 @@
 
   &__text {
     .text-block__item {
-      @include letter-spacing($textSize);
-
       margin-bottom: 37px;
+      letter-spacing: -0.04em;
 
       @media #{$mobile} {
         padding-left: 24px;
@@ -20,6 +19,7 @@
 
       &::before {
         left: 4px;
+        letter-spacing: -0.04em;
         font-size: 30px;
 
         @media #{$mobile} {

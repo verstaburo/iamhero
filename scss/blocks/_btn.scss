@@ -1,6 +1,4 @@
 .btn {
-  @include letter-spacing($btnTextSize);
-
   box-sizing: border-box;
   padding-top: 10px;
   padding-left: 28px;
@@ -8,6 +6,7 @@
   padding-bottom: 10px;
   font-family: $mainFontFamily;
   font-size: $btnTextSize;
+  letter-spacing: -0.04em;
   line-height: normal;
   font-weight: 700;
   color: $mainFontColorDark;
@@ -90,14 +89,11 @@
   }
 
   &_big {
-    @include letter-spacing($btnBigTextSize);
-
     font-size: $btnBigTextSize;
+    letter-spacing: -0.04em;
     border-radius: 50px;
 
     @media #{$mobile} {
-      @include letter-spacing($btnBigTextSize/2);
-
       font-size: $btnBigTextSize/2;
     }
   }

@@ -12,11 +12,10 @@
   }
 
   &__text {
-    @include letter-spacing($textSizeBig);
-
     width: 50%;
     text-align: right;
     font-size: $textSizeBig;
+    letter-spacing: -0.04em;
     font-weight: 100;
     line-height: 1.2em;
     color: $mainFontColorDark;
@@ -36,12 +35,11 @@
   }
 
   &__star {
-    @include letter-spacing($noteStarSize);
-
     margin-right: 14px;
     text-align: right;
     font-size: $noteStarSize;
     font-weight: 100;
+    letter-spacing: -0.04em;
     line-height: inherit;
     color: $additionalColorGreen;
     vertical-align: middle;
@@ -51,8 +49,7 @@
     }
 
     @media #{$mobile} {
-      @include letter-spacing($textSizeBig);
-
+      letter-spacing: -0.04em;
       margin-right: 0;
       font-size: $textSizeBig;
     }

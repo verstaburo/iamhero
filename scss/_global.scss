@@ -14,17 +14,17 @@ input[type="file"] > input[type="button"]::-moz-focus-inner {
 
 // Цвет выделения текста
 ::selection {
-  background: blue;
+  background: $additionalColorGreen;
   color: white;
 }
 
 ::-moz-selection {
-  background: blue;
+  background: $additionalColorGreen;
   color: white;
 }
 
 ::-webkit-selection {
-  background: blue;
+  background: $additionalColorGreen;
   color: white;
 }
 
@@ -142,12 +142,13 @@ html {
 }
 
 body {
-  min-width: 320px;
+  min-width: 300px;
   width: 100%;
   min-height: 100%;
   font-size: 0;
   font-family: $mainFontFamily;
   color: $mainFontColorDark;
+  letter-spacing: -0.04em;
   background-color: #fff;
 }
 
@@ -161,11 +162,8 @@ footer {
 .container {
   width: 1640px;
   margin: 0 auto;
-  padding-left: 43px;
 
   @media #{$desktop2} {
-    padding-left: 0;
-    padding-right: 0;
     width: 1340px;
   }
 
@@ -178,11 +176,11 @@ footer {
   }
 
   @media #{$tablet} {
-    width: 600px;
+    width: 80%;
   }
 
   @media #{$mobile} {
-   width: 290px;
+   width: 90.6%;
   }
 }
 
@@ -210,6 +208,7 @@ span {
   font-style: inherit;
   font-family: inherit;
   font-weight: inherit;
+  letter-spacing: inherit;
 }
 
 // Общие стили для заголовков (если есть)
@@ -226,56 +225,58 @@ h5 {
 
 // Стили заголовков (удалить лишнее)
 h1 {
-  /*@include letter-spacing($titleSizeH1);*/
-
   font-size: $titleSizeH1;
-  letter-spacing: -2.7px;
+  letter-spacing: -0.04em;
+
+  @media #{$desktop} {
+    font-size: $titleSizeH1*0.7;
+  }
 
   @media #{$mobile} {
-    @include letter-spacing($titleSizeH1/2);
-
     font-size: $titleSizeH1/2;
   }
 }
 
 h2 {
-  @include letter-spacing($titleSizeH2);
-
   font-size: $titleSizeH2;
+  letter-spacing: -0.04em;
+
+  @media #{$desktop} {
+    font-size: $titleSizeH2*0.7;
+  }
 
   @media #{$mobile} {
-    @include letter-spacing($titleSizeH2/2);
-
     font-size: $titleSizeH2/2;
   }
 }
 
 h3 {
-  @include letter-spacing($titleSizeH3);
-
   font-size: $titleSizeH3;
+  letter-spacing: -0.04em;
+
+  @media #{$desktop} {
+    font-size: $titleSizeH3*0.7;
+  }
 }
 
 h4 {
-  @include letter-spacing($titleSizeH4);
-
   font-size: $titleSizeH4;
+  letter-spacing: -0.04em;
+
+  @media #{$desktop} {
+    font-size: $titleSizeH4*0.7;
+  }
 
   @media #{$mobile} {
-    @include letter-spacing($menuTextSize);
-
     font-size: $menuTextSize;
   }
 }
 
 h5 {
-  @include letter-spacing($titleSizeH5);
-
   font-size: $titleSizeH5;
+  letter-spacing: -0.04em;
 
   @media #{$mobile} {
-    @include letter-spacing($textSizeMobileBig);
-
     font-size: $textSizeMobileBig;
   }
 }
@@ -286,21 +287,24 @@ p {
   width: 100%;
   font-family: $mainFontFamily;
   font-size: $textSize;
+  letter-spacing: -0.04em;
   font-weight: 100;
   line-height: normal;
 }
 
 p.small {
   font-size: $textSizeSmall;
+  letter-spacing: -0.04em;
 }
 
 p.big {
   font-size: $textSizeBig;
+  letter-spacing: -0.04em;
 }
 
 p.huge {
-  @include letter-spacing($textSizeHuge);
   font-size: $textSizeHuge;
+  letter-spacing: -0.04em;
 }
 
 // Типографика //
@@ -324,11 +328,10 @@ a {
 select,
 input,
 textarea {
-  @include letter-spacing($formTextSize);
-
   padding: 12px 20px;
   margin: 0;
   font-size: $formTextSize;
+  letter-spacing: -0.04em;
   line-height: 1.2em;
   font-weight: 300;
   text-align: left;
@@ -338,8 +341,6 @@ textarea {
   display: inline-block;
 
   @media #{$mobile} {
-    @include letter-spacing($textSizeMobile);
-
     font-size: $textSizeMobile;
     padding: 10px 16px;
   }
@@ -352,6 +353,7 @@ textarea {
   display: inline-block;
   color: $mainFontColorDark;
   font-size: 20px;
+  letter-spacing: -0.04em;
   background-color: transparent;
   &::hover {
     background-color: $additionalColorGreen;

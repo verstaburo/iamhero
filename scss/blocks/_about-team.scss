@@ -12,6 +12,7 @@
 
 .about-team__title {
 	font-size: 50px;
+  letter-spacing: -0.04em;
 	margin-bottom: 64px;
 
 	@media #{$tablet} {
@@ -22,6 +23,7 @@
 
 .about-team__text {
 	font-size: 25px;
+  letter-spacing: -0.04em;
 	max-width: 40%;
 	margin-bottom: 79px;
 
@@ -83,6 +85,7 @@
 	& b {
 		font-size: 25px;
 		font-weight: 100;
+    letter-spacing: -0.04em;
 		margin-bottom: 2px;
 
 		@media #{$tablet} {
@@ -96,6 +99,7 @@
 
 	& span {
 		font-size: 17px;
+    letter-spacing: -0.04em;
 		font-weight: 500;
 		color: #98a9b3;
 

@@ -30,8 +30,6 @@
   }
 
   &__label {
-    @include letter-spacing($formTextSize);
-
     box-sizing: border-box;
     font-size: $formTextSize;
     font-weight: 500;
@@ -39,10 +37,9 @@
     color: $mainFontColorLight;
     border-bottom: 1px solid $formBorderFocus;
     transition: all 0.25s ease-in-out;
+    letter-spacing: -0.04em;
 
     @media #{$mobile} {
-      @include letter-spacing($textSizeMobile);
-
       font-size: $textSizeMobile;
     }
 

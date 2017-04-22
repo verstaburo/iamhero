@@ -64,24 +64,21 @@
     &_mainpage {
       margin-bottom: 70px;
       font-size: $titleSizeH1;
-      letter-spacing: -2.7px;
+      letter-spacing: -0.04em;
 
       @media #{$mobile} {
         margin-bottom: 35px;
         font-size: $titleSizeH1/2;
-        letter-spacing: -1.6px;
+        letter-spacing: -0.04em;
       }
     }
 
     &_h2big {
-      @include letter-spacing($titleSizeH2_big);
-
       font-size: $titleSizeH2_big;
+      letter-spacing: -0.04em;
       margin-bottom: 24px;
 
       @media #{$mobile} {
-        @include letter-spacing($titleSizeH2_big/2);
-
         font-size: $titleSizeH2_big/2;
       }
     }
@@ -92,71 +89,52 @@
   }
 
   &__content {
+    letter-spacing: -0.04em;
     font-size: $textSize;
     line-height: 1.2em;
     box-sizing: border-box;
     width: 100%;
 
     @media #{$mobile} {
-      @include letter-spacing($textSizeMobileBig);
-
       font-size: $textSizeMobileBig;
       line-height: 1.4em;
     }
 
     &_small {
-      @include letter-spacing($textSizeSmall);
-
       font-size: $textSizeSmall;
     }
 
     &_big {
-      @include letter-spacing($textSizeBig);
-
       font-size: $textSizeBig;
 
       @media #{$mobile} {
-        @include letter-spacing($textSizeMobile);
-
         font-size: $textSizeMobile;
         line-height: 1.5em;
       }
     }
 
     &_huge {
-      @include letter-spacing($textSizeHuge);
-
       font-size: $textSizeHuge;
 
       @media #{$mobile} {
-        @include letter-spacing(($textSizeHuge/2));
-
         font-size: ($textSizeHuge)/2;
       }
     }
 
     &_huger {
-      @include letter-spacing($textSizeHuger);
-
       font-size: $textSizeHuger;
       line-height: 1.2em;
 
       @media #{$mobile} {
-        @include letter-spacing(($textSizeHuger/2));
-
         font-size: ($textSizeHuger)/2;
       }
     }
 
     &_gigantic {
-      @include letter-spacing($textSizeGigantic);
-
       font-size: $textSizeGigantic;
       line-height: 1.2em;
 
       @media #{$mobile} {
-        @include letter-spacing($textSize);
-
         font-size: $textSize;
       }
 
@@ -248,16 +226,13 @@
   }
 
   &__slogan {
+    letter-spacing: -0.04em;
 
     &_big {
-      @include letter-spacing($textSizeSlogan);
-
       font-size: $textSizeSlogan;
       line-height: 1.2em;
 
       @media #{$mobile} {
-        @include letter-spacing($textSizeSlogan/2);
-
         font-size: $textSizeSlogan/2;
       }
     }

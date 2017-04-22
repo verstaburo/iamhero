@@ -82,9 +82,8 @@
       color: $mainFontColorDark;
 
       @media #{$tablet} {
-        @include letter-spacing($pricingHeaderTextMobile);
-
         font-size: $pricingHeaderTextMobile;
+        letter-spacing: -0.04em;
       }
     }
   }
@@ -126,8 +125,6 @@
   }
 
   &__cell {
-    @include letter-spacing($textSize);
-
     box-sizing: border-box;
     display: table-cell;
     padding-top: 32px;
@@ -135,12 +132,11 @@
     min-height: 70px;
     font-family: $mainFontFamily;
     font-size: $textSize;
+    letter-spacing: -0.04em;
     font-weight: 300;
     color: $mainFontColorDark;
 
     @media #{$mobile} {
-      @include letter-spacing($textSizeMobile);
-
       font-size: $textSizeMobile;
       padding-top: 20px;
       min-height: 25px;
@@ -196,13 +192,12 @@
   }
 
   &__footer {
-    @include letter-spacing($textSize);
-
     box-sizing: border-box;
     padding: 26px 42px;
     width: 100%;
     font-family: $mainFontFamily;
     font-size: $textSize;
+    letter-spacing: -0.04em;
     line-height: (45/22)*1em;
     font-weight: 700;
     color: $mainFontColorLight;
@@ -212,8 +207,6 @@
     background-position: 0 0;
 
     @media #{$mobile} {
-      @include letter-spacing(($textSizeMobile - 1));
-
       padding: 12px 9%;
       font-size: ($textSizeMobile - 1);
     }
@@ -242,8 +235,6 @@
     }
 
     @media #{$mobile} {
-      @include letter-spacing($textSizeTiny);
-
       padding: 9px 24px;
       width: 100%;
       font-size: $textSizeTiny;

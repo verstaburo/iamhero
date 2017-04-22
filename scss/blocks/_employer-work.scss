@@ -62,13 +62,12 @@
   }
 
   &__item {
-    @include letter-spacing($textSizeBiger);
-
     position: relative;
     box-sizing: border-box;
     margin-bottom: 9px;
     padding-left: 48px;
     font-size: $textSizeBiger;
+    letter-spacing: -0.04em;
 
     @media #{$tablet} {
       margin-bottom: 50px;
@@ -76,8 +75,6 @@
     }
 
     @media #{$mobile} {
-      @include letter-spacing($textSizeBiger/2);
-
       margin-bottom: 35px;
       padding-left: 44px;
       font-size: $textSizeBiger/2;

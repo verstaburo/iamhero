@@ -93,15 +93,12 @@
 
     & .text-block__title_mainpage {
       @media #{$tablet} {
-        @include letter-spacing(($titleSizeH1 - 10px));
-
+        letter-spacing: -0.04em;
         margin-bottom: 0;
         font-size: ($titleSizeH1 - 10px);
       }
 
       @media #{$mobile} {
-        @include letter-spacing(($titleSizeH1 - 10px)/2);
-
         font-size: ($titleSizeH1 - 10px)/2;
       }
     }
@@ -122,16 +119,13 @@
 
   &__btn {
     @media #{$tablet} {
-      @include letter-spacing($titleSizeH3);
-
       font-size: $titleSizeH3;
+      letter-spacing: -0.04em;
       padding: 10px 44px;
       border-radius: 50px;
     }
 
     @media #{$mobile} {
-      @include letter-spacing($titleSizeH3/2);
-
       font-size: $titleSizeH3/2;
       padding: 10px 44px;
       border-radius: 25px;

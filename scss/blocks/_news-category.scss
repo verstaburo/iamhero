@@ -25,10 +25,9 @@
   }
 
   &__field {
-    @include letter-spacing($menuTextSize);
-
     display: none;
     font-size: $menuTextSize;
+    letter-spacing: -0.04em;
     font-weight: 300;
     color: $mainFontColorDark;
     background-color: $bgColor;
@@ -45,7 +44,7 @@
 
     @media #{$mobile} {
       font-size: $textSizeMobileBig;
-      letter-spacing: -1.3px;
+      letter-spacing: -0.04em;
       padding: 10px 13px;
     }
 
@@ -117,12 +116,11 @@
   }
 
   &__item {
-    @include letter-spacing($textSizeSmaller);
-
     display: inline-block;
     box-sizing: border-box;
     margin-right: 14px;
     font-size: $textSizeSmaller;
+    letter-spacing: -0.04em;
     font-weight: 300;
     color: $mainFontColorDark;
     background-color: $bgColor;
@@ -132,8 +130,6 @@
     border-radius: 15px;
 
     @media #{$tablet} {
-      @include letter-spacing($menuTextSize);
-
       margin-right: 0;
       font-size: $menuTextSize;
       border: none;
@@ -142,8 +138,6 @@
     }
 
     @media #{$mobile} {
-      @include letter-spacing($textSizeMobileBig);
-
       font-size: $textSizeMobileBig;
     }
 

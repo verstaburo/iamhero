@@ -19,15 +19,17 @@
 
 .about-slogan__text {
 	font-size: 30px;
+  letter-spacing: -0.04em;
 
 	@media #{$tablet} {
 		font-size: 16.55px;
-	}	
+	}
 
 	&_quote {
 		margin-bottom: 79px;
-		max-width: 620px;	
+		max-width: 620px;
 		font-size: 50px;
+    letter-spacing: -0.04em;
 
 		@media #{$tablet} {
 			margin-bottom: 37px;
@@ -68,12 +70,12 @@
 	& img {
 		z-index: 1;
 
-		@media #{$tablet} {	
+		@media #{$tablet} {
 			width: auto;
 			height: 160%;
 		}
 
-		@media #{$mobile} {	
+		@media #{$mobile} {
 			height: 125%;
 		}
 	}
@@ -87,7 +89,7 @@
 	&_blured {
 		z-index: -1;
 
-		&::before {	
+		&::before {
 			width: 50%;
 			background-color: rgba(0,0,0,.3);
 
@@ -98,11 +100,11 @@
 
 		& img {
 			width: 200%;
-			filter: blur(15px); 
+			filter: blur(15px);
 			filter: url(#about-slogan__blur-half);
 			filter:progid:DXImageTransform.Microsoft.Blur(PixelRadius='15');
 
-			@media #{$tablet} {	
+			@media #{$tablet} {
 				filter: url(#about-slogan__blur-full);
 			}
 		}

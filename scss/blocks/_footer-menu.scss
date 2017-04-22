@@ -13,20 +13,18 @@
   }
 
   &__item {
-    @include letter-spacing($textSize);
-
     margin-bottom: 1px;
     font-size: $textSize;
     line-height: (51/22)*1em;
     font-weight: 300;
+    letter-spacing: -0.04em;
     text-align: left;
     color: $footerTextFontColor;
 
     @media #{$mobile} {
-      @include letter-spacing($textSizeSmall);
-
       margin-bottom: 0;
       font-size: $textSizeSmall;
+      letter-spacing: -0.04em;
     }
 
     a {

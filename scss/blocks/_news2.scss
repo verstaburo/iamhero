@@ -104,11 +104,12 @@
    bottom: 102px;
    left: 45px;
    line-height: 1.28em;
-   letter-spacing:-1.2px;
+   letter-spacing: -0.04em;
    z-index: 15;
 
    @media (max-width: 640px) {
-      font-size: 21px;
+     font-size: 21px;
+     letter-spacing: -0.04em;
     }
  }
  .news-list .images-block time {
@@ -118,10 +119,10 @@
    color: #25ffc4;
    font-weight: 100;
    font-size: 14px;
+   letter-spacing: -0.04em;
    bottom: 26px;
    left: 49px;
    line-height: 1.15em;
-   letter-spacing:-0.5px;
    z-index: 15;
    padding-left: 5px;
 
@@ -142,7 +143,7 @@
     font-weight: 100;
     font-size: 55px;
     line-height: 1.31em;
-    letter-spacing:-1.2px;
+    letter-spacing: -0.04em;
     z-index: 1;
 
     @media (max-width: 1024px) {
@@ -153,7 +154,7 @@
     @media (max-width: 640px) {
       font-size: 21px;
       line-height: 1.2em;
-      letter-spacing: -1px;
+      letter-spacing: -0.04em;
     }
   }
   .news-list .images-block_100 p {
@@ -163,7 +164,7 @@
     font-weight: 100;
     font-size: 24px;
     line-height: 1.15em;
-    letter-spacing:-0.5px;
+    letter-spacing: -0.04em;
     padding-left: 6px;
     z-index: 1;
 
@@ -176,10 +177,12 @@
   width: 200px;
   display: inline;
   font-size: 15px;
+  letter-spacing: -0.04em;
   color: #374851;
 }
 .news-list .container h1.news_page {
   font-size: 70px;
+  letter-spacing: -0.04em;
   margin-top: 11px;
   font-weight: 100;
   color: #374851;
@@ -284,11 +287,12 @@
 
   @media (max-width: 320px) {
     font-size: 15px;
+    letter-spacing: -0.04em;
   }
 }
 .follow p {
   font-size: 30px;
-  letter-spacing: -1.3px;
+  letter-spacing: -0.04em;
   font-weight: 500;
   width: auto;
   margin: 0 auto;
@@ -314,12 +318,13 @@
     padding-top: 0;
     padding-left: 32px;
     padding-right: 32px;
-    letter-spacing: -1.3px;
+    letter-spacing: -0.04em;
     margin-bottom: 18px;
   }
 
   @media (max-width: 320px) {
     font-size: 19px;
+    letter-spacing: -0.04em;
   }
 
   br {
@@ -333,6 +338,7 @@
   left: 10px;
   top: 50%;
   font-size: 35px;
+  letter-spacing: -0.04em;
   line-height: 35px;
   height: 36px;
   font-weight: 100;
@@ -342,6 +348,7 @@
   @media (max-width: 1024px) {
     left: 20px;
     font-size: 29px;
+    letter-spacing: -0.04em;
     line-height: 28px;
     height: 28px;
   }

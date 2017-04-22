@@ -1,6 +1,7 @@
 .contacts {
 	color: #374851;
 	font-size: 16px;
+  letter-spacing: -0.04em;
 	font-weight: 300;
 	display: flex;
 	flex-direction: column;
@@ -46,6 +47,7 @@
 		flex-direction: column;
 		h1 {
 			font-size: 70px;
+      letter-spacing: -0.04em;
 			line-height: .4;
 			@media #{$tablet} {
 				line-height: 1.15;
@@ -55,12 +57,12 @@
 		}
 		h3 {
 			font-size: $textSizeSmaller;
-			letter-spacing: 0;
+			letter-spacing: -0.04em;
 			margin-top: 55px;
 			@media #{$tablet} {
 				margin-top: 0;
 			}
-      
+
       @media #{$mobile} {
         font-size: 13px;
 			}
@@ -68,6 +70,7 @@
 	}
 	&__adress {
 		font-size: 22px;
+    letter-spacing: -0.04em;
 		color: #6d7f77;
 		font-weight: 100;
 		@media #{$tablet} {
@@ -92,8 +95,9 @@
 		color: #6d7f77;
 		transition: all .25s ease-in-out;
 		font-size: 17px;
+    letter-spacing: -0.04em;
 		border-bottom: 1px solid #25ffc4;
-    
+
     @media #{$mobile} {
       font-size: $textSizeMobileBig;
     }
@@ -130,16 +134,16 @@
     width: 100%;
     height: 624px;
     overflow: hidden;
-    
+
     @media #{$tablet} {
       height: 600px;
     }
-    
+
     @media #{$mobile} {
       height: 300px;
       overflow: visible;
     }
-    
+
 		img {
       position: absolute;//
       top: 0;//
@@ -179,7 +183,7 @@
 	&__feedback-container {
 		position: relative;
 		z-index: 1;
-    
+
     @media #{$mobile} {
       box-sizing: border-box;
       padding-left: 8%;

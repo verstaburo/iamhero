@@ -2,12 +2,14 @@
 	padding: 160px 0 65px 0;
 	color: $formFontColorDarkest;
 	font-size: 16px;
+  letter-spacing: -0.04em;
 
 	&__container {
 		flex-direction: column;
 	}
 	&__heading {
 		font-size: 50px;
+    letter-spacing: -0.04em;
 		font-weight: 700;
 		margin-bottom: 50px;
 		text-align: left;
@@ -18,6 +20,7 @@
 	}
 	&__description {
 		font-size: 50px;
+    letter-spacing: -0.04em;
 		font-weight: 100;
 		max-width: 75%;
 		text-align: left;
@@ -58,6 +61,7 @@
 		flex-direction: column;
 		color: $formFontColorDarkest;
 		font-size: 25px;
+    letter-spacing: -0.04em;
 		@media #{$tablet} {
 			padding: 0;
 			font-size: 16px;
@@ -106,6 +110,7 @@
 		flex-direction: column;
 		color: $formFontColorDarkest;
 		font-size: 25px;
+    letter-spacing: -0.04em;
 		padding: 30px 45px;
 		background: #fff;
 		box-shadow: 0px 1px 5px 0px rgba(96, 123, 137, 0.35);
@@ -127,6 +132,7 @@
 
 	&__r-heading {
 		font-size: 40px;
+    letter-spacing: -0.04em;
 		font-weight: 700;
 		margin-bottom: 10px;
 		@media #{$tablet} {
@@ -137,6 +143,7 @@
 	&__r-row {
 		font-weight: 300;
 		font-size: 22px;
+    letter-spacing: -0.04em;
 		padding: 25px 0;
 		@media #{$tablet} {
 			font-size: 16px;
@@ -184,6 +191,7 @@
 		background: $mainGradient;
 		background-size: cover;
 		font-size: 15px;
+    letter-spacing: -0.04em;
 		color: #fff;
 		font-weight: 300;
 		padding: 20px 40px;

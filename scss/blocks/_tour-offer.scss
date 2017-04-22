@@ -44,16 +44,14 @@
     }
 
     & .text-block__slogan_big {
-      @media #{$tablet} {
-        @include letter-spacing(($textSizeSlogan - 6px));
+      letter-spacing: -0.04em;
 
+      @media #{$tablet} {
         font-size: ($textSizeSlogan - 6px);
         line-height: 1.35em;
       }
 
       @media #{$mobile} {
-        @include letter-spacing(($textSizeSlogan - 6px)/2);
-
         font-size: ($textSizeSlogan - 6px)/2;
       }
     }

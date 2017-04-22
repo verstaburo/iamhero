@@ -3,6 +3,7 @@
 }
 .video {
 	font-size: 16px;
+  letter-spacing: -0.04em;
 
 	&__container {
 		flex-direction: column;
@@ -101,9 +102,10 @@
 		font-size: 60px;
 		font-weight: 100;
 		margin-bottom: 95px;
-		letter-spacing: -2px;
+		letter-spacing: -0.04em;
 		p {
 			font-size: 60px;
+      letter-spacing: -0.04em;
 			@media #{$tablet}{
 				font-size: 30px;
 			}
@@ -119,9 +121,10 @@
 
 	&__desc {
 		font-size: 30px;
+    letter-spacing: -0.04em;
 		p {
 			font-size: 30px;
-			letter-spacing: -1.4px;
+			letter-spacing: -0.04em;
 			font-weight: 100;
 		}
 		b {
@@ -191,12 +194,14 @@
 		h2 {
  			font-size: 50px;
 			margin-bottom: 40px;
+      letter-spacing: -0.04em;
 			@media #{$tablet}{
 				font-size: 30px;
 			}
 		}
 		p {
 			font-size: 25px;
+      letter-spacing: -0.04em;
 			margin-bottom: 25px;
 			margin-top: 50px;
 			@media #{$tablet}{

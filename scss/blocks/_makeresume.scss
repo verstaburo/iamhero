@@ -25,10 +25,9 @@
       padding-right: 40px;
 
       @media #{$mobile} {
-        @include letter-spacing($textSizeSmall + 1);
-
         padding-right: 10px;
         font-size: $textSizeSmall + 1;
+        letter-spacing: -0.04em;
         line-height: 1.23em;
       }
 

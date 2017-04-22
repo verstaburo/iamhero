@@ -9,7 +9,7 @@
 
 	@media #{$tablet} {
 		padding-top: 67px;
-		padding-bottom: 82px;		
+		padding-bottom: 82px;
 	}
 }
 
@@ -84,7 +84,7 @@
 	& img {
 		@media #{$mobile} {
 			width: 513%;
-		}		
+		}
 	}
 }
 .about-description__content-item:nth-child(5) {
@@ -96,6 +96,7 @@
 	& p {
 		max-width: 72%;
 		font-size: 50px;
+    letter-spacing: -0.04em;
 
 		@media #{$tablet} {
 			max-width: 95%;
@@ -115,6 +116,7 @@
 		display: flex;
 		justify-content: flex-end;
 		font-size: 25px;
+    letter-spacing: -0.04em;
 
 		@media #{$tablet} {
 			font-size: 15px;
@@ -151,7 +153,8 @@
 
 .about-description__text {
 	font-size: 25px;
-	
+  letter-spacing: -0.04em;
+
 	@media #{$tablet} {
 		font-size: 15px;
 	}
@@ -159,14 +162,16 @@
 	&_big {
 		font-size: 50px;
 		font-weight: 100;
+    letter-spacing: -0.04em;
 		white-space: nowrap;
 		margin-right: 4.0%;;
 
 		@media #{$tablet} {
 			display: inline-block;
 			font-size: 35px;
+      letter-spacing: -0.04em;
 			white-space: normal;
-			margin-right: 0;	
+			margin-right: 0;
 			margin-bottom: 35px;
 		}
 	}
