@@ -255,6 +255,10 @@
   margin-right: 0;
   min-width: 54px;
   min-height: 54px;
+  
+  &:hover {
+    background-color: transparent;
+  }
 
   @media (max-width: 1024px) {
     margin-bottom: 6px;
@@ -298,11 +302,15 @@
   width: auto;
   margin: 0 auto;
   padding-top: 8px;
+  border-color: transparent;
+  transition: border 0.25s ease-in-out;
 
   a {
     display: inline;
     margin-bottom: 2px;
     text-decoration: none;
+    border-color: transparent;
+    transition: all 0.25s ease-in-out;
 
     a:hover {
       text-decoration: none;
