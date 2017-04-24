@@ -22,12 +22,12 @@
 
     @media #{$tablet} {
       padding-top: 264px;
-      padding-bottom: 264px;
+      padding-bottom: 50px;
     }
 
     @media #{$mobile} {
       padding-top: 132px;
-      padding-bottom: 132px;
+      padding-bottom: 50px;
     }
   }
 
@@ -39,7 +39,7 @@
     z-index: 2;
 
     @media #{$desktop2} {
-      padding-right: 150px;
+      padding-right: 0px;
     }
 
     @media #{$desktop} {
@@ -118,7 +118,11 @@
     }
 
     @media (min-width: 1024px) and #{$desktop} {
-      transform: translate(150px, -40px);
+      transform: translate(260px, -40px);
+    }
+    
+    @media (min-width: 1380px) and (max-width:1690px) {
+      transform: translate(260px, -40px);
     }
   }
 }

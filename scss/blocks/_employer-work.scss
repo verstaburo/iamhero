@@ -1,14 +1,10 @@
 .employer-work {
-  min-height: 844px;
-
-  @media #{$tablet} {
-    min-height: 1170px;
-  }
+  padding-bottom: 70px;
 
   @media #{$mobile} {
-    min-height: 585px;
-  }
-
+      padding-bottom: 30px;
+    }
+  
   &__container {
     padding-top: 92px;
 

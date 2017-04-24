@@ -109,13 +109,6 @@
         margin-left: 0;
       }
 
-      & .footer-menu__title {
-        margin-left: -5px;
-
-        @media #{$tablet} {
-          margin-left: 0;
-        }
-      }
     }
   }
 }

@@ -5,6 +5,7 @@
   border: 3px solid $additionalColorGreen;
   border-radius: 50%;
   background-color: transparent;
+  transition: background-color .25s ease-in-out !important;
 
   @media #{$tablet} {
     width: 46px;

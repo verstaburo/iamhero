@@ -1,24 +1,19 @@
 .we-for-employer {
   box-sizing: border-box;
-  min-height: 796px;
-
-  @media #{$tablet} {
-    min-height: 606px;
-  }
-
   &__container {
     padding-top: 202px;
+    padding-bottom: 150px;
 
     @media #{$desktop} {
       padding-top: 100px;
     }
 
     @media #{$tablet} {
-      padding: 72px 16px 510px;
+      padding: 52px 16px 510px;
     }
 
     @media #{$mobile} {
-      padding-bottom: 210px;
+      padding-bottom: 270px;
     }
   }
 
@@ -58,6 +53,15 @@
   &__bg {
     top: 0;
     right: 0;
+    
+    img {
+    
+    @media #{$desktop} {
+      bottom: auto;
+      top: 0;
+    }
+      
+    }
 
     @media #{$tablet} {
       top: 100%;
