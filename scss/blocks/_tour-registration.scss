@@ -11,7 +11,13 @@
 
   &__container {
     min-height: 608px;
+    padding: 0 44px;
     padding-bottom: 50px;
+    
+    @media #{$desktop2} {
+      padding-left: 0;
+      padding-right: 0;
+    }
 
     @media #{$tablet2} {
       flex-direction: row;
@@ -65,13 +71,13 @@
   }
 
   &__companies {
-    padding-left: 8px;
+    padding-left: 18px;
     padding-bottom: 14px;
     width: 70%;
     align-self: flex-end;
 
     @media #{$desktop} {
-      padding-left: 28px;
+      padding-left: 18px;
     }
 
     @media #{$tablet2} {

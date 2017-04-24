@@ -1,35 +1,57 @@
 .tour-dashboard {
   position: relative;
-  min-height: 850px;
 
-  @media #{$desktop} {
-    min-height: 650px;
-  }
+    @media #{$desktop} {
+    }
 
-  @media #{$mobile} {
-    min-height: 1160px;
-  }
+    @media #{$tablet2} {
+      padding-bottom: 150px;
+    }
 
-  @media #{$mobile} {
-    min-height: 620px;
-  }
+    @media #{$mobile} {
+      padding-bottom: 145px;
+    }
+
 
   &__container {
     padding-top: 280px;
+    padding-bottom: 362px;
 
     @media #{$desktop} {
       padding-top: 212px;
+      padding-bottom: 290px;
+    }
+
+    @media #{$tablet2} {
+      padding-bottom: 40px;
     }
 
     @media #{$mobile} {
       padding-top: 106px;
+      padding-bottom: 20px;
     }
   }
 
   &__text {
-    width: 33%;
+    width: 48%;
+    box-sizing: border-box;
+    padding-left: 44px;
+    padding-right: 200px;
+    
+    @media #{$desktop2} {
+      padding-left: 0;
+      padding-right: 100px;
+    }
+    
+    @media #{$desktop} {
+      padding-right: 40px;
+    }
 
     @media #{$tablet2} {
+      align-self: flex-start;
+    }
+    
+    @media #{$tablet} {
       width: 100%;
     }
 
@@ -51,84 +73,139 @@
       }
     }
   }
-
+  
   &__bg {
     position: relative;
     position: absolute;
     top: 0;
-    right: 0;
-    width: 980px;
-    height: 688px;
-
-    @media #{$desktop2} {
-      width: 56%;
-    }
-
-    @media #{$tablet2} {
-      position: relative;
-      width: 75%;
-      margin-left: 25%;
-    }
-
+    left: 0;
+    width: 51%;
+    margin-left: 49%;
+    height: auto;
+    
     @media #{$tablet} {
+      position: relative;
       width: 90%;
       margin-left: 10%;
     }
-
-    @media (min-width: 510px) and #{$mobile} {
-      width: 75%;
-      margin-left: 25%;
-      height: 344px;
-    }
-
-    @media (max-width: 509px) {
+    
+    @media #{$mobile} {
       width: 95%;
       margin-left: 5%;
-      height: 344px;
     }
-
+    
     &::before {
       position: absolute;
       content: '';
-      top: 100%;
-      left: 0;
-      width: 100%;
-      height: 90px;
-      background-image: url(../images/tour_dropshadow.png);
-      background-repeat: no-repeat;
-      background-position: 50% 0;
-      background-size: contain;
-      z-index: 10;
-
-      @media #{$mobile} {
-        height: 45px;
+      top: calc(100% + 40px);
+      left: 50%;
+      transform: translate(-50%, 0);
+      width: 40%;
+      height: 2px;
+      border-radius: 50%;
+      background-color: rgba(0, 0, 0, 0.5);
+      filter: blur(5px);
+      
+      @media #{$tablet} {
+        width: 50%;
+        top: calc(100% + 10px);
+        height: 1px;
+        filter: blur(2px);
       }
     }
-
+    
     img {
-      width: 980px;
-      height: 688px;
-
-      @media #{$desktop2} {
-        position: absolute;
-        top: 0;
-        left: 0;
-        /*right: 0;
-        bottom: 0;
-        min-width: 100%;
-        height: auto;
-        width: 0;
-        margin: 0 auto;*/
-      }
-
-      @media #{$mobile} {
-        height: 640px;
-      }
-
-      @media #{$mobile} {
-        width: 490px;
-        height: 320px;
-      }
+      position: relative;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      min-width: 100%;
+      min-height: 100%;
+      width: 0;
+      margin: auto;
+      object-fit: cover;
     }
   }
+
+//  &__bg {
+//    position: relative;
+//    position: absolute;
+//    top: 0;
+//    right: 0;
+//    width: 980px;
+//    height: 688px;
+//
+//    @media #{$desktop2} {
+//      height: auto;
+//      width: 56%;
+//    }
+//
+//    @media #{$tablet2} {
+//      position: relative;
+//      width: 75%;
+//      margin-left: 25%;
+//    }
+//
+//    @media #{$tablet} {
+//      width: 90%;
+//      margin-left: 10%;
+//    }
+//
+//    @media (min-width: 510px) and #{$mobile} {
+//      width: 75%;
+//      margin-left: 25%;
+//      height: 344px;
+//    }
+//
+//    @media (max-width: 509px) {
+//      width: 95%;
+//      margin-left: 5%;
+//      height: 344px;
+//    }
+//
+//    &::before {
+//      position: absolute;
+//      content: '';
+//      top: 100%;
+//      left: 0;
+//      width: 100%;
+//      height: 90px;
+//      background-image: url(../images/tour_dropshadow.png);
+//      background-repeat: no-repeat;
+//      background-position: 50% 0;
+//      background-size: contain;
+//      z-index: 10;
+//
+//      @media #{$mobile} {
+//        height: 45px;
+//      }
+//    }
+//
+//    img {
+//      width: 980px;
+//      height: 688px;
+//
+//      @media #{$desktop2} {
+//        position: absolute;
+//        top: 0;
+//        left: 0;
+//        right: 0;
+//        bottom: 0;
+//        min-width: 100%;
+//        height: auto;
+//        width: 0;
+//        margin: 0 auto;
+//      }
+//
+//      @media #{$mobile} {
+//        height: 640px;
+//      }
+//
+//      @media #{$mobile} {
+//        width: 490px;
+//        height: 320px;
+//      }
+//    }
+//  }
 }

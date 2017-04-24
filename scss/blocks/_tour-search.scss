@@ -1,27 +1,28 @@
 .tour-search {
   position: relative;
-  min-height: 988px;
-
+  
   @media #{$desktop} {
-    min-height: 788px;
   }
 
   @media #{$tablet} {
-    min-height: 1220px;
+    padding-bottom: 100px;
   }
 
   @media #{$mobile} {
-    min-height: 660px;
+    padding-bottom: 50px;
   }
 
   &__container {
-    padding-top: 248px;
-
-    @media #{$desktop} {
+    padding-top: 252px;
+    padding-bottom: 448px;
+    
+    @media #{$desktop2} {
       padding-top: 150px;
+      padding-bottom: 282px;
     }
 
     @media #{$tablet} {
+      padding-bottom: 40px;
       padding-top: 136px;
     }
 
@@ -31,22 +32,27 @@
   }
 
   &__text {
-    width: 45%;
-    padding-left: 58px;
-    padding-right: 60px;
+    width: 48%;
+    padding-left: 128px;
+    padding-right: 52px;
 
     @media #{$desktop2} {
       padding-left: 78px;
       padding-right: 10px;
     }
-
-    @media #{$tablet2} {
-      width: 100%;
-      padding-left: 0;
+    
+    @media #{$desktop} {
+      padding-left: 60px;
       padding-right: 0;
     }
 
+    @media #{$tablet2} {
+      align-self: flex-end;
+    }
+
     @media #{$tablet} {
+      align-self: flex-start;
+      width: 100%;
       padding-left: 28px;
       padding-right: 80px;
     }
@@ -67,78 +73,132 @@
       }
     }
   }
-
+  
   &__bg {
     position: relative;
     position: absolute;
     top: 0;
     left: 0;
-    width: 938px;
-    height: 688px;
-
-    @media #{$desktop2} {
-      width: 56%;
-    }
-
-    @media #{$tablet2} {
-      position: relative;
-      width: 72%;
-      margin-right: 28%;
-    }
-
+    width: 49%;
+    margin-right: 51%;
+    height: auto;
+    
     @media #{$tablet} {
+      position: relative;
       width: 90%;
       margin-right: 10%;
     }
-
-    @media (min-width: 495px) and #{$mobile} {
-      width: 73%;
-      margin-right: 27%;
-      height: 322px;
-    }
-
-    @media (max-width: 494px) {
+    
+    @media #{$mobile} {
       width: 95%;
       margin-right: 5%;
-      height: 322px;
     }
-
-     &::before {
+    
+    &::before {
       position: absolute;
       content: '';
-      top: 100%;
-      right: 0;
-      width: 100%;
-      height: 90px;
-      background-image: url(../images/tour_dropshadow.png);
-      background-repeat: no-repeat;
-      background-position: 50% 0;
-      background-size: contain;
-      z-index: 10;
-
-      @media #{$mobile} {
-        height: 45px;
+      top: calc(100% + 40px);
+      left: 50%;
+      transform: translate(-50%, 0);
+      width: 40%;
+      height: 2px;
+      border-radius: 50%;
+      background-color: rgba(0, 0, 0, 0.5);
+      filter: blur(5px);
+      
+      @media #{$tablet} {
+        width: 50%;
+        top: calc(100% + 10px);
+        height: 1px;
+        filter: blur(2px);
       }
     }
-
+    
     img {
-      width: 938px;
-      height: 688px;
-
-      @media #{$desktop2} {
-        position: absolute;
-        top: 0;
-        right: 0;
-      }
-
-      @media #{$tablet} {
-        height: 644px;
-      }
-
-      @media #{$mobile} {
-        width: 469px;
-        height: 322px;
-      }
+      position: relative;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      min-width: 100%;
+      min-height: 100%;
+      width: 0;
+      margin: auto;
+      object-fit: cover;
     }
   }
+
+//  &__bg {
+//    position: relative;
+//    position: absolute;
+//    top: 0;
+//    left: 0;
+//    width: 938px;
+//    height: 688px;
+//
+//    @media #{$desktop2} {
+//      width: 56%;
+//    }
+//
+//    @media #{$tablet2} {
+//      position: relative;
+//      width: 72%;
+//      margin-right: 28%;
+//    }
+//
+//    @media #{$tablet} {
+//      width: 90%;
+//      margin-right: 10%;
+//    }
+//
+//    @media (min-width: 495px) and #{$mobile} {
+//      width: 73%;
+//      margin-right: 27%;
+//      height: 322px;
+//    }
+//
+//    @media (max-width: 494px) {
+//      width: 95%;
+//      margin-right: 5%;
+//      height: 322px;
+//    }
+//
+//     &::before {
+//      position: absolute;
+//      content: '';
+//      top: 100%;
+//      right: 0;
+//      width: 100%;
+//      height: 90px;
+//      background-image: url(../images/tour_dropshadow.png);
+//      background-repeat: no-repeat;
+//      background-position: 50% 0;
+//      background-size: contain;
+//      z-index: 10;
+//
+//      @media #{$mobile} {
+//        height: 45px;
+//      }
+//    }
+//
+//    img {
+//      width: 938px;
+//      height: 688px;
+//
+//      @media #{$desktop2} {
+//        position: absolute;
+//        top: 0;
+//        right: 0;
+//      }
+//
+//      @media #{$tablet} {
+//        height: 644px;
+//      }
+//
+//      @media #{$mobile} {
+//        width: 469px;
+//        height: 322px;
+//      }
+//    }
+//  }
 }

@@ -1,44 +1,57 @@
 .tour-matching {
   position: relative;
-  min-height: 774px;
 
   @media #{$tablet2} {
-    min-height: 1276px;
+//    min-height: 1276px;
   }
 
   @media #{$tablet} {
-    min-height: 1076px;
+//    min-height: 1076px;
   }
 
   @media #{$mobile} {
-    min-height: 638px;
+//    min-height: 638px;
   }
 
   &__container {
     position: relative;
     padding-top: 134px;
+    padding-bottom: 312px;
+    
+    @media #{$desktop2} {
+      padding-top: 10px;
+      padding-bottom: 150px;
+    }
 
     @media #{$tablet2} {
       padding-bottom: 90px;
-      padding-top: 168px;
+      //padding-top: 168px;
     }
 
     @media #{$mobile} {
-      padding-top: 84px;
+      //padding-top: 84px;
     }
   }
 
   &__text {
     width: 40%;
-    padding-right: 70px;
+    padding-left: 44px;
+    padding-right: 46px;
+    
+    @media #{$desktop2} {
+      padding-top: 110px;
+    }
 
     @media #{$tablet2} {
       width: 100%;
+      padding-left: 0;
       padding-right: 0;
+      padding-top: 88px;
       margin-bottom: 72px;
     }
 
     @media #{$tablet} {
+      padding-top: 84px;
       padding-left: 28px;
       padding-right: 80px;
     }

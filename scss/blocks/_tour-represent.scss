@@ -1,27 +1,21 @@
 .tour-represent {
-  min-height: 608px;
-
-  @media #{$tablet} {
-    min-height: 1022px;
-  }
-
-  @media #{$mobile} {
-    min-height: 511px;
-  }
-
   &__container {
     padding-top: 160px;
+    padding-bottom: 160px;
 
     @media #{$tablet2} {
       padding-top: 80px;
+      padding-bottom: 80px;
     }
 
     @media #{$tablet} {
       padding-top: 272px;
+      padding-bottom: 200px;
     }
 
     @media #{$mobile} {
       padding-top: 136px;
+      padding-bottom: 98px;
     }
   }
 

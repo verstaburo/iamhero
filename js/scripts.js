@@ -85,10 +85,10 @@ if(superheroAccountElem) {
 window.sr = ScrollReveal();
 
 //animation fall collage at tour.html page
-var tourCollageReveal1 = {delay: 100, distance: '-500px', easing: 'cubic-bezier(0.3, 0.5, 0.1, 1)', scale: 1, mobile: false, duration: 1000};
-var tourCollageReveal2 = {delay: 500, distance: '-500px', easing: 'cubic-bezier(0.3, 0.5, 0.1, 1)', scale: 1, mobile: false, duration: 1000};
-var tourCollageReveal3 = {delay: 1000, distance: '-500px', easing: 'cubic-bezier(0.3, 0.5, 0.1, 1)', scale: 1, mobile: false, duration: 1000};
-var tourCollageReveal4 = {delay: 1500, distance: '-500px', easing: 'cubic-bezier(0.3, 0.5, 0.1, 1)', scale: 1, mobile: false, duration: 1000};
+var tourCollageReveal1 = {delay: 100, distance: '-400px', easing: 'cubic-bezier(0.3, 0.5, 0.1, 1)', scale: 1, mobile: true, duration: 1000, viewOffset: { right: -2000, left: -500}};
+var tourCollageReveal2 = {delay: 500, distance: '-400px', easing: 'cubic-bezier(0.3, 0.5, 0.1, 1)', scale: 1, mobile: true, duration: 1000, viewOffset: { right: -2000, left: -500}};
+var tourCollageReveal3 = {delay: 1000, distance: '-400px', easing: 'cubic-bezier(0.3, 0.5, 0.1, 1)', scale: 1, mobile: true, duration: 1000, viewOffset: { right: -2000, left: -500}};
+var tourCollageReveal4 = {delay: 1500, distance: '-400px', easing: 'cubic-bezier(0.3, 0.5, 0.1, 1)', scale: 1, mobile: true, duration: 1000, viewOffset: { right: -2000, left: -500}};
 
 sr.reveal('.collage__img_resume1', tourCollageReveal1);
 sr.reveal('.collage__img_resume2', tourCollageReveal2);

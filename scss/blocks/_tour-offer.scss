@@ -1,36 +1,30 @@
 .tour-offer {
-  min-height: 710px;
 
   @media #{$tablet} {
-    min-height: 1142px;
   }
 
   @media #{$mobile} {
-    min-height: 571px;
   }
 
   &__container {
     position: relative;
     flex-wrap: wrap;
     align-content: space-between;
-    min-height: 710px;
     padding-top: 214px;
-    padding-bottom: 122px;
+    padding-bottom: 144px;
     padding-left: 40px;
 
     @media #{$tablet2} {
       justify-content: space-between !important;
       align-items: flex-start;
-      padding: 268px 32px 244px;
+      padding: 168px 32px 144px;
     }
 
     @media #{$tablet} {
-      min-height: 1142px;
       padding: 268px 32px 244px;
     }
 
     @media #{$mobile} {
-      min-height: 571px;
       padding: 134px 16px 122px;
     }
   }
@@ -38,9 +32,11 @@
   &__text {
     width: 100%;
     padding-right: 100px;
+    margin-bottom: 54px;
 
     @media #{$tablet} {
       padding-right: 0;
+      margin-bottom: 0;
     }
 
     & .text-block__slogan_big {
