@@ -1,60 +1,156 @@
-.about-donate__container {
-	padding: 0;
-	margin-bottom: 170px;
+.about-donate {
 
-	@media #{$tablet} {
-		margin-bottom: 80px;
-	}
-}
+  &__content {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 0 46px;
 
-.about-donate__title {
-	font-size: 50px;
-  letter-spacing: -0.04em;
-	margin-bottom: 43px;
+    @media #{$desktop} {
+      padding: 0 32px;
+    }
 
-	@media #{$tablet} {
-		font-size: 30px;
+    @media #{$tablet} {
+      padding: 0 14px;
+    }
+  }
+
+  &__container {
+    padding: 0;
+    margin-bottom: 170px;
+
+    @media #{$tablet} {
+      margin-bottom: 80px;
+    }
+  }
+
+  &__title {
+    font-size: 50px;
     letter-spacing: -0.04em;
-		margin-bottom: 31px;
-	}
-}
+    margin-bottom: 43px;
 
-.about-donate__text {
-	font-size: 25px;
-  letter-spacing: -0.04em;
-	margin-bottom: 67px;
+    @media #{$desktop} {
+      font-size: 35px;
+      margin-bottom: 30px;
+    }
 
-	@media #{$tablet} {
-		font-size: 15px;
-		margin-bottom: 36px;
-	}
-}
+    @media #{$tablet} {
+      font-size: 30px;
+      letter-spacing: -0.04em;
+      margin-bottom: 31px;
+    }
+  }
 
-.about-donate__pics {
-	display: flex;
-	justify-content: flex-start;
+  &__text {
+    font-size: 25px;
+    letter-spacing: -0.04em;
+    margin-bottom: 67px;
 
-	@media #{$tablet} {
-		flex-flow: column nowrap;
-		align-items: center;
-		justify-content: flex-start;
-	}
+    @media #{$desktop} {
+      font-size: 18px;
+    }
 
-	& > div {
-		width: 260px;
-		margin-right: 2.4%;
+    @media #{$tablet} {
+      font-size: 15px;
+      margin-bottom: 36px;
+    }
+  }
 
-		@media #{$tablet} {
-			width: 100%;
-			margin-right: 0;
-			margin-bottom: 68px;
-		}
+  &__services {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
 
-		& img {
-			@media #{$tablet} {
-				width: 100%;
-			}
-		}
-	}
+    @media #{$tablet} {
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+    }
+  }
+
+  &__service {
+    margin-right: 38px;
+    position: relative;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    @media #{$desktop} {
+      margin-right: 27px;
+    }
+
+    @media #{$tablet} {
+      margin-right: 0;
+      margin-bottom: 68px;
+    }
+
+    a {
+      display: inline-block;
+      width: 100%;
+      height: 100%;
+    }
+
+    img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      min-width: 100%;
+      min-height: 100%;
+      width: 0;
+      margin: auto;
+      object-fit: cover;
+    }
+
+    &_indiegogo {
+      width: 261px;
+      height: 539px;
+
+      @media #{$desktop} {
+        width: 182px;
+        height: 377px;
+      }
+
+      @media #{$tablet} {
+        width: 258px;
+        height: 532px;
+      }
+    }
+
+    &_forks {
+      width: 218px;
+      height: 374px;
+
+      @media #{$desktop} {
+        width: 152px;
+        height: 261px;
+      }
+
+      @media #{$tablet} {
+        width: 216px;
+        height: 370px;
+      }
+    }
+
+    & > div {
+      width: 260px;
+      margin-right: 2.4%;
+
+      @media #{$tablet} {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 68px;
+      }
+
+      & img {
+        @media #{$tablet} {
+          width: 100%;
+        }
+      }
+    }
+  }
 }
 

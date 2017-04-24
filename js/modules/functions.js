@@ -10,12 +10,12 @@ function DropDown(el) {
 DropDown.prototype = {
     initEvents : function() {
         var obj = this;
- 
+
         obj.dd.on('click', function(event){
             $(this).toggleClass('activated');
             return false;
         });
- 
+
         obj.opts.on('click',function(){
             var opt = $(this);
             obj.val = opt.text();

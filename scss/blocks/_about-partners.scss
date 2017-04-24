@@ -1,7 +1,7 @@
 .about-partners__container {
 	padding: 0;
-	padding-top: 172px;
-	padding-bottom: 364px;
+	padding-top: 120px;
+	padding-bottom: 200px;
 
 	@media #{$tablet} {
 		padding-top: 15px;
@@ -10,57 +10,63 @@
 }
 
 .about-partners__text {
-	max-width: 65%;
+	width: 60%;
+  box-sizing: border-box;
+  padding: 0 44px;
 	font-size: 50px;
   letter-spacing: -0.04em;
 	margin-bottom: 100px;
 
+  @media #{$desktop} {
+    font-size: 35px;
+  }
+
 	@media #{$tablet} {
-		max-width: 73%;
+		width: 100%;
+    padding: 0 14px;
 		font-size: 26px;
     letter-spacing: -0.04em;
 		margin-bottom: 34px;
 	}
 
 	&_bold {
-		font-weight: 300;
+		font-weight: 500;
 	}
 }
 
 .about-partners__logos {
 	display: flex;
   flex-direction: row;
-	align-items: flex-start;
+	align-items: stretch;
 	justify-content: center;
   flex-wrap: wrap;
+  padding-top: 6px;
+
+  @media #{$tablet} {
+    justify-content: space-between;
+  }
 
 
 	& .about-partners__item {
-    margin-right: 0 ;
-		/*width: 12%;
-		margin-right: 6%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-right: 94px ;
+    margin-bottom: 20px;
 
-		@media #{$desktop2} {
-			width: 25%;
-			margin-bottom: 30px;
-		}
+    @media #{$desktop} {
+      margin-right: 38px;
+    }
 
-		@media #{$tablet} {
-			width: 30%;
-			margin-right: 20%;
+    @media #{$tablet} {
+      width: 50%;
+      margin-right: 0;
+    }
 
-		}
-
-		&:last-child {
+    &:last-child {
 			margin-right: 0;
-
-			@media #{$tablet} {
-				margin-right: 20%;
-			}
-		}
-
-		& img {
-			width: 100%;
-		}*/
+    }
 	}
 }
