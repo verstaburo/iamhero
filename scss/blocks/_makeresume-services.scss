@@ -22,26 +22,17 @@
   }
 
   &__item {
-    width: 16%;
-    margin-right: 5.5%;
+    width: 20%;
+    padding: 0 1%;
 
     @media #{$tablet} {
       width: 100%;
-      margin-right: 0;
       margin-bottom: 10px;
       text-align: left;
     }
 
     @media #{$mobile} {
       margin-bottom: 2px;
-    }
-
-    &:first-child {
-      width: 14%;
-
-      @media #{$tablet} {
-        width: 100%;
-      }
     }
 
     &:nth-child(5n) {

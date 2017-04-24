@@ -134,23 +134,6 @@
         height: 370px;
       }
     }
-
-    & > div {
-      width: 260px;
-      margin-right: 2.4%;
-
-      @media #{$tablet} {
-        width: 100%;
-        margin-right: 0;
-        margin-bottom: 68px;
-      }
-
-      & img {
-        @media #{$tablet} {
-          width: 100%;
-        }
-      }
-    }
   }
 }
 

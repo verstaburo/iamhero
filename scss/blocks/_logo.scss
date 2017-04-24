@@ -28,7 +28,7 @@
     width: 220px;
     height: 157px;
 
-    @media #{$tablet2} {
+    @media #{$desktop} {
       width: 165px;
       height: 117px;
     }
@@ -93,7 +93,7 @@
       width: 220px;
       height: 157px;
 
-      @media #{$tablet2} {
+      @media #{$desktop} {
         width: 165px;
         height: 117px;
       }

@@ -1,18 +1,10 @@
 .tour-accounts {
-  min-height: 1300px;
-
-  @media #{$tablet} {
-    min-height: 1500px;
-  }
-
-  @media #{$mobile} {
-    min-height: 870px;
-  }
 
   &__container {
     align-content: flex-start;
     flex-wrap: wrap;
     padding-top: 208px;
+    padding-bottom: 208px;
 
     @media #{$tablet2} {
       padding-top: 108px;
@@ -20,13 +12,15 @@
     }
 
     @media #{$tablet} {
-      padding-top: 8px;
+      padding-top: 48px;
+      padding-bottom: 100px;
       padding-left: 64px;
       padding-right: 100px;
     }
 
     @media #{$mobile} {
       padding-top: 4px;
+      padding-bottom: 100px;
       padding-left: 32px;
       padding-right: 50px;
     }
@@ -105,6 +99,7 @@
         margin-top: 16px;
         margin-left: 5px;
         font-weight: 300;
+        line-height: normal;
         letter-spacing: -0.04em;
 
         @media #{$tablet} {
@@ -170,13 +165,21 @@
       margin-left: -43px;
     }
 
+    @media (min-width: 1381px) and (max-width: 1440px) {
+      top: -440px;
+    }
+
+    @media #{$desktop} {
+      top: -590px;
+    }
+
     @media #{$tablet2} {
       top: -500px;
       width: 100%;
     }
 
     @media #{$tablet} {
-      top: -578px;
+      top: -668px;
     }
 
     @media (min-width: 460px) and #{$mobile} {

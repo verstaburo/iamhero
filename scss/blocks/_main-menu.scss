@@ -40,11 +40,10 @@
 
   &__burger-item {
     position: absolute;
-    display: block;
     width: 35px;
     height: 2px;
     background-color: $bgColor;
-    transition: width 0.5s ease-in-out, opacity 0.5s ease-in-out;
+    transition: width 0.5s ease-in-out, opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
 
     &::before,
     &::after {
@@ -54,7 +53,7 @@
       width: 35px;
       height: 2px;
       background-color: $bgColor;
-      transform: translate3d(0, 0, 0) rotate(0);
+      transform: rotate(0deg);
       transition: transform 0.5s ease-in-out;
 
       @media #{$tablet} {
@@ -105,11 +104,13 @@
       &::before {
         top: 0;
         transform: rotate(45deg);
+        transition: transform 0.5s ease-in-out;
       }
 
       &::after {
         bottom: 0;
         transform: rotate(-45deg);
+        transition: transform 0.5s ease-in-out;
       }
     }
   }
@@ -161,6 +162,10 @@
     display: inline-block;
     margin-right: 53px;
     font-size: 0;
+
+    @media #{$desktop} {
+      margin-right: 37px;
+    }
 
     @media #{$tablet2} {
       width: 100%;

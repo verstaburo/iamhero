@@ -168,11 +168,13 @@ footer {
   }
 
   @media #{$desktop} {
-    width: 1240px
+    width: 93%;
+    /*width: 1240px*/
   }
 
   @media #{$tablet2} {
-    width: 960px;
+    width: 93%;
+    /*width: 960px;*/
   }
 
   @media #{$tablet} {
@@ -330,6 +332,7 @@ input,
 textarea {
   padding: 12px 20px;
   margin: 0;
+  font-family: $mainFontFamily;
   font-size: $formTextSize;
   letter-spacing: -0.04em;
   line-height: 1.2em;

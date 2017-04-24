@@ -82,6 +82,10 @@
     margin-right: 48px;
     font-size: 0;
 
+    @media #{$desktop} {
+      margin-right: 34px;
+    }
+
     .page-header_no-switch-btn & {
       margin-right: 40px;
     }
