@@ -63,6 +63,15 @@
         color: $additionalColorGreen;
       }
     }
+
+    .versus-table__right-section & {
+      width: 100%;
+      margin-bottom: 30px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
   }
 
   &__header {
@@ -142,12 +151,6 @@
       min-height: 25px;
     }
 
-    .pricing__table_special & {
-      @media #{$mobile} {
-        padding-top: 34px;
-      }
-    }
-
     &_service {
       text-align: left;
     }
@@ -187,7 +190,17 @@
     }
 
     &_link {
+      padding-top: 20px;
+      padding-left: 5%;
       text-align: right;
+
+      @media #{$desktop2} {
+        padding-left: 0;
+      }
+
+      @media #{$mobile} {
+        padding-top: 8px;
+      }
     }
   }
 
@@ -208,7 +221,7 @@
 
     @media #{$mobile} {
       padding: 12px 9%;
-      font-size: ($textSizeMobile - 1);
+      font-size: $textSizeMobileBig;
     }
 
     p {
@@ -219,24 +232,34 @@
       color: inherit;
       letter-spacing: inherit;
     }
+
+    .versus-table__right-section & {
+      font-size: $textSizeMobileBig;
+      line-height: (16/15)*1em;
+      font-weight: 300;
+      padding: 22px 42px;
+      
+      @media #{$mobile} {
+        padding: 22px 14px;
+      }
+      
+      p {
+        width: 65%;
+        
+        @media #{$desktop2} {
+          width: 100%;
+        }
+      }
+    }
   }
 
   &__btn {
     box-sizing: border-box;
-
-    @media #{$desktop2} {
-      padding-left: 48px;
-      padding-right: 48px;
-    }
-
-    @media #{$desktop} {
-      padding-left: 24px;
-      padding-right: 24px;
-    }
+    display: inline-block;
+    width: 100%;
 
     @media #{$mobile} {
-      padding: 9px 24px;
-      width: 100%;
+      padding: 9px 10px;
       font-size: $textSizeTiny;
     }
   }

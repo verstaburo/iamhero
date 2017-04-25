@@ -139,6 +139,11 @@
     margin-bottom: 24px;
     margin-top: 10px;
 
+    @media #{$desktop} {
+      width: 422px;
+      height: 281px;
+    }
+
     @media #{$tablet} {
       float: none;
       margin-top: 0;
@@ -148,7 +153,6 @@
     }
 
     @media #{$mobile} {
-      width: 257px;
       width: 257px;
       height: 171px;
       margin-right: 0;

@@ -33,22 +33,43 @@
 	&__row {
 		display: flex;
 		flex-direction: row;
+    justify-content: space-between;
 		padding-top: 95px;
-    	padding-left: 10px;
+    padding-left: 48px;
+    box-sizing: border-box;
 		width: 100%;
+    
+    @media #{$desktop2} {
+      padding-left: 0;
+    }
+
 		@media #{$tablet} {
 			flex-direction: column;
+      justify-content: flex-start;
 		}
 	}
 	&__left-section {
-		width: 55%;
+		width: 53.5%;
+    
+    @media #{$desktop2} {
+      width: 55%;
+    }
+    
 		@media #{$tablet} {
 			width: 100%;
 		}
 	}
 
 	&__right-section {
-		width: 40%;
+		width: 46.5%;
+    margin-right: -38px;
+    padding-top: 76px;
+    
+    @media #{$desktop2} {
+      width: 45%;
+      margin-right: 0;
+    }
+
 		@media #{$tablet} {
 			width: 100%;
 		}
