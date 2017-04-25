@@ -1,22 +1,11 @@
 .tour-matching {
   position: relative;
 
-  @media #{$tablet2} {
-//    min-height: 1276px;
-  }
-
-  @media #{$tablet} {
-//    min-height: 1076px;
-  }
-
-  @media #{$mobile} {
-//    min-height: 638px;
-  }
-
   &__container {
     position: relative;
-    padding-top: 134px;
-    padding-bottom: 312px;
+    padding-top: 0;
+    padding-bottom: 190px;
+    align-items: center;
     
     @media #{$desktop2} {
       padding-top: 10px;
@@ -25,41 +14,32 @@
 
     @media #{$tablet2} {
       padding-bottom: 90px;
-      //padding-top: 168px;
+      flex-direction: row;
     }
-
-    @media #{$mobile} {
-      //padding-top: 84px;
+    
+    @media #{$tablet} {
+      padding-top: 144px;
+      padding-bottom: 104px;
+      flex-direction: column;
     }
   }
 
   &__text {
-    width: 40%;
-    padding-left: 44px;
-    padding-right: 46px;
-    
-    @media #{$desktop2} {
-      padding-top: 110px;
-    }
-
-    @media #{$tablet2} {
-      width: 100%;
-      padding-left: 0;
-      padding-right: 0;
-      padding-top: 88px;
-      margin-bottom: 72px;
-    }
+    width: 43.7%;
+    padding-left: 3%;
+    padding-right: 3%;
 
     @media #{$tablet} {
-      padding-top: 84px;
-      padding-left: 28px;
-      padding-right: 80px;
+      width: 100%;
+      padding-left: 32px;
+      padding-right: 32px;
+      margin-bottom: 72px;
     }
 
     @media #{$mobile} {
       padding-left: 14px;
-      padding-right: 40px;
-      margin-bottom: 36px;
+      padding-right: 14px;
+      margin-bottom: 56px;
     }
 
     p{
@@ -75,29 +55,14 @@
   }
 
   &__img {
-    position: absolute;
-    top: 0;
-    right: -24px;
-    width: 923px;
-    height: 580px;
+    position: relative;
+    width: 56.3%;
+    height: auto;
     overflow: hidden;
 
-    @media #{$desktop2} {
-      right: auto;
-      position: relative;
-      width: 60%;
-    }
-
-    @media #{$tablet2} {
-      width: 100%;
-    }
-
     @media #{$tablet} {
-      height: 364px;
-    }
-
-    @media #{$mobile} {
-      height: 182px;
+      width: 100%;
+      max-width: 923px;
     }
 
     &::before {
@@ -118,19 +83,8 @@
     }
 
     img {
-      width: 923px;
-      height: 580px;
-
-      @media #{$desktop2} {
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        margin: 0 auto;
-        width: 100%;
-        height: auto;
-      }
+      width: 100%;
+      height: auto;
     }
   }
 }

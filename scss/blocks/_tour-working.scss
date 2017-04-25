@@ -1,23 +1,19 @@
 .tour-working {
-  min-height: 900px;
-
-  @media #{$tablet2} {
-    min-height: 745px;
-  }
 
   @media #{$tablet} {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    min-height: 670px;
   }
 
   &__container {
     padding-top: 284px;
+    padding-bottom: 354px;
 
     @media #{$tablet2} {
       padding-top: 150px;
+      padding-bottom: 180px;
       flex-direction: row;
     }
 
@@ -25,10 +21,12 @@
       order: 1;
       flex-direction: column;
       padding-top: 168px;
+      padding-bottom: 40px;
     }
 
     @media #{$mobile} {
       padding-top: 84px;
+      padding-bottom: 20px;
     }
   }
 
@@ -38,13 +36,12 @@
     padding-right: 40px;
 
     @media #{$desktop2} {
-      width: 30%;
       padding-left: 5%;
-      padding-right: 0;
+      padding-right: 5%;
     }
-
+    
     @media #{$tablet2} {
-      margin-left: 70%;
+      margin-left: 55%;
     }
 
     @media #{$tablet} {
@@ -78,52 +75,41 @@
     position: relative;
     box-sizing: border-box;
     position: absolute;
-    top: 44px;
+    top: 50%;
     left: 0;
-    width: 1111px;
-    height: 745px;
+    width: 55%;
+    margin-right: 45%;
+    height: 67%;
+    transform: translate(0, -50%);
     overflow: hidden;
-
-    @media #{$desktop2} {
-      width: 70%;
-    }
 
     @media #{$tablet} {
       position: relative;
       top: auto;
       left: auto;
+      transform: none;
       order: 2;
       width: 100%;
-      height: 943px;
+      max-width: 640px;
+      margin: 0 auto;
+      height: auto;
+      margin-top: -36px;
     }
-
-    @media #{$mobile} {
-      height: 471.5px;
-      margin-top: -46px;
-    }
-
 
     img {
-      width: 1111px;
-      height: 745px;
-
-      @media #{$desktop2} {
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        margin: auto;
-        width: 100%;
-        height: auto;
-      }
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      margin: auto;
+      min-width: 100%;
+      min-height: 100%;
+      width: 0;
+      object-fit: cover;
 
       @media #{$tablet} {
-        /*min-width: 100%;
-        min-height: 100%;
-        width: 0;
-        object-fit: cover;*/
-        margin: 0 auto;
+        position: relative;
       }
     }
   }
