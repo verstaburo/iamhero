@@ -20,12 +20,25 @@
 	}
 
 	&__left-section {
-		width: 60%;
+    box-sizing: border-box;
+		width: 55%;
+    padding-left: 44px;
+    
+    @media #{$desktop2} {
+      padding: 0;
+    }
+    
 		@media #{$tablet}{
 			order:0;
 			width: 100%;
 		}
 		&.order-two {
+      padding: 0 44px;
+      
+      @media #{$desktop2} {
+        padding: 0;
+      }
+      
 			@media #{$tablet}{
 				order:2;
 				width: 100%;
@@ -34,7 +47,9 @@
 	}
 
 	&__right-section {
+    box-sizing: border-box;
 		width: 45%;
+    
 		@media #{$tablet}{
 			order:1;
 			width: 100%;
@@ -55,16 +70,11 @@
     display: inline-block;
     position: relative;
     margin-top: 10px;
-		margin-left: 40px;
+		margin-left: 12%;
     padding: 14px 38px;
 
-    @media #{$desktop2} {
-      margin-left: 10px;
-    }
-
-    @media #{$desktop} {
-      padding-left: 20px;
-      padding-right: 20px;
+    @media #{$desktop} {      
+      font-size: $btnBigTextSize*0.7;
     }
 
 		@media #{$tablet}{
@@ -77,6 +87,7 @@
     @media #{$mobile} {
       padding-left: 10px;
       padding-right: 10px;
+      font-size: 17.5px;
     }
 
     &::before {
@@ -99,16 +110,22 @@
 	}
 
 	&__question {
-		font-size: 60px;
+		font-size: $textSizeSlogan;
 		font-weight: 100;
 		margin-bottom: 95px;
 		letter-spacing: -0.04em;
+    
+    @media #{$desktop} {
+      font-size: $textSizeSlogan*0.7;
+    }
+    
+    @media #{$mobile} {
+      font-size: $textSizeSlogan/2;
+    }
+    
 		p {
-			font-size: 60px;
+			font-size: inherit;
       letter-spacing: -0.04em;
-			@media #{$tablet}{
-				font-size: 30px;
-			}
 		}
 		@media #{$tablet}{
 			margin-bottom: 30px;
@@ -120,26 +137,36 @@
 	}
 
 	&__desc {
-		font-size: 30px;
+		font-size: $textSizeHuge;
     letter-spacing: -0.04em;
+    
+    @media #{$desktop} {
+      font-size: $textSizeHuge*0.7;
+    }
+    
+    @media #{$mobile} {
+      font-size: $textSizeHuge/2;
+    }
+    
 		p {
-			font-size: 30px;
+			font-size: inherit;
 			letter-spacing: -0.04em;
 			font-weight: 100;
 		}
+    
 		b {
+      font-size: inherit;
 			font-weight: 500;
 			margin-top: 40px;
 			display: block;
 			@media #{$tablet}{
 				margin-top: 20px;
-				font-size: 25px;
 			}
 		}
 	}
 
 	&__youtube-content {
-		width: 90%;
+		width: 100%;
 		height: 560px;
 		border-radius: 25px;
 		overflow: hidden;
@@ -166,8 +193,9 @@
 		bottom: 80px;
 		color: #fff;
 		line-height: 1.15;
+    
 		@media #{$tablet}{
-			font-size: 18px;
+			font-size: 15px;
 			padding-left: 60px;
 			left: 15px;
 			right: 15px;
@@ -179,57 +207,48 @@
 		height: 111px;
 		position: absolute;
 		top: 50%;
-		margin-top: -55px;
+    transform: translate(0, -50%);
 		left: 0;
 		@media #{$tablet}{
 			width: 50px;
 			height: 50px;
-			margin-top: -18px;
 		}
 	}
 	&__represent {
 		margin-top: 50px;
 		margin-left: 30px;
 		color: $formFontColorDarkest;
+    
+    @media #{$tablet} {
+      margin-left: 0;
+    }
+    
 		h2 {
- 			font-size: 50px;
+ 			font-size: $titleSizeH2;
 			margin-bottom: 40px;
       letter-spacing: -0.04em;
-			@media #{$tablet}{
-				font-size: 30px;
+      
+      @media #{$desktop}{
+				font-size: $titleSizeH2*0.7;
+			}
+      
+			@media #{$mobile}{
+				font-size: $titleSizeH2/2;
 			}
 		}
 		p {
-			font-size: 25px;
+			font-size: $textSizeBig;
       letter-spacing: -0.04em;
 			margin-bottom: 25px;
 			margin-top: 50px;
-			@media #{$tablet}{
-				font-size: 18px;
+      
+      @media #{$desktop}{
+				font-size: $textSizeBig*0.7;
+			}
+      
+			@media #{$mobile}{
+				font-size: $textSizeMobileBig;
 			}
 		}
 	}
-
-	/*&__section-content {
-		position: relative;
-		&:before {
-			position: absolute;
-			content: '';
-			top: 50%;
-			margin-top: -6px;
-			right: calc(-50% - 188px);
-			width: 100%;
-			height: 12px;
-			background-color: #1451ff;
-			@media #{$mobile}{
-				right: calc(-50% - 100px);
-			}
-			@media #{$tablet}{
-				right: calc(-50% - 190px);
-			}
-			@media #{$tablet2}{
-				right: calc(-50% - 85px);
-			}
-		}
-	}*/
 }
