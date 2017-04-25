@@ -43,7 +43,7 @@
     width: 35px;
     height: 2px;
     background-color: $bgColor;
-    transition: width 0.5s ease-in-out, opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
 
     &::before,
     &::after {
@@ -54,7 +54,7 @@
       height: 2px;
       background-color: $bgColor;
       transform: rotate(0deg);
-      transition: transform 0.5s ease-in-out;
+      transition: all 0.5s ease-in-out;
 
       @media #{$tablet} {
         width: 30px;
@@ -104,13 +104,11 @@
       &::before {
         top: 0;
         transform: rotate(45deg);
-        transition: transform 0.5s ease-in-out;
       }
 
       &::after {
         bottom: 0;
         transform: rotate(-45deg);
-        transition: transform 0.5s ease-in-out;
       }
     }
   }

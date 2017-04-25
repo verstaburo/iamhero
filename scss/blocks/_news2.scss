@@ -4,6 +4,14 @@
 
 .news-list {
   margin-top: 130px;
+  
+  @media (max-width: 1690px) {
+    margin-top: 100px;
+  }
+  
+  @media #{$desktop} {
+    margin-top: 76px;
+  }
 
   @media (max-width: 1024px) {
     margin-top: 76px;
@@ -14,13 +22,15 @@
   }
 }
 .news-list h1 {
-  margin-left: -10px;
   margin-bottom: 20px;
 
   @media  (max-width: 1024px) {
     margin-left: 0;
     margin-bottom: 14px;
-    padding: 0 9%;
+  }
+  
+  @media (max-width: 640px) {
+    padding-left: 5%; padding-right: 5%;
   }
 }
 
@@ -38,19 +48,16 @@
 
   @media (max-width: 640px) {
     width: 100%;
+    .news-category {margin-left: 5%; margin-right: 5%;}
   }
 
   @media (max-width: 320px) {
     width: 320px;
   }
+  
 }
 
-.news-list .news-category {
-  @media (max-width: 1024px) {
-    margin-left: 10%;
-    margin-right: 10%;
-  }
-}
+
 .news-list .catalog {
   margin-bottom: 75px;
 }
@@ -73,8 +80,6 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: flex-start;
-  align-content: flex-start;
   flex-wrap: wrap;
 
   @media (max-width: 1024px) {
@@ -106,6 +111,10 @@
    line-height: 1.28em;
    letter-spacing: -0.04em;
    z-index: 15;
+   
+   @media (max-width:1690px) {
+     font-size:28px;
+   }
 
    @media (max-width: 640px) {
      font-size: 21px;
@@ -124,7 +133,11 @@
    left: 49px;
    line-height: 1.15em;
    z-index: 15;
-   padding-left: 5px;
+   margin-top: 50px;
+   
+   @media (max-width: 1690px) {
+     margin-top: 30px
+   }
 
    @media (max-width: 640px) {
       padding-left: 0;
@@ -145,11 +158,11 @@
     line-height: 1.31em;
     letter-spacing: -0.04em;
     z-index: 1;
-
-    @media (max-width: 1024px) {
-      font-size: 39px;
-      margin-bottom: 0;
+    
+    @media (max-width:1690px) {
+      font-size: 30px;
     }
+    
 
     @media (max-width: 640px) {
       font-size: 21px;
@@ -165,8 +178,11 @@
     font-size: 24px;
     line-height: 1.15em;
     letter-spacing: -0.04em;
-    padding-left: 6px;
     z-index: 1;
+    
+    @media (max-width:1690px) {
+      font-size: 20px;
+    }
 
     @media (max-width: 1024px) {
       display: none;
@@ -235,8 +251,9 @@
   margin-bottom: 62px;
 
   @media #{$desktop2} {
-    padding-left: 40px;
-    padding-right: 40px;
+    margin-bottom: 30px;
+    padding-left: 0px;
+    padding-right: 0px;
   }
 
   @media (max-width: 1024px) {
@@ -303,6 +320,10 @@
   padding-top: 8px;
   border-color: transparent;
   transition: border 0.25s ease-in-out;
+  
+  @media (max-width: 1690px) {
+    font-size: 22px;
+  }
 
   a {
     display: inline;
@@ -343,15 +364,40 @@
 }
 .follow .btn span {
   position: absolute;
-  left: 10px;
+  left: 15px;
   top: 50%;
-  font-size: 35px;
-  letter-spacing: -0.04em;
-  line-height: 35px;
+  font-size: 0;
+  width: 20px;
   height: 36px;
   font-weight: 100;
   color: #25ffc4;
   transform: translate(0, -50%);
+  
+  &:before {
+    content:"";
+    position: absolute;
+    top:50%;
+    height:2px;
+    width: 20px;
+    border-radius:100px;
+    background-color:#25ffc4;
+    left:0;
+    transform:translateY(-50%);
+    transition: background-color 1s ease-out;
+  }
+  
+   &:after {
+    content:"";
+    position: absolute;
+    top:50%;
+    height:20px;
+    width: 2px;
+    border-radius:100px;
+    background-color:#25ffc4;
+    left:50%;
+    transform:translateX(-50%) translateY(-50%);
+     transition: background-color 1s ease-out;
+  }
 
   @media (max-width: 1024px) {
     left: 20px;
@@ -363,12 +409,17 @@
 }
 .follow .btn:hover span {
   color: #374851;
-  transition: color 1s ease-out;
+  &:before, &:after {
+    background-color:#374851;
+  }
 }
 
 .follow:hover .btn span {
   color: #374851;
   transition: all 1s ease-out;
+  &:before, &:after {
+    background-color:#374851;
+  }
 }
 
 .follow:hover .btn {
@@ -400,15 +451,24 @@
   flex-direction: column;
   justify-content: flex-end;
   align-items: flex-start;
-  height: 660px;
   margin-bottom: 58px;
+  
+  @media (max-width:1690px) {
+    margin-bottom: 37px;
+  }
 
   @media (max-width: 1024px) {
     margin-bottom: 44px;
+    min-height: 500px;
+  }
+  
+  @media (max-width: 640px) {
+    min-height: 340px;
+    margin-bottom: 25px;
   }
 
   @media (max-width: 320px) {
-    height: 372px;
+    min-height: 372px;
     margin-bottom: 22px;
   }
 
@@ -425,7 +485,6 @@
       }
 
       time {
-        padding-left: 6px;
 
         @media #{$tablet} {
           padding-left: 0;
@@ -443,9 +502,19 @@
   &_small {
     height: 456px;
     margin-bottom: 36px;
+    
+    @media (max-width:1690px) {
+      height: 356px;
+    }
+    
+    @media (max-width:1280px) {
+      width: 326px;
+    }
 
     @media (max-width: 1024px) {
       margin-bottom: 28px;
+      width: 100% !important;
+      margin-right: 0 !important;
     }
 
     @media (max-width: 320px) {
@@ -473,7 +542,6 @@
 
       time {
         letter-spacing: -1.1px;
-        padding-left: 5px;
 
         @media (max-width: 1024px) {
           letter-spacing: -0.4px;
@@ -485,14 +553,15 @@
 
   &_30 {
     width: 31.3%;
+    min-height: 660px;
 
     @media #{$desktop2} {
-      width: 47.7%;
+      width: 31%;
+      min-height: 500px;
     }
 
     @media (max-width: 1024px) {
-      width: 483px;
-      min-width: 483px;
+      width: 100%;
     }
 
     @media (max-width: 483px) {
@@ -503,14 +572,20 @@
 
   &_60 {
     width: 65.8%;
+    min-height: 600px;
 
     @media #{$desktop2} {
       width: 100%;
+      min-height: 400px;
     }
 
     .images-block__describe {
       width: 47.6%;
       padding: 32px 50px 24px 50px;
+      
+      @media (max-width:1690px) {
+        padding: 26px 22px 24px;
+      }
 
       @media (max-width: 1024px) {
         width: 100%;
@@ -528,9 +603,11 @@
       width: 50%;
       height: 100%;
       align-self: flex-end;
+      min-height: 660px;
 
       @media #{$desktop2} {
-        padding: 32px 44px 24px 44px;
+        padding: 32px 44px 104px 44px;
+        min-height: 450px;
       }
 
       @media (max-width: 1024px) {
@@ -541,6 +618,10 @@
         background-color: rgba(0, 0, 0, 0.6);
         text-overflow: ellipsis;
         padding: 24px 36px 14px 32px;
+      }
+      
+      @media (max-width: 640px) {
+        time {margin-top: 0;}
       }
 
       time {
@@ -562,8 +643,12 @@
     min-height: 42.3%;
     padding: 32px 44px 24px 44px;
 
+    @media (max-width: 1690px) {
+      padding: 22px 22px 20px;
+    }
+    
     @media (max-width: 1024px) {
-      padding: 32px 44px 24px 44px;
+      padding: 24px 36px 14px 32px;
     }
 
     @media (max-width: 320px) {
@@ -612,6 +697,13 @@
 }
 
 .news-list {
+  padding-bottom: 70px; 
+  
+  @media (max-width: 640px) {
+    padding-bottom: 0;
+  }
+  
+  
   &__item {
     &:nth-child(1) {
       @media #{$desktop2} {
@@ -723,4 +815,8 @@
       }
     }
   }
+}
+
+@media (max-width: 640px) {
+  .images-block__describe {padding-left: 5% !important; padding-right: 5% !important;}
 }
