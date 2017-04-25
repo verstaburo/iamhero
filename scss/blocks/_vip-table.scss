@@ -106,12 +106,18 @@
 		font-weight: 100;
 	}
 	&__t-col {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 		width: 30%;
 		text-align: center;
 		padding: 15px 0;
+    
 		&:first-child {
-			width: 30%;
+      width: 40%;
 			text-align: left;
+      align-items: flex-start;
 		}
 	}
 	&__t-subheader &__t-col {
@@ -220,9 +226,19 @@
 	&__check-img {
 		width: 24px;
 		height: 24px;
+    
+    @media #{$mobile} {
+      width: 12px;
+      height: 12px;
+    }
 	}
 	&__cancel-img {
 		width: 24px;
 		height: 24px;
+    
+    @media #{$mobile} {
+      width: 12px;
+      height: 12px;
+    }
 	}
 }
