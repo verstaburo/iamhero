@@ -202,16 +202,20 @@ var StickyElement = function(node){
 
 var demo = new StickyElement($('.sticky'));
 
+//redirect at index page
+
+
 $(document).ready(function() {
+  $("body.page_index").css("display", "none");
+  $("body.page_index").fadeIn(2000);
+  
 	$("a.lead__btn").click(function(event){
 		event.preventDefault();
 		linkLocation = this.href;
-		$("body").fadeOut(1000, redirectPage);
+		$("body.page_index").fadeOut(1000, function () {
+      window.location = linkLocation;
+    });
 	});
-
-	function redirectPage() {
-		window.location = linkLocation;
-	}
 });
 
 //Video at index page
