@@ -234,3 +234,16 @@ $('.intro-video__close').click(function(){
 	videoblockIndex.removeClass('active');
   setTimeout(function(){ videoblockIndex.find('iframe').attr('src', ''); }, 250);
 });
+
+//Video at vip page
+
+var videoVip, videoblockVip;
+src = 'https://www.youtube.com/embed/';
+videoblockVip = $('.video__item');
+
+$('.video__youtube-link').click(function(event){
+  event.preventDefault();
+	videoVip = $(this).parents('.video__item').data('video');
+  videoblockVip.addClass('active'); // Добавляем активный класс, который увеличит блок по высоте и сделает видимым слой с видео
+  setTimeout(function(){ videoblockVip.find('iframe').attr('src', src+videoVip+'?autoplay=1'); }, 250);
+});
