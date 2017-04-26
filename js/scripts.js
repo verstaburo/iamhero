@@ -28,14 +28,33 @@ $(".switch__item").on("click", function() {
 
 //hamburger menu
 $('.main-menu__burger').click(function(){
-	$(this).toggleClass('js-menu-opened');
-	$('.main-menu__list').toggleClass('js-menu-opened');
+  var itemList = document.querySelectorAll('.main-menu__item:not(.hidden)');
+  if($(this).hasClass('js-menu-opened')) {
+    $(this).removeClass('js-menu-opened');
+    $('.main-menu__list').slideUp(3000, function () {
+      $(this).removeClass('js-menu-opened');
+    });
+  } else {
+    $(this).addClass('js-menu-opened');
+    $('.main-menu__list').slideDown(1000, function () {
+      $(this).css('display', 'flex');
+    }).addClass('js-menu-opened');
+  }
 });
 
 //user menu
 $('.user-menu__toggle').click(function(){
-	$(this).toggleClass('js-user-opened');
-	$('.user-menu__list').toggleClass('js-user-opened');
+  if($(this).hasClass('js-user-opened')) {
+    $(this).removeClass('js-user-opened');
+    $('.user-menu__list').slideUp(3000, function () {
+      $(this).removeClass('js-user-opened');
+    });
+  } else {
+    $(this).addClass('js-user-opened');
+    $('.user-menu__list').slideDown(1000, function () {
+      $(this).css('display', 'flex');
+    }).addClass('js-user-opened');
+  }
 });
 
 //animation of the appearance of lines on hover at tour.html page

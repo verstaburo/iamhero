@@ -1,3 +1,11 @@
+@media #{$tablet2} {
+  @for $i from 1 through 3 {
+    .main-menu__item:nth-child(#{$i}) {
+      transition-delay: 0.8s + 0.2s * $i;
+    }
+  }
+}
+
 .main-menu {
   display: flex;
   flex-direction: row;
@@ -126,8 +134,13 @@
 
     @media #{$tablet2} {
       padding-left: 0;
-      opacity: 0;
+      //opacity: 0;
       display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 100%;
+      height: auto;
     }
 
     .page-header_no-switch-btn &{
@@ -140,11 +153,6 @@
     }
 
     &.js-menu-opened {
-      position: absolute;
-      top: 100%;
-      left: 0;
-      width: 100%;
-      height: auto;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -152,7 +160,6 @@
       background-color: $bgMenuColor;
       background-image: $mainGradient;
       z-index: 120;
-      opacity: 1;
     }
   }
 
@@ -168,6 +175,13 @@
     @media #{$tablet2} {
       width: 100%;
       margin-right: 0;
+      //experiment
+      opacity: 0;
+      transition: all 0.5s ease-in-out;
+    }
+
+    .main-menu__list.js-menu-opened & {
+      opacity: 1;
     }
 
     &.hidden {

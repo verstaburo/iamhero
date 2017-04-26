@@ -1,3 +1,11 @@
+@media #{$tablet2} {
+  @for $i from 1 through 2 {
+    .user-menu__item:nth-child(#{$i}) {
+      transition-delay: 0.8s + 0.2s * $i;
+    }
+  }
+}
+
 .user-menu {
   display: flex;
   flex-direction: row;
@@ -59,14 +67,14 @@
 
     @media #{$tablet2} {
       display: none;
-    }
-
-    &.js-user-opened {
       position: absolute;
       top: 100%;
       left: 0;
       width: 100%;
       height: auto;
+    }
+
+    &.js-user-opened {
       background-color: $bgMenuColor;
       background-image: $mainGradient;
       z-index: 120;
@@ -92,6 +100,15 @@
 
     &:last-child {
       margin-right: 0;
+    }
+
+    @media #{$tablet2} {
+      opacity: 0;
+      transition: all 0.5s ease-in-out;
+    }
+
+    .user-menu__list.js-user-opened & {
+      opacity: 1;
     }
   }
 

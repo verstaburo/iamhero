@@ -2,7 +2,7 @@
 	padding: 235px 0 235px 0;
 	min-height: 817px;
   box-shadow: inset 0 -14px 0 0 #000;
-  
+
 	@media #{$tablet} {
 		padding: 60px 0 350px 0;
 		min-height: 100%;
@@ -11,11 +11,11 @@
 	.page-section__bg-img {
 		@media #{$tablet} {
 			height: 365px;
-			top: auto; 
+			top: auto;
 			bottom: 0;
 		}
 	}
-  
+
   &__bg {
     position: relative;
     position: absolute;
@@ -25,20 +25,21 @@
     left: 0;
     margin-right: 50%;
     z-index: -1;
-    
+
     @media #{$tablet} {
       width: 100%;
       height: 378px;
       margin-right: 0;
     }
-    
+
     img {
       position: absolute;
       width: auto;
       height: 100%;
       bottom: 0;
       right: 0;
-      
+      z-index: -1;
+
       @media #{$tablet} {
         right: 50%;
         width: auto;
@@ -51,7 +52,7 @@
 	&__container {
 		justify-content: flex-end;
 	}
-	
+
 	&__text {
 		padding: 0;
 	}
