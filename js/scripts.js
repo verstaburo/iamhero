@@ -182,7 +182,6 @@ var StickyElement = function(node){
     var docTop = doc.scrollTop(),
         anchorTop = anchor.offset().top;
 
-    console.log('scroll', docTop, anchorTop);
     if(docTop > anchorTop){
       if(!fixed){
         anchor.height(content.outerHeight());
@@ -202,3 +201,32 @@ var StickyElement = function(node){
 };
 
 var demo = new StickyElement($('.sticky'));
+
+$(document).ready(function() {
+	$("a.lead__btn").click(function(event){
+		event.preventDefault();
+		linkLocation = this.href;
+		$("body").fadeOut(1000, redirectPage);
+	});
+
+	function redirectPage() {
+		window.location = linkLocation;
+	}
+});
+
+//Video at index page
+
+var videoIndex, src, videoblockIndex;
+src = 'https://www.youtube.com/embed/';
+videoblockIndex = $('.intro-video');
+
+$('.intro-video__btn').click(function(){
+	videoIndex = $(this).parents('.intro-video').data('video');
+  videoblockIndex.addClass('active'); // Добавляем активный класс, который увеличит блок по высоте и сделает видимым слой с видео
+  setTimeout(function(){ videoblockIndex.find('iframe').attr('src', src+videoIndex+'?autoplay=1'); }, 250);
+});
+
+$('.intro-video__close').click(function(){
+	videoblockIndex.removeClass('active');
+  setTimeout(function(){ videoblockIndex.find('iframe').attr('src', ''); }, 250);
+});

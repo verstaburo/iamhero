@@ -13,6 +13,8 @@
   }
 
   &__container {
+    position: relative;
+    will-change: padding;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -58,7 +60,7 @@
       flex-direction: row;
       justify-content: center;
       align-items: flex-start;
-      
+
       @media #{$desktop} {
         padding-top: 5px;
       }
@@ -140,6 +142,63 @@
     @media #{$mobile} {
       width: 50px;
       height: 50px;
+    }
+  }
+
+  &__content {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    pointer-events: none;
+    transition: all .25s ease-in-out;
+    background-color: #000;
+
+    iframe {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  &.active {
+    .intro-video__content {
+      opacity: 1;
+      pointer-events: all;
+      transition-delay: .25s;
+      z-index: 20;
+    }
+  }
+
+  &__close {
+    position: relative;
+    position: absolute;
+    top: 60px;
+    right: 30px;
+    width: 30px;
+    height: 2px;
+    cursor: pointer;
+    z-index: 22;
+
+    &::before,
+    &::after {
+      position: absolute;
+      content: '';
+      left: 0;
+      width: 30px;
+      height: 2px;
+      background-color: $bgColor;
+    }
+
+    &::before {
+      top: 0;
+      transform: rotate(45deg);
+    }
+
+    &::after {
+      bottom: 0;
+      transform: rotate(-45deg);
     }
   }
 }
