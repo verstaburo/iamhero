@@ -1,5 +1,6 @@
 .intro-video {
   position: relative;
+  transition: all 0.25 ease-in-out;
 
   &::before {
     position: absolute;
@@ -163,7 +164,18 @@
   }
 
   &.active {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    z-index: 1200;
+
+    .intro-video__container {
+      display: none;
+    }
+
     .intro-video__content {
+      position: relative;;
       opacity: 1;
       pointer-events: all;
       transition-delay: .25s;
