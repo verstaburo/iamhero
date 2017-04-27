@@ -39,7 +39,7 @@
       padding-left: 5%;
       padding-right: 5%;
     }
-    
+
     @media #{$tablet2} {
       margin-left: 55%;
     }
@@ -75,13 +75,17 @@
     position: relative;
     box-sizing: border-box;
     position: absolute;
-    top: 50%;
+    top: calc(50% - 40px);
     left: 0;
     width: 55%;
     margin-right: 45%;
     height: 67%;
     transform: translate(0, -50%);
     overflow: hidden;
+
+    @media #{$tablet2} {
+      top: 50%;
+    }
 
     @media #{$tablet} {
       position: relative;

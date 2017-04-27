@@ -1,5 +1,5 @@
 document.createElement( "picture" );
-svg4everybody();
+svg4everybody({polyfill: true});
 
 
 //radio buttons in form_prereg
@@ -137,23 +137,23 @@ var employerBlock = document.querySelector('.lead__item_employer');
 
 if(heroBlock && employerBlock) {
   heroBlock.addEventListener('mouseenter', function (event) {
-    heroBlock.classList.toggle('js-hero-hover-active');
-    employerBlock.classList.toggle('js-employer-hover-none');
+    heroBlock.classList.add('js-hero-hover-active');
+    employerBlock.classList.add('js-employer-hover-none');
   }, false);
 
   heroBlock.addEventListener('mouseleave', function (event) {
-    heroBlock.classList.toggle('js-hero-hover-active');
-    employerBlock.classList.toggle('js-employer-hover-none');
+    heroBlock.classList.remove('js-hero-hover-active');
+    employerBlock.classList.remove('js-employer-hover-none');
   }, false);
 
   employerBlock.addEventListener('mouseenter', function (event) {
-    heroBlock.classList.toggle('js-hero-hover-none');
-    employerBlock.classList.toggle('js-employer-hover-active');
+    heroBlock.classList.add('js-hero-hover-none');
+    employerBlock.classList.add('js-employer-hover-active');
   }, false);
 
   employerBlock.addEventListener('mouseleave', function (event) {
-    heroBlock.classList.toggle('js-hero-hover-none');
-    employerBlock.classList.toggle('js-employer-hover-active');
+    heroBlock.classList.remove('js-hero-hover-none');
+    employerBlock.classList.remove('js-employer-hover-active');
   }, false);
 }
 

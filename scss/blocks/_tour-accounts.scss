@@ -35,7 +35,12 @@
     }
 
     @media #{$tablet} {
+      padding-right: 15%;
       width: 100%;
+    }
+
+    @media #{$mobile} {
+      padding-right: 0;
     }
 
     & .text-block__content {
@@ -59,7 +64,7 @@
       margin-bottom: 160px;
       padding-left: 44px;
       padding-right: 310px;
-      
+
       @media #{$desktop2} {
         padding-left: 0;
       }
@@ -75,7 +80,11 @@
         margin-bottom: 728px;
       }
 
-      @media #{$mobile} {
+      @media (min-width: 451px) and #{$mobile} {
+        margin-bottom: 494px;
+      }
+
+      @media (max-width: 450px) {
         margin-bottom: 364px;
       }
     }
