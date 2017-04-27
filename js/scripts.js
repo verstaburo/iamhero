@@ -205,7 +205,7 @@ var demo = new StickyElement($('.sticky'));
 //redirect at index page
 
 
-$(document).ready(function() {
+/*$(document).ready(function() {
   $("body.page_index").css("display", "none");
   $("body.page_index").fadeIn(2000);
 
@@ -216,7 +216,7 @@ $(document).ready(function() {
       window.location = linkLocation;
     });
 	});
-});
+});*/
 
 //Video at index page
 
