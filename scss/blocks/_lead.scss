@@ -18,6 +18,16 @@
   @media #{$mobile} {
   }
 
+  &_fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 1100;
+    overflow: hidden;
+  }
+
   &__item {
     position: relative;
     display: flex;
