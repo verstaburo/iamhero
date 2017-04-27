@@ -204,6 +204,7 @@ var demo = new StickyElement($('.sticky'));
 
 //redirect at index page
 
+
 $(document).ready(function() {
   $("body.page_index").css("display", "none");
   $("body.page_index").fadeIn(2000);

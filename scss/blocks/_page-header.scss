@@ -15,6 +15,14 @@
     z-index: 1000;
   }
 
+  &_mainpage {
+
+    .page-header__wrapper,
+    .page-header__wrapper.fixed {
+      display: none;
+    }
+  }
+
   &__wrapper {
     position: relative;
     //max-width: 1920px;
