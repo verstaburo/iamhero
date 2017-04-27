@@ -135,7 +135,6 @@
 
   &__cell {
     box-sizing: border-box;
-    display: table-cell;
     padding-top: 32px;
     width: 33%;
     min-height: 70px;
@@ -238,14 +237,14 @@
       line-height: (16/15)*1em;
       font-weight: 300;
       padding: 22px 42px;
-      
+
       @media #{$mobile} {
         padding: 22px 14px;
       }
-      
+
       p {
         width: 65%;
-        
+
         @media #{$desktop2} {
           width: 100%;
         }
