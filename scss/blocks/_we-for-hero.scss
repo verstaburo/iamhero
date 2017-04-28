@@ -1,14 +1,6 @@
 .we-for-hero {
   overflow: hidden;
 
-/*  @media #{$tablet} {
-    min-height: 1036px;
-  }
-
-  @media #{$mobile} {
-    min-height: 518px;
-  }*/
-
   &__container {
     position: relative;
     box-sizing: border-box;
@@ -70,29 +62,6 @@
         line-height: 1.2em;
       }
     }
-  }
-
-  &__collage {
-    position: relative;
-    position: absolute;
-//    display: flex;
-//    flex-direction: row;
-//    justify-content: center;
-//    align-items: flex-start;
-//    align-content: flex-start;
-//    flex-wrap: wrap;
-    width: 88%;
-    height: auto;
-    overflow: hidden;
-    top: -52%;
-    right: -9%;
-    z-index: -1;
-
-  }
-
-  &__img {
-    width: 100%;
-    height: auto;
   }
 
   &__bg {

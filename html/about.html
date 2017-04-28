@@ -4,6 +4,19 @@
 <body class="page">
 	[snp tpl="html/blocks/header.html" class="page-header_fixed page-header_no-switch-btn" wrapper_class="" link1="#" link1_text="Opportunities" link2="#" link2_text="VIP" link3="#" link3_text="Examples" link4_visible="hidden" link4="#" link4_text="" dop_item="" ]
 	<main class="page-content about-page-content_width">
+    <svg height="0">
+			<defs>
+				<filter id="about-slogan__blur-half" x="0" y="0" width="50%" height="100%">
+					<feGaussianBlur in="SourceGraphic" stdDeviation="17"/>
+				</filter>
+				<filter id="about-slogan__blur-full" x="0" y="0" width="100%" height="100%">
+					<feGaussianBlur in="SourceGraphic" stdDeviation="15"/>
+				</filter>
+				<filter id="about-team__grayscale">
+					<feColorMatrix type="saturate" values="0"/>
+				</filter>
+			</defs>
+		</svg>
 
 		<section class="page-section page-section_start about-slogan">
 			<div class="container page-section__container about-container about-slogan__container">
@@ -24,6 +37,10 @@
 		</section>
 
 		<section class="page-section page-section_start about-description">
+		
+		  <div class="about-description__bg">
+        <img src="images/about_ipads.png" alt="">
+      </div> 
 			<div class="container page-section__container about-container about-description__container">
 
 				<div class="about-description__content">
@@ -37,9 +54,6 @@
 					</div>
 					<div class="about-description__content-item">
 						<p class="about-description__text">May be two more sentences could be added here just for capacity. Also it's important to mention that the team of professionals are involved in the project united by bright idea.</p>
-					</div>
-					<div class="about-description__content-item">
-						<img src="images/about_ipads.png" alt="">
 					</div>
 					<div class="about-description__content-item about-description__content-item_flex">
 						<p class="about-description__text">Together, we are all Herows. In the modern world there is a lack of responsible and taleneted professionals.</p>
@@ -110,7 +124,9 @@
 							<span>Art Director</span>
 						</div>
 						<div class="about-team__photo">
-							<div><img src="images/about_photo6.jpg"></div>
+							<div>
+                <img src="images/about_photo6.jpg">
+							</div>
 							<b>Eugene Sheeleen</b>
 							<span>UI DEsigner</span>
 						</div>
@@ -134,20 +150,6 @@
 
 			</div>
 		</section>
-
-		<svg height="0">
-			<defs>
-				<filter id="about-slogan__blur-half" x="0" y="0" width="50%" height="100%">
-					<feGaussianBlur in="SourceGraphic" stdDeviation="17"/>
-				</filter>
-				<filter id="about-slogan__blur-full" x="0" y="0" width="100%" height="100%">
-					<feGaussianBlur in="SourceGraphic" stdDeviation="15"/>
-				</filter>
-				<filter id="about-team__grayscale">
-					<feColorMatrix type="matrix" values="1 1 1 0 0 1 1 1 0 0 1 1 1 0 0 0 0 0 1 0"/>
-				</filter>
-			</defs>
-		</svg>
 
 	</main>
 	[snp tpl="html/blocks/form-prereg.html" ]
