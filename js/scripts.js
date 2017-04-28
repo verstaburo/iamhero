@@ -205,22 +205,6 @@ if(document.querySelector('.sticky')) {
 var demo = new StickyElement($('.sticky'));
 }
 
-//redirect at index page
-
-
-/*$(document).ready(function() {
-  $("body.page_index").css("display", "none");
-  $("body.page_index").fadeIn(2000);
-
-	$(".lead__btn").click(function(event){
-		event.preventDefault();
-		linkLocation = $(event.target).attr("href");
-		$("body.page_index").fadeOut(1000, function () {
-      window.location = linkLocation;
-    });
-	});
-});*/
-
 //Video at index page
 
 var videoIndex, src, videoblockIndex;
