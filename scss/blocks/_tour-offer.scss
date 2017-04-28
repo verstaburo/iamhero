@@ -10,12 +10,13 @@
     position: relative;
     flex-wrap: wrap;
     align-content: space-between;
+    justify-content: flex-start;
     padding-top: 214px;
     padding-bottom: 144px;
     padding-left: 40px;
 
     @media #{$tablet2} {
-      justify-content: space-between !important;
+      justify-content: space-between;
       align-items: flex-start;
       padding: 168px 32px 144px;
     }

@@ -405,6 +405,8 @@
 
   &__text {
     position: relative;
+    box-sizing: border-box;
+    width: 100%;
     margin-bottom: 42px;
     z-index: 4;
     transition: padding 1.25s ease-in-out;
