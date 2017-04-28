@@ -5,6 +5,23 @@
   align-items: center;
   
   &_mainindex {
-    background-color:#435970
+    background-color:#435970;
+    
+    &__container {
+      float: left;
+      width: 100%;
+      height: 100%;
+      overflow: auto;
+      
+      footer {overflow: hidden;}
+    }
+  }
+}
+
+.page_mainindex__container {transition:all 1s ease-in-out; opacity: 1; position: fixed; top: 0; left: 0;
+  &.active {
+    transform: translate3d(0,-200px,0);
+    opacity: 0.5;
+    pointer-events: none;
   }
 }

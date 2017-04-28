@@ -3,7 +3,11 @@
 [snp tpl="html/blocks/head.html" page_title="I'm hero" ]
 
   <body class="page page_index page_mainindex">
-[snp tpl="html/blocks/header_mainpage.html" class="" lead_class="lead_fixed"]
+  <div class="page_mainindex__container">
+    [snp tpl="html/blocks/header_mainpage.html" class="" lead_class="lead_fixed"]
+    [snp tpl="html/blocks/footer.html" special_class="noreveal"]
+  </div>
+  
   <div class="page-wrapper">
 
   </div>
@@ -22,14 +26,14 @@
         data:"",
         success:function(data){
             var newdata = $(data);
-            newdata.find("meta, link").remove();
+            newdata.find("meta, link, footer").remove();
             $('.page-wrapper').html(newdata);              
             var title = data.match(/<title>(.*?)<\/title>/);
               
-              $('.page-wrapper, .page-header__lead').addClass("active");
+              $('.page-wrapper, .page_mainindex__container').addClass("active");
               $("title").text(title[0].replace(/(<([^>]+)>)/ig,""));
               setTimeout(function(){
-                $('.page-header__lead').remove();
+                $('.page_mainindex__container').remove();
                 $(".page-wrapper").css("transform", "none")
               }, 1000);
               
