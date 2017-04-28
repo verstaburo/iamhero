@@ -225,15 +225,15 @@ var demo = new StickyElement($('.sticky'));
 
 var videoIndex, src, videoblockIndex;
 src = 'https://www.youtube.com/embed/';
-videoblockIndex = $('.intro-video');
+videoblockIndex = $(document).find('.intro-video');
 
-$('.intro-video__btn').click(function(){
+$(document).on("click", '.intro-video__btn', function(){
 	videoIndex = $(this).parents('.intro-video').data('video');
   videoblockIndex.addClass('active'); // Добавляем активный класс, который увеличит блок по высоте и сделает видимым слой с видео
   setTimeout(function(){ videoblockIndex.find('iframe').attr('src', src+videoIndex+'?autoplay=1'); }, 250);
 });
 
-$('.intro-video__close').click(function(){
+$(document).on("click", '.intro-video__close', function(){
 	videoblockIndex.removeClass('active');
   setTimeout(function(){ videoblockIndex.find('iframe').attr('src', ''); }, 250);
 });

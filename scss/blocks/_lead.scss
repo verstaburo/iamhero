@@ -12,7 +12,7 @@
 
   @media #{$tablet} {
     flex-direction: column;
-    height: auto;
+    height: 100%;
   }
 
   @media #{$mobile} {
@@ -56,6 +56,7 @@
       width: 100%;
       min-height: 264px;
       height: 264px;
+      flex: 1;
     }
 
     @media #{$mobile} {
@@ -135,14 +136,14 @@
       &:hover {
         @media #{$tablet} {
           height: 872px;
-          min-height: 872px;
+          min-height: 75%;
           padding-right: 9.5%;
           width: 100%;
         }
 
         @media #{$mobile} {
           height: 438px;
-          min-height: 438px;
+          min-height: 75%;
         }
 
         & .text-block__content {
@@ -174,14 +175,14 @@
 
         @media #{$tablet} {
           height: 872px;
-          min-height: 872px;
+          min-height: 75%;
           padding-right: 9.5%;
           width: 100%;
         }
 
         @media #{$mobile} {
           height: 438px;
-          min-height: 438px;
+          min-height: 75%;
         }
       }
 
@@ -201,11 +202,11 @@
         @media #{$tablet} {
           width: 100%;
           padding-right: 9.5%;
-          min-height: 264px;
+          min-height: 50%;
         }
 
         @media #{$mobile} {
-          min-height: 132px;
+          min-height: 50%;
         }
       }
     }
@@ -276,14 +277,14 @@
 
         @media #{$tablet} {
           height: 872px;
-          min-height: 872px;
+          min-height: 75%;
           width: 100%;
           padding-left: 9.5%;
         }
 
         @media #{$mobile} {
           height: 438px;
-          min-height: 438px;
+          min-height: 75%;
         }
       }
 
@@ -303,11 +304,11 @@
         @media #{$tablet} {
           width: 100%;
           padding-left: 9.5%;
-          min-height: 264px;
+          min-height: 50%;
         }
 
         @media #{$mobile} {
-          min-height: 132px;
+          min-height: 50%;
         }
       }
     }
@@ -357,11 +358,11 @@
     z-index: 1;
 
     @media #{$tablet} {
-      height: 876px;
+      height: 100%;
     }
 
     @media #{$mobile} {
-      height: 438px;
+      height: 100%;
     }
   }
 

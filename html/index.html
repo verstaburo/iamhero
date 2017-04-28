@@ -2,11 +2,48 @@
 <html lang="en">
 [snp tpl="html/blocks/head.html" page_title="I'm hero" ]
 
-  <body class="page page_index">
+  <body class="page page_index page_mainindex">
 [snp tpl="html/blocks/header_mainpage.html" class="" lead_class="lead_fixed"]
   <div class="page-wrapper">
 
   </div>
 [snp tpl="html/blocks/scripts.html" ]
+ 
+  <script>
+    $(document).on("click", ".lead__btn", function(e){
+      e.preventDefault();
+      var href = $(this).attr("href");
+      
+      $.ajax({
+        url: href,
+        type:'GET',
+        beforeSend:function(){
+        },
+        data:"",
+        success:function(data){
+            var newdata = $(data);
+            newdata.find("meta, link").remove();
+            $('.page-wrapper').html(newdata);              
+            var title = data.match(/<title>(.*?)<\/title>/);
+              
+              $('.page-wrapper, .page-header__lead').addClass("active");
+              $("title").text(title[0].replace(/(<([^>]+)>)/ig,""));
+              setTimeout(function(){
+                $('.page-header__lead').remove();
+                $(".page-wrapper").css("transform", "none")
+              }, 1000);
+              
+              window.history.pushState(href, title[0], href);
+              
+              setTimeout(function(){
+                var body = $("html, body");
+                body.stop().animate({scrollTop:1}, '500', 'swing', function() {});
+              }, 300);
+            //setTimeout(function(){hidepreloader();},1000);
+            //setTimeout(function(){unfixscreen();},1010);
+        }
+      });
+    });
+  </script>
   </body>
 </html>

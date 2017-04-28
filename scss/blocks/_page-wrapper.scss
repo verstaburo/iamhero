@@ -1,0 +1,13 @@
+.page-header__lead {transition:all 1s ease-in-out; opacity: 1;
+  &.active {
+    transform: translate3d(0,-200px,0);
+    opacity: 0.5;
+    pointer-events: none;
+  }
+}
+
+.page-wrapper {transition:all 1s ease-in-out; transform: translate3d(0,100vh,0); background-color: white; z-index: 10000;
+  &.active {
+    transform: translate3d(0,0,0);
+  }
+}

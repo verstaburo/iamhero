@@ -2,4 +2,17 @@
   padding-top: 52px;
   width: 100%;
   overflow: hidden;
+  
+  @media #{$tablet2} {
+    padding-top: 130px;
+  }
+  
+  @media #{$tablet} {
+    padding-top: 82px;
+  }
+  
+  @media #{$mobile} {
+    padding-top: 48px;
+  } 
+  
 }
