@@ -11,7 +11,7 @@
 .news-container .content {
   width: 773px;
   float: left;
-  
+
   @media #{$desktop2} {
     width: 100%;
     .images-block.block_first {width: 100%;}
@@ -133,7 +133,7 @@
   margin-top: -2px;
   padding-left: 44px;
   padding-right: 44px;
-  
+
   @media #{$tablet} {
     padding-left: 30px; padding-right: 30px;
   }
@@ -180,7 +180,7 @@
   line-height: 1.15em;
   z-index: 15;
   text-overflow: ellipsis;
-  
+
   @media (max-width: 1690px) {
     font-size: 22px
   }
@@ -536,7 +536,7 @@
 .news-aside {
   @media (max-width: 1280px) {
     margin-right: -40px;
-    width: auto !important;
+
   }
 }
 
@@ -545,7 +545,7 @@
   @media (max-width:1280px) {
     padding-bottom: 0;
   }
-  
+
   @media (max-width: 640px) {
     padding-left: 5%; padding-right: 5%;
   }
