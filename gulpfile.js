@@ -26,7 +26,7 @@ gulp.task('style', function() {
     .pipe(sass())
     .pipe(postcss([
       autoprefixer({browsers: [
-        'last 2 versions'
+        'last 2 versions', 'last 7 iOS version'
       ]}),
       mqpacker({
         sort: false

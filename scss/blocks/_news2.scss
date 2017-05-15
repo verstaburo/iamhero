@@ -96,7 +96,7 @@
 
  .text-shadow-back {
    width: 100%;
-   bottom: 0;
+   //bottom: 0;
    background-color: rgba(0, 0, 0, 0.6);
    z-index: 10;
  }
@@ -144,10 +144,6 @@
       font-size: 9px;
     }
  }
-.text-shadow-back.green-back {
-    height: 100%;
-    background: linear-gradient(135deg, rgba(#07644a,0.6) 0%, rgba(0,0,0,0.6) 100%);
-  }
   .text-shadow-back.green-back h6 {
     margin-bottom: 30px;
     white-space:normal;
@@ -602,7 +598,7 @@
       padding: 104px;
       justify-content: flex-start;
       width: 50%;
-      height: 100%;
+      min-height: 100%;
       align-self: flex-end;
       min-height: 660px;
 
@@ -663,6 +659,10 @@
 
     time {
       width: 100%;
+    }
+    
+    &_green {
+      background: linear-gradient(135deg, rgba(#07644a,0.6) 0%, rgba(0,0,0,0.6) 100%);
     }
   }
 
