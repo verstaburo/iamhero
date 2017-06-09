@@ -31,7 +31,7 @@ $('.main-menu__burger').click(function(){
   var itemList = document.querySelectorAll('.main-menu__item:not(.hidden)');
   if($(this).hasClass('js-menu-opened')) {
     $(this).removeClass('js-menu-opened');
-    $('.main-menu__list').slideUp(3000, function () {
+    $('.main-menu__list').slideUp(1000, function () {
       $(this).removeClass('js-menu-opened');
     });
   } else {
@@ -46,7 +46,7 @@ $('.main-menu__burger').click(function(){
 $('.user-menu__toggle').click(function(){
   if($(this).hasClass('js-user-opened')) {
     $(this).removeClass('js-user-opened');
-    $('.user-menu__list').slideUp(3000, function () {
+    $('.user-menu__list').slideUp(1000, function () {
       $(this).removeClass('js-user-opened');
     });
   } else {
