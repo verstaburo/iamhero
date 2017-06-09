@@ -111,37 +111,41 @@
 		//margin: 0 25px;
 		white-space: normal;
 		vertical-align: top;
-    
+
     &:not(:last-of-type) {
       margin-right: 50px;
-      
+
+      @media #{$tablet2} {
+        margin-right: 20px;
+      }
+
       @media #{$tablet} {
         margin-right: 20px;
       }
     }
-    
+
     @media #{$tablet2} {
       display: inline-block;
     }
-    
+
 		@media #{$tablet} {
 			min-width: 150px;
-      
+
       &:nth-of-type(4) {
         margin-right: 0;
       }
-      
+
       &:nth-of-type(n + 5) {
         display: none;
       }
 		}
-    
+
     @media #{$mobile} {
-      
+
       &:nth-of-type(2) {
         margin-right: 0;
       }
-      
+
       &:nth-of-type(n + 3) {
         display: none;
       }
