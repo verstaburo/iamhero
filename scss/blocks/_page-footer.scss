@@ -17,6 +17,14 @@
     padding-right: 4px;
     padding-bottom: 52px;
 
+    @media #{$desktop2} {
+      padding-left: 4px;
+    }
+
+    @media #{$desktop} {
+      padding-left: 4px;
+    }
+
     @media #{$tablet2} {
       justify-content: space-between;
       flex-wrap: wrap;
