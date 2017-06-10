@@ -234,3 +234,15 @@ $('.video__youtube-link').click(function(event){
   videoblockVip.addClass('active'); // Добавляем активный класс, который увеличит блок по высоте и сделает видимым слой с видео
   setTimeout(function(){ videoblockVip.find('iframe').attr('src', src+videoVip+'?autoplay=1'); }, 250);
 });
+
+$('.lead__item_hero').hover(function(){
+  $(this).find("video")[0].play();
+}, function(){
+  $(this).find("video")[0].pause();
+});
+
+$('.lead__item_employer').hover(function(){
+  $(this).find("video")[0].play();
+}, function(){
+  $(this).find("video")[0].pause();
+});
