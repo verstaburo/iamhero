@@ -83,7 +83,8 @@ gulp.task('copy', function () {
   return gulp.src([
     'fonts/**/*',
     'js/vendors/*',
-    'css/vendor/*'
+    'css/vendor/*',
+    'video/**/*'
     ],
     {
     base: '.'
