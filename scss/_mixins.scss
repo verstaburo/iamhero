@@ -1,0 +1,38 @@
+/*
+Миксин для элементов, которые должны сохранять определенное соотношение сторон (напр., блок с видео)
+Пример использования:
+div {
+  @include ratio(16,9);
+} */
+@mixin ratio($x,$y, $pseudo: false) {
+  $padding: unquote(($y/$x) *100+'%');
+
+  @if $pseudo {
+
+    &::before {
+      @include pseudo($pos: relative);
+
+      width: 100%;
+      padding-top: $padding;
+    }
+  }
+
+  @else { padding-top: $padding; }
+}
+
+/*
+Миксин для базовых параметров псевдоэлементов.
+Пример использования:
+
+div::after {
+  @include pseudo;
+  top: 10px;
+  left: 10px;
+  width: 150px;
+}
+*/
+@mixin pseudo($display: block, $pos: absolute, $content: '') {
+  content: $content;
+  display: $display;
+  position: $pos;
+}
