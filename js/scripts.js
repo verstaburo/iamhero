@@ -309,28 +309,14 @@ $('.video__youtube-link').click(function (event) {
   }, 250);
 });
 
-if ($(window).width() > 640) {
-  $('.lead__item_hero').hover(function () {
-    $(this).find("video")[0].play();
-  }, function () {
-    $(this).find("video")[0].pause();
-  });
+$('.lead__item_hero').hover(function () {
+  $(this).find("video")[0].play();
+}, function () {
+  $(this).find("video")[0].pause();
+});
 
-  $('.lead__item_employer').hover(function () {
-    $(this).find("video")[0].play();
-  }, function () {
-    $(this).find("video")[0].pause();
-  });
-} else {
-  $('.lead__item_hero').click(function () {
-    $(this).find("video")[0].play();
-  }, function () {
-    $(this).find("video")[0].pause();
-  });
-
-  $('.lead__item_employer').click(function () {
-    $(this).find("video")[0].play();
-  }, function () {
-    $(this).find("video")[0].pause();
-  });
-}
+$('.lead__item_employer').hover(function () {
+  $(this).find("video")[0].play();
+}, function () {
+  $(this).find("video")[0].pause();
+});

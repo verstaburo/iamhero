@@ -2,33 +2,50 @@
   width: 100%;
   background: $bgFooterMenuColor;
 
+  @media #{$tablet2} {
+    padding: 0 14px;
+  }
+
   &__container {
     display: flex;
     flex-direction: row;
-    //width: 100%;
+
+    @media #{$tablet} {
+      flex-direction: column;
+    }
   }
 
   &__img {
-    height: 203px;
-    width: 277px;
-    margin-top: -6px;
+    height: auto;
+    display: flex;
+    align-items: flex-end;
+
+    @media #{$tablet2} {
+      padding: 0 14px;
+    }
+
+    @media #{$tablet} {
+      justify-content: center;
+    }
+
+    img {
+      width: 277px;
+      margin-top: -6px;
+    }
   }
 
   &__description {
     display: flex;
     flex-direction: column;
     width: 100%;
-    padding: 25px 0;
+    padding: 25px 30px 25px 0;
+
+    @media #{$tablet2} {
+      padding: 25px 0;
+    }
   }
 
   .description {
-    &__box {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      padding-right: 30px;
-    }
-
     &__title {
       font-size: 25px;
       font-weight: 500;
@@ -37,10 +54,22 @@
       line-height: 1.2;
       margin-bottom: 15px;
       max-width: 1200px;
+
+      @media #{$tablet2} {
+        max-width: 100%;
+      }
     }
   }
 
   .box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    @media #{$tablet2} {
+      flex-direction: column;
+    }
+
     &__text {
       font-size: 20px;
       font-family: $mainFontFamily;
@@ -48,6 +77,27 @@
       line-height: 1.2;
       letter-spacing: -.04em;
       max-width: 850px;
+
+      @media #{$tablet2} {
+        max-width: 100%;
+      }
+    }
+
+    &__img {
+      height: 45px;
+      margin: 0 10px;
+
+      &:last-child {
+        margin-right: 0;
+      }
+
+      @media #{$tablet2} {
+        margin: 15px 0;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
     }
   }
 }
