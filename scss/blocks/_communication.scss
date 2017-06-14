@@ -1,7 +1,7 @@
 .communication {
   padding-bottom: 100px;
   overflow: hidden;
-  
+
   @media #{$desktop} {
     padding-bottom: 40px;
   }
@@ -107,9 +107,9 @@
     width: 100%;
     height: 704px;
     overflow: visible;
-    
+
     @media #{$desktop} {
-      height: 400px;
+      height: 600px;
     }
 
     @media #{$tablet} {
@@ -117,18 +117,19 @@
     }
 
     @media #{$mobile} {
-      height: 175px;
+      height: 250px;
     }
 
     img {
       position: absolute;
       top: 0;
-      left: 50%;
+      //left: 50%;
       bottom: 0;
-      transform: translateX(-50%);
+      //transform: translateX(-50%);
       margin: auto;
       max-height: 100%;
-      width: auto;
+      //width: auto;
+      width: 100%;
       object-fit: cover;
     }
   }

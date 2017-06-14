@@ -308,15 +308,3 @@ $('.video__youtube-link').click(function (event) {
     videoblockVip.find('iframe').attr('src', src + videoVip + '?autoplay=1');
   }, 250);
 });
-
-$('.lead__item_hero').hover(function () {
-  $(this).find("video")[0].play();
-}, function () {
-  $(this).find("video")[0].pause();
-});
-
-$('.lead__item_employer').hover(function () {
-  $(this).find("video")[0].play();
-}, function () {
-  $(this).find("video")[0].pause();
-});
