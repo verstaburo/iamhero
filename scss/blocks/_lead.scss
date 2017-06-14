@@ -397,23 +397,6 @@
       margin: auto;
       object-fit: cover;
       z-index: 2;
-      display: none;
-
-      @media #{$desktop} {
-        display: block;
-      }
-
-      @media #{$tablet2} {
-        display: block;
-      }
-
-      @media #{$tablet} {
-        display: block;
-      }
-
-      @media #{$mobile} {
-        display: block;
-      }
     }
 
     &::before {
@@ -482,29 +465,4 @@
       top: 24px;
     }
   }
-
-  video {
-    height: 100%;
-    position: relative;
-    top: 0;
-    left: 0;
-    z-index: 1000;
-
-    @media #{$desktop} {
-      display: none;
-    }
-
-    @media #{$tablet2} {
-      display: none;
-    }
-
-    @media #{$tablet} {
-      display: none;
-    }
-
-    @media #{$mobile} {
-      display: none;
-    }
-  }
-
 }
