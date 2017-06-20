@@ -1,6 +1,6 @@
 .tour-search {
   position: relative;
-  
+
   @media #{$desktop} {
   }
 
@@ -15,7 +15,7 @@
   &__container {
     padding-top: 252px;
     padding-bottom: 448px;
-    
+
     @media #{$desktop2} {
       padding-top: 150px;
       padding-bottom: 282px;
@@ -40,7 +40,7 @@
       padding-left: 78px;
       padding-right: 10px;
     }
-    
+
     @media #{$desktop} {
       padding-left: 60px;
       padding-right: 0;
@@ -73,7 +73,7 @@
       }
     }
   }
-  
+
   &__bg {
     position: relative;
     position: absolute;
@@ -82,18 +82,18 @@
     width: 49%;
     margin-right: 51%;
     height: auto;
-    
+
     @media #{$tablet} {
       position: relative;
       width: 90%;
       margin-right: 10%;
     }
-    
+
     @media #{$mobile} {
       width: 95%;
       margin-right: 5%;
     }
-    
+
     &::before {
       position: absolute;
       content: '';
@@ -105,7 +105,7 @@
       border-radius: 50%;
       background-color: rgba(0, 0, 0, 0.5);
       filter: blur(5px);
-      
+
       @media #{$tablet} {
         width: 50%;
         top: calc(100% + 10px);
@@ -113,8 +113,8 @@
         filter: blur(2px);
       }
     }
-    
-    img {
+
+    img, video {
       position: relative;
       top: 0;
       left: 0;

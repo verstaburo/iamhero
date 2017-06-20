@@ -53,7 +53,7 @@ gulp.task('images', function () {
       imagemin.optipng({optimizationLevel: 3}),
       imagemin.jpegtran({progressive: true})
     ]))
-    .pipe(gulp.dest('./build/images'));
+    .pipe(gulp.dest('build/images'));
 });
 
 gulp.task('svgsprite', function () {
@@ -103,7 +103,8 @@ gulp.task('serve', function() {
     notify: false,
     open: true,
     cors: true,
-    ui: false
+    ui: false,
+    tunnel: 'verstaiamhero'
   });
 
   gulp.watch('scss/**/*.{scss,sass}', ['style']);

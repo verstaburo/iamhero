@@ -37,12 +37,12 @@
     box-sizing: border-box;
     padding-left: 44px;
     padding-right: 200px;
-    
+
     @media #{$desktop2} {
       padding-left: 0;
       padding-right: 100px;
     }
-    
+
     @media #{$desktop} {
       padding-right: 40px;
     }
@@ -50,7 +50,7 @@
     @media #{$tablet2} {
       align-self: flex-start;
     }
-    
+
     @media #{$tablet} {
       width: 100%;
     }
@@ -73,7 +73,7 @@
       }
     }
   }
-  
+
   &__bg {
     position: relative;
     position: absolute;
@@ -82,18 +82,18 @@
     width: 51%;
     margin-left: 49%;
     height: auto;
-    
+
     @media #{$tablet} {
       position: relative;
       width: 90%;
       margin-left: 10%;
     }
-    
+
     @media #{$mobile} {
       width: 95%;
       margin-left: 5%;
     }
-    
+
     &::before {
       position: absolute;
       content: '';
@@ -105,7 +105,7 @@
       border-radius: 50%;
       background-color: rgba(0, 0, 0, 0.5);
       filter: blur(5px);
-      
+
       @media #{$tablet} {
         width: 50%;
         top: calc(100% + 10px);
@@ -113,8 +113,8 @@
         filter: blur(2px);
       }
     }
-    
-    img {
+
+    img, video {
       position: relative;
       top: 0;
       left: 0;
