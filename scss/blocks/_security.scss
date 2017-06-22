@@ -6,12 +6,16 @@
     padding: 0 14px;
   }
 
+  @media #{$tablet} {
+    padding: 0;
+  }
+
   &__container {
     display: flex;
     flex-direction: row;
 
     @media #{$tablet} {
-      flex-direction: column;
+      //flex-direction: column;
     }
   }
 
@@ -19,6 +23,8 @@
     height: auto;
     display: flex;
     align-items: flex-end;
+    width: auto;
+    //flex-basis: 100%;
 
     @media #{$tablet2} {
       padding: 0 14px;
@@ -26,11 +32,30 @@
 
     @media #{$tablet} {
       justify-content: center;
+      padding: 0;
+      flex-basis: 100%;
+      //position: relative;
+      //width: 277px;
+    }
+
+    @media #{$mobile} {
+      margin-left: -70px;
+      flex-basis: 100%;
     }
 
     img {
       width: 277px;
       margin-top: -6px;
+
+      @media #{$tablet} {
+        //position: absolute;
+        //bottom: 0;
+      }
+
+      @media #{$mobile} {
+        width: inherit;
+        height: 180px;
+      }
     }
   }
 
@@ -58,6 +83,17 @@
       @media #{$tablet2} {
         max-width: 100%;
       }
+
+      @media #{$tablet} {
+        max-width: inherit;
+        margin-left: -277px;
+        margin-bottom: 27px;
+        padding: 40px 10px 0;
+      }
+
+      @media #{$mobile} {
+        margin-left: -175px;
+      }
     }
   }
 
@@ -70,6 +106,10 @@
       flex-direction: column;
     }
 
+    @media #{$mobile} {
+      margin-left: -30px;
+    }
+
     &__text {
       font-size: 20px;
       font-family: $mainFontFamily;
@@ -80,6 +120,18 @@
 
       @media #{$tablet2} {
         max-width: 100%;
+      }
+
+      @media #{$tablet} {
+        max-width: inherit;
+        width: inherit;
+        margin-left: -277px;
+        padding: 0 10px;
+        margin-bottom: 35px;
+      }
+
+      @media #{$mobile} {
+        margin-left: -145px;
       }
     }
 
@@ -96,6 +148,26 @@
 
         &:last-child {
           margin-bottom: 0;
+
+          @media #{$mobile} {
+            justify-content: center;
+          }
+
+          img {
+            width: 85px;
+          }
+        }
+      }
+
+      @media #{$mobile} {
+        height: inherit;
+        width: 130px;
+        display: flex;
+        align-items: baseline;
+        justify-content: flex-end;
+
+        img {
+          width: 110px;
         }
       }
     }
