@@ -1,10 +1,12 @@
 .tour-working {
+  margin-top: -200px;
 
   @media #{$tablet} {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
+    margin-top: 0;
   }
 
   &__container {
@@ -35,6 +37,8 @@
     width: 45%;
     padding-left: 10.6%;
     padding-right: 40px;
+    position: relative;
+    top: 300px;
 
     @media #{$desktop2} {
       padding-left: 5%;
@@ -50,6 +54,8 @@
       margin-left: 0;
       padding-left: 32px;
       padding-right: 76px;
+      top: 0;
+      position: inherit;
     }
 
     @media #{$mobile} {
