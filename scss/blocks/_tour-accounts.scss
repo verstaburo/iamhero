@@ -61,7 +61,8 @@
 
     &_hero {
       margin-right: 50%;
-      margin-bottom: 160px;
+      margin-bottom: 260px;
+      margin-top: 100px;
       padding-left: 44px;
       padding-right: 310px;
 
@@ -168,7 +169,7 @@
   }
 
   &__img {
-    top: -392px;
+    top: -292px;
     left: 0;
     width: 100%;
     height: 1753px;
@@ -180,28 +181,28 @@
     }
 
     @media (min-width: 1381px) and (max-width: 1440px) {
-      top: -440px;
+      top: -340px;
     }
 
     @media #{$desktop} {
-      top: -590px;
+      top: -490px;
     }
 
     @media #{$tablet2} {
-      top: -500px;
+      top: -400px;
       width: 100%;
     }
 
     @media #{$tablet} {
-      top: -668px;
+      top: -568px;
     }
 
     @media (min-width: 460px) and #{$mobile} {
-      top: -200px;
+      top: -100px;
     }
 
     @media #{$mobile} {
-      top: -264px;
+      top: -164px;
       height: 876px;
     }
   }
