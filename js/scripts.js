@@ -31,7 +31,7 @@ $('.main-menu__burger').click(function () {
   var itemList = document.querySelectorAll('.main-menu__item:not(.hidden)');
   if ($(this).hasClass('js-menu-opened')) {
     $(this).removeClass('js-menu-opened');
-    $('.main-menu__list').slideUp(500, function () {
+    $('.main-menu__list').slideUp(1000, function () {
       $(this).removeClass('js-menu-opened');
     });
   } else {
