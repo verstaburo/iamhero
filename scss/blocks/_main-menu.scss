@@ -1,7 +1,7 @@
 @media #{$tablet2} {
   @for $i from 1 through 3 {
     .main-menu__item:nth-child(#{$i}) {
-      transition-delay: 0.8s + 0.2s * $i;
+      transition-delay: 0.1s + 0.1s * $i;
     }
   }
 }
