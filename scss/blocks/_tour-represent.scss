@@ -1,4 +1,13 @@
 .tour-represent {
+
+  &__bg {
+
+    @media #{$tablet} {
+      opacity: .4;
+    }
+
+  }
+
   &__container {
     padding-top: 160px;
     padding-bottom: 160px;
