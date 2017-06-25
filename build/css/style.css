@@ -6526,6 +6526,9 @@ textarea {
   .logo__img_lead{
     width: 82px;
     height: 58px; }
+  .page_mainindex__container{
+    -webkit-overflow-scrolling: touch;
+    overflow-y: scroll; }
   .lead__item{
     min-height: 132px;
     height: 132px; }
@@ -6577,6 +6580,9 @@ textarea {
     height: 22px;
     -webkit-transform: translate(3px, -1px);
     transform: translate(3px, -1px); }
+  .page_mainindex__container{
+    -webkit-overflow-scrolling: touch;
+    overflow-y: scroll; }
   .we-for-employer__container{
     padding-bottom: 270px; }
   .we-for-employer__text .text-block__content{
