@@ -1386,7 +1386,7 @@ textarea {
     top: 60px;
     right: 30px;
     width: 30px;
-    height: 2px;
+    height: 30px;
     cursor: pointer;
     z-index: 22; }
     .intro-video__close::before, .intro-video__close::after {
@@ -1397,11 +1397,11 @@ textarea {
       height: 2px;
       background-color: #fff; }
     .intro-video__close::before {
-      top: 0;
+      top: 14px;
       -webkit-transform: rotate(45deg);
               transform: rotate(45deg); }
     .intro-video__close::after {
-      bottom: 0;
+      bottom: 14px;
       -webkit-transform: rotate(-45deg);
               transform: rotate(-45deg); }
 
