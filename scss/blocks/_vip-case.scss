@@ -64,6 +64,7 @@
       background-size: 100% 100%;
 			//box-shadow: inset 0 -165px 90px 0 rgba(255,255,255, 0.75);
 			z-index: 1;
+      pointer-events: none;
 		}
 
     @media #{$desktop} {
@@ -167,7 +168,8 @@
 
 	}
 	&__element-heading, &__element-desc, &__element-tags {
-		padding: 0 25px;
+		//padding: 0 25px;
+		padding: 0 17px;
 
     @media #{$mobile} {
       padding: 0 10px;
@@ -208,13 +210,14 @@
 		background: $vipCaseColor;
 		border-radius:20px;
 		padding: 4px 9px;
-		margin: 0 1px;
+		margin: 0 1px 10px;
 		display: inline-block;
 		@media #{$tablet} {
 			margin-bottom: 10px;
 		}
 
     @media #{$mobile} {
+      margin: 5px 0;
       font-size: 10px;
     }
 	}
