@@ -10,6 +10,10 @@
 		min-height: 100%;
 	}
 
+  @media #{$mobile} {
+    padding: 0px 0 350px 0;
+  }
+
 	.page-section__bg-img {
 		@media #{$tablet} {
 			height: 365px;
