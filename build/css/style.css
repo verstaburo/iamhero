@@ -5172,9 +5172,11 @@ textarea {
     top: -400px;
     width: 100%; }
   .tour-dashboard{
-    padding-bottom: 150px; }
+    padding-bottom: 0px; }
   .tour-dashboard__container{
     padding-bottom: 40px; }
+  .tour-dashboard__container{
+    padding-top: 36px; }
   .tour-dashboard__text{
     -webkit-align-self: flex-start;
     -ms-flex-item-align: start;
@@ -5746,7 +5748,7 @@ textarea {
     -webkit-filter: blur(2px);
     filter: blur(2px); }
   .tour-search{
-    padding-bottom: 100px; }
+    padding-bottom: 0; }
   .tour-search__container{
     padding-bottom: 40px;
     padding-top: 136px; }
@@ -6923,9 +6925,9 @@ textarea {
     top: -164px;
     height: 876px; }
   .tour-dashboard{
-    padding-bottom: 145px; }
+    padding-bottom: 0; }
   .tour-dashboard__container{
-    padding-top: 106px;
+    padding-top: 68px;
     padding-bottom: 20px; }
   .tour-dashboard__text{
     padding-left: 16px;
@@ -6937,7 +6939,7 @@ textarea {
     width: 95%;
     margin-left: 5%; }
   .tour-search{
-    padding-bottom: 50px; }
+    padding-bottom: 0; }
   .tour-search__container{
     padding-top: 68px; }
   .tour-search__text{
@@ -6949,6 +6951,8 @@ textarea {
   .tour-search__bg{
     width: 95%;
     margin-right: 5%; }
+  .tour-matching__container{
+    padding-top: 68px; }
   .tour-matching__text{
     padding-left: 14px;
     padding-right: 14px;
