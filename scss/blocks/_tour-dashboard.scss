@@ -28,6 +28,10 @@
       padding-bottom: 40px;
     }
 
+    @media #{$tablet2} {
+      padding-top: 136px;
+    }
+
     @media #{$mobile} {
       //padding-top: 106px;
       padding-top: 68px;

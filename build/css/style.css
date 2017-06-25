@@ -5175,6 +5175,8 @@ textarea {
     padding-bottom: 0px; }
   .tour-dashboard__container{
     padding-bottom: 40px; }
+  .tour-dashboard__container{
+    padding-top: 136px; }
   .tour-dashboard__text{
     -webkit-align-self: flex-start;
     -ms-flex-item-align: start;
