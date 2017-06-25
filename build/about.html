@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Content-type" content="text/html; utf-8">
+  <meta http-equiv="Content-language" content="en-EN">
+  <meta name="description" content="{description}">
+  <meta name="keywords" content="{keywords}">
+  <title>About</title>
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="css/vendor/normalize.css">
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body class="page">
+	  <header class="page-header page-header_fixed page-header_no-switch-btn">
+    <div class="sticky__anchor"></div>
+    <div class="page-header__wrapper {wrapper_class}">
+      <a href="index.html" class="logo logo_header page-header__logo">
+        <img class="logo__img logo__img_header" src="images/logo_light.svg" alt="" >
+      </a>
+      <nav class="page-header__menu main-menu">
+        <button class="main-menu__burger" type="button">Menu <div class="main-menu__burger-item"></div></button>
+        <ul class="main-menu__list">
+          <li class="main-menu__item"><a href=" undefined" class="main-menu__link"> Opportunities</a></li>
+          <li class="main-menu__item"><a href=" undefined" class="main-menu__link"> VIP</a></li>
+          <li class="main-menu__item"><a href=" undefined" class="main-menu__link"> Examples</a></li>
+          <li class="main-menu__item hidden"><a href=" undefined" class="main-menu__link"> {link4_text}</a></li>
+          {dop_item}
+        </ul>
+      </nav>
+      <div class="page-header__user-menu user-menu">
+        <button class="user-menu__toggle" type="button">User menu
+          <svg class="user-menu__icon">
+            <use xlink:href="images/sprite.svg#user_menu"></use>
+          </svg>
+        </button>
+        <ul class="user-menu__list">
+          <li class="user-menu__item"><a href="#" class="user-menu__link">Log In</a></li>
+          <li class="user-menu__item"><a href="#" class="user-menu__link">Sign up now</a></li>
+        </ul>
+        <a href="#" class="user-menu__switch-btn">
+          <span>Switch to employer</span>
+          <svg class="user-menu__arrow">
+            <use xlink:href="images/sprite.svg#arrow"></use>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </header>
+
+	<main class="page-content about-page-content_width">
+    <svg height="0">
+			<defs>
+				<filter id="about-slogan__blur-half" x="0" y="0" width="50%" height="100%">
+					<feGaussianBlur in="SourceGraphic" stdDeviation="17"/>
+				</filter>
+				<filter id="about-slogan__blur-full" x="0" y="0" width="100%" height="100%">
+					<feGaussianBlur in="SourceGraphic" stdDeviation="15"/>
+				</filter>
+				<filter id="about-team__grayscale">
+					<feColorMatrix type="saturate" values="0"/>
+				</filter>
+			</defs>
+		</svg>
+
+		<section class="page-section page-section_start about-slogan">
+			<div class="container page-section__container about-container about-slogan__container">
+
+				<div class="about-slogan__content">
+					<p class="about-slogan__text about-slogan__text_quote">&#34;We work on the most exciting way for job seekers to introduce themselves &amp; employees to attract job seekers in a smart way.<br><span>And we love it</span>&#34;</p>
+					<p class="about-slogan__text">Have an idea how to get things better? <a href="#">Drop Us a line!</a></p>
+				</div>
+
+			</div>
+
+			<div class="page-section__bg-img about-slogan__bg">
+				<picture>
+          <source srcset="images/about_slogan_bg_mobile.jpg" media="(max-width: 1024px)">
+				  <img src="images/about_slogan_bg.jpg" alt="">
+				</picture>
+			</div>
+		</section>
+
+		<section class="page-section page-section_start about-description">
+
+		  <div class="about-description__bg">
+        <img src="images/about_ipads.png" alt="">
+      </div>
+			<div class="container page-section__container about-container about-description__container">
+
+				<div class="about-description__content">
+					<div class="about-description__content-item about-description__content-item_flex">
+						<span class="about-description__text about-description__text_big">I am Hero!</span>
+						<p class="about-description__text">I am Hero is the service that you deserve. Heroes can access missions in a new and refresshing way, built to connect those who need and those who can.</p>
+					</div>
+					<div class="about-description__content-item">
+						<p class="about-description__text">We see everyone as Heroes.</p>
+						<p class="about-description__text about-description__text_bold">Professional individuals capable of delivering what is needed, when it is needed.</p>
+					</div>
+					<div class="about-description__content-item">
+						<p class="about-description__text">May be two more sentences could be added here just for capacity. Also it's important to mention that the team of professionals are involved in the project united by bright idea.</p>
+					</div>
+					<div class="about-description__content-item about-description__content-item_flex">
+						<p class="about-description__text">Together, we are all Herows. In the modern world there is a lack of responsible and taleneted professionals.</p>
+						<p class="about-description__text about-description__text_bold">Together, we can revolt and transform society.</p>
+						<div class="about-description__comment">
+							<div class="about-description__comment-author">
+								<b>Michael Berlant</b>
+								<span>I AM HERO founder</span>
+							</div>
+							<div class="about-description__comment-image">
+								<img src="images/about_avatar.jpg" alt="">
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</section>
+
+		<section class="page-section page-section_start about-partners">
+			<div class="container page-section__container about-container about-partners__container">
+
+				<div class="about-parners__content">
+					<p class="about-partners__text">We're proud to introduce you our partners and companies <b class="about-partners__text_bold">that believe in heroes</b></p>
+					<ul class="about-partners__logos">
+						<li class="about-partners__item"><a href="https://www.audi.com" class="company company_audi"><img src="images/about_logo-audi.png" alt=""></a></li>
+						<li class="about-partners__item"><a href="https://www.airbnb.com" class="company company_airbnb"><img src="images/about_logo-airbnb.png" alt=""></a></li>
+						<li class="about-partners__item"><a href="https://www.paypal.com" class="company company_paypal"><img src="images/about_logo-paypal.png" alt=""></a></li>
+						<li class="about-partners__item"><a href="https://www.fox.com" class="company company_fox"><img src="images/about_logo-fox.png" alt=""></a></li>
+						<li class="about-partners__item"><a href="https://www.soundcloud.com" class="company company_soundcloud"><img src="images/about_logo-soundcloud.png" alt=""></a></li>
+						<li class="about-partners__item"><a href="https://www.facebook.com" class="company company_facebook"><img src="images/about_logo-fb.png" alt=""></a></li>
+					</ul>
+				</div>
+
+			</div>
+		</section>
+
+		<section class="page-section page-section_start about-team">
+			<div class="container page-section__container about-container about-team__container">
+
+				<div class="about-team__content">
+					<h2 class="about-team__title">The team</h2>
+					<p class="about-team__text">Here we are! We're the guys standing behind service philosophy, managing, developing and promoting.</p>
+					<div class="about-team__photos">
+						<div class="about-team__photo">
+							<div><img src="images/about_photo1.jpg"></div>
+							<b>Mikhael Berlant</b>
+							<span>Chief Executive Officel, Project founder</span>
+						</div>
+						<div class="about-team__photo">
+							<div><img src="images/about_photo2.jpg"></div>
+							<b>Maksim Kondratiev</b>
+							<span>Project Manajer</span>
+						</div>
+						<div class="about-team__photo">
+							<div><img src="images/about_photo3.jpg"></div>
+							<b>Dmitry Popov</b>
+							<span>Lead Developer</span>
+						</div>
+						<div class="about-team__photo">
+							<div><img src="images/about_photo4.jpg"></div>
+							<b>Olga Brede</b>
+							<span>Design team Project manager</span>
+						</div>
+						<div class="about-team__photo">
+							<div><img src="images/about_photo5.jpg"></div>
+							<b>Jekaterina Jefimova</b>
+							<span>Art Director</span>
+						</div>
+						<div class="about-team__photo">
+							<div>
+                <img src="images/about_photo6.jpg">
+							</div>
+							<b>Eugene Sheeleen</b>
+							<span>UI DEsigner</span>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</section>
+
+		<section class="page-section page-section_start about-donate">
+			<div class="container page-section__container about-container about-donate__container">
+
+				<div class="about-donate__content">
+					<h2 class="about-donate__title">Donate if you feel us.</h2>
+					<p class="about-donate__text">We believe in crowdfunding as well as in our idea so you can find and help us on kickstarter and Indiegogo.<br>You can make sure you'll be hero-packed for good</p>
+					<div class="about-donate__services">
+						<div class="about-donate__service about-donate__service_indiegogo"><a href=""><img src="images/about_indiegogo.jpg" alt=""></a></div>
+						<div class="about-donate__service about-donate__service_forks"><a href=""><img src="images/about_forks.jpg" alt=""></a></div>
+					</div>
+				</div>
+
+			</div>
+		</section>
+
+	</main>
+
+  <div class="page-section page-security">
+  <div class="page-security__container container">
+    <div class="page-security__img">
+      <img class="" src="images/security-0.png" alt="">
+  </div>
+    <div class="page-security__description description">
+      <h3 class="description__title">All IAmHero servers provide the highest standards for privacy and security of all
+        data, located in several distributed TÜV certified covert german data center locations.</h3>
+      <div class="box description__box">
+        <p class="box__text">All server locations are powered by 100% certified eco-power using energy-saving climate
+          systems, allowing for 45% reduction of energy costs with 2 separate and independent power supplies and diesel
+          generators for backup to guarantee interruption-free power supply."</p>
+        <div class="box__img">
+          <img class="" src="images/security2.png" alt="">
+        </div>
+        <div class="box__img">
+          <img class="" src="images/security1.png" alt="">
+        </div>
+        <div class="box__img">
+          <img class="" src="images/security3.png" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+	  <form action="" class="form form_light form_prereg" id="preregistration-from">
+    <div class="form__container container">
+      <div class="text-block text-block_light text-block_start form__text">
+        <h2 class="text-block__title text-block__title_mainpage {special_class}">
+          Get started now! <i>For Free</i>
+        </h2>
+        <div class="text-block__content text-block__content_huger {special_class}">
+          <p>
+            Over 500 000 heroes can’t be wrong...
+          </p>
+        </div>
+      </div>
+      <div class="form__content">
+        <div class="form__radiofield switch {special_class}">
+          <div class="form__radio switch__item">
+            <input type="radio" value="jobseeker" name="usertype" id="jobseeker" class="form__radioitem switch__radio" checked>
+            <label class="form__radiolabel switch__label" for="jobseeker">
+              Job seeker
+            </label>
+          </div>
+          <div class="form__radio  switch__item">
+            <input type="radio" value="employer" name="usertype" id="employer" class="form__radioitem switch__radio">
+            <label class="form__radiolabel switch__label" for="employer">
+              Employer
+            </label>
+          </div>
+        </div>
+        <label class="form__inputlabel {special_class}" for="username">
+          Full name
+          <input type="text" name="username" id="username" placeholder="Full name">
+        </label>
+        <label class="form__inputlabel {special_class}" for="email">
+          E-mail Adress
+          <input type="email" name="email" id="email" placeholder="E-mail Adress" required>
+        </label>
+        <label class="form__inputlabel {special_class}" for="password">
+          Create password
+          <input type="password" name="password" id="password" placeholder="Create password" required>
+        </label>
+        <button class="form__submit btn btn_light btn_wider" type="submit">Continue</button>
+      </div>
+    </div>
+  </form>
+
+	  <footer class="page-footer">
+    <div class="page-footer__container container">
+      <div class="page-footer__logo">
+        <a href="index.html" class="logo logo_footer {special_class}">
+          <img class="logo__img logo__img_footer" src="images/logo_grey.svg" alt="">
+        </a>
+      </div>
+      <div class="page-footer__menu footer-menu page-footer__menu_info">
+        <h4 class="footer-menu__title {special_class}">Information</h4>
+        <ul class="footer-menu__list">
+          <li class="footer-menu__item {special_class}">
+            <a href="#">About amhero</a>
+          </li>
+          <li class="footer-menu__item {special_class}">
+            <a href="#">Help &amp; Support</a>
+          </li>
+          <li class="footer-menu__item {special_class}">
+            <a href="#">Jobs</a>
+          </li>
+          <li class="footer-menu__item {special_class}">
+            <a href="#">Join The—iamhero</a>
+          </li>
+        </ul>
+      </div>
+      <div class="page-footer__menu footer-menu page-footer__menu_employer">
+        <h4 class="footer-menu__title {special_class}">Employer</h4>
+        <ul class="footer-menu__list">
+          <li class="footer-menu__item {special_class}">
+            <a href="#">Hire the Heros</a>
+          </li>
+          <li class="footer-menu__item {special_class}">
+            <a href="#">Create Company Page</a>
+          </li>
+          <li class="footer-menu__item {special_class}">
+            <a href="#">Post a Job</a>
+          </li>
+          <li class="footer-menu__item {special_class}">
+            <a href="price.html">Pricing</a>
+          </li>
+          <li class="footer-menu__item {special_class}">
+            <a href="#">Terms &amp; Conditions</a>
+          </li>
+          <li class="footer-menu__item {special_class}">
+            <a href="#">Privacy Policy</a>
+          </li>
+        </ul>
+      </div>
+      <div class="page-footer__menu footer-menu page-footer__menu_hero">
+        <h4 class="footer-menu__title {special_class}">I am hero</h4>
+        <ul class="footer-menu__list">
+          <li class="footer-menu__item {special_class}">
+            <a href="#">Functions</a>
+          </li>
+          <li class="footer-menu__item {special_class}">
+            <a href="#">Resume</a>
+          </li>
+          <li class="footer-menu__item {special_class}">
+            <a href="price.html">Pricing</a>
+          </li>
+          <li class="footer-menu__item {special_class}">
+            <a href="#">Terms &amp; Conditions</a>
+          </li>
+          <li class="footer-menu__item {special_class}">
+            <a href="#">Privacy Policy</a>
+          </li>
+        </ul>
+      </div>
+      <div class="page-footer__menu footer-menu page-footer__menu_social {special_class}">
+        <h4 class="footer-menu__title {special_class}">Social</h4>
+        <ul class="footer-menu__list socials">
+          <li class="footer-menu__item {special_class} socials__item social">
+            <a href="https://www.facebook.com" class="social__link">
+              Facebook
+              <svg class="social__img  social__img_facebook">
+                <use xlink:href="images/sprite.svg#icon_facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="footer-menu__item {special_class} socials__item social">
+            <a href="https://www.twitter.com" class="social__link">
+              Twitter
+              <svg class="social__img social__img_twitter">
+                <use xlink:href="images/sprite.svg#icon_twitter"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="footer-menu__item {special_class} socials__item social">
+            <a href="https://www.youtube.com" class="social__link">
+              Youtube
+              <svg class="social__img social__img_youtube">
+                <use xlink:href="images/sprite.svg#icon_youtube"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="footer-menu__item {special_class} socials__item social">
+            <a href="https://www.instagram.com" class="social__link">
+              Instagram
+              <svg class="social__img social__img_instagram">
+                <use xlink:href="images/sprite.svg#icon_instagram"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+	  <script src="js/vendors/jquery.min.js"></script>
+
+  <!--[if lt IE 9]><script src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE9.js"></script><![endif]-->
+  <!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+
+  <!--svg support-->
+  <script src="js/vendors/svg4everybody.min.js"></script>
+
+  <!--scroll animation-->
+  <script src="js/vendors/scrollReveal.js"></script>
+
+  <script src="js/main.min.js"></script>
+  <script src="js/vendors/picturefill.min.js"></script>
+
+</body>
+</html>
