@@ -156,13 +156,13 @@
     pointer-events: none;
     transition: all .25s ease-in-out;
     background-color: #000;
-    z-index: 3;
+    transform: translate3d(0, 0, 0);
 
     iframe {
-      position: relative;
       width: 100%;
       height: 100%;
-      z-index: 4;
+      backface-visibility: hidden;
+      transform: translate3d(0, 0, 0);
     }
   }
 
@@ -171,6 +171,8 @@
     top: 0;
     left: 0;
     height: 100vh;
+    transform: translate3d(0, 0, 0);
+    backface-visibility: hidden;
     z-index: 1200;
 
     .intro-video__container {

@@ -1363,17 +1363,24 @@ textarea {
     pointer-events: none;
     transition: all .25s ease-in-out;
     background-color: #000;
-    z-index: 3; }
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0); }
     .intro-video__content iframe {
-      position: relative;
       width: 100%;
       height: 100%;
-      z-index: 4; }
+      -webkit-backface-visibility: hidden;
+              backface-visibility: hidden;
+      -webkit-transform: translate3d(0, 0, 0);
+              transform: translate3d(0, 0, 0); }
   .intro-video.active {
     position: fixed;
     top: 0;
     left: 0;
     height: 100vh;
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+    -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
     z-index: 1200; }
     .intro-video.active .intro-video__container {
       display: none; }
@@ -2061,7 +2068,7 @@ textarea {
     margin-bottom: 260px;
     margin-top: 100px;
     padding-left: 44px;
-    padding-right: 310px; }
+    padding-right: 300px; }
   .tour-accounts__text_superhero {
     margin-left: 50%;
     padding-left: 174px;
@@ -4601,7 +4608,8 @@ textarea {
   .tour-working__text .text-block__content{
     padding-right: 0; }
   .tour-accounts__text_hero{
-    padding-left: 0; }
+    padding-left: 44px;
+    padding-right: 150px; }
   .tour-dashboard__text{
     padding-left: 0;
     padding-right: 100px; }
@@ -5180,6 +5188,7 @@ textarea {
   .tour-accounts__text{
     width: 70%; }
   .tour-accounts__text_hero{
+    padding-left: 0;
     padding-right: 0;
     margin-right: 30%;
     margin-bottom: 750px; }

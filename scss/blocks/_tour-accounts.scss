@@ -64,13 +64,15 @@
       margin-bottom: 260px;
       margin-top: 100px;
       padding-left: 44px;
-      padding-right: 310px;
+      padding-right: 300px;
 
       @media #{$desktop2} {
-        padding-left: 0;
+        padding-left: 44px;
+        padding-right: 150px;
       }
 
       @media #{$tablet2} {
+        padding-left: 0;
         padding-right: 0;
         margin-right: 30%;
         margin-bottom: 750px;

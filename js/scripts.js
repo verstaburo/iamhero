@@ -290,6 +290,7 @@ $(document).on("click", '.intro-video__btn', function () {
 $(document).on("click", '.intro-video__close', function (event) {
   event.preventDefault();
   event.stopPropagation();
+  console.log("close click");
   videoblockIndex.removeClass('active');
   setTimeout(function () {
     videoblockIndex.find('iframe').attr('src', '');
