@@ -3274,11 +3274,11 @@ textarea {
     -webkit-justify-content: center;
         -ms-flex-pack: center;
             justify-content: center;
-    white-space: nowrap; }
+    width: 100%; }
   .case__grid-col {
-    -webkit-flex: 1;
-        -ms-flex: 1;
-            flex: 1;
+    -webkit-flex-basis: 100%;
+        -ms-flex-preferred-size: 100%;
+            flex-basis: 100%;
     display: inline-block;
     white-space: normal;
     vertical-align: top; }
