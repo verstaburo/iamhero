@@ -37,7 +37,7 @@
     box-sizing: border-box;
     padding: 0 9.5%;
     width: 50%;
-    transition: height 1.25s ease-in-out, min-height 1.25s ease-in-out, max-height 1.25s ease-in-out, width 1.25s ease-in-out, opacity 1.25s ease-in-out, padding 1.25s ease-in-out;
+    transition: height .75s ease-in-out, min-height .75s ease-in-out, max-height .75s ease-in-out, width .75s ease-in-out, opacity .75s ease-in-out, padding .75s ease-in-out;
 
     @media #{$desktop2} {
       padding-right: 9.5%;
@@ -74,7 +74,7 @@
       background-position: 0% 100%;
       background-repeat: no-repeat;
       opacity: 0;
-      transition: opacity 1.25s ease-in-out;
+      transition: opacity .75s ease-in-out;
       z-index: 3;
 
       @media #{$mobile} {
@@ -330,7 +330,7 @@
     visibility: hidden;
     opacity: 0;
     transform: translateY(200px);
-    transition: transform 1s ease-in-out, opacity 1s ease-in-out, background 0.25s ease-in-out, color 0.25s ease-in-out;
+    transition: transform .75s ease-in-out, opacity .75s ease-in-out, background 0.25s ease-in-out, color 0.25s ease-in-out;
     z-index: 5;
 
     @media #{$tablet} {
@@ -418,7 +418,7 @@
     width: 100%;
     margin-bottom: 42px;
     z-index: 4;
-    transition: padding 1.25s ease-in-out;
+    transition: padding .75s ease-in-out;
 
     @media #{$tablet2} {
       margin-bottom: 20px;
@@ -435,7 +435,7 @@
       left: 0;
       width: 12px;
       height: 300%;
-      transition: height 1.25s ease-in-out;
+      transition: height .75s ease-in-out;
 
       @media #{$mobile} {
         width: 6px;

@@ -1,6 +1,8 @@
 .intro-video {
   position: relative;
   transition: all 0.25 ease-in-out;
+  transform: translate3d(0, 0, 0);
+  backface-visibility: hidden;
 
   &::before {
     position: absolute;
@@ -22,6 +24,8 @@
     align-items: flex-start;
     padding-top: 126px;
     padding-bottom: 70px;
+    transform: translate3d(0, 0, 0);
+    backface-visibility: hidden;
     z-index: 2;
 
     @media #{$tablet2} {
@@ -157,10 +161,12 @@
     transition: all .25s ease-in-out;
     background-color: #000;
     transform: translate3d(0, 0, 0);
+    backface-visibility: hidden;
 
     iframe {
       width: 100%;
       height: 100%;
+      z-index: 99;
       backface-visibility: hidden;
       transform: translate3d(0, 0, 0);
     }
@@ -171,8 +177,6 @@
     top: 0;
     left: 0;
     height: 100vh;
-    transform: translate3d(0, 0, 0);
-    backface-visibility: hidden;
     z-index: 1200;
 
     .intro-video__container {
@@ -190,12 +194,19 @@
 
   &__close {
     position: absolute;
+    display: none;
     top: 60px;
     right: 30px;
     width: 30px;
     height: 30px;
     cursor: pointer;
     z-index: 10000;
+    transform: translate3d(0, 0, 0);
+    backface-visibility: hidden;
+
+    &.active {
+      display: block;
+    }
 
     &::before,
     &::after {
