@@ -3,7 +3,11 @@
   &__bg {
 
     @media #{$tablet} {
-      opacity: .4;
+
+      img {
+        opacity: .7;
+      }
+
     }
 
   }
