@@ -759,7 +759,7 @@ textarea {
       bottom: calc(100% + 14px);
       left: 0;
       width: 12px;
-      height: 200%;
+      height: 300%;
       transition: height 1.25s ease-in-out; }
     .lead__text .text-block__title_mainpage {
       padding-right: 0; }
@@ -1362,10 +1362,13 @@ textarea {
     opacity: 0;
     pointer-events: none;
     transition: all .25s ease-in-out;
-    background-color: #000; }
+    background-color: #000;
+    z-index: 3; }
     .intro-video__content iframe {
+      position: relative;
       width: 100%;
-      height: 100%; }
+      height: 100%;
+      z-index: 4; }
   .intro-video.active {
     position: fixed;
     top: 0;
@@ -1379,16 +1382,15 @@ textarea {
       opacity: 1;
       pointer-events: all;
       transition-delay: .25s;
-      z-index: 20; }
+      z-index: 3; }
   .intro-video__close {
-    position: relative;
     position: absolute;
     top: 60px;
     right: 30px;
     width: 30px;
     height: 30px;
     cursor: pointer;
-    z-index: 22; }
+    z-index: 10000; }
     .intro-video__close::before, .intro-video__close::after {
       position: absolute;
       content: '';
@@ -2208,14 +2210,29 @@ textarea {
       width: 100%;
       height: auto; }
 
+.tour-represent__bg::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+  content: '';
+  width: 100%;
+  height: 100%;
+  background-image: radial-gradient(ellipse at 50% 50%, rgba(255, 255, 255, 0.7) 0%, transparent 100%);
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  z-index: 2; }
+
 .tour-represent__container {
   padding-top: 160px;
   padding-bottom: 160px; }
 
 .tour-represent__text {
+  position: relative;
   width: 50%;
   padding-left: 138px;
-  padding-right: 180px; }
+  padding-right: 180px;
+  z-index: 3; }
 
 .tour-offer__container {
   position: relative;
@@ -5788,8 +5805,8 @@ textarea {
   .tour-matching__img{
     width: 100%;
     max-width: 923px; }
-  .tour-represent__bg img{
-    opacity: .7; }
+  .tour-represent__bg::before{
+    display: block; }
   .tour-represent__container{
     padding-top: 272px;
     padding-bottom: 200px; }

@@ -2,10 +2,28 @@
 
   &__bg {
 
+    &::before {
+      position: absolute;
+      top: 0;
+      left: 0;
+      display: none;
+      content: '';
+      width: 100%;
+      height: 100%;
+      background-image: radial-gradient(ellipse at 50% 50%, rgba(#fff, .7) 0%, transparent 100%);
+      background-position: 50% 50%;
+      background-repeat: no-repeat;
+      z-index: 2;
+
+      @media #{$tablet} {
+        display: block;
+      }
+    }
+
     @media #{$tablet} {
 
       img {
-        opacity: .7;
+        //opacity: .7;
       }
 
     }
@@ -33,9 +51,11 @@
   }
 
   &__text {
+    position: relative;
     width: 50%;
     padding-left: 138px;
     padding-right: 180px;
+    z-index: 3;
 
     @media #{$desktop} {
       padding-left: 60px;
