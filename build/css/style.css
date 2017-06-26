@@ -6536,9 +6536,9 @@ textarea {
     min-height: 132px;
     height: 132px; }
   .lead__item::before{
-    z-index: -1; }
+    z-index: 3; }
   .lead__item::after{
-    z-index: -1; }
+    z-index: 3; }
   .lead__item_hero::before{
     background-image: linear-gradient(to top, #1451ff 0, transparent 220px); }
   .lead__item_hero:hover{
