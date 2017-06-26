@@ -159,7 +159,7 @@
     top: 0;
     width: 100%;
     height: 100%;
-    //opacity: 0;
+    opacity: 0;
     pointer-events: none;
     transition: all .25s ease-in-out;
     background-color: #000;
@@ -173,6 +173,10 @@
       z-index: 1004;
       backface-visibility: hidden;
       transform: translate3d(0, 0, 0);
+
+      @media #{$tablet} {
+        height: calc(100vh - 40px);
+      }
     }
   }
 
@@ -190,9 +194,8 @@
     .intro-video__content {
       position: relative;
       display: block;
-      //opacity: 1;
+      opacity: 1;
       pointer-events: all;
-      transition-delay: .25s;
       z-index: 1003;
 
       @media #{$tablet} {
@@ -216,6 +219,7 @@
 
     @media #{$tablet} {
       top: 5px;
+      right: 5px;
     }
 
     &::before,

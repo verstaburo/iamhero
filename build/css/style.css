@@ -1370,6 +1370,7 @@ textarea {
     top: 0;
     width: 100%;
     height: 100%;
+    opacity: 0;
     pointer-events: none;
     transition: all .25s ease-in-out;
     background-color: #000;
@@ -1397,8 +1398,8 @@ textarea {
     .intro-video.active .intro-video__content {
       position: relative;
       display: block;
+      opacity: 1;
       pointer-events: all;
-      transition-delay: .25s;
       z-index: 1003; }
   .intro-video__close {
     position: absolute;
@@ -5613,10 +5614,13 @@ textarea {
   .intro-video__play-btn{
     width: 75px;
     height: 75px; }
+  .intro-video__content iframe{
+    height: calc(100vh - 40px); }
   .intro-video.active .intro-video__content{
     padding-top: 40px; }
   .intro-video__close{
-    top: 5px; }
+    top: 5px;
+    right: 5px; }
   .resume-examples__text{
     margin-bottom: 20px; }
   .resume-examples__images{
