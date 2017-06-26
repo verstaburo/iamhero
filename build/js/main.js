@@ -315,9 +315,8 @@ videoblockIndex = $(document).find('.intro-video');
 $(document).on("click", '.intro-video__btn', function () {
   videoIndex = $(this).parents('.intro-video').data('video');
   videoblockIndex.addClass('active'); // Добавляем активный класс, который увеличит блок по высоте и сделает видимым слой с видео
-  $('.intro-video__close').addClass('active');
   setTimeout(function () {
-    videoblockIndex.find('iframe').attr('src', src + videoIndex + '?autoplay=1');
+    videoblockIndex.find('iframe').attr('src', src + videoIndex + '?wmode=opaque&autoplay=1&showinfo=0');
   }, 250);
 });
 
@@ -325,7 +324,6 @@ $(document).on("click", '.intro-video__close', function (event) {
   event.preventDefault();
   event.stopPropagation();
   videoblockIndex.removeClass('active');
-  $(this).removeClass('active');
   setTimeout(function () {
     videoblockIndex.find('iframe').attr('src', '');
   }, 250);
