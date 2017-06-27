@@ -256,6 +256,22 @@ if (heroBlock && employerBlock) {
     heroBlock.classList.remove('js-hero-hover-none');
     employerBlock.classList.remove('js-employer-hover-active');
   }, false);
+
+  if(/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)){
+    heroBlock.addEventListener('click', function () {
+      heroBlock.classList.add('js-hero-hover-active');
+      employerBlock.classList.add('js-employer-hover-none');
+      heroBlock.classList.remove('js-hero-hover-none');
+      employerBlock.classList.remove('js-employer-hover-active');
+    }, false);
+
+    employerBlock.addEventListener('click', function () {
+      heroBlock.classList.add('js-hero-hover-none');
+      employerBlock.classList.add('js-employer-hover-active');
+      heroBlock.classList.remove('js-hero-hover-active');
+      employerBlock.classList.remove('js-employer-hover-none');
+    }, false);
+  }
 }
 
 //dropdown menu news-category
