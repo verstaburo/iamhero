@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Content-type" content="text/html; utf-8">
+  <meta http-equiv="Content-language" content="en-EN">
+  <meta name="description" content="{description}">
+  <meta name="keywords" content="{keywords}">
+  <title>404 - page not found</title>
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="css/vendor/normalize.css">
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+  <body class="page">
+  <header class="page-header page-header_fixed">
+    <div class="sticky__anchor"></div>
+    <div class="page-header__wrapper {wrapper_class}">
+      <a href="index.html" class="logo logo_header page-header__logo">
+        <img class="logo__img logo__img_header" src="images/logo_light.svg" alt="" >
+      </a>
+      <nav class="page-header__menu main-menu">
+        <button class="main-menu__burger" type="button">Menu <div class="main-menu__burger-item"></div></button>
+        <ul class="main-menu__list">
+          <li class="main-menu__item"><a href=" undefined" class="main-menu__link"> I am Hero</a></li>
+          <li class="main-menu__item"><a href=" undefined" class="main-menu__link"> Take a tour</a></li>
+          <li class="main-menu__item"><a href=" undefined" class="main-menu__link"> Superhero</a></li>
+          <li class="main-menu__item visible"><a href=" undefined" class="main-menu__link"> Examples</a></li>
+          {dop_item}
+        </ul>
+      </nav>
+      <div class="page-header__user-menu user-menu">
+        <button class="user-menu__toggle" type="button">User menu
+          <svg class="user-menu__icon">
+            <use xlink:href="images/sprite.svg#user_menu"></use>
+          </svg>
+        </button>
+        <ul class="user-menu__list">
+          <li class="user-menu__item"><a href="#" class="user-menu__link">Log In</a></li>
+          <li class="user-menu__item"><a href="#" class="user-menu__link">Sign up now</a></li>
+        </ul>
+        <a href="#" class="user-menu__switch-btn">
+          <span>Switch to employer</span>
+          <svg class="user-menu__arrow">
+            <use xlink:href="images/sprite.svg#arrow"></use>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main class="page-content">
+    <section class="page-section page-section_end notfound">
+      <div class="container page-section__container notfound__container">
+        <div class="text-block text-block_light text-block_centered notfound__text">
+          <h1 class="text-block__title text-block__title_huge text-block__title_medium notfound__title">404</h1>
+          <div class="text-block__content text-block__content_hugest text-block__content_lightweight notfound__content">
+            <p>
+              The page you were looking for could not be found.
+            </p>
+            <a href="index.html" class="btn btn_light btn_wider notfound__btn">Go to main page</a>
+          </div>
+        </div>
+      </div>
+      <div class="page-section__bg-img notfound__bg">
+        <picture>
+          <source srcset="images/notfound_bg_mobile.jpg" media="(max-width: 1024px)">
+          <img src="images/notfound_bg.jpg" alt="">
+        </picture>
+      </div>
+    </section>
+  </main>
+  <form action="" class="form form_light form_prereg" id="preregistration-from">
+    <div class="form__container container">
+      <div class="text-block text-block_light text-block_start form__text">
+        <h2 class="text-block__title text-block__title_mainpage {special_class}">
+          Get started now! <i>For Free</i>
+        </h2>
+        <div class="text-block__content text-block__content_huger {special_class}">
+          <p>
+            Over 500 000 heroes can’t be wrong...
+          </p>
+        </div>
+      </div>
+      <div class="form__content">
+        <div class="form__radiofield switch {special_class}">
+          <div class="form__radio switch__item">
+            <input type="radio" value="jobseeker" name="usertype" id="jobseeker" class="form__radioitem switch__radio" checked>
+            <label class="form__radiolabel switch__label" for="jobseeker">
+              Job seeker
+            </label>
+          </div>
+          <div class="form__radio  switch__item">
+            <input type="radio" value="employer" name="usertype" id="employer" class="form__radioitem switch__radio">
+            <label class="form__radiolabel switch__label" for="employer">
+              Employer
+            </label>
+          </div>
+        </div>
+        <label class="form__inputlabel {special_class}" for="username">
+          Full name
+          <input type="text" name="username" id="username" placeholder="Full name">
+        </label>
+        <label class="form__inputlabel {special_class}" for="email">
+          E-mail Adress
+          <input type="email" name="email" id="email" placeholder="E-mail Adress" required>
+        </label>
+        <label class="form__inputlabel {special_class}" for="password">
+          Create password
+          <input type="password" name="password" id="password" placeholder="Create password" required>
+        </label>
+        <button class="form__submit btn btn_light btn_wider" type="submit">Continue</button>
+      </div>
+    </div>
+  </form>
+
+  <footer class="page-footer">
+    <div class="page-footer__container container">
+      <div class="page-footer__logo">
+        <a href="index.html" class="logo logo_footer {special_class}">
+          <img class="logo__img logo__img_footer" src="images/logo_grey.svg" alt="">
+        </a>
+      </div>
+      <div class="page-footer__menu footer-menu page-footer__menu_info">
+        <h4 class="footer-menu__title {special_class}">Information</h4>
+        <ul class="footer-menu__list">
+          <li class="footer-menu__item {special_class}">
+            <a href="#">About amhero</a>
+          </li>
+          <li class="footer-menu__item {special_class}">
+            <a href="#">Help &amp; Support</a>
+          </li>
+          <li class="footer-menu__item {special_class}">
+            <a href="#">Jobs</a>
+          </li>
+          <li class="footer-menu__item {special_class}">
+            <a href="#">Join The—iamhero</a>
+          </li>
+        </ul>
+      </div>
+      <div class="page-footer__menu footer-menu page-footer__menu_employer">
+        <h4 class="footer-menu__title {special_class}">Employer</h4>
+        <ul class="footer-menu__list">
+          <li class="footer-menu__item {special_class}">
+            <a href="#">Hire the Heros</a>
+          </li>
+          <li class="footer-menu__item {special_class}">
+            <a href="#">Create Company Page</a>
+          </li>
+          <li class="footer-menu__item {special_class}">
+            <a href="#">Post a Job</a>
+          </li>
+          <li class="footer-menu__item {special_class}">
+            <a href="price.html">Pricing</a>
+          </li>
+          <li class="footer-menu__item {special_class}">
+            <a href="#">Terms &amp; Conditions</a>
+          </li>
+          <li class="footer-menu__item {special_class}">
+            <a href="#">Privacy Policy</a>
+          </li>
+        </ul>
+      </div>
+      <div class="page-footer__menu footer-menu page-footer__menu_hero">
+        <h4 class="footer-menu__title {special_class}">I am hero</h4>
+        <ul class="footer-menu__list">
+          <li class="footer-menu__item {special_class}">
+            <a href="#">Functions</a>
+          </li>
+          <li class="footer-menu__item {special_class}">
+            <a href="#">Resume</a>
+          </li>
+          <li class="footer-menu__item {special_class}">
+            <a href="price.html">Pricing</a>
+          </li>
+          <li class="footer-menu__item {special_class}">
+            <a href="#">Terms &amp; Conditions</a>
+          </li>
+          <li class="footer-menu__item {special_class}">
+            <a href="#">Privacy Policy</a>
+          </li>
+        </ul>
+      </div>
+      <div class="page-footer__menu footer-menu page-footer__menu_social {special_class}">
+        <h4 class="footer-menu__title {special_class}">Social</h4>
+        <ul class="footer-menu__list socials">
+          <li class="footer-menu__item {special_class} socials__item social">
+            <a href="https://www.facebook.com" class="social__link">
+              Facebook
+              <svg class="social__img  social__img_facebook">
+                <use xlink:href="images/sprite.svg#icon_facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="footer-menu__item {special_class} socials__item social">
+            <a href="https://www.twitter.com" class="social__link">
+              Twitter
+              <svg class="social__img social__img_twitter">
+                <use xlink:href="images/sprite.svg#icon_twitter"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="footer-menu__item {special_class} socials__item social">
+            <a href="https://www.youtube.com" class="social__link">
+              Youtube
+              <svg class="social__img social__img_youtube">
+                <use xlink:href="images/sprite.svg#icon_youtube"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="footer-menu__item {special_class} socials__item social">
+            <a href="https://www.instagram.com" class="social__link">
+              Instagram
+              <svg class="social__img social__img_instagram">
+                <use xlink:href="images/sprite.svg#icon_instagram"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/vendors/jquery.min.js"></script>
+
+  <!--[if lt IE 9]><script src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE9.js"></script><![endif]-->
+  <!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+
+  <!--svg support-->
+  <script src="js/vendors/svg4everybody.min.js"></script>
+
+  <!--scroll animation-->
+  <script src="js/vendors/scrollReveal.js"></script>
+
+  <script src="js/main.min.js"></script>
+  <script src="js/vendors/picturefill.min.js"></script>
+
+  </body>
+</html>

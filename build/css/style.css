@@ -380,6 +380,9 @@ textarea {
       font-size: 53px;
       letter-spacing: -0.04em;
       margin-bottom: 24px; }
+    .text-block__title_huge {
+      font-size: 80px;
+      text-transform: uppercase; }
     .text-block__title_medium {
       font-weight: 500; }
   .text-block__content {
@@ -397,11 +400,15 @@ textarea {
     .text-block__content_huger {
       font-size: 33px;
       line-height: 1.2em; }
+    .text-block__content_hugest {
+      font-size: 35px; }
     .text-block__content_gigantic {
       font-size: 50px;
       line-height: 1.2em; }
       .text-block__content_gigantic p {
         padding: 0; }
+    .text-block__content_lightweight {
+      font-weight: 300; }
     .text-block__content_16em {
       line-height: 1.64em; }
     .text-block__content p {
@@ -4564,7 +4571,18 @@ textarea {
       margin: 0 10px; }
       .page-security .box__img:last-child {
         margin-right: 0; }
-      @media (max-width: 1690px){
+
+.notfound__text {
+  padding: 156px 60px 566px;
+  width: 540px; }
+
+.notfound__title {
+  margin-bottom: 20px; }
+
+.notfound__content p {
+  margin-bottom: 51px; }
+
+@media (max-width: 1690px){
   .container{
     width: 1340px; }
   .text-block_start .text-block__title_mainpage{
@@ -4723,8 +4741,11 @@ textarea {
   .contacts__top-line{
     margin-left: 100px; }
   .contacts__form-row{
-    margin-left: 100px; } }
-      @media (max-width: 1380px){
+    margin-left: 100px; }
+  .notfound__text{
+    padding-bottom: 270px; } }
+
+@media (max-width: 1380px){
   .container{
     width: 93%;
 
@@ -4754,6 +4775,8 @@ textarea {
     font-size: 21px; }
   .text-block__content_huger{
     font-size: 23.1px; }
+  .text-block__content_hugest{
+    font-size: 24.5px; }
   .text-block__content_gigantic{
     font-size: 35px; }
   .text-block__slogan_big{
@@ -4993,7 +5016,8 @@ textarea {
   .contacts__form-row{
     margin-left: 0;
     max-width: 100%; } }
-      @media (max-width: 1279px){
+
+@media (max-width: 1279px){
   .container{
     width: 93%;
 
@@ -5359,8 +5383,16 @@ textarea {
   .page-security .box__img:last-child{
     margin-bottom: 0; }
   .page-security .box__img:last-child img{
-    width: 85px; } }
-      @media (max-width: 1024px){
+    width: 85px; }
+  .notfound__container{
+    -webkit-align-items: flex-end;
+    -ms-flex-align: end;
+    align-items: flex-end; }
+  .notfound__text{
+    padding: 156px 30px 233px;
+    width: 480px; } }
+
+@media (max-width: 1024px){
   .container{
     width: 80%; }
   .text-block_centered .text-block__title_mainpage{
@@ -6512,8 +6544,21 @@ textarea {
     width: inherit;
     margin-left: -277px;
     padding: 0 10px;
-    margin-bottom: 35px; } }
-      @media (max-width: 639px){
+    margin-bottom: 35px; }
+  .notfound__container{
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center; }
+  .notfound__text{
+    padding: 112px 30px 233px;
+    width: 100%; }
+  .notfound__title{
+    margin-bottom: 12px; }
+  .notfound__btn{
+    padding: 8px 62px;
+    border-radius: 50px; } }
+
+@media (max-width: 639px){
   .container{
     width: 90.6%; }
   h1{
@@ -6557,6 +6602,9 @@ textarea {
     font-size: 15px; }
   .text-block__content_huger{
     font-size: 16.5px; }
+  .text-block__content_hugest{
+    font-size: 21px;
+    line-height: 1.2em; }
   .text-block__content_gigantic{
     font-size: 22px; }
   .text-block__slogan_big{
@@ -7207,8 +7255,18 @@ textarea {
     -ms-flex-pack: end;
     justify-content: flex-end; }
   .page-security .box__img img{
-    width: 110px; } }
-      @media (min-width: 1921px){
+    width: 110px; }
+  .notfound__text{
+    padding: 56px 10px 233px; }
+  .notfound__title{
+    margin-bottom: 6px; }
+  .notfound__content p{
+    margin-bottom: 42px; }
+  .notfound__btn{
+    padding: 8px 62px;
+    border-radius: 50px; } }
+
+@media (min-width: 1921px){
   .lead__item_hero.js-hero-hover-active{
     padding-right: calc(9.5px + 130px); }
   .collage_accounts{
@@ -7217,43 +7275,54 @@ textarea {
     left: auto;
     right: auto;
     margin-left: -43px; } }
-      @media (min-width: 475px) and (max-width: 639px){
+
+@media (min-width: 475px) and (max-width: 639px){
   .we-for-hero__bg{
     -webkit-transform: translate(60px, 0);
     transform: translate(60px, 0); } }
-      @media (min-width: 925px) and (max-width: 1024px){
+
+@media (min-width: 925px) and (max-width: 1024px){
   .we-for-hero__bg{
     -webkit-transform: translate(150px, 0);
     transform: translate(150px, 0); } }
-      @media (min-width: 1024px) and (max-width: 1380px){
+
+@media (min-width: 1024px) and (max-width: 1380px){
   .we-for-hero__bg{
     -webkit-transform: translate(260px, -40px);
     transform: translate(260px, -40px); } }
-      @media (min-width: 1380px) and (max-width: 1690px){
+
+@media (min-width: 1380px) and (max-width: 1690px){
   .we-for-hero__bg{
     -webkit-transform: translate(260px, -40px);
     transform: translate(260px, -40px); } }
-      @media (max-width: 450px){
+
+@media (max-width: 450px){
   .crowdfunding__text{
     padding-right: 12px; }
   .tour-accounts__text_hero{
     margin-bottom: 364px; } }
-      @media (min-width: 1691px) and (max-width: 1820px){
+
+@media (min-width: 1691px) and (max-width: 1820px){
   .tour-resume__collage{
     right: 1110px; } }
-      @media (min-width: 500px) and (max-width: 639px){
+
+@media (min-width: 500px) and (max-width: 639px){
   .tour-resume__collage{
     left: 40px; } }
-      @media (min-width: 451px) and (max-width: 639px){
+
+@media (min-width: 451px) and (max-width: 639px){
   .tour-accounts__text_hero{
     margin-bottom: 494px; } }
-      @media (min-width: 1381px) and (max-width: 1440px){
+
+@media (min-width: 1381px) and (max-width: 1440px){
   .tour-accounts__img{
     top: -340px; } }
-      @media (min-width: 460px) and (max-width: 639px){
+
+@media (min-width: 460px) and (max-width: 639px){
   .tour-accounts__img{
     top: -100px; } }
-      @media (max-width: 640px){
+
+@media (max-width: 640px){
   .news-list{
     margin-top: 48px; }
   .news-list h1{
@@ -7348,7 +7417,8 @@ textarea {
   .news-wrapper .content .text_page{
     padding-left: 5%;
     padding-right: 5%; } }
-      @media (max-width: 320px){
+
+@media (max-width: 320px){
   .news-list .container{
     width: 320px; }
   .news-list .images-block_100 img{
@@ -7436,12 +7506,14 @@ textarea {
     width: 320px; }
   .another-cathegory{
     padding: 0 30px; } }
-      @media (min-width: 1025px){
+
+@media (min-width: 1025px){
   .follow p br{
     display: none; }
   .images-block_100 .images-block__describe time{
     display: none; } }
-      @media (max-width: 1280px){
+
+@media (max-width: 1280px){
   .images-block_small{
     width: 326px; }
   .news-aside{
@@ -7450,11 +7522,13 @@ textarea {
     padding-bottom: 0; }
   .news-detail h1.news_page{
     padding-top: 50px; } }
-      @media (max-width: 483px){
+
+@media (max-width: 483px){
   .images-block_30{
     width: 100%;
     min-width: 100%; } }
-      @media (max-width: 1440px){
+
+@media (max-width: 1440px){
   .news-detail .news_page{
     width: 170px; }
   .news-detail .news-top-menu{
@@ -7463,27 +7537,33 @@ textarea {
   .news-detail .container{
     position: relative;
     width: 1200px; } }
-      @media (max-width: 320px) and (max-width: 1024px){
+
+@media (max-width: 320px) and (max-width: 1024px){
   .news-detail .news-top-menu{
     height: auto; } }
-      @media (max-width: 760px){
+
+@media (max-width: 760px){
   .news-post{
     margin-right: 0; } }
-      @media (min-width: 401px) and (max-width: 639px){
+
+@media (min-width: 401px) and (max-width: 639px){
   .about-description__bg{
     margin-top: -15px; }
   .about-description__content-item:nth-child(4){
     margin-top: 400px; } }
-      @media (max-width: 400px){
+
+@media (max-width: 400px){
   .about-description__bg{
     margin-top: -25px; }
   .about-description__content-item:nth-child(4){
     margin-top: 310px; } }
-      @media desktop{
+
+@media desktop{
   .about-description__bg img{
     width: 1804px;
     height: 930px; } }
-      @media (max-width: 1279px) and (max-width: 639px){
+
+@media (max-width: 1279px) and (max-width: 639px){
   .page-security .box__img:last-child{
     -webkit-justify-content: center;
     -ms-flex-pack: center;

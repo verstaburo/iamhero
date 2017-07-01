@@ -96,6 +96,11 @@
       }
     }
 
+    &_huge {
+      font-size: $titleSizeExtraHuge;
+      text-transform: uppercase;
+    }
+
     &_medium {
       font-weight: 500;
     }
@@ -163,6 +168,19 @@
       }
     }
 
+    &_hugest {
+      font-size: $textSizeHugest;
+
+      @media #{$desktop} {
+        font-size: $textSizeHugest*0.7;
+      }
+
+      @media #{$mobile} {
+        font-size: $textSize - 1px;
+        line-height: 1.2em;
+      }
+    }
+
     &_gigantic {
       font-size: $textSizeGigantic;
       line-height: 1.2em;
@@ -178,6 +196,10 @@
       p {
         padding: 0;
       }
+    }
+
+    &_lightweight{
+      font-weight: 300;
     }
 
     &_16em {

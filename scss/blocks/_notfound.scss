@@ -1,0 +1,70 @@
+.notfound {
+
+  &__container {
+    @media #{$tablet2} {
+      align-items: flex-end;
+    }
+
+    @media #{$tablet} {
+      align-items: center;
+    }
+  }
+
+  &__text {
+    padding: 156px 60px 566px;
+    width: 540px;
+
+    @media #{$desktop2} {
+      padding-bottom: 270px;
+    }
+
+    @media #{$tablet2} {
+      padding: 156px 30px 233px;
+      width: 480px;
+    }
+
+    @media #{$tablet} {
+      padding: 112px 30px 233px;
+      width: 100%;
+    }
+
+    @media #{$mobile} {
+      padding: 56px 10px 233px;
+    }
+  }
+
+  &__title {
+    margin-bottom: 20px;
+
+    @media #{$tablet} {
+      margin-bottom: 12px;
+    }
+
+    @media #{$mobile} {
+      margin-bottom: 6px;
+    }
+  }
+
+  &__content {
+
+    p {
+      margin-bottom: 51px;
+
+      @media #{$mobile} {
+        margin-bottom: 42px;
+      }
+    }
+  }
+
+  &__btn {
+    @media #{$tablet} {
+      padding: 8px 62px;
+      border-radius: 50px;
+    }
+
+    @media #{$mobile} {
+      padding: 8px 62px;
+      border-radius: 50px;
+    }
+  }
+}
