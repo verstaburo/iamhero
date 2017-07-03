@@ -12,6 +12,10 @@
     color: $footerTitleFontColor;
   }
 
+  &__list {
+    width: 100%;
+  }
+
   &__item {
     margin-bottom: 1px;
     font-size: $textSize;
@@ -20,6 +24,7 @@
     letter-spacing: -0.04em;
     text-align: left;
     color: $footerTextFontColor;
+    width: 100%;
 
     @media #{$mobile} {
       margin-bottom: 0;
@@ -35,6 +40,8 @@
       letter-spacing: inherit;
       color: inherit;
       text-decoration: none;
+      width: 100%;
+      transition: all .25s ease-in-out;
 
       &:hover { opacity: .75; }
     }

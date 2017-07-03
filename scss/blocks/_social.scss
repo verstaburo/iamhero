@@ -1,13 +1,15 @@
 .social {
   box-sizing: border-box;
-  width: 54px;
-  height: 54px;
+  min-width: 55px;
+  width: 55px;
+  height: 55px;
   border: 3px solid $additionalColorGreen;
   border-radius: 50%;
   background-color: transparent;
   transition: background-color .25s ease-in-out !important;
 
   @media #{$tablet} {
+    min-width: 46px;
     width: 46px;
     height: 46px;
   }
