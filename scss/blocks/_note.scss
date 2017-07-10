@@ -7,7 +7,7 @@
   align-items: flex-start;
   width: 100%;
 
-  @media #{$mobile} {
+  @media (max-width: 639px) {
     padding: 0 10%;
   }
 
@@ -20,16 +20,16 @@
     line-height: 1.2em;
     color: $mainFontColorDark;
 
-    @media #{$tablet2} {
+    @media (max-width: 1279px) {
       width: 70%;
     }
 
-    @media #{$tablet} {
+    @media (max-width: 1024px) {
       width: 100%;
       text-align: left;
     }
 
-    @media #{$mobile} {
+    @media (max-width: 639px) {
       font-size: $textSizeMobile;
     }
   }
@@ -44,11 +44,11 @@
     color: $additionalColorGreen;
     vertical-align: middle;
 
-    @media #{$tablet} {
+    @media (max-width: 1024px) {
       text-align: left;
     }
 
-    @media #{$mobile} {
+    @media (max-width: 639px) {
       letter-spacing: -0.04em;
       margin-right: 0;
       font-size: $textSizeBig;

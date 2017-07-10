@@ -6,19 +6,19 @@
     padding-top: 208px;
     padding-bottom: 264px;
 
-    @media #{$tablet2} {
+    @media (max-width: 1279px) {
       padding-top: 108px;
       padding-bottom: 30px;
     }
 
-    @media #{$tablet} {
+    @media (max-width: 1024px) {
       padding-top: 48px;
       padding-bottom: 100px;
       padding-left: 64px;
       padding-right: 60px;
     }
 
-    @media #{$mobile} {
+    @media (max-width: 639px) {
       padding-top: 4px;
       padding-bottom: 30px;
       padding-left: 32px;
@@ -30,30 +30,30 @@
     box-sizing: border-box;
     width: 50%;
 
-    @media #{$tablet2} {
+    @media (max-width: 1279px) {
       width: 70%;
     }
 
-    @media #{$tablet} {
+    @media (max-width: 1024px) {
       padding-right: 15%;
       width: 100%;
     }
 
-    @media #{$mobile} {
+    @media (max-width: 639px) {
       padding-right: 0;
     }
 
     & .text-block__content {
-      @media #{$tablet} {
+      @media (max-width: 1024px) {
         padding-left: 4px;
       }
 
-      @media #{$mobile} {
+      @media (max-width: 639px) {
         padding-left: 2px;
       }
 
       p {
-        @media #{$tablet} {
+        @media (max-width: 1024px) {
           margin-bottom: 15px;
         }
       }
@@ -66,24 +66,24 @@
       padding-left: 44px;
       padding-right: 300px;
 
-      @media #{$desktop2} {
+      @media (max-width: 1690px) {
         padding-left: 44px;
         padding-right: 150px;
       }
 
-      @media #{$tablet2} {
+      @media (max-width: 1279px) {
         padding-left: 0;
         padding-right: 0;
         margin-right: 30%;
         margin-bottom: 750px;
       }
 
-      @media #{$tablet} {
+      @media (max-width: 1024px) {
         margin-right: 0;
         margin-bottom: 728px;
       }
 
-      @media (min-width: 451px) and #{$mobile} {
+      @media (min-width: 451px) and (max-width: 639px) {
         margin-bottom: 494px;
       }
 
@@ -97,17 +97,17 @@
       padding-left: 174px;
       padding-right: 60px;
 
-      @media #{$desktop} {
+      @media (max-width: 1380px) {
         padding-left: 202px;
         padding-right: 0;
       }
 
-      @media #{$tablet2} {
+      @media (max-width: 1279px) {
         margin-left: 30%;
         padding-left: 0px;
       }
 
-      @media #{$tablet} {
+      @media (max-width: 1024px) {
         margin-left: 0;
       }
 
@@ -119,12 +119,12 @@
         line-height: normal;
         letter-spacing: -0.04em;
 
-        @media #{$tablet} {
+        @media (max-width: 1024px) {
           font-size: $btnTextSize*2;
           margin-left: 0;
         }
 
-        @media #{$mobile} {
+        @media (max-width: 639px) {
           margin-top: -2px;
           font-size: $btnTextSize;
         }
@@ -145,7 +145,7 @@
       border-radius: 10px;
       transform: translate(0, -50%);
 
-      @media #{$mobile} {
+      @media (max-width: 639px) {
         left: -15px;
         width: 6px;
         height: 18px;
@@ -163,7 +163,7 @@
         left: -34px;
         background-color: $markSuperheroAccount;
 
-        @media #{$mobile} {
+        @media (max-width: 639px) {
           left: -15px;
         }
       }
@@ -186,24 +186,24 @@
       top: -340px;
     }
 
-    @media #{$desktop} {
+    @media (max-width: 1380px) {
       top: -490px;
     }
 
-    @media #{$tablet2} {
+    @media (max-width: 1279px) {
       top: -400px;
       width: 100%;
     }
 
-    @media #{$tablet} {
+    @media (max-width: 1024px) {
       top: -568px;
     }
 
-    @media (min-width: 460px) and #{$mobile} {
+    @media (min-width: 460px) and (max-width: 639px) {
       top: -100px;
     }
 
-    @media #{$mobile} {
+    @media (max-width: 639px) {
       top: -164px;
       height: 876px;
     }

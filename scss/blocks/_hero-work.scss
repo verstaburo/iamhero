@@ -2,13 +2,13 @@
 
   &__container {
     padding-bottom: 100px;
-    
-    @media #{$tablet} {
+
+    @media (max-width: 1024px) {
       padding: 0 32px;
       padding-bottom: 456px;
     }
 
-    @media #{$mobile} {
+    @media (max-width: 639px) {
       padding: 0 16px;
       padding-bottom: 228px;
     }
@@ -20,23 +20,23 @@
     padding-right: 162px;
     width: 50%;
 
-    @media #{$desktop2} {
+    @media (max-width: 1690px) {
       padding-right: 100px;
       padding-left: 100px;
     }
 
-    @media #{$desktop} {
+    @media (max-width: 1380px) {
       padding-right: 60px;
       padding-left: 60px;
     }
 
-    @media #{$tablet2} {
+    @media (max-width: 1279px) {
       align-self: flex-end;
       padding-right: 40px;
       padding-left: 40px;
     }
 
-    @media #{$tablet} {
+    @media (max-width: 1024px) {
       align-self: flex-start;
       width: 100%;
       padding-top: 92px;
@@ -44,32 +44,32 @@
       padding-left: 0;
     }
 
-    @media #{$mobile} {
+    @media (max-width: 639px) {
       padding-top: 46px;
     }
 
     & .text-block__title_mainpage {
       padding-right: 50px;
 
-      @media #{$desktop2} {
+      @media (max-width: 1690px) {
         padding-right: 0;
       }
 
-      @media #{$tablet} {
+      @media (max-width: 1024px) {
         margin-bottom: 48px;
       }
 
-      @media #{$mobile} {
+      @media (max-width: 639px) {
         margin-bottom: 24px;
       }
     }
 
     p {
-      @media #{$tablet} {
+      @media (max-width: 1024px) {
         margin-bottom: 32px;
       }
 
-      @media #{$mobile} {
+      @media (max-width: 639px) {
         margin-bottom: 16px;
         line-height: 1.2em;
       }

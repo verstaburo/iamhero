@@ -4,11 +4,11 @@
     display: block;
     padding: 150px 46px;
 
-    @media #{$desktop} {
+    @media (max-width: 1380px) {
       padding: 118px 32px;
     }
 
-    @media #{$mobile} {
+    @media (max-width: 639px) {
       padding: 56px 16px;
     }
   }
@@ -18,12 +18,12 @@
     letter-spacing: -0.04em;
     margin-bottom: 70px;
 
-    @media #{$desktop} {
+    @media (max-width: 1380px) {
       margin-bottom: 49px;
       font-size: $titleSizeH1*0.7;
     }
 
-    @media #{$mobile} {
+    @media (max-width: 639px) {
       margin-bottom: 24px;
       font-size: $titleSizeH1/2;
     }
@@ -35,13 +35,13 @@
     margin-top: 102px;
     margin-bottom: 26px;
 
-    @media #{$desktop} {
+    @media (max-width: 1380px) {
       margin-top: 64px;
       margin-bottom: 22px;
       font-size: $titleSizeH2_big*0.7;
     }
 
-    @media #{$mobile} {
+    @media (max-width: 639px) {
       margin-top: 32px;
       margin-bottom: 20px;
       font-size: $titleSizeH2_big/2;
@@ -53,7 +53,7 @@
     letter-spacing: -0.04em;
     margin-bottom: 26px;
 
-    @media #{$desktop} {
+    @media (max-width: 1380px) {
       font-size: $titleSizeH3*0.7;
     }
   }
@@ -63,11 +63,11 @@
     letter-spacing: -0.04em;
     margin-bottom: 26px;
 
-    @media #{$desktop} {
+    @media (max-width: 1380px) {
       font-size: $titleSizeH4*0.7;
     }
 
-    @media #{$mobile} {
+    @media (max-width: 639px) {
       font-size: $menuTextSize;
     }
   }
@@ -78,11 +78,11 @@
     font-weight: 500;
     margin-bottom: 26px;
 
-    @media #{$desktop} {
+    @media (max-width: 1380px) {
       font-size: $textSizeSmaller;
     }
 
-    @media #{$tablet} {
+    @media (max-width: 1024px) {
       font-size: $textSizeMobileBig;
     }
   }
@@ -97,13 +97,13 @@
     line-height: 1.64em;
     margin-bottom: 34px;
 
-    @media #{$desktop} {
+    @media (max-width: 1380px) {
       font-size: $textSizeSmaller;
       line-height: 1.4em;
       margin-bottom: 22px;
     }
 
-    @media #{$tablet} {
+    @media (max-width: 1024px) {
       font-size: $textSizeMobileBig;
     }
 
@@ -120,12 +120,12 @@
     line-height: 1.2em;
     letter-spacing: -0.04em;
 
-    @media #{$desktop} {
+    @media (max-width: 1380px) {
       line-height: 1.24em;
       font-size: $textSize;
     }
 
-    @media #{$tablet} {
+    @media (max-width: 1024px) {
       font-size: $textSizeLitle;
     }
   }
@@ -139,12 +139,12 @@
     margin-bottom: 24px;
     margin-top: 10px;
 
-    @media #{$desktop} {
+    @media (max-width: 1380px) {
       width: 422px;
       height: 281px;
     }
 
-    @media #{$tablet} {
+    @media (max-width: 1024px) {
       float: none;
       margin-top: 0;
       margin-bottom: 12px;
@@ -152,7 +152,7 @@
       margin-left: auto;
     }
 
-    @media #{$mobile} {
+    @media (max-width: 639px) {
       width: 257px;
       height: 171px;
       margin-right: 0;
@@ -173,12 +173,12 @@
       font-weight: 500;
       margin-bottom: 37px;
 
-      @media #{$desktop} {
+      @media (max-width: 1380px) {
         font-size: $textSizeSmaller;
         line-height: 1.4em;
       }
 
-      @media #{$tablet} {
+      @media (max-width: 1024px) {
         font-size: $textSizeMobileBig;
         padding-left: 24px;
         margin-bottom: 20px;
@@ -195,7 +195,7 @@
         font-size: 30px;
         line-height: inherit;
 
-        @media #{$tablet} {
+        @media (max-width: 1024px) {
           font-size: 16px;
         }
       }
@@ -206,14 +206,14 @@
     list-style: disc;
     padding-left: 24px;
 
-    @media #{$tablet} {
+    @media (max-width: 1024px) {
       padding-left: 16px;
     }
 
     li {
       padding-left: 16px;
 
-      @media #{$tablet} {
+      @media (max-width: 1024px) {
         padding-left: 10px;
       }
     }
@@ -229,12 +229,12 @@
     font-size: $textSize;
     padding-left: 0;
 
-    @media #{$desktop} {
+    @media (max-width: 1380px) {
       font-size: $textSizeSmaller;
       padding-left: 0;
     }
 
-    @media #{$tablet} {
+    @media (max-width: 1024px) {
       font-size: $textSizeMobileBig;
       padding-left: 0;
     }
@@ -244,7 +244,7 @@
       font-weight: 500;
       margin-bottom: 78px;
 
-      @media #{$desktop} {
+      @media (max-width: 1380px) {
         width: 100%;
         line-height: 1.4em;
         margin-bottom: 42px;
@@ -259,7 +259,7 @@
         margin-top: 40px;
         line-height: 1.4em;
 
-        @media #{$desktop} {
+        @media (max-width: 1380px) {
           margin-top: 20px;
         }
       }
@@ -276,7 +276,7 @@
     align-items: flex-start;
     flex-wrap: wrap;
 
-    @media #{$tablet} {
+    @media (max-width: 1024px) {
       padding-top: 14px;
     }
 
@@ -289,7 +289,7 @@
       h1, h2, h3, h4, h5, p {
         text-align: inherit;
 
-        @media #{$tablet} {
+        @media (max-width: 1024px) {
           letter-spacing: -0.04em;
         }
       }
@@ -297,7 +297,7 @@
       h1, h2, h3, h4, h5 {
         margin-bottom: 16px;
 
-        @media #{$tablet} {
+        @media (max-width: 1024px) {
           margin-bottom: 8px;
         }
       }
@@ -306,13 +306,13 @@
         margin-bottom: 14px;
       }
 
-      @media #{$tablet} {
+      @media (max-width: 1024px) {
         width: 100%;
         margin-bottom: 10px;
         text-align: left;
       }
 
-      @media #{$tablet} {
+      @media (max-width: 1024px) {
         margin-bottom: -2px;
       }
     }

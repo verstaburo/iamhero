@@ -1,7 +1,7 @@
 .tour-working {
   margin-top: -200px;
 
-  @media #{$tablet} {
+  @media (max-width: 1024px) {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -14,20 +14,20 @@
     //padding-top: 84px;
     padding-bottom: 354px;
 
-    @media #{$tablet2} {
+    @media (max-width: 1279px) {
       //padding-top: 80px;
       padding-bottom: 180px;
       flex-direction: row;
     }
 
-    @media #{$tablet} {
+    @media (max-width: 1024px) {
       order: 1;
       flex-direction: column;
       padding-top: 80px;
       padding-bottom: 40px;
     }
 
-    @media #{$mobile} {
+    @media (max-width: 639px) {
       padding-top: 80px;
       padding-bottom: 20px;
     }
@@ -40,16 +40,16 @@
     position: relative;
     top: 300px;
 
-    @media #{$desktop2} {
+    @media (max-width: 1690px) {
       padding-left: 5%;
       padding-right: 5%;
     }
 
-    @media #{$tablet2} {
+    @media (max-width: 1279px) {
       margin-left: 55%;
     }
 
-    @media #{$tablet} {
+    @media (max-width: 1024px) {
       width: 100%;
       margin-left: 0;
       padding-left: 32px;
@@ -58,7 +58,7 @@
       position: inherit;
     }
 
-    @media #{$mobile} {
+    @media (max-width: 639px) {
       padding-left: 16px;
       padding-right: 38px;
     }
@@ -66,12 +66,12 @@
     & .text-block__content {
       padding-right: 120px;
 
-      @media #{$desktop2} {
+      @media (max-width: 1690px) {
         padding-right: 0;
       }
 
       p {
-        @media #{$mobile} {
+        @media (max-width: 639px) {
           margin-bottom: 15px;
         }
       }
@@ -90,11 +90,11 @@
     transform: translate(0, -50%);
     overflow: hidden;
 
-    @media #{$tablet2} {
+    @media (max-width: 1279px) {
       top: 50%;
     }
 
-    @media #{$tablet} {
+    @media (max-width: 1024px) {
       position: relative;
       top: auto;
       left: auto;
@@ -119,7 +119,7 @@
       width: 0;
       object-fit: cover;
 
-      @media #{$tablet} {
+      @media (max-width: 1024px) {
         position: relative;
       }
     }

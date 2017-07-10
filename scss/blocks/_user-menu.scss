@@ -1,4 +1,4 @@
-@media #{$tablet2} {
+@media (max-width: 1279px) {
   @for $i from 1 through 2 {
     .user-menu__item:nth-child(#{$i}) {
       transition-delay: 0.8s + 0.2s * $i;
@@ -12,7 +12,7 @@
   justify-content: space-between;
   align-items: flex-start;
 
-  @media #{$tablet2} {
+  @media (max-width: 1279px) {
     order: 3;
   }
 
@@ -27,7 +27,7 @@
     padding: 0;
     cursor: pointer;
 
-    @media #{$tablet2} {
+    @media (max-width: 1279px) {
       display: inline-block;
     }
   }
@@ -39,12 +39,12 @@
     stroke: $bgColor;
     stroke-width: 2px;
 
-    @media #{$tablet} {
+    @media (max-width: 1024px) {
       width: 40px;
       height: 40px;
     }
 
-    @media #{$mobile} {
+    @media (max-width: 639px) {
       width: 22px;
       height: 22px;
       transform: translate(3px, -1px);
@@ -65,7 +65,7 @@
       padding-right: 32px;
     }
 
-    @media #{$tablet2} {
+    @media (max-width: 1279px) {
       display: none;
       position: absolute;
       top: 100%;
@@ -90,7 +90,7 @@
     margin-right: 48px;
     font-size: 0;
 
-    @media #{$desktop} {
+    @media (max-width: 1380px) {
       margin-right: 34px;
     }
 
@@ -102,7 +102,7 @@
       margin-right: 0;
     }
 
-    @media #{$tablet2} {
+    @media (max-width: 1279px) {
       opacity: 0;
       transition: all 0.5s ease-in-out;
     }
@@ -140,7 +140,7 @@
     line-height: 1.2em;
     color: $mainFontColorLight;
 
-    @media #{$tablet2} {
+    @media (max-width: 1279px) {
       display: none;
     }
 

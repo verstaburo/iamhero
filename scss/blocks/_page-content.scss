@@ -3,16 +3,16 @@
   width: 100%;
   overflow: hidden;
 
-  @media #{$tablet2} {
+  @media (max-width: 1279px) {
     //padding-top: 130px;
   }
 
-  @media #{$tablet} {
+  @media (max-width: 1024px) {
     padding-top: 51px;
     //padding-top: 82px;
   }
 
-  @media #{$mobile} {
+  @media (max-width: 639px) {
     //padding-top: 48px;
   }
 

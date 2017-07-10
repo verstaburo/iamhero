@@ -1,15 +1,15 @@
 .tour-search {
   position: relative;
 
-  @media #{$desktop} {
+  @media (max-width: 1380px) {
   }
 
-  @media #{$tablet} {
+  @media (max-width: 1024px) {
     //padding-bottom: 100px;
     padding-bottom: 0;
   }
 
-  @media #{$mobile} {
+  @media (max-width: 639px) {
     //padding-bottom: 50px;
     padding-bottom: 0;
   }
@@ -18,17 +18,17 @@
     padding-top: 252px;
     padding-bottom: 448px;
 
-    @media #{$desktop2} {
+    @media (max-width: 1690px) {
       padding-top: 150px;
       padding-bottom: 282px;
     }
 
-    @media #{$tablet} {
+    @media (max-width: 1024px) {
       padding-bottom: 40px;
       padding-top: 136px;
     }
 
-    @media #{$mobile} {
+    @media (max-width: 639px) {
       padding-top: 68px;
     }
   }
@@ -38,38 +38,38 @@
     padding-left: 128px;
     padding-right: 52px;
 
-    @media #{$desktop2} {
+    @media (max-width: 1690px) {
       padding-left: 78px;
       padding-right: 10px;
     }
 
-    @media #{$desktop} {
+    @media (max-width: 1380px) {
       padding-left: 60px;
       padding-right: 0;
     }
 
-    @media #{$tablet2} {
+    @media (max-width: 1279px) {
       align-self: flex-end;
     }
 
-    @media #{$tablet} {
+    @media (max-width: 1024px) {
       align-self: flex-start;
       width: 100%;
       padding-left: 28px;
       padding-right: 80px;
     }
 
-    @media #{$mobile} {
+    @media (max-width: 639px) {
       padding-left: 14px;
       padding-right: 40px;
     }
 
     p {
-      @media #{$tablet} {
+      @media (max-width: 1024px) {
         padding-left: 4px;
       }
 
-      @media #{$mobile} {
+      @media (max-width: 639px) {
         margin-bottom: 15px;
         padding-left: 2px;
       }
@@ -85,13 +85,13 @@
     margin-right: 51%;
     height: auto;
 
-    @media #{$tablet} {
+    @media (max-width: 1024px) {
       position: relative;
       width: 90%;
       margin-right: 10%;
     }
 
-    @media #{$mobile} {
+    @media (max-width: 639px) {
       width: 95%;
       margin-right: 5%;
     }
@@ -108,7 +108,7 @@
       background-color: rgba(0, 0, 0, 0.5);
       filter: blur(5px);
 
-      @media #{$tablet} {
+      @media (max-width: 1024px) {
         width: 50%;
         top: calc(100% + 10px);
         height: 1px;

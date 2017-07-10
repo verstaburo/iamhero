@@ -9,11 +9,11 @@
   width: 1540px;
   margin: 0 auto;
 
-  @media #{$desktop2} {
+  @media (max-width: 1690px) {
     width: 1110px;
   }
 
-  @media #{$tablet2} {
+  @media (max-width: 1279px) {
     width: 1013px;
   }
 }
@@ -23,19 +23,19 @@
   width: calc(100% - 31.3%);
   float: left;
 
-  @media #{$desktop2} {
+  @media (max-width: 1690px) {
     //width: 100%;
     width: calc(100% - 314px);
     .images-block.block_first {width: 100%;}
   }
 
-  @media #{$desktop} {
+  @media (max-width: 1380px) {
     //width: 100%;
     width: calc(100% - 314px);
     .images-block.block_first {width: 100%;}
   }
 
-  @media #{$tablet2} {
+  @media (max-width: 1279px) {
     width: 100%;
     .images-block.block_first {width: 100%;}
     //max-width: 773px;
@@ -49,15 +49,15 @@
   position: relative;
   min-height: 660px;
 
-  @media #{$desktop2} {
+  @media (max-width: 1690px) {
     min-height: 520px;
   }
 
-  @media #{$tablet} {
+  @media (max-width: 1024px) {
     min-height: 500px;
   }
 
-  @media #{$mobile} {
+  @media (max-width: 639px) {
     min-height: 340px;
   }
 
@@ -80,7 +80,7 @@
   float: left;
   position: relative;
 
-  @media #{$desktop2} {
+  @media (max-width: 1690px) {
     width: 314px;
   }
 
@@ -115,7 +115,7 @@
   //width: 773px;
   width: 100%;
 
-  @media #{$tablet} {
+  @media (max-width: 1024px) {
     width: 100%;
     max-width: 773px;
   }
@@ -149,7 +149,7 @@
   width: 100%;
   box-sizing: border-box;
 
-  @media #{$tablet} {
+  @media (max-width: 1024px) {
     display: none;
   }
 }
@@ -179,11 +179,11 @@
   padding-left: 44px;
   padding-right: 44px;
 
-  @media #{$tablet} {
+  @media (max-width: 1024px) {
     padding-left: 30px; padding-right: 30px;
   }
 
-  @media #{$tablet} {
+  @media (max-width: 1024px) {
     padding-bottom: 0;
     width: 100%;
   }
@@ -416,7 +416,7 @@
     padding-left: 10px;
     //margin-bottom: 15px;
 
-    @media #{$tablet} {
+    @media (max-width: 1024px) {
       height: auto;
     }
 
@@ -478,7 +478,7 @@
     }
 }
 
-@media #{$mobile} {
+@media (max-width: 639px) {
   .news-container {
     padding-left: 0;
     width: 320px;
@@ -501,7 +501,7 @@
   justify-content: flex-start;
   align-items: flex-start;
 
-  @media #{$tablet2} {
+  @media (max-width: 1279px) {
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
@@ -515,11 +515,11 @@
   margin-bottom: 16px;
   letter-spacing: -0.04em;
 
-  @media #{$tablet2} {
+  @media (max-width: 1279px) {
     width: 100%;
   }
 
-  @media #{$tablet} {
+  @media (max-width: 1024px) {
     padding: 0 5%;
   }
 
@@ -544,7 +544,7 @@
   overflow: hidden;
   margin-left: 44px;
 
-  @media #{$tablet2} {
+  @media (max-width: 1279px) {
     margin-left: 0;
     width: 100% !important;
     flex-direction: row;
@@ -565,7 +565,7 @@
 .news-post {
   margin-bottom: 36px;
 
-  @media #{$tablet2} {
+  @media (max-width: 1279px) {
     margin-right: 40px;
   }
 

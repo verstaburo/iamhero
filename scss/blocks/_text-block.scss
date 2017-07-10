@@ -7,7 +7,7 @@
     & .text-block__title_mainpage {
       padding-right: 60px;
 
-      @media #{$desktop2} {
+      @media (max-width: 1690px) {
         padding-right: 0;
       }
     }
@@ -19,11 +19,11 @@
     & .text-block__title_mainpage {
       margin-bottom: 40px;
 
-      @media #{$tablet} {
+      @media (max-width: 1024px) {
         margin-bottom: 32px;
       }
 
-      @media #{$mobile} {
+      @media (max-width: 639px) {
         margin-bottom: 16px;
       }
     }
@@ -35,7 +35,7 @@
     & .text-block__title_mainpage {
       padding-right: 50px;
 
-      @media #{$desktop2} {
+      @media (max-width: 1690px) {
         padding-right: 0;
       }
     }
@@ -52,11 +52,11 @@
   &__title {
     margin-bottom: 50px;
 
-    @media #{$desktop} {
+    @media (max-width: 1380px) {
       margin-bottom: 35px;
     }
 
-    @media #{$mobile} {
+    @media (max-width: 639px) {
       margin-bottom: 22px;
     }
 
@@ -70,12 +70,12 @@
       font-size: $titleSizeH1;
       letter-spacing: -0.04em;
 
-      @media #{$desktop} {
+      @media (max-width: 1380px) {
         font-size: $titleSizeH1*0.7;
         margin-bottom: 49px;
       }
 
-      @media #{$mobile} {
+      @media (max-width: 639px) {
         margin-bottom: 35px;
         font-size: $titleSizeH1/2;
         letter-spacing: -0.04em;
@@ -87,11 +87,11 @@
       letter-spacing: -0.04em;
       margin-bottom: 24px;
 
-      @media #{$desktop} {
+      @media (max-width: 1380px) {
         font-size: $titleSizeH2_big*0.7;
       }
 
-      @media #{$mobile} {
+      @media (max-width: 639px) {
         font-size: $titleSizeH2_big/2;
       }
     }
@@ -113,11 +113,11 @@
     box-sizing: border-box;
     width: 100%;
 
-    @media #{$desktop} {
+    @media (max-width: 1380px) {
       font-size: $textSizeSmaller;
     }
 
-    @media #{$mobile} {
+    @media (max-width: 639px) {
       font-size: $textSizeMobileBig;
       line-height: 1.4em;
     }
@@ -125,7 +125,7 @@
     &_small {
       font-size: $textSizeSmall;
 
-      @media #{$desktop} {
+      @media (max-width: 1380px) {
         font-size: $textSizeTiny;
       }
     }
@@ -133,11 +133,11 @@
     &_big {
       font-size: $textSizeBig;
 
-      @media #{$desktop} {
+      @media (max-width: 1380px) {
         font-size: $textSizeLitle;
       }
 
-      @media #{$mobile} {
+      @media (max-width: 639px) {
         font-size: $textSizeMobile;
         line-height: 1.5em;
       }
@@ -146,11 +146,11 @@
     &_huge {
       font-size: $textSizeHuge;
 
-      @media #{$desktop} {
+      @media (max-width: 1380px) {
         font-size: $textSizeHuge*0.7;
       }
 
-      @media #{$mobile} {
+      @media (max-width: 639px) {
         font-size: ($textSizeHuge)/2;
       }
     }
@@ -159,11 +159,11 @@
       font-size: $textSizeHuger;
       line-height: 1.2em;
 
-      @media #{$desktop} {
+      @media (max-width: 1380px) {
         font-size: $textSizeHuger*0.7;
       }
 
-      @media #{$mobile} {
+      @media (max-width: 639px) {
         font-size: ($textSizeHuger)/2;
       }
     }
@@ -171,11 +171,11 @@
     &_hugest {
       font-size: $textSizeHugest;
 
-      @media #{$desktop} {
+      @media (max-width: 1380px) {
         font-size: $textSizeHugest*0.7;
       }
 
-      @media #{$mobile} {
+      @media (max-width: 639px) {
         font-size: $textSize - 1px;
         line-height: 1.2em;
       }
@@ -185,11 +185,11 @@
       font-size: $textSizeGigantic;
       line-height: 1.2em;
 
-      @media #{$desktop} {
+      @media (max-width: 1380px) {
         font-size: $textSizeGigantic*0.7;
       }
 
-      @media #{$mobile} {
+      @media (max-width: 639px) {
         font-size: $textSize;
       }
 
@@ -216,7 +216,7 @@
       letter-spacing: inherit;
       color: inherit;
 
-      @media #{$tablet} {
+      @media (max-width: 1024px) {
         padding: 0;
       }
     }
@@ -291,11 +291,11 @@
       font-size: $textSizeSlogan;
       line-height: 1.2em;
 
-      @media #{$desktop} {
+      @media (max-width: 1380px) {
         font-size: $textSizeSlogan*0.7;
       }
 
-      @media #{$mobile} {
+      @media (max-width: 639px) {
         font-size: $textSizeSlogan/2;
       }
     }
@@ -315,7 +315,7 @@
       margin-right: 30px;
       margin-bottom: 30px;
 
-      @media #{$tablet} {
+      @media (max-width: 1024px) {
         float: none;
       }
     }

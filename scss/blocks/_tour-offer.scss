@@ -1,9 +1,9 @@
 .tour-offer {
 
-  @media #{$tablet} {
+  @media (max-width: 1024px) {
   }
 
-  @media #{$mobile} {
+  @media (max-width: 639px) {
   }
 
   &__container {
@@ -15,17 +15,17 @@
     padding-bottom: 144px;
     padding-left: 40px;
 
-    @media #{$tablet2} {
+    @media (max-width: 1279px) {
       justify-content: space-between;
       align-items: flex-start;
       padding: 168px 32px 144px;
     }
 
-    @media #{$tablet} {
+    @media (max-width: 1024px) {
       padding: 268px 32px 244px;
     }
 
-    @media #{$mobile} {
+    @media (max-width: 639px) {
       padding: 134px 16px 122px;
     }
   }
@@ -35,7 +35,7 @@
     padding-right: 100px;
     margin-bottom: 54px;
 
-    @media #{$tablet} {
+    @media (max-width: 1024px) {
       padding-right: 0;
       margin-bottom: 0;
     }
@@ -43,12 +43,12 @@
     & .text-block__slogan_big {
       letter-spacing: -0.04em;
 
-      @media #{$tablet} {
+      @media (max-width: 1024px) {
         font-size: ($textSizeSlogan - 6px);
         line-height: 1.35em;
       }
 
-      @media #{$mobile} {
+      @media (max-width: 639px) {
         font-size: ($textSizeSlogan - 6px)/2;
       }
     }
@@ -62,12 +62,12 @@
     height: 45px;
     transform: rotate(90deg);
 
-    @media #{$tablet} {
+    @media (max-width: 1024px) {
       width: 72px;
       height: 60px;
     }
 
-    @media #{$mobile} {
+    @media (max-width: 639px) {
       width: 36px;
       height: 30px;
     }
@@ -78,12 +78,12 @@
     height: 45px;
     fill: $additionalColorBlue;
 
-    @media #{$tablet} {
+    @media (max-width: 1024px) {
       width: 72px;
       height: 60px;
     }
 
-    @media #{$mobile} {
+    @media (max-width: 639px) {
       width: 36px;
       height: 30px;
     }

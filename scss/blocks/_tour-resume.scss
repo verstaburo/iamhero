@@ -2,15 +2,15 @@
   position: relative;
   min-height: 790px;
 
-  @media #{$tablet2} {
+  @media (max-width: 1279px) {
     min-height: 930px;
   }
-  
-  @media #{$tablet} {
+
+  @media (max-width: 1024px) {
     min-height: 1040px;
   }
-  
-  @media #{$mobile} {
+
+  @media (max-width: 639px) {
     min-height: 520px;
   }
 
@@ -18,23 +18,23 @@
     padding: 0 44px;
     padding-top: 226px;
     padding-bottom: 100px;
-    
-    @media #{$desktop2} {
+
+    @media (max-width: 1690px) {
       padding-left: 0;
       padding-right: 0;
     }
 
-    @media #{$tablet2} {
+    @media (max-width: 1279px) {
       padding-top: 120px;
     }
-    
-    @media #{$tablet} {
+
+    @media (max-width: 1024px) {
       padding-top: 188px;
       padding-left: 28px;
       padding-right: 28px;
     }
-    
-    @media #{$mobile} {
+
+    @media (max-width: 639px) {
       padding-top: 94px;
       padding-left: 14px;
       padding-right: 14px;
@@ -45,12 +45,12 @@
     position: relative;
     width: 33%;
 
-    @media #{$tablet2} {
+    @media (max-width: 1279px) {
       align-self: flex-start;
       width: 50%;
     }
-    
-    @media #{$tablet} {
+
+    @media (max-width: 1024px) {
       width: 100%;
     }
   }
@@ -65,28 +65,28 @@
       right: 1110px;
     }
 
-    @media #{$desktop2} {
+    @media (max-width: 1690px) {
       right: 910px;
     }
 
-    @media #{$tablet2} {
+    @media (max-width: 1279px) {
       position: relative;
       top: -200px;
       left: auto;
       right: -110px;
     }
-    
-    @media #{$tablet} {
+
+    @media (max-width: 1024px) {
       top: -40px;
       left: -188px;
       right: auto;
     }
-    
-    @media (min-width: 500px) and #{$mobile} {
+
+    @media (min-width: 500px) and (max-width: 639px) {
       left: 40px;
     }
-    
-    @media #{$mobile} {
+
+    @media (max-width: 639px) {
       top: -146px;
       left: -104px;
       right: auto;

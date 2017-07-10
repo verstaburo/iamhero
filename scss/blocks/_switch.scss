@@ -8,7 +8,7 @@
   border: 1px solid $formBorderColor;
   padding: 5px;
 
-  @media #{$mobile} {
+  @media (max-width: 639px) {
     padding: 3px;
   }
 
@@ -39,7 +39,7 @@
     transition: all 0.25s ease-in-out;
     letter-spacing: -0.04em;
 
-    @media #{$mobile} {
+    @media (max-width: 639px) {
       font-size: $textSizeMobile;
     }
 

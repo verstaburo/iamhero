@@ -163,25 +163,23 @@ footer {
   width: 1640px;
   margin: 0 auto;
 
-  @media #{$desktop2} {
+  @media (max-width: 1690px) {
     width: 1340px;
   }
 
-  @media #{$desktop} {
+  @media (max-width: 1380px) {
     width: 93%;
-    /*width: 1240px*/
   }
 
-  @media #{$tablet2} {
+  @media (max-width: 1279px) {
     width: 93%;
-    /*width: 960px;*/
   }
 
-  @media #{$tablet} {
+  @media (max-width: 1024px) {
     width: 80%;
   }
 
-  @media #{$mobile} {
+  @media (max-width: 639px) {
    width: 90.6%;
   }
 }
@@ -230,11 +228,11 @@ h1 {
   font-size: $titleSizeH1;
   letter-spacing: -0.04em;
 
-  @media #{$desktop} {
+  @media (max-width: 1380px) {
     font-size: $titleSizeH1*0.7;
   }
 
-  @media #{$mobile} {
+  @media (max-width: 639px) {
     font-size: $titleSizeH1/2;
   }
 }
@@ -243,11 +241,11 @@ h2 {
   font-size: $titleSizeH2;
   letter-spacing: -0.04em;
 
-  @media #{$desktop} {
+  @media (max-width: 1380px) {
     font-size: $titleSizeH2*0.7;
   }
 
-  @media #{$mobile} {
+  @media (max-width: 639px) {
     font-size: $titleSizeH2/2;
   }
 }
@@ -256,7 +254,7 @@ h3 {
   font-size: $titleSizeH3;
   letter-spacing: -0.04em;
 
-  @media #{$desktop} {
+  @media (max-width: 1380px) {
     font-size: $titleSizeH3*0.7;
   }
 }
@@ -265,11 +263,11 @@ h4 {
   font-size: $titleSizeH4;
   letter-spacing: -0.04em;
 
-  @media #{$desktop} {
+  @media (max-width: 1380px) {
     font-size: $titleSizeH4*0.7;
   }
 
-  @media #{$mobile} {
+  @media (max-width: 639px) {
     font-size: $menuTextSize;
   }
 }
@@ -278,7 +276,7 @@ h5 {
   font-size: $titleSizeH5;
   letter-spacing: -0.04em;
 
-  @media #{$mobile} {
+  @media (max-width: 639px) {
     font-size: $textSizeMobileBig;
   }
 }
@@ -344,7 +342,7 @@ textarea {
   background-color: transparent;
   display: inline-block;
 
-  @media #{$mobile} {
+  @media (max-width: 639px) {
     font-size: $textSizeMobile;
     padding: 10px 16px;
   }

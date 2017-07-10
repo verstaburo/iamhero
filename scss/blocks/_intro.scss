@@ -6,16 +6,16 @@
     padding-bottom: 82px;
     padding-left: 40px;
 
-    @media #{$tablet2} {
+    @media (max-width: 1279px) {
       padding-top: 128px;
       padding-bottom: 88px;
     }
 
-    @media #{$tablet} {
+    @media (max-width: 1024px) {
       padding: 128px 32px 88px;
     }
 
-    @media #{$mobile} {
+    @media (max-width: 639px) {
       padding: 0 16px;
       padding-top: 64px;
       padding-bottom: 44px;
@@ -25,29 +25,29 @@
   &__slogans {
     width: 50%;
 
-    @media #{$tablet2} {
+    @media (max-width: 1279px) {
       width: 100%;
       margin-bottom: 80px;
     }
 
-    @media #{$mobile} {
+    @media (max-width: 639px) {
       margin-bottom: 40px;
     }
 
     & .text-block__slogan_big {
       margin-bottom: 90px;
 
-      @media #{$tablet2} {
+      @media (max-width: 1279px) {
         margin-bottom: 45px;
       }
 
-      @media #{$mobile} {
+      @media (max-width: 639px) {
         margin-bottom: 24px;
       }
     }
 
     p{
-      @media #{$mobile} {
+      @media (max-width: 639px) {
         margin-bottom: 15px;
       }
     }
@@ -58,14 +58,14 @@
     padding-left: 154px;
     padding-right: 60px;
 
-    @media #{$tablet2} {
+    @media (max-width: 1279px) {
       width: 100%;
       padding-left: 0;
       padding-right: 0;
     }
 
     p {
-      @media #{$mobile} {
+      @media (max-width: 639px) {
         margin-bottom: 15px;
       }
     }
@@ -79,16 +79,16 @@
     padding-left: 76px;
     padding-right: 96px;
 
-    @media #{$tablet2} {
+    @media (max-width: 1279px) {
       margin-left: 0;
     }
 
-    @media #{$tablet} {
+    @media (max-width: 1024px) {
       margin-left: -2px;
       margin-bottom: 40px;
     }
 
-    @media #{$mobile} {
+    @media (max-width: 639px) {
       margin-bottom: 20px;
       padding-left: 36px;
       padding-right: 48px;
@@ -106,7 +106,7 @@
       cursor: default;
       z-index: -1;
 
-      @media #{$mobile} {
+      @media (max-width: 639px) {
         left: calc(100% + 15px);
         height: 6px;
       }

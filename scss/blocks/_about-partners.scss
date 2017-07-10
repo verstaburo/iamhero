@@ -3,7 +3,7 @@
 	padding-top: 120px;
 	padding-bottom: 200px;
 
-	@media #{$tablet} {
+	@media (max-width: 1024px) {
 		padding-top: 15px;
 		padding-bottom: 41px;
 	}
@@ -17,11 +17,11 @@
   letter-spacing: -0.04em;
 	margin-bottom: 100px;
 
-  @media #{$desktop} {
+  @media (max-width: 1380px) {
     font-size: 35px;
   }
 
-	@media #{$tablet} {
+	@media (max-width: 1024px) {
 		width: 100%;
     padding: 0 14px;
 		font-size: 26px;
@@ -42,7 +42,7 @@
   flex-wrap: wrap;
   padding-top: 6px;
 
-  @media #{$tablet} {
+  @media (max-width: 1024px) {
     justify-content: space-between;
   }
 
@@ -56,11 +56,11 @@
     margin-right: 94px ;
     margin-bottom: 20px;
 
-    @media #{$desktop} {
+    @media (max-width: 1380px) {
       margin-right: 38px;
     }
 
-    @media #{$tablet} {
+    @media (max-width: 1024px) {
       width: 50%;
       margin-right: 0;
     }

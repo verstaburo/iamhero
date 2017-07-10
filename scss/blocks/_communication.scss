@@ -2,7 +2,7 @@
   padding-bottom: 100px;
   overflow: hidden;
 
-  @media #{$desktop} {
+  @media (max-width: 1380px) {
     padding-bottom: 40px;
   }
 
@@ -19,23 +19,23 @@
     padding-right: 188px;
     margin-bottom: 20px;
 
-    @media #{$desktop2} {
+    @media (max-width: 1690px) {
       padding-top: 100px;
       padding-left: 6%;
       padding-right: 6%;
     }
 
-    @media #{$tablet2} {
+    @media (max-width: 1279px) {
       padding-left: 3%;
       padding-right: 3%;
     }
 
-    @media #{$tablet} {
+    @media (max-width: 1024px) {
       padding-top: 58px;
       margin-bottom: 12px;
     }
 
-    @media #{$mobile} {
+    @media (max-width: 639px) {
       margin-bottom: 6px;
       padding-left: 9px;
       padding-right: 14px;
@@ -45,7 +45,7 @@
       padding-left: 20px;
       padding-right: 100px;
 
-      @media #{$desktop2} {
+      @media (max-width: 1690px) {
         padding: 0;
       }
     }
@@ -55,18 +55,18 @@
       padding-left: 4px;
       padding-right: 95px;
 
-      @media #{$desktop2} {
+      @media (max-width: 1690px) {
         padding: 0;
       }
 
-      @media #{$mobile} {
+      @media (max-width: 639px) {
         line-height: 1.2em;
         padding-left: 10px;
         padding-right: 10px;
       }
 
       p {
-        @media #{$tablet} {
+        @media (max-width: 1024px) {
           margin-bottom: 15px;
         }
       }
@@ -76,12 +76,12 @@
   &__text-bottom {
     //padding-right: 74px;
 //
-    //@media #{$desktop2} {
+    //@media (max-width: 1690px) {
     //  padding: 0 14%;
     //}
 
     .text-block__content {
-      @media #{$mobile} {
+      @media (max-width: 639px) {
         line-height: 1.2em;
       }
     }
@@ -91,11 +91,11 @@
     position: relative;
     margin-bottom: 76px;
 
-    @media #{$tablet} {
+    @media (max-width: 1024px) {
       margin-bottom: 64px;
     }
 
-    @media #{$mobile} {
+    @media (max-width: 639px) {
       margin-bottom: 32px;
     }
   }
@@ -108,15 +108,15 @@
     height: 704px;
     overflow: visible;
 
-    @media #{$desktop} {
+    @media (max-width: 1380px) {
       height: 600px;
     }
 
-    @media #{$tablet} {
+    @media (max-width: 1024px) {
       height: 350px;
     }
 
-    @media #{$mobile} {
+    @media (max-width: 639px) {
       height: 250px;
     }
 
@@ -139,13 +139,13 @@
       p {
         display: none;
 
-        @media #{$tablet} {
+        @media (max-width: 1024px) {
           display: block;
         }
       }
 
       .text-block__link {
-        @media #{$tablet} {
+        @media (max-width: 1024px) {
           display: none;
         }
       }
@@ -160,23 +160,23 @@
       padding-right: 146px;
       margin-bottom: 12px;
 
-      @media #{$desktop2} {
+      @media (max-width: 1690px) {
         padding-top: 100px;
         padding-left: 6%;
         padding-right: 6%;
       }
 
-      @media #{$tablet2} {
+      @media (max-width: 1279px) {
         padding-left: 3%;
         padding-right: 3%;
       }
 
-      @media #{$tablet} {
+      @media (max-width: 1024px) {
         padding-top: 57px;
         margin-bottom: 12px;
       }
 
-      @media #{$mobile} {
+      @media (max-width: 639px) {
         margin-bottom: 6px;
         padding-left: 9px;
         padding-right: 14px;
@@ -187,11 +187,11 @@
     & .communication__text-bottom {
       padding-right: 130px;
 
-      @media #{$desktop2} {
+      @media (max-width: 1690px) {
         padding-right: 0;
       }
 
-      @media #{$mobile} {
+      @media (max-width: 639px) {
         padding-left: 40px;
         padding-right: 43px;
 
@@ -205,15 +205,15 @@
       margin-bottom: 84px;
       margin-left: -86px;
 
-      @media #{$desktop2} {
+      @media (max-width: 1690px) {
         margin-left: 0;
       }
 
-      @media #{$tablet} {
+      @media (max-width: 1024px) {
         margin-bottom: 64px;
       }
 
-      @media #{$mobile} {
+      @media (max-width: 639px) {
         margin-bottom: 32px;
       }
     }

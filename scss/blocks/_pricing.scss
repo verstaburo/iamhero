@@ -1,11 +1,11 @@
 .pricing {
   margin-bottom: 122px;
 
-  @media #{$desktop} {
+  @media (max-width: 1380px) {
     margin-bottom: 60px;
   }
 
-  @media #{$tablet} {
+  @media (max-width: 1024px) {
     margin-bottom: 40px;
   }
 
@@ -20,19 +20,19 @@
     margin-top: -160px;
     overflow: visible;
 
-    @media #{$desktop} {
+    @media (max-width: 1380px) {
       flex-direction: row !important;
       justify-content: space-between !important;
     }
 
-    @media #{$tablet} {
+    @media (max-width: 1024px) {
       flex-direction: column;
       align-items: center;
       padding: 0;
       margin-top: 0;
     }
 
-    @media #{$mobile} {
+    @media (max-width: 639px) {
       width: 100%;
       margin: 0;
     }
@@ -49,13 +49,13 @@
     background-color: $bgColor;
     box-shadow: 0 1px 5px 0 rgba($pricingTableShadow, 0.35);
 
-    @media #{$tablet} {
+    @media (max-width: 1024px) {
       margin-bottom: 2px;
       width: 100%;
     }
 
     &_special {
-      @media #{$tablet} {
+      @media (max-width: 1024px) {
         margin-bottom: 18px;
       }
 
@@ -79,7 +79,7 @@
     padding: 24px 40px 0;
     width: 100%;
 
-    @media #{$mobile} {
+    @media (max-width: 639px) {
       padding: 36px 9% 0;
     }
 
@@ -90,7 +90,7 @@
       text-align: left;
       color: $mainFontColorDark;
 
-      @media #{$tablet} {
+      @media (max-width: 1024px) {
         font-size: $pricingHeaderTextMobile;
         letter-spacing: -0.04em;
       }
@@ -108,7 +108,7 @@
     padding-right: 36px;
     padding-bottom: 42px;
 
-    @media #{$mobile} {
+    @media (max-width: 639px) {
       padding-left: 9%;
       padding-right: 9%;
       padding-bottom: 30px;
@@ -117,7 +117,7 @@
     .pricing__table_special & {
       padding-right: 46px;
 
-      @media #{$mobile} {
+      @media (max-width: 639px) {
         padding-right: 10%;
         padding-bottom: 34px;
       }
@@ -144,7 +144,7 @@
     font-weight: 300;
     color: $mainFontColorDark;
 
-    @media #{$mobile} {
+    @media (max-width: 639px) {
       font-size: $textSizeMobile;
       padding-top: 20px;
       min-height: 25px;
@@ -160,7 +160,7 @@
       font-weight: 300;
 
       .pricing__table_regular & {
-        @media #{$tablet} {
+        @media (max-width: 1024px) {
           text-align: right;
         }
       }
@@ -193,11 +193,11 @@
       padding-left: 5%;
       text-align: right;
 
-      @media #{$desktop2} {
+      @media (max-width: 1690px) {
         padding-left: 0;
       }
 
-      @media #{$mobile} {
+      @media (max-width: 639px) {
         padding-top: 8px;
       }
     }
@@ -218,7 +218,7 @@
     background-repeat: no-repeat;
     background-position: 0 0;
 
-    @media #{$mobile} {
+    @media (max-width: 639px) {
       padding: 12px 9%;
       font-size: $textSizeMobileBig;
     }
@@ -238,14 +238,14 @@
       font-weight: 300;
       padding: 22px 42px;
 
-      @media #{$mobile} {
+      @media (max-width: 639px) {
         padding: 22px 14px;
       }
 
       p {
         width: 65%;
 
-        @media #{$desktop2} {
+        @media (max-width: 1690px) {
           width: 100%;
         }
       }
@@ -257,7 +257,7 @@
     display: inline-block;
     width: 100%;
 
-    @media #{$mobile} {
+    @media (max-width: 639px) {
       padding: 9px 10px;
       font-size: $textSizeTiny;
     }

@@ -36,14 +36,14 @@
     box-sizing: border-box;
     padding-left: 150px;
 
-    @media #{$tablet2} {
+    @media (max-width: 1279px) {
       padding-left: 0;
       align-items: center;
       //padding: 7px 5%;
       padding: 1px 5%;
     }
 
-    @media #{$tablet} {
+    @media (max-width: 1024px) {
       padding: 3px 5%;
     }
 
@@ -67,7 +67,7 @@
     background-color: $bgMenuColor;
     z-index: 100;
 
-    @media #{$tablet2} {
+    @media (max-width: 1279px) {
       position: relative;
       order: 2;
       background-color: transparent;

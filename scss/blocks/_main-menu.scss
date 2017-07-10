@@ -1,4 +1,4 @@
-@media #{$tablet2} {
+@media (max-width: 1279px) {
   @for $i from 1 through 3 {
     .main-menu__item:nth-child(#{$i}) {
       transition-delay: 0.1s + 0.1s * $i;
@@ -14,7 +14,7 @@
   flex-grow: 1;
   box-sizing: border-box;
 
-  @media #{$tablet2} {
+  @media (max-width: 1279px) {
     order: 1;
     flex-grow: 0;
   }
@@ -30,16 +30,16 @@
     height: 30px;
     cursor: pointer;
 
-    @media #{$tablet2} {
+    @media (max-width: 1279px) {
       display: inline-block;
     }
 
-    @media #{$tablet} {
+    @media (max-width: 1024px) {
       width: 30px;
       height: 26px;
     }
 
-    @media #{$mobile} {
+    @media (max-width: 639px) {
       width: 18px;
       height: 18px;
       margin-top: -4px;
@@ -64,11 +64,11 @@
       transform: rotate(0deg);
       transition: all 0.5s ease-in-out;
 
-      @media #{$tablet} {
+      @media (max-width: 1024px) {
         width: 30px;
       }
 
-      @media #{$mobile} {
+      @media (max-width: 639px) {
         width: 18px;
       }
     }
@@ -76,11 +76,11 @@
     &::before {
       top: -12px;
 
-      @media #{$tablet} {
+      @media (max-width: 1024px) {
         top: -10px;
       }
 
-      @media #{$mobile} {
+      @media (max-width: 639px) {
         top: -6px;
       }
     }
@@ -88,20 +88,20 @@
     &::after {
       bottom: -12px;
 
-      @media #{$tablet} {
+      @media (max-width: 1024px) {
         bottom: -10px;
       }
 
-      @media #{$mobile} {
+      @media (max-width: 639px) {
         bottom: -6px;
       }
     }
 
-    @media #{$tablet} {
+    @media (max-width: 1024px) {
       width: 30px;
     }
 
-    @media #{$mobile} {
+    @media (max-width: 639px) {
       width: 18px;
     }
 
@@ -132,7 +132,7 @@
     align-content: flex-start;
     flex-wrap: wrap;
 
-    @media #{$tablet2} {
+    @media (max-width: 1279px) {
       padding-left: 0;
       //opacity: 0;
       display: none;
@@ -147,7 +147,7 @@
       padding-left: 210px;
       justify-content: center;
 
-      @media #{$tablet2} {
+      @media (max-width: 1279px) {
         padding-left: 0;
       }
     }
@@ -168,11 +168,11 @@
     margin-right: 53px;
     font-size: 0;
 
-    @media #{$desktop} {
+    @media (max-width: 1380px) {
       margin-right: 37px;
     }
 
-    @media #{$tablet2} {
+    @media (max-width: 1279px) {
       width: 100%;
       margin-right: 0;
       //experiment
@@ -195,7 +195,7 @@
     .page-header_no-switch-btn & {
       margin-right: 30px;
 
-      @media #{$tablet2} {
+      @media (max-width: 1279px) {
         width: 100%;
         margin-right: 0;
       }
@@ -218,7 +218,7 @@
     color: $mainFontColorLight;
     text-decoration: none;
 
-    @media #{$tablet2} {
+    @media (max-width: 1279px) {
       width: 100%;
       text-align: center;
     }

@@ -4,26 +4,26 @@
     flex-direction: row;
     justify-content: flex-start;
     align-items: flex-start;
-    
-    @media #{$tablet} {
+
+    @media (max-width: 1024px) {
       flex-direction: column;
       padding-left: 8px;
     }
-    
-    @media #{$mobile} {
+
+    @media (max-width: 639px) {
       padding-left: 4px;
     }
   }
 
   &__item {
     padding-right: 52px;
-    
-    @media #{$tablet} {
+
+    @media (max-width: 1024px) {
       padding-right: 0;
       margin-bottom: 44px;
     }
-    
-    @media #{$mobile} {
+
+    @media (max-width: 639px) {
       margin-bottom: 22px;
     }
   }

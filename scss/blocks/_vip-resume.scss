@@ -3,7 +3,7 @@
 	&__container {
 		padding-left: 28px
 	}
-	@media #{$tablet} {
+	@media (max-width: 1024px) {
 		padding: 80px 0;
 	}
 

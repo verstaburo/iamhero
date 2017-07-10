@@ -8,7 +8,7 @@
   background-color: transparent;
   transition: background-color .25s ease-in-out !important;
 
-  @media #{$tablet} {
+  @media (max-width: 1024px) {
     min-width: 46px;
     width: 46px;
     height: 46px;
@@ -38,7 +38,7 @@
       width: 14px;
       height: 27px;
 
-      @media #{$tablet} {
+      @media (max-width: 1024px) {
         width: 12px;
         height: 24px;
       }
@@ -48,7 +48,7 @@
       width: 29px;
       height: 23px;
 
-      @media #{$tablet} {
+      @media (max-width: 1024px) {
         width: 26px;
         height: 20px;
       }
@@ -60,7 +60,7 @@
       fill: transparent;
       stroke: $bgSocialColor;
 
-      @media #{$tablet} {
+      @media (max-width: 1024px) {
         width: 20px;
         height: 20px;
       }
@@ -70,7 +70,7 @@
       width: 25px;
       height: 18px;
 
-      @media #{$tablet} {
+      @media (max-width: 1024px) {
         width: 22px;
         height: 15px;
       }

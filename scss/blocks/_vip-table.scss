@@ -13,7 +13,7 @@
 		font-weight: 700;
 		margin-bottom: 50px;
 		text-align: left;
-		@media #{$tablet} {
+		@media (max-width: 1024px) {
       align-self: flex-start;
 			font-size: 30px;
 		}
@@ -25,7 +25,7 @@
 		max-width: 75%;
 		text-align: left;
 
-		@media #{$tablet} {
+		@media (max-width: 1024px) {
 			max-width: 100%;
 			font-size: 25px;
 		}
@@ -39,11 +39,11 @@
     box-sizing: border-box;
 		width: 100%;
 
-    @media #{$desktop2} {
+    @media (max-width: 1690px) {
       padding-left: 0;
     }
 
-		@media #{$tablet} {
+		@media (max-width: 1024px) {
 			flex-direction: column;
       justify-content: flex-start;
 		}
@@ -51,11 +51,11 @@
 	&__left-section {
 		width: 53.5%;
 
-    @media #{$desktop2} {
+    @media (max-width: 1690px) {
       width: 55%;
     }
 
-		@media #{$tablet} {
+		@media (max-width: 1024px) {
 			width: 100%;
 		}
 	}
@@ -65,12 +65,12 @@
     margin-right: -38px;
     padding-top: 76px;
 
-    @media #{$desktop2} {
+    @media (max-width: 1690px) {
       width: 45%;
       margin-right: 0;
     }
 
-		@media #{$tablet} {
+		@media (max-width: 1024px) {
 			width: 100%;
 		}
 	}
@@ -83,7 +83,7 @@
 		color: $formFontColorDarkest;
 		font-size: 25px;
     letter-spacing: -0.04em;
-		@media #{$tablet} {
+		@media (max-width: 1024px) {
 			padding: 0;
 			font-size: 16px;
 		}
@@ -142,7 +142,7 @@
 		padding: 30px 45px;
 		background: #fff;
 		box-shadow: 0px 1px 5px 0px rgba(96, 123, 137, 0.35);
-		@media #{$tablet} {
+		@media (max-width: 1024px) {
 			padding: 10px 15px;
 			font-size: 16px;
 		}
@@ -163,7 +163,7 @@
     letter-spacing: -0.04em;
 		font-weight: 700;
 		margin-bottom: 10px;
-		@media #{$tablet} {
+		@media (max-width: 1024px) {
 			font-size: 25px;
 		}
 	}
@@ -173,7 +173,7 @@
 		font-size: 22px;
     letter-spacing: -0.04em;
 		padding: 25px 0;
-		@media #{$tablet} {
+		@media (max-width: 1024px) {
 			font-size: 16px;
 		}
 
@@ -204,11 +204,11 @@
 		display: flex;
 		&:first-child {
 			width: 50%;
-			@media #{$tablet} {
+			@media (max-width: 1024px) {
 				width: 100%;
 			}
 		}
-		@media #{$tablet} {
+		@media (max-width: 1024px) {
 			width: 100%;
 		}
 	}
@@ -228,7 +228,7 @@
 		width: 24px;
 		height: 24px;
 
-    @media #{$mobile} {
+    @media (max-width: 639px) {
       width: 12px;
       height: 12px;
     }
@@ -237,7 +237,7 @@
 		width: 24px;
 		height: 24px;
 
-    @media #{$mobile} {
+    @media (max-width: 639px) {
       width: 12px;
       height: 12px;
     }

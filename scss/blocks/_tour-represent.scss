@@ -15,7 +15,7 @@
       background-repeat: no-repeat;
       z-index: 2;
 
-      @media #{$tablet} {
+      @media (max-width: 1024px) {
         display: block;
       }
     }
@@ -25,17 +25,17 @@
     padding-top: 160px;
     padding-bottom: 160px;
 
-    @media #{$tablet2} {
+    @media (max-width: 1279px) {
       padding-top: 80px;
       padding-bottom: 80px;
     }
 
-    @media #{$tablet} {
+    @media (max-width: 1024px) {
       padding-top: 272px;
       padding-bottom: 200px;
     }
 
-    @media #{$mobile} {
+    @media (max-width: 639px) {
       padding-top: 136px;
       padding-bottom: 98px;
     }
@@ -48,33 +48,33 @@
     padding-right: 180px;
     z-index: 3;
 
-    @media #{$desktop} {
+    @media (max-width: 1380px) {
       padding-left: 60px;
       padding-right: 90px;
     }
 
-    @media #{$tablet2} {
+    @media (max-width: 1279px) {
       align-self: flex-end;
     }
 
-    @media #{$tablet} {
+    @media (max-width: 1024px) {
       width: 100%;
       align-self: flex-start;
       padding-left: 32;
       padding-right: 180px;
     }
 
-    @media #{$mobile} {
+    @media (max-width: 639px) {
       padding-left: 16px;
       padding-right: 90px;
     }
 
     & .text-block__title {
-      @media #{$tablet} {
+      @media (max-width: 1024px) {
         margin-bottom: 28px;
       }
 
-      @media #{$mobile} {
+      @media (max-width: 639px) {
         margin-bottom: 14px;
       }
     }

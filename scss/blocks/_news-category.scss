@@ -1,5 +1,5 @@
 .news-category {
-  @media #{$tablet} {
+  @media (max-width: 1024px) {
     position: relative;
     width: 254px;
     border: 2px solid #dadada;
@@ -9,7 +9,7 @@
   }
 
    &.activated {
-    @media #{$tablet} {
+    @media (max-width: 1024px) {
       border-color: $additionalColorGreen;
       margin-bottom: 28px;
       border-bottom-width: 0;
@@ -17,14 +17,14 @@
       border-bottom-right-radius: 0;
     }
   }
-  
+
   &_inner {
-    @media #{$tablet} {
+    @media (max-width: 1024px) {
       margin-bottom: 15px;
     }
-    
+
     &.activated {
-      @media #{$tablet} {
+      @media (max-width: 1024px) {
        margin-bottom: 17px;
       }
     }
@@ -41,14 +41,14 @@
     box-sizing: border-box;
     border-radius: 25px;
 
-    @media #{$tablet} {
+    @media (max-width: 1024px) {
       position: relative;
       display: inline-block;
       width: 100%;
       cursor: pointer;
     }
 
-    @media #{$mobile} {
+    @media (max-width: 639px) {
       font-size: $textSizeMobileBig;
       letter-spacing: -0.04em;
       padding: 10px 13px;
@@ -60,7 +60,7 @@
     }
 
     &::after {
-      @media #{$tablet} {
+      @media (max-width: 1024px) {
         position: absolute;
         content: '';
         top: 50%;
@@ -73,7 +73,7 @@
         transform: translate(0, -50%) rotate(45deg);
       }
 
-      @media #{$mobile} {
+      @media (max-width: 639px) {
         width: 8px;
         height: 8px;
         right: 16px;
@@ -94,7 +94,7 @@
     transition: background 0.25s ease-in-out, opacity 0.25s ease-in-out, height 0.25s ease-in-out;
     z-index: 100;
 
-    @media #{$tablet} {
+    @media (max-width: 1024px) {
       position: absolute;
       top: 100%;
       left: -2px;
@@ -108,7 +108,7 @@
     }
 
     .activated & {
-      @media #{$tablet} {
+      @media (max-width: 1024px) {
         border: 2px solid $additionalColorGreen;
         border-top-width: 0;
         border-bottom-left-radius: 25px;
@@ -135,7 +135,7 @@
     border-radius: 15px;
     transition: all 0.25s ease-in-out;
 
-    @media #{$tablet} {
+    @media (max-width: 1024px) {
       margin-right: 0;
       font-size: $menuTextSize;
       border: none;
@@ -143,7 +143,7 @@
       width: 100%;
     }
 
-    @media #{$mobile} {
+    @media (max-width: 639px) {
       font-size: $textSizeMobileBig;
     }
 
@@ -161,14 +161,14 @@
       background-color: $mainFontColorDark;
       border-color: $mainFontColorDark;
 
-      @media #{$tablet} {
+      @media (max-width: 1024px) {
         color: $mainFontColorDark;
         background-color: $bgColor;
         border: none;
       }
 
       &:hover {
-        @media #{$tablet} {
+        @media (max-width: 1024px) {
           background-color: $additionalColorGreen;
         }
       }
@@ -184,13 +184,13 @@
       line-height: inherit;
       text-decoration: none;
 
-      @media #{$tablet} {
+      @media (max-width: 1024px) {
         padding: 12px 20px;
         width: 100%;
         text-align: left;
       }
 
-      @media #{$mobile} {
+      @media (max-width: 639px) {
         padding: 10px 14px;
       }
     }

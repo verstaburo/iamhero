@@ -17,7 +17,7 @@
   cursor: pointer;
   transition: all 0.25s ease-in-out;
 
-  @media #{$mobile} {
+  @media (max-width: 639px) {
     font-size: 0.75*$btnTextSize;
     padding: 7px 24px;
   }
@@ -82,7 +82,7 @@
     padding-left: 86px;
     padding-right: 86px;
 
-    @media #{$mobile} {
+    @media (max-width: 639px) {
       padding-left: 42px;
       padding-right: 42px;
     }
@@ -93,7 +93,7 @@
     letter-spacing: -0.04em;
     border-radius: 50px;
 
-    @media #{$mobile} {
+    @media (max-width: 639px) {
       font-size: $btnBigTextSize/2;
     }
   }

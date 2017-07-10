@@ -5,7 +5,7 @@
     width: 241px;
     height: 62px;
 
-    @media #{$mobile} {
+    @media (max-width: 639px) {
       width: 120.5px;
       height: 31px;
     }
@@ -14,7 +14,7 @@
       width: 241px;
       height: 62px;
 
-      @media #{$mobile} {
+      @media (max-width: 639px) {
         width: 120.5px;
         height: 31px;
       }
@@ -26,7 +26,7 @@
     height: 85px;
     transform: translate(0, -30px);
 
-    @media #{$mobile} {
+    @media (max-width: 639px) {
       width: 107px;
       height: 42.5px;
       transform: translate(0);
@@ -36,7 +36,7 @@
       width: 214px;
       height: 85px;
 
-      @media #{$mobile} {
+      @media (max-width: 639px) {
         width: 107px;
         height: 42.5px;
       }
@@ -47,12 +47,12 @@
     width: 181px;
     height: 101px;
 
-    @media #{$desktop} {
+    @media (max-width: 1380px) {
       width: 0.7*181px;
       height: 0.7*101px;
     }
 
-    @media #{$mobile} {
+    @media (max-width: 639px) {
       width: 92px;
       height: 52px;
     }
@@ -61,12 +61,12 @@
       width: 181px;
       height: 101px;
 
-      @media #{$desktop} {
+      @media (max-width: 1380px) {
         width: 0.7*181px;
         height: 0.7*101px;
       }
 
-      @media #{$mobile} {
+      @media (max-width: 639px) {
         width: 92px;
         height: 52px;
       }
@@ -77,12 +77,12 @@
     width: 200px;
     height: 62px;
 
-    @media #{$desktop} {
+    @media (max-width: 1380px) {
       width: 0.7*200px;
       height: 0.7*62px;
     }
 
-    @media #{$mobile} {
+    @media (max-width: 639px) {
       width: 102px;
       height: 32px;
     }
@@ -91,12 +91,12 @@
       width: 200px;
       height: 62px;
 
-      @media #{$desktop} {
+      @media (max-width: 1380px) {
         width: 0.7*200px;
         height: 0.7*62px;
       }
 
-      @media #{$mobile} {
+      @media (max-width: 639px) {
         width: 102px;
         height: 32px;
       }
@@ -107,12 +107,12 @@
     width: 248px;
     height: 60px;
 
-    @media #{$desktop} {
+    @media (max-width: 1380px) {
       width: 0.7*248px;
       height: 0.7*60px;
     }
 
-    @media #{$mobile} {
+    @media (max-width: 639px) {
       width: 126px;
       height: 31px;
     }
@@ -121,12 +121,12 @@
       width: 248px;
       height: 60px;
 
-      @media #{$desktop} {
+      @media (max-width: 1380px) {
         width: 0.7*248px;
         height: 0.7*60px;
       }
 
-      @media #{$mobile} {
+      @media (max-width: 639px) {
         width: 126px;
         height: 31px;
       }
@@ -137,12 +137,12 @@
     width: 136px;
     height: 59px;
 
-    @media #{$desktop} {
+    @media (max-width: 1380px) {
       width: 0.7*136px;
       height: 0.7*59px;
     }
 
-    @media #{$mobile} {
+    @media (max-width: 639px) {
       width: 69px;
       height: 30px;
     }
@@ -151,12 +151,12 @@
       width: 136px;
       height: 59px;
 
-      @media #{$desktop} {
+      @media (max-width: 1380px) {
         width: 0.7*136px;
         height: 0.7*59px;
       }
 
-      @media #{$mobile} {
+      @media (max-width: 639px) {
         width: 69px;
         height: 30px;
       }
@@ -167,12 +167,12 @@
     width: 149px;
     height: 84px;
 
-    @media #{$desktop} {
+    @media (max-width: 1380px) {
       width: 0.7*149px;
       height: 0.7*84px;
     }
 
-    @media #{$mobile} {
+    @media (max-width: 639px) {
       width: 76px;
       height: 43px;
     }
@@ -181,12 +181,12 @@
       width: 149px;
       height: 84px;
 
-      @media #{$desktop} {
+      @media (max-width: 1380px) {
         width: 0.7*149px;
         height: 0.7*84px;
       }
 
-      @media #{$mobile} {
+      @media (max-width: 639px) {
         width: 76px;
         height: 43px;
       }
@@ -197,12 +197,12 @@
     width: 193px;
     height: 73px;
 
-    @media #{$desktop} {
+    @media (max-width: 1380px) {
       width: 0.7*193px;
       height: 0.7*73px;
     }
 
-    @media #{$mobile} {
+    @media (max-width: 639px) {
       width: 97px;
       height: 37px;
     }
@@ -211,12 +211,12 @@
       width: 193px;
       height: 73px;
 
-      @media #{$desktop} {
+      @media (max-width: 1380px) {
         width: 0.7*193px;
         height: 0.7*73px;
       }
 
-      @media #{$mobile} {
+      @media (max-width: 639px) {
         width: 97px;
         height: 37px;
       }

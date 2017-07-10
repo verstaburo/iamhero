@@ -38,18 +38,18 @@
     }
   }
 
-  @media #{$mobile} {
+  @media (max-width: 639px) {
       padding-bottom: 30px;
     }
 
   &__container {
     padding-top: 92px;
 
-    @media #{$tablet} {
+    @media (max-width: 1024px) {
       padding-top: 88px;
     }
 
-    @media #{$mobile} {
+    @media (max-width: 639px) {
       padding: 44px 14px 0;
     }
   }
@@ -59,28 +59,28 @@
     padding-left: 154px;
     padding-right: 50px;
 
-    @media #{$desktop} {
+    @media (max-width: 1380px) {
       padding-left: 0;
     }
 
-    @media #{$tablet2} {
+    @media (max-width: 1279px) {
       align-self: flex-end;
     }
 
-    @media #{$tablet} {
+    @media (max-width: 1024px) {
       width: 100%;
       padding-right: 0;
       align-self: flex-start;
     }
 
     & .text-block__title_mainpage {
-      @media #{$mobile} {
+      @media (max-width: 639px) {
         margin-bottom: 32px;
       }
     }
 
     & .text-block__content {
-      @media #{$mobile} {
+      @media (max-width: 639px) {
         line-height: 1.35em;
       }
     }
@@ -89,7 +89,7 @@
   &__list {
     margin-top: 82px;
 
-    @media #{$mobile} {
+    @media (max-width: 639px) {
       margin-top: 30px;
     }
   }
@@ -102,12 +102,12 @@
     font-size: $textSizeBiger;
     letter-spacing: -0.04em;
 
-    @media #{$tablet} {
+    @media (max-width: 1024px) {
       margin-bottom: 50px;
       padding-left: 80px;
     }
 
-    @media #{$mobile} {
+    @media (max-width: 639px) {
       margin-bottom: 35px;
       padding-left: 44px;
       font-size: $textSizeBiger/2;
@@ -119,12 +119,12 @@
     top: 8px;
     left: 6px;
 
-    @media #{$tablet} {
+    @media (max-width: 1024px) {
       top: 0;
       left: 3px;
     }
 
-    @media #{$mobile} {
+    @media (max-width: 639px) {
       top: 4px;
       left: 4px;
     }
@@ -134,12 +134,12 @@
       width: 23px;
       height: 24px;
 
-      @media #{$tablet} {
+      @media (max-width: 1024px) {
         width: 53px;
         height: 53px;
       }
 
-      @media #{$mobile} {
+      @media (max-width: 639px) {
         top: 5px;
         width: 26.5px;
         height: 26.5px;
@@ -150,12 +150,12 @@
       width: 24px;
       height: 24px;
 
-      @media #{$tablet} {
+      @media (max-width: 1024px) {
         width: 55px;
         height: 55px;
       }
 
-      @media #{$mobile} {
+      @media (max-width: 639px) {
         top: -1px;
         width: 27.5px;
         height: 27.5px;
@@ -167,12 +167,12 @@
       width: 24px;
       height: 24px;
 
-      @media #{$tablet} {
+      @media (max-width: 1024px) {
         width: 55px;
         height: 55px;
       }
 
-      @media #{$mobile} {
+      @media (max-width: 639px) {
         top: 0;
         left: 7px;
         width: 27.5px;
@@ -184,13 +184,13 @@
       width: 25px;
       height: 24px;
 
-      @media #{$tablet} {
+      @media (max-width: 1024px) {
         top: -8px;
         width: 58px;
         height: 55px;
       }
 
-      @media #{$mobile} {
+      @media (max-width: 639px) {
         top: -8px;
         width: 29px;
         height: 27.5px;
@@ -201,7 +201,7 @@
   &__bg {
     background-color: $bgHeaderMenuItemHover;
 
-    @media #{$tablet} {
+    @media (max-width: 1024px) {
 
       &::before {
         position: absolute;

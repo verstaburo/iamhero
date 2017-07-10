@@ -5,11 +5,11 @@
     width: 100%;
     padding: 0 46px;
 
-    @media #{$desktop} {
+    @media (max-width: 1380px) {
       padding: 0 32px;
     }
 
-    @media #{$tablet} {
+    @media (max-width: 1024px) {
       padding: 0 14px;
     }
   }
@@ -18,7 +18,7 @@
     padding: 0;
     margin-bottom: 170px;
 
-    @media #{$tablet} {
+    @media (max-width: 1024px) {
       margin-bottom: 80px;
     }
   }
@@ -28,12 +28,12 @@
     letter-spacing: -0.04em;
     margin-bottom: 43px;
 
-    @media #{$desktop} {
+    @media (max-width: 1380px) {
       font-size: 35px;
       margin-bottom: 30px;
     }
 
-    @media #{$tablet} {
+    @media (max-width: 1024px) {
       font-size: 30px;
       letter-spacing: -0.04em;
       margin-bottom: 31px;
@@ -45,11 +45,11 @@
     letter-spacing: -0.04em;
     margin-bottom: 67px;
 
-    @media #{$desktop} {
+    @media (max-width: 1380px) {
       font-size: 18px;
     }
 
-    @media #{$tablet} {
+    @media (max-width: 1024px) {
       font-size: 15px;
       margin-bottom: 36px;
     }
@@ -62,7 +62,7 @@
     align-items: flex-start;
     flex-wrap: wrap;
 
-    @media #{$tablet} {
+    @media (max-width: 1024px) {
       flex-direction: column;
       align-items: center;
       justify-content: flex-start;
@@ -77,11 +77,11 @@
       margin-right: 0;
     }
 
-    @media #{$desktop} {
+    @media (max-width: 1380px) {
       margin-right: 27px;
     }
 
-    @media #{$tablet} {
+    @media (max-width: 1024px) {
       margin-right: 0;
       margin-bottom: 68px;
     }
@@ -109,12 +109,12 @@
       width: 261px;
       height: 539px;
 
-      @media #{$desktop} {
+      @media (max-width: 1380px) {
         width: 182px;
         height: 377px;
       }
 
-      @media #{$tablet} {
+      @media (max-width: 1024px) {
         width: 258px;
         height: 532px;
       }
@@ -124,12 +124,12 @@
       width: 218px;
       height: 374px;
 
-      @media #{$desktop} {
+      @media (max-width: 1380px) {
         width: 152px;
         height: 261px;
       }
 
-      @media #{$tablet} {
+      @media (max-width: 1024px) {
         width: 216px;
         height: 370px;
       }

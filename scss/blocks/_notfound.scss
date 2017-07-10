@@ -1,11 +1,11 @@
 .notfound {
 
   &__container {
-    @media #{$tablet2} {
+    @media (max-width: 1279px) {
       align-items: flex-end;
     }
 
-    @media #{$tablet} {
+    @media (max-width: 1024px) {
       align-items: center;
     }
   }
@@ -14,21 +14,21 @@
     padding: 156px 60px 566px;
     width: 540px;
 
-    @media #{$desktop2} {
+    @media (max-width: 1690px) {
       padding-bottom: 270px;
     }
 
-    @media #{$tablet2} {
+    @media (max-width: 1279px) {
       padding: 156px 30px 233px;
       width: 480px;
     }
 
-    @media #{$tablet} {
+    @media (max-width: 1024px) {
       padding: 112px 30px 233px;
       width: 100%;
     }
 
-    @media #{$mobile} {
+    @media (max-width: 639px) {
       padding: 56px 10px 233px;
     }
   }
@@ -36,11 +36,11 @@
   &__title {
     margin-bottom: 20px;
 
-    @media #{$tablet} {
+    @media (max-width: 1024px) {
       margin-bottom: 12px;
     }
 
-    @media #{$mobile} {
+    @media (max-width: 639px) {
       margin-bottom: 6px;
     }
   }
@@ -50,19 +50,19 @@
     p {
       margin-bottom: 51px;
 
-      @media #{$mobile} {
+      @media (max-width: 639px) {
         margin-bottom: 42px;
       }
     }
   }
 
   &__btn {
-    @media #{$tablet} {
+    @media (max-width: 1024px) {
       padding: 8px 62px;
       border-radius: 50px;
     }
 
-    @media #{$mobile} {
+    @media (max-width: 639px) {
       padding: 8px 62px;
       border-radius: 50px;
     }

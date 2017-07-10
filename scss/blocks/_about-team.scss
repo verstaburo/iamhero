@@ -1,7 +1,7 @@
 .about-team {
 	margin-bottom: 137px;
 
-	@media #{$tablet} {
+	@media (max-width: 1024px) {
 		margin-bottom: 80px;
 	}
 
@@ -15,11 +15,11 @@
   padding: 0 47px;
   width: 100%;
 
-  @media #{$desktop} {
+  @media (max-width: 1380px) {
     padding: 0 33px;
   }
 
-  @media #{$tablet} {
+  @media (max-width: 1024px) {
     padding: 0 14px;
   }
 }
@@ -29,11 +29,11 @@
   letter-spacing: -0.04em;
 	margin-bottom: 64px;
 
-  @media #{$desktop} {
+  @media (max-width: 1380px) {
     font-size: 35px;
   }
 
-	@media #{$tablet} {
+	@media (max-width: 1024px) {
 		font-size: 30px;
 		margin-bottom: 27px;
 	}
@@ -45,11 +45,11 @@
 	max-width: 40%;
 	margin-bottom: 79px;
 
-  @media #{$desktop} {
+  @media (max-width: 1380px) {
     font-size: 18px;
   }
 
-	@media #{$tablet} {
+	@media (max-width: 1024px) {
 		font-size: 15px;
 		max-width: 100%;
 		margin-bottom: 33px;
@@ -63,7 +63,7 @@
 	justify-content: space-between;
   align-items: flex-start;
 
-	@media #{$tablet} {
+	@media (max-width: 1024px) {
 		flex-direction: column;
 		align-items: center;
 		justify-content: flex-start;
@@ -75,12 +75,12 @@
 	//margin-right: 11%;
 	margin-bottom: 102px;
 
-	@media #{$desktop2} {
+	@media (max-width: 1690px) {
 		//width: 40%;
 		//margin-right: 20%;
 		margin-bottom: 36px;
 	}
-	@media #{$tablet} {
+	@media (max-width: 1024px) {
 		width: 100%;
     max-width: 402px;
 		margin-right: 0;
@@ -94,7 +94,7 @@
 	& div {
 		margin-bottom: 26px;
 
-		@media #{$tablet} {
+		@media (max-width: 1024px) {
 			margin-bottom: 22px;
 		}
 
@@ -102,7 +102,7 @@
 			width: 100%;
       filter: grayscale(100%);
 			filter: gray;
-			filter: url(#about-team__grayscale);			
+			filter: url(#about-team__grayscale);
 		}
 	}
 
@@ -112,11 +112,11 @@
     letter-spacing: -0.04em;
 		margin-bottom: 2px;
 
-		@media #{$tablet} {
+		@media (max-width: 1024px) {
 			font-size: 35px;
 		}
 
-		@media #{$mobile} {
+		@media (max-width: 639px) {
 			font-size: 17px;
 		}
 	}
@@ -127,11 +127,11 @@
 		font-weight: 500;
 		color: #98a9b3;
 
-		@media #{$tablet} {
+		@media (max-width: 1024px) {
 			font-size: 25px;
 		}
 
-		@media #{$mobile} {
+		@media (max-width: 639px) {
 			font-size: 12px;
 		}
 	}
@@ -141,7 +141,7 @@
 	}
 
 	&:nth-child(n+2) {
-		@media #{$desktop2} {
+		@media (max-width: 1690px) {
 			margin-right: 0;
 		}
 	}

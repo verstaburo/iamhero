@@ -26,7 +26,7 @@
     color: $footerTextFontColor;
     width: 100%;
 
-    @media #{$mobile} {
+    @media (max-width: 639px) {
       margin-bottom: 0;
       font-size: $textSizeSmall;
       letter-spacing: -0.04em;

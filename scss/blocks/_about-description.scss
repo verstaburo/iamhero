@@ -6,12 +6,12 @@
 	padding-top: 110px;
 	padding-bottom: 110px;
 
-	@media #{$tablet} {
+	@media (max-width: 1024px) {
 		padding-top: 67px;
 		padding-bottom: 82px;
 	}
 }
-  
+
   &__bg {
     position: relative;
     position: absolute;
@@ -20,19 +20,19 @@
     width: 100%;
     height: 100%;
     margin-top: -130px;
-    
-    @media #{$desktop} {
+
+    @media (max-width: 1380px) {
       margin-top: -60px;
     }
-    
-    @media (min-width: 401px) and #{$mobile} {
+
+    @media (min-width: 401px) and (max-width: 639px) {
       margin-top: -15px;
     }
-    
+
     @media (max-width: 400px) {
       margin-top: -25px;
     }
-    
+
     img {
       position: absolute;
       top: 50%;
@@ -40,18 +40,18 @@
       width: 2776px;
       height: 1432px;
       transform: translate(-50%, -50%);
-      
+
       @media #{desktop} {
         width: 1804px;
         height: 930px;
-      } 
-      
-      @media #{$mobile} {
+      }
+
+      @media (max-width: 639px) {
         width: 1249px;
         height: 644px;
       }
     }
-  }  
+  }
 
 &__content {
 	width: 100%;
@@ -61,11 +61,11 @@
   box-sizing: border-box;
   padding: 0 44px;
 
-  @media #{$desktop} {
+  @media (max-width: 1380px) {
     padding: 0 38px;
   }
 
-  @media #{$tablet} {
+  @media (max-width: 1024px) {
     padding: 0 14px;
   }
 
@@ -73,7 +73,7 @@
     display: flex;
     justify-content: flex-start;
 
-    @media #{$tablet} {
+    @media (max-width: 1024px) {
       display: block;
     }
   }
@@ -81,7 +81,7 @@
   &:nth-child(1) {
     margin-bottom: 71px;
 
-    @media #{$tablet} {
+    @media (max-width: 1024px) {
       margin-bottom: 19px;
     }
 
@@ -89,7 +89,7 @@
       width: 55%;
       padding: 0 5px;
 
-      @media #{$tablet} {
+      @media (max-width: 1024px) {
        width: 90%;
       }
     }
@@ -99,16 +99,16 @@
     width: 61%;
     margin-bottom: 40px;
 
-    @media #{$desktop} {
+    @media (max-width: 1380px) {
       margin-bottom: 30px;
     }
 
-    @media #{$tablet} {
+    @media (max-width: 1024px) {
       width: 80%;
       margin-bottom: 15px;
     }
 
-    @media #{$mobile} {
+    @media (max-width: 639px) {
       width: 100%;
     }
   }
@@ -118,12 +118,12 @@
     z-index: 10;
     width: 50%;
 
-    @media #{$tablet} {
+    @media (max-width: 1024px) {
       width: 60%;
       margin-bottom: 30px;
     }
 
-    @media #{$mobile} {
+    @media (max-width: 639px) {
       background-color: rgba(255, 255, 255, 0.7);
       width: 85%;
       margin-bottom: 0;
@@ -137,11 +137,11 @@
     text-align: right;
     padding: 0 15px;
     margin-top: 606px;
-    
-    @media (min-width: 401px) and #{$mobile} {
+
+    @media (min-width: 401px) and (max-width: 639px) {
       margin-top: 400px;
     }
-    
+
     @media (max-width: 400px) {
       margin-top: 310px;
     }
@@ -151,11 +151,11 @@
       font-size: 50px;
       letter-spacing: -0.04em;
 
-      @media #{$desktop} {
+      @media (max-width: 1380px) {
         font-size: 35px;
       }
 
-      @media #{$tablet} {
+      @media (max-width: 1024px) {
         width: 95%;
         font-size: 26px;
       }
@@ -163,7 +163,7 @@
       /*&:nth-child(2) {
         margin-bottom: 75px;
 
-        @media #{$tablet} {
+        @media (max-width: 1024px) {
           margin-bottom: 28px;
         }
       }*/
@@ -177,11 +177,11 @@
       letter-spacing: -0.04em;
       margin-top: 70px;
 
-      @media #{$desktop} {
+      @media (max-width: 1380px) {
         font-size: 18px;
       }
 
-      @media #{$tablet} {
+      @media (max-width: 1024px) {
         margin-top: 28px;
         font-size: 15px;
       }
@@ -201,7 +201,7 @@
           font-weight: 100;
         }
 
-        @media #{$tablet} {
+        @media (max-width: 1024px) {
           padding-top: 13px;
           margin-right: 23px;
         }
@@ -215,7 +215,7 @@
         box-shadow: 0 75px 73px -50px #000;
         overflow: hidden;
 
-        @media #{$tablet} {
+        @media (max-width: 1024px) {
           width: 88px;
           height: 88px;
         }
@@ -228,11 +228,11 @@
 	font-size: 25px;
   letter-spacing: -0.04em;
 
-  @media #{$desktop} {
+  @media (max-width: 1380px) {
     font-size: 18px;
   }
 
-	@media #{$tablet} {
+	@media (max-width: 1024px) {
 		font-size: 15px;
 	}
 
@@ -243,11 +243,11 @@
 		white-space: nowrap;
 		margin-right: 4.0%;;
 
-    @media #{$desktop} {
+    @media (max-width: 1380px) {
       font-size: 35px;
     }
 
-		@media #{$tablet} {
+		@media (max-width: 1024px) {
 			display: inline-block;
 			font-size: 35px;
       letter-spacing: -0.04em;

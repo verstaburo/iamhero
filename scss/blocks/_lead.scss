@@ -10,12 +10,12 @@
   height: 100vh;
   overflow: hidden;
 
-  @media #{$tablet} {
+  @media (max-width: 1024px) {
     flex-direction: column;
     height: 100%;
   }
 
-  @media #{$mobile} {
+  @media (max-width: 639px) {
   }
 
   &_fixed {
@@ -39,19 +39,19 @@
     width: 50%;
     transition: height .75s ease-in-out, min-height .75s ease-in-out, max-height .75s ease-in-out, width .75s ease-in-out, opacity .75s ease-in-out, padding .75s ease-in-out;
 
-    @media #{$desktop2} {
+    @media (max-width: 1690px) {
       padding-right: 9.5%;
     }
 
-    @media #{$desktop} {
+    @media (max-width: 1380px) {
       padding-left: 9.5%;
     }
 
-    @media #{$tablet2} {
+    @media (max-width: 1279px) {
       padding: 0 9.5%;
     }
 
-    @media #{$tablet} {
+    @media (max-width: 1024px) {
       overflow: hidden;
       width: 100%;
       min-height: 264px;
@@ -59,7 +59,7 @@
       flex: 1;
     }
 
-    @media #{$mobile} {
+    @media (max-width: 639px) {
       min-height: 132px;
       height: 132px;
     }
@@ -77,7 +77,7 @@
       transition: opacity .75s ease-in-out;
       z-index: 3;
 
-      @media #{$mobile} {
+      @media (max-width: 639px) {
         z-index: 3;
       }
     }
@@ -97,11 +97,11 @@
       z-index: 3;
       transition: opacity 0.25s ease-in-out;
 
-      @media #{$tablet} {
+      @media (max-width: 1024px) {
         opacity: 0.55;
       }
 
-      @media #{$mobile} {
+      @media (max-width: 639px) {
         z-index: 3;
       }
     }
@@ -115,7 +115,7 @@
       &::before {
         background-image: linear-gradient(to top, $additionalColorBlue 0, transparent 526px);
 
-        @media #{$mobile} {
+        @media (max-width: 639px) {
           background-image: linear-gradient(to top, $additionalColorBlue 0, transparent 220px);
         }
       }
@@ -128,13 +128,13 @@
         left: 0;
         background-color: $additionalColorBlue;
 
-        @media #{$tablet} {
+        @media (max-width: 1024px) {
           left: 0;
         }
       }
 
       & .text-block__content {
-        @media #{$tablet} {
+        @media (max-width: 1024px) {
           opacity: 0;
           width: 0;
           height: 0;
@@ -143,20 +143,20 @@
       }
 
       &:hover {
-        @media #{$tablet} {
+        @media (max-width: 1024px) {
           height: 872px;
           min-height: 75%;
           padding-right: 9.5%;
           width: 100%;
         }
 
-        @media #{$mobile} {
+        @media (max-width: 639px) {
           height: 438px;
           min-height: 75%;
         }
 
         & .text-block__content {
-          @media #{$tablet} {
+          @media (max-width: 1024px) {
             opacity: 1;
             width: 100%;
             height: auto;
@@ -173,23 +173,23 @@
           padding-right: calc(9.5px + 130px);
         }
 
-        @media #{$desktop2} {
+        @media (max-width: 1690px) {
           padding-right: calc(9.5% + 130px);
         }
 
-        @media #{$tablet2} {
+        @media (max-width: 1279px) {
           width: calc(50% + 102px);
           padding-right: calc(9.5% + 102px);
         }
 
-        @media #{$tablet} {
+        @media (max-width: 1024px) {
           height: 872px;
           min-height: 75%;
           padding-right: 9.5%;
           width: 100%;
         }
 
-        @media #{$mobile} {
+        @media (max-width: 639px) {
           height: 438px;
           min-height: 75%;
         }
@@ -199,22 +199,22 @@
         width: calc(50% - 130px);
         padding-right: calc(9.5% - 130px);
 
-        @media #{$desktop2} {
+        @media (max-width: 1690px) {
           padding-right: calc(9.5% - 130px);
         }
 
-        @media #{$tablet2} {
+        @media (max-width: 1279px) {
           width: calc(50% - 102px);
           padding-right: calc(9.5% - 102px);
         }
 
-        @media #{$tablet} {
+        @media (max-width: 1024px) {
           width: 100%;
           padding-right: 9.5%;
           min-height: 50%;
         }
 
-        @media #{$mobile} {
+        @media (max-width: 639px) {
           min-height: 50%;
         }
       }
@@ -225,7 +225,7 @@
       &::before {
         background-image: linear-gradient(to top, $additionalColorGreen 0, transparent 526px);
 
-        @media #{$mobile} {
+        @media (max-width: 639px) {
           background-image: linear-gradient(to top, $additionalColorGreen 0, transparent 220px);
         }
       }
@@ -239,7 +239,7 @@
       }
 
       & .text-block__content {
-        @media #{$tablet} {
+        @media (max-width: 1024px) {
           opacity: 0;
           width: 0;
           height: 0;
@@ -249,20 +249,20 @@
 
       &:hover {
 
-        @media #{$tablet} {
+        @media (max-width: 1024px) {
           height: 872px;
           min-height: 872px;
           width: 100%;
           padding-left: 9.5%;
         }
 
-        @media #{$mobile} {
+        @media (max-width: 639px) {
           height: 438px;
           min-height: 438px;
         }
 
         & .text-block__content {
-          @media #{$tablet} {
+          @media (max-width: 1024px) {
             opacity: 1;
             width: 100%;
             height: auto;
@@ -275,23 +275,23 @@
         width: calc(50% + 130px);
         padding-left: calc(9.5% + 130px);
 
-        @media #{$desktop} {
+        @media (max-width: 1380px) {
           padding-left: calc(9.5% + 130px);
         }
 
-        @media #{$tablet2} {
+        @media (max-width: 1279px) {
           width: calc(50% + 102px);
           padding-left: calc(9.5% + 102px);
         }
 
-        @media #{$tablet} {
+        @media (max-width: 1024px) {
           height: 872px;
           min-height: 75%;
           width: 100%;
           padding-left: 9.5%;
         }
 
-        @media #{$mobile} {
+        @media (max-width: 639px) {
           height: 438px;
           min-height: 75%;
         }
@@ -301,22 +301,22 @@
         width: calc(50% - 130px);
         padding-left: calc(9.5% - 130px);
 
-        @media #{$desktop} {
+        @media (max-width: 1380px) {
           padding-left: calc(9.5% - 130px);
         }
 
-        @media #{$tablet2} {
+        @media (max-width: 1279px) {
           width: calc(50% - 102px);
           padding-left: calc(9.5% - 102px);
         }
 
-        @media #{$tablet} {
+        @media (max-width: 1024px) {
           width: 100%;
           padding-left: 9.5%;
           min-height: 50%;
         }
 
-        @media #{$mobile} {
+        @media (max-width: 639px) {
           min-height: 50%;
         }
       }
@@ -333,7 +333,7 @@
     transition: transform .75s ease-in-out, opacity .75s ease-in-out, background 0.25s ease-in-out, color 0.25s ease-in-out;
     z-index: 5;
 
-    @media #{$tablet} {
+    @media (max-width: 1024px) {
       position: absolute;
       top: 0;
       left: 0;
@@ -350,7 +350,7 @@
       transform: translateY(0);
       opacity: 1;
 
-      @media #{$tablet} {
+      @media (max-width: 1024px) {
         width: auto;
         height: auto;
         overflow: visible;
@@ -366,11 +366,11 @@
     height: 1058px;
     z-index: 1;
 
-    @media #{$tablet} {
+    @media (max-width: 1024px) {
       height: 100%;
     }
 
-    @media #{$mobile} {
+    @media (max-width: 639px) {
       height: 100%;
     }
   }
@@ -381,7 +381,7 @@
     height: 100vh;
     overflow: hidden;
 
-    @media #{$tablet} {
+    @media (max-width: 1024px) {
       height: 100%;
       min-height: 100%;
     }
@@ -420,11 +420,11 @@
     z-index: 4;
     transition: padding .75s ease-in-out;
 
-    @media #{$tablet2} {
+    @media (max-width: 1279px) {
       margin-bottom: 20px;
     }
 
-    @media #{$tablet} {
+    @media (max-width: 1024px) {
       margin-bottom: 12px;
     }
 
@@ -437,7 +437,7 @@
       height: 300%;
       transition: height .75s ease-in-out;
 
-      @media #{$mobile} {
+      @media (max-width: 639px) {
         width: 6px;
         bottom: calc(100% + 8px);
       }
@@ -455,14 +455,14 @@
     transform: translate(-50%, 0);
     z-index: 10;
 
-    @media #{$tablet} {
+    @media (max-width: 1024px) {
       top: 48px;
       left: auto;
       right: 8%;
       transform: none;
     }
 
-    @media #{$mobile} {
+    @media (max-width: 639px) {
       top: 24px;
     }
   }

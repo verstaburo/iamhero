@@ -13,7 +13,7 @@
 		flex-direction: row;
 		padding-top: 170px;
 		width: 100%;
-		@media #{$tablet}{
+		@media (max-width: 1024px){
 			padding-top: 60px;
 			flex-direction: column;
 		}
@@ -23,23 +23,23 @@
     box-sizing: border-box;
 		width: 55%;
     padding-left: 44px;
-    
-    @media #{$desktop2} {
+
+    @media (max-width: 1690px) {
       padding: 0;
     }
-    
-		@media #{$tablet}{
+
+		@media (max-width: 1024px){
 			order:0;
 			width: 100%;
 		}
 		&.order-two {
       padding: 0 44px;
-      
-      @media #{$desktop2} {
+
+      @media (max-width: 1690px) {
         padding: 0;
       }
-      
-			@media #{$tablet}{
+
+			@media (max-width: 1024px){
 				order:2;
 				width: 100%;
 			}
@@ -49,13 +49,13 @@
 	&__right-section {
     box-sizing: border-box;
 		width: 45%;
-    
-		@media #{$tablet}{
+
+		@media (max-width: 1024px){
 			order:1;
 			width: 100%;
 		}
 		&.order-one {
-			@media #{$tablet}{
+			@media (max-width: 1024px){
 				order:1;
 				width: 100%;
 			}
@@ -73,18 +73,18 @@
 		margin-left: 12%;
     padding: 14px 38px;
 
-    @media #{$desktop} {      
+    @media (max-width: 1380px) {
       font-size: $btnBigTextSize*0.7;
     }
 
-		@media #{$tablet}{
+		@media (max-width: 1024px){
 			display: block;
 			width: 80%;
       margin-left: -5px;
 			margin-top: 30px;
 		}
 
-    @media #{$mobile} {
+    @media (max-width: 639px) {
       padding-left: 10px;
       padding-right: 10px;
       font-size: 17.5px;
@@ -102,7 +102,7 @@
       cursor: default;
       z-index: -1;
 
-      @media #{$mobile} {
+      @media (max-width: 639px) {
         left: calc(100% + 15px);
         height: 6px;
       }
@@ -114,20 +114,20 @@
 		font-weight: 100;
 		margin-bottom: 95px;
 		letter-spacing: -0.04em;
-    
-    @media #{$desktop} {
+
+    @media (max-width: 1380px) {
       font-size: $textSizeSlogan*0.7;
     }
-    
-    @media #{$mobile} {
+
+    @media (max-width: 639px) {
       font-size: $textSizeSlogan/2;
     }
-    
+
 		p {
 			font-size: inherit;
       letter-spacing: -0.04em;
 		}
-		@media #{$tablet}{
+		@media (max-width: 1024px){
 			margin-bottom: 30px;
 		}
 		b {
@@ -139,27 +139,27 @@
 	&__desc {
 		font-size: $textSizeHuge;
     letter-spacing: -0.04em;
-    
-    @media #{$desktop} {
+
+    @media (max-width: 1380px) {
       font-size: $textSizeHuge*0.7;
     }
-    
-    @media #{$mobile} {
+
+    @media (max-width: 639px) {
       font-size: $textSizeHuge/2;
     }
-    
+
 		p {
 			font-size: inherit;
 			letter-spacing: -0.04em;
 			font-weight: 100;
 		}
-    
+
 		b {
       font-size: inherit;
 			font-weight: 500;
 			margin-top: 40px;
 			display: block;
-			@media #{$tablet}{
+			@media (max-width: 1024px){
 				margin-top: 20px;
 			}
 		}
@@ -177,11 +177,11 @@
 			height: 100%;
 			object-fit:cover;
 		}
-		@media #{$tablet}{
+		@media (max-width: 1024px){
 			height: auto;
 		}
-	} 
-  
+	}
+
   &__item {
     iframe {
       position: absolute;
@@ -191,21 +191,21 @@
       height: 100%;
       opacity: 0;
     }
-    
+
     &.active {
       z-index: 20;
-      
+
       iframe {
         opacity: 1;
       }
-      
+
       .video__youtube-link {
         opacity: 0;
         z-index: -1;
       }
     }
   }
-  
+
 	&__youtube-link {
 		display: block;
 		position: absolute;
@@ -219,8 +219,8 @@
 		color: #fff;
 		line-height: 1.15;
     z-index: 10;
-    
-		@media #{$tablet}{
+
+		@media (max-width: 1024px){
 			font-size: 15px;
 			padding-left: 60px;
 			left: 15px;
@@ -235,7 +235,7 @@
 		top: 50%;
     transform: translate(0, -50%);
 		left: 0;
-		@media #{$tablet}{
+		@media (max-width: 1024px){
 			width: 50px;
 			height: 50px;
 		}
@@ -244,21 +244,21 @@
 		margin-top: 50px;
 		margin-left: 30px;
 		color: $formFontColorDarkest;
-    
-    @media #{$tablet} {
+
+    @media (max-width: 1024px) {
       margin-left: 0;
     }
-    
+
 		h2 {
  			font-size: $titleSizeH2;
 			margin-bottom: 40px;
       letter-spacing: -0.04em;
-      
-      @media #{$desktop}{
+
+      @media (max-width: 1380px){
 				font-size: $titleSizeH2*0.7;
 			}
-      
-			@media #{$mobile}{
+
+			@media (max-width: 639px){
 				font-size: $titleSizeH2/2;
 			}
 		}
@@ -267,12 +267,12 @@
       letter-spacing: -0.04em;
 			margin-bottom: 25px;
 			margin-top: 50px;
-      
-      @media #{$desktop}{
+
+      @media (max-width: 1380px){
 				font-size: $textSizeBig*0.7;
 			}
-      
-			@media #{$mobile}{
+
+			@media (max-width: 639px){
 				font-size: $textSizeMobileBig;
 			}
 		}
