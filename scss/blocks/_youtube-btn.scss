@@ -1,0 +1,31 @@
+.youtube-btn {
+  display: inline-flex;
+  align-items: center;
+
+  &__icon {
+    width: 113px;
+    height: 77px;
+    position: relative;
+    background-color: #da522d;
+    border-radius: 38.5px;
+
+    &::before {
+      content: '';
+      position: absolute;
+      transform: translate(-50%, -50%);
+      left: calc(50% + 5px);
+      top: 50%;
+      border-left: 27px solid #fff;
+      border-top: 16px solid transparent;
+      border-bottom: 16px solid transparent;
+    }
+  }
+
+  &__text {
+    font-size: 35px;
+    margin-left: 25px;
+    font-weight: 500;
+    letter-spacing: -.04em;
+    border-bottom: 2px solid #25ffc4;
+  }
+}

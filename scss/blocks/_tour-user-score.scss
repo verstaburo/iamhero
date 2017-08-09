@@ -1,0 +1,56 @@
+.tour-user-score {
+
+  &__container {
+    padding-top: 211px;
+    padding-bottom: 356px;
+
+    @media (max-width: 1690px) {
+      padding-top: 110px;
+      padding-bottom: 250px;
+    }
+
+    @media (max-width: 1279px) {
+      align-items: flex-end;
+    }
+
+    @media (max-width: 1024px) {
+      padding-bottom: 75px;
+      padding-top: 50px;
+    }
+
+    @media (max-width: 639px) {
+      padding-top: 0;
+    }
+  }
+
+  &__text {
+    width: 41.5%;
+
+    @media (max-width: 1024px) {
+      width: auto;
+    }
+  }
+
+  &__bg {
+    position: absolute;
+    top: 0;
+    left: 108px;
+    width: 46%;
+    height: auto;
+
+    @media (max-width: 1024px) {
+      left: auto;
+      position: relative;
+      margin-left: auto;
+      margin-right: auto;
+      padding-bottom: 75px;
+    }
+
+    img {
+      width: 100%;
+      height: auto;
+      object-fit: contain;
+      max-height: 735px;
+    }
+  }
+}

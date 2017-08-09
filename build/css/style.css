@@ -1102,6 +1102,10 @@ textarea {
     -webkit-justify-content: flex-start;
         -ms-flex-pack: start;
             justify-content: flex-start; }
+  .page-section_start_wrap .page-section__container {
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap; }
   .page-section_end .page-section__container {
     -webkit-justify-content: flex-end;
         -ms-flex-pack: end;
@@ -1777,6 +1781,14 @@ textarea {
     .collage__img_resume1 img {
       width: 1210px;
       height: 668px; }
+    .collage__img_resume1_employer {
+      width: 1245px;
+      height: 697px;
+      top: -13px;
+      left: -46px; }
+      .collage__img_resume1_employer img {
+        width: 1245px;
+        height: 697px; }
   .collage__img_resume2 {
     top: 48px;
     left: 316px;
@@ -1788,6 +1800,14 @@ textarea {
     .collage__img_resume2 img {
       width: 895px;
       height: 803px; }
+    .collage__img_resume2_employer {
+      top: 164px;
+      left: 240px;
+      width: 971px;
+      height: 939px; }
+      .collage__img_resume2_employer img {
+        width: 971px;
+        height: 939px; }
   .collage__img_resume3 {
     top: 276px;
     left: 134px;
@@ -1875,6 +1895,8 @@ textarea {
     padding-top: 176px;
     padding-bottom: 82px;
     padding-left: 40px; }
+  .intro__top-70 {
+    margin-top: 70px; }
   .intro__slogans {
     width: 50%; }
     .intro__slogans .text-block__slogan_big {
@@ -1890,6 +1912,9 @@ textarea {
     margin-bottom: 50px;
     padding-left: 76px;
     padding-right: 96px; }
+    .intro__btn_padding_smaller {
+      padding-left: 30px;
+      padding-right: 15px; }
     .intro__btn::before {
       position: absolute;
       content: '';
@@ -1920,6 +1945,9 @@ textarea {
     bottom: 0;
     background-image: linear-gradient(to top, black 0%, transparent 100%);
     z-index: 2; }
+  .tour-registration .page-section__bg-img_uniform::after {
+    background-image: none;
+    background-color: rgba(1, 14, 31, 0.69); }
   .tour-registration .page-section__bg-img img {
     position: absolute;
     top: 0;
@@ -2205,6 +2233,9 @@ textarea {
       bottom: 0;
       width: 100%;
       height: auto; }
+    .tour-search__bg_employer {
+      top: -113px;
+      left: 59px; }
 
 .tour-matching {
   position: relative; }
@@ -4590,7 +4621,74 @@ textarea {
 .notfound__content p {
   margin-bottom: 51px; }
 
-@media (max-width: 1690px){
+.youtube-btn {
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  .youtube-btn__icon {
+    width: 113px;
+    height: 77px;
+    position: relative;
+    background-color: #da522d;
+    border-radius: 38.5px; }
+    .youtube-btn__icon::before {
+      content: '';
+      position: absolute;
+      -webkit-transform: translate(-50%, -50%);
+              transform: translate(-50%, -50%);
+      left: calc(50% + 5px);
+      top: 50%;
+      border-left: 27px solid #fff;
+      border-top: 16px solid transparent;
+      border-bottom: 16px solid transparent; }
+  .youtube-btn__text {
+    font-size: 35px;
+    margin-left: 25px;
+    font-weight: 500;
+    letter-spacing: -.04em;
+    border-bottom: 2px solid #25ffc4; }
+
+.tour-info-resume {
+  margin-top: -197px; }
+  .tour-info-resume__container {
+    padding-top: 27%;
+    padding-bottom: 23%; }
+  .tour-info-resume__text {
+    width: 40.5%; }
+  .tour-info-resume__img {
+    position: absolute;
+    width: 63%;
+    height: auto;
+    top: 0;
+    left: 0; }
+    .tour-info-resume__img img {
+      object-fit: contain;
+      width: 100%;
+      height: auto;
+      max-height: 1240px; }
+
+.tour-user-score__container {
+  padding-top: 211px;
+  padding-bottom: 356px; }
+
+.tour-user-score__text {
+  width: 41.5%; }
+
+.tour-user-score__bg {
+  position: absolute;
+  top: 0;
+  left: 108px;
+  width: 46%;
+  height: auto; }
+  .tour-user-score__bg img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    max-height: 735px; }
+  @media (max-width: 1690px){
   .container{
     width: 1340px; }
   .text-block_start .text-block__title_mainpage{
@@ -4751,9 +4849,11 @@ textarea {
   .contacts__form-row{
     margin-left: 100px; }
   .notfound__text{
-    padding-bottom: 270px; } }
-
-@media (max-width: 1380px){
+    padding-bottom: 270px; }
+  .tour-user-score__container{
+    padding-top: 110px;
+    padding-bottom: 250px; } }
+  @media (max-width: 1380px){
   .container{
     width: 93%; }
   h1{
@@ -5024,8 +5124,7 @@ textarea {
   .contacts__form-row{
     margin-left: 0;
     max-width: 100%; } }
-
-@media (max-width: 1279px){
+  @media (max-width: 1279px){
   .container{
     width: 93%; }
   .logo_footer{
@@ -5249,6 +5348,9 @@ textarea {
     padding-bottom: 40px; }
   .tour-dashboard__container{
     padding-top: 36px; }
+  .tour-dashboard__container_employer{
+    padding-bottom: 175px;
+    padding-top: 175px; }
   .tour-dashboard__text{
     -webkit-align-self: flex-start;
     -ms-flex-item-align: start;
@@ -5257,6 +5359,8 @@ textarea {
     -webkit-align-self: flex-end;
     -ms-flex-item-align: end;
     align-self: flex-end; }
+  .tour-search__bg_employer{
+    top: 0; }
   .tour-matching__container{
     padding-bottom: 90px;
     -webkit-flex-direction: row;
@@ -5395,9 +5499,17 @@ textarea {
     align-items: flex-end; }
   .notfound__text{
     padding: 156px 30px 233px;
-    width: 480px; } }
-
-@media (max-width: 1024px){
+    width: 480px; }
+  .tour-info-resume__container{
+    -webkit-align-items: flex-end;
+    -ms-flex-align: end;
+    align-items: flex-end;
+    padding-top: 45%; }
+  .tour-user-score__container{
+    -webkit-align-items: flex-end;
+    -ms-flex-align: end;
+    align-items: flex-end; } }
+  @media (max-width: 1024px){
   .container{
     width: 80%; }
   .text-block_centered .text-block__title_mainpage{
@@ -6562,9 +6674,27 @@ textarea {
     margin-bottom: 12px; }
   .notfound__btn{
     padding: 8px 62px;
-    border-radius: 50px; } }
-
-@media (max-width: 639px){
+    border-radius: 50px; }
+  .tour-info-resume__container{
+    padding-bottom: 0; }
+  .tour-info-resume__text{
+    width: auto; }
+  .tour-info-resume__img{
+    position: relative;
+    margin-left: auto;
+    margin-right: auto; }
+  .tour-user-score__container{
+    padding-bottom: 75px;
+    padding-top: 50px; }
+  .tour-user-score__text{
+    width: auto; }
+  .tour-user-score__bg{
+    left: auto;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 75px; } }
+  @media (max-width: 639px){
   .container{
     width: 90.6%; }
   h1{
@@ -6860,6 +6990,9 @@ textarea {
   .collage__img_resume2 img{
     width: 447.5px;
     height: 401.5px; }
+  .collage__img_resume2_employer{
+    top: 70px;
+    left: 122px; }
   .collage__img_resume3{
     top: 138px;
     left: 67px;
@@ -6919,6 +7052,8 @@ textarea {
     margin-bottom: 20px;
     padding-left: 36px;
     padding-right: 48px; }
+  .intro__btn_padding_smaller{
+    padding-left: 0; }
   .intro__btn::before{
     left: calc(100% + 15px);
     height: 6px; }
@@ -7270,9 +7405,10 @@ textarea {
     margin-bottom: 42px; }
   .notfound__btn{
     padding: 8px 62px;
-    border-radius: 50px; } }
-
-@media (min-width: 1921px){
+    border-radius: 50px; }
+  .tour-user-score__container{
+    padding-top: 0; } }
+  @media (min-width: 1921px){
   .lead__item_hero.js-hero-hover-active{
     padding-right: calc(9.5px + 130px); }
   .collage_accounts{
@@ -7281,54 +7417,43 @@ textarea {
     left: auto;
     right: auto;
     margin-left: -43px; } }
-
-@media (min-width: 475px) and (max-width: 639px){
+  @media (min-width: 475px) and (max-width: 639px){
   .we-for-hero__bg{
     -webkit-transform: translate(60px, 0);
     transform: translate(60px, 0); } }
-
-@media (min-width: 925px) and (max-width: 1024px){
+  @media (min-width: 925px) and (max-width: 1024px){
   .we-for-hero__bg{
     -webkit-transform: translate(150px, 0);
     transform: translate(150px, 0); } }
-
-@media (min-width: 1024px) and (max-width: 1380px){
+  @media (min-width: 1024px) and (max-width: 1380px){
   .we-for-hero__bg{
     -webkit-transform: translate(260px, -40px);
     transform: translate(260px, -40px); } }
-
-@media (min-width: 1380px) and (max-width: 1690px){
+  @media (min-width: 1380px) and (max-width: 1690px){
   .we-for-hero__bg{
     -webkit-transform: translate(260px, -40px);
     transform: translate(260px, -40px); } }
-
-@media (max-width: 450px){
+  @media (max-width: 450px){
   .crowdfunding__text{
     padding-right: 12px; }
   .tour-accounts__text_hero{
     margin-bottom: 364px; } }
-
-@media (min-width: 1691px) and (max-width: 1820px){
+  @media (min-width: 1691px) and (max-width: 1820px){
   .tour-resume__collage{
     right: 1110px; } }
-
-@media (min-width: 500px) and (max-width: 639px){
+  @media (min-width: 500px) and (max-width: 639px){
   .tour-resume__collage{
     left: 40px; } }
-
-@media (min-width: 451px) and (max-width: 639px){
+  @media (min-width: 451px) and (max-width: 639px){
   .tour-accounts__text_hero{
     margin-bottom: 494px; } }
-
-@media (min-width: 1381px) and (max-width: 1440px){
+  @media (min-width: 1381px) and (max-width: 1440px){
   .tour-accounts__img{
     top: -340px; } }
-
-@media (min-width: 460px) and (max-width: 639px){
+  @media (min-width: 460px) and (max-width: 639px){
   .tour-accounts__img{
     top: -100px; } }
-
-@media (max-width: 640px){
+  @media (max-width: 640px){
   .news-list{
     margin-top: 48px; }
   .news-list h1{
@@ -7423,8 +7548,7 @@ textarea {
   .news-wrapper .content .text_page{
     padding-left: 5%;
     padding-right: 5%; } }
-
-@media (max-width: 320px){
+  @media (max-width: 320px){
   .news-list .container{
     width: 320px; }
   .news-list .images-block_100 img{
@@ -7512,14 +7636,12 @@ textarea {
     width: 320px; }
   .another-cathegory{
     padding: 0 30px; } }
-
-@media (min-width: 1025px){
+  @media (min-width: 1025px){
   .follow p br{
     display: none; }
   .images-block_100 .images-block__describe time{
     display: none; } }
-
-@media (max-width: 1280px){
+  @media (max-width: 1280px){
   .images-block_small{
     width: 326px; }
   .news-aside{
@@ -7528,13 +7650,11 @@ textarea {
     padding-bottom: 0; }
   .news-detail h1.news_page{
     padding-top: 50px; } }
-
-@media (max-width: 483px){
+  @media (max-width: 483px){
   .images-block_30{
     width: 100%;
     min-width: 100%; } }
-
-@media (max-width: 1440px){
+  @media (max-width: 1440px){
   .news-detail .news_page{
     width: 170px; }
   .news-detail .news-top-menu{
@@ -7543,33 +7663,27 @@ textarea {
   .news-detail .container{
     position: relative;
     width: 1200px; } }
-
-@media (max-width: 320px) and (max-width: 1024px){
+  @media (max-width: 320px) and (max-width: 1024px){
   .news-detail .news-top-menu{
     height: auto; } }
-
-@media (max-width: 760px){
+  @media (max-width: 760px){
   .news-post{
     margin-right: 0; } }
-
-@media (min-width: 401px) and (max-width: 639px){
+  @media (min-width: 401px) and (max-width: 639px){
   .about-description__bg{
     margin-top: -15px; }
   .about-description__content-item:nth-child(4){
     margin-top: 400px; } }
-
-@media (max-width: 400px){
+  @media (max-width: 400px){
   .about-description__bg{
     margin-top: -25px; }
   .about-description__content-item:nth-child(4){
     margin-top: 310px; } }
-
-@media desktop{
+  @media desktop{
   .about-description__bg img{
     width: 1804px;
     height: 930px; } }
-
-@media (max-width: 1279px) and (max-width: 639px){
+  @media (max-width: 1279px) and (max-width: 639px){
   .page-security .box__img:last-child{
     -webkit-justify-content: center;
     -ms-flex-pack: center;

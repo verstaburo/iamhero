@@ -125,5 +125,14 @@
       width: 100%;
       height: auto;
     }
+
+    &_employer {
+      top: -113px;
+      left: 59px;
+
+      @media (max-width: 1279px) {
+        top: 0;
+      }
+    }
   }
 }

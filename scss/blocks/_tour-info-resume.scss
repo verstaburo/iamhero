@@ -1,0 +1,46 @@
+.tour-info-resume {
+  margin-top: -197px;
+
+  &__container {
+    padding-top: 27%;
+    padding-bottom: 23%;
+
+    @media (max-width: 1279px) {
+      align-items: flex-end;
+      padding-top: 45%;
+    }
+
+    @media (max-width: 1024px) {
+      padding-bottom: 0;
+    }
+  }
+
+  &__text {
+    width: 40.5%;
+
+    @media (max-width: 1024px) {
+      width: auto;
+    }
+  }
+
+  &__img {
+    position: absolute;
+    width: 63%;
+    height: auto;
+    top: 0;
+    left: 0;
+
+    @media (max-width: 1024px) {
+      position: relative;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    img {
+      object-fit: contain;
+      width: 100%;
+      height: auto;
+      max-height: 1240px;
+    }
+  }
+}

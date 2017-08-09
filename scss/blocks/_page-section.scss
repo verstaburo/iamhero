@@ -29,6 +29,12 @@
     .page-section__container {
       justify-content: flex-start;
     }
+
+    &_wrap {
+      .page-section__container {
+        flex-wrap: wrap;
+      }
+    }
   }
 
   &_end {

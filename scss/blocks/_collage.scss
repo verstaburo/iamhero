@@ -58,6 +58,18 @@
           height: 334px;
         }
       }
+
+      &_employer {
+        width: 1245px;
+        height: 697px;
+        top: -13px;
+        left: -46px;
+
+        img {
+          width: 1245px;
+          height: 697px;
+        }
+      }
     }
 
     &_resume2 {
@@ -82,6 +94,23 @@
         @media (max-width: 639px) {
           width: 447.5px;
           height: 401.5px;
+        }
+      }
+
+      &_employer {
+        top: 164px;
+        left: 240px;
+        width: 971px;
+        height: 939px;
+
+        @media (max-width: 639px) {
+          top: 70px;
+          left: 122px;
+        }
+
+        img {
+          width: 971px;
+          height: 939px;
         }
       }
     }
@@ -284,4 +313,3 @@
     }
   }
 }
-

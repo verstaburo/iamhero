@@ -37,6 +37,13 @@
       padding-top: 68px;
       padding-bottom: 20px;
     }
+
+    &_employer {
+      @media (max-width: 1279px) {
+        padding-bottom: 175px;
+        padding-top: 175px;
+      }
+    }
   }
 
   &__text {
