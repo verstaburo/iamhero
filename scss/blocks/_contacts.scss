@@ -196,17 +196,40 @@
 		margin-bottom: 48px;
 	}
 	&__form-element {
+    position: relative;
 		box-sizing: border-box;
 		width: 100%;
 		margin-bottom: 25px;
 		text-align: center;
-		&.col-3 {
+
+    &.error > input, &.error > textarea {
+      border-color: #e64418;
+    }
+
+    &.validated > input, &.validated > textarea {
+      border-color: #39d3a9;
+    }
+
+    .errortext {
+      position: absolute;
+      letter-spacing: -.04em;
+      font-weight: 700;
+      color: #df4116;
+      font-size: 14px;
+      width: 100%;
+      top: 105%;
+      text-align: right;
+      right: 18px;
+      line-height: 1.2em;
+    }
+
+    &.col-3 {
 			width: 30%;
 			@media (max-width: 1024px) {
 				width: 100%;
 			}
 		}
-		input[type="text"] {
+		input {
 			width: 100%;
 		}
 		textarea {

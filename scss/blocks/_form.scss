@@ -1,6 +1,19 @@
 .form {
   width: 100%;
 
+  .errortext {
+    position: absolute;
+    letter-spacing: -.04em;
+    font-weight: 700;
+    color: #df4116;
+    font-size: 14px;
+    width: 100%;
+    top: 105%;
+    text-align: right;
+    right: 18px;
+    line-height: 1.2em;
+  }
+
   &__container {
     box-sizing: border-box;
     display: flex;
@@ -78,6 +91,15 @@
     margin: 0;
     line-height: 1.2em;
     text-align: left;
+    position: relative;
+
+    &.error > input {
+      border-color: #e64418;
+    }
+
+    &.validated > input {
+      border-color: #39d3a9;
+    }
   }
 
   input:focus,
