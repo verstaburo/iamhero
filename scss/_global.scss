@@ -12,6 +12,34 @@ input[type="file"] > input[type="button"]::-moz-focus-inner {
   outline: none;
 }
 
+form {
+
+  label {
+    position: relative;
+
+    &.error > input, &.error > textarea {
+      border-color: #e64418;
+    }
+
+    &.validated > input, &.validated > textarea {
+      border-color: #39d3a9;
+    }
+
+    .errortext {
+      position: absolute;
+      letter-spacing: -.04em;
+      font-weight: 700;
+      color: #df4116;
+      font-size: 14px;
+      width: 100%;
+      top: 105%;
+      text-align: right;
+      right: 18px;
+      line-height: 1.2em;
+    }
+  }
+}
+
 // Цвет выделения текста
 ::selection {
   background: $additionalColorGreen;
