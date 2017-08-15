@@ -6,6 +6,10 @@
     padding-bottom: 214px;
     width: 50%;
 
+    @media (min-width: 1280px) {
+      padding-left: 48px;
+    }
+
     @media (max-width: 1690px) {
       padding-right: 10%;
     }

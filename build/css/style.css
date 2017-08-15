@@ -761,6 +761,7 @@ textarea {
       width: 0;
       margin: auto;
       object-fit: cover;
+      font-family: 'object-fit: cover;';
       z-index: 2; }
     .lead__bg-img::before {
       position: absolute;
@@ -877,7 +878,7 @@ textarea {
         -ms-flex-wrap: wrap;
             flex-wrap: wrap; }
     .page-header_no-switch-btn .main-menu__list {
-      padding-left: 210px;
+      padding-left: 0;
       -webkit-justify-content: center;
           -ms-flex-pack: center;
               justify-content: center; }
@@ -897,7 +898,7 @@ textarea {
       z-index: 120; }
   .main-menu__item {
     display: inline-block;
-    margin-right: 53px;
+    margin-left: 53px;
     font-size: 0; }
     .main-menu__list.js-menu-opened .main-menu__item {
       opacity: 1; }
@@ -906,9 +907,9 @@ textarea {
     .main-menu__item.visible {
       display: inline-block; }
     .page-header_no-switch-btn .main-menu__item {
-      margin-right: 30px; }
-    .main-menu__item:last-child {
-      margin-right: 0; }
+      margin-left: 30px; }
+    .main-menu__item:first-child {
+      margin-left: 0; }
   .main-menu__link {
     display: inline-block;
     padding: 14px 10px;
@@ -1147,6 +1148,7 @@ textarea {
       width: 0;
       margin: auto;
       object-fit: cover;
+      font-family: 'object-fit: cover;';
       z-index: 1; }
 
 .we-for-employer {
@@ -1191,6 +1193,7 @@ textarea {
       width: 0;
       margin: auto;
       object-fit: cover;
+      font-family: 'object-fit: cover;';
       z-index: 1; }
   .employer-work__container {
     padding-top: 92px; }
@@ -1306,7 +1309,8 @@ textarea {
       margin: auto;
       max-height: 100%;
       width: 100%;
-      object-fit: cover; }
+      object-fit: cover;
+      font-family: 'object-fit: cover;'; }
   .communication_employer .communication__text-bottom p {
     display: none; }
   .communication_hero .communication__text-top {
@@ -1529,7 +1533,8 @@ textarea {
     min-width: 100%;
     min-height: 100%;
     width: 0;
-    object-fit: cover; }
+    object-fit: cover;
+    font-family: 'object-fit: cover;'; }
   .resume-examples__img:first-child, .resume-examples__img:last-child {
     margin-top: 58px; }
 
@@ -1913,8 +1918,10 @@ textarea {
     padding-top: 176px;
     padding-bottom: 82px;
     padding-left: 40px; }
-  .intro__top-70 {
-    margin-top: 70px; }
+  .intro_employer .intro__slogans .text-block__slogan_big {
+    margin-bottom: 65px; }
+  .intro__top-35 {
+    margin-top: 35px; }
   .intro__slogans {
     width: 50%; }
     .intro__slogans .text-block__slogan_big {
@@ -1977,6 +1984,7 @@ textarea {
     width: 0;
     margin: auto;
     object-fit: cover;
+    font-family: 'object-fit: cover;';
     z-index: 1; }
 
 .tour-registration__container {
@@ -2068,11 +2076,15 @@ textarea {
 
 .tour-resume {
   position: relative;
-  min-height: 790px; }
+  min-height: 740px; }
+  .tour-resume .text-block__content {
+    padding-right: 25px; }
   .tour-resume__container {
     padding: 0 44px;
     padding-top: 226px;
     padding-bottom: 100px; }
+    .tour-resume__container_employer {
+      padding-top: 265px; }
   .tour-resume__text {
     position: relative;
     width: 33%; }
@@ -2116,7 +2128,8 @@ textarea {
       min-width: 100%;
       min-height: 100%;
       width: 0;
-      object-fit: cover; }
+      object-fit: cover;
+      font-family: 'object-fit: cover;'; }
 
 .tour-accounts__container {
   -webkit-align-content: flex-start;
@@ -2176,8 +2189,8 @@ textarea {
 .tour-dashboard {
   position: relative; }
   .tour-dashboard__container {
-    padding-top: 280px;
-    padding-bottom: 362px; }
+    padding-top: 220px;
+    padding-bottom: 220px; }
   .tour-dashboard__text {
     width: 48%;
     box-sizing: border-box;
@@ -2189,22 +2202,14 @@ textarea {
     top: 0;
     left: 0;
     width: 51%;
-    margin-left: 49%;
-    height: auto; }
-    .tour-dashboard__bg::before {
-      position: absolute;
-      content: '';
-      top: calc(100% + 40px);
-      left: 50%;
-      -webkit-transform: translate(-50%, 0);
-              transform: translate(-50%, 0);
-      width: 40%;
-      height: 2px;
-      border-radius: 50%;
-      background-color: rgba(0, 0, 0, 0.5);
-      -webkit-filter: blur(5px);
-              filter: blur(5px); }
-    .tour-dashboard__bg img, .tour-dashboard__bg video {
+    margin-left: 49.5%;
+    height: 100%; }
+    .tour-dashboard__bg img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      font-family: 'object-fit: contain;'; }
+    .tour-dashboard__bg video {
       position: relative;
       top: 0;
       left: 0;
@@ -2223,7 +2228,6 @@ textarea {
     padding-left: 128px;
     padding-right: 52px; }
   .tour-search__bg {
-    position: relative;
     position: absolute;
     top: 0;
     left: 0;
@@ -2251,9 +2255,20 @@ textarea {
       bottom: 0;
       width: 100%;
       height: auto; }
-    .tour-search__bg_employer {
-      top: -113px;
-      left: 59px; }
+  .tour-search_employer .tour-search__container {
+    padding-top: 330px;
+    padding-bottom: 520px; }
+  .tour-search_employer .tour-search__bg {
+    left: 55px;
+    height: 85%; }
+    .tour-search_employer .tour-search__bg::before {
+      content: none; }
+    .tour-search_employer .tour-search__bg img {
+      height: 100%;
+      object-fit: contain;
+      font-family: 'object-fit: contain;'; }
+  .tour-search_employer .tour-search__text .text-block__content {
+    max-width: 95%; }
 
 .tour-matching {
   position: relative; }
@@ -2699,6 +2714,7 @@ textarea {
       width: 0;
       margin: auto;
       object-fit: cover;
+      font-family: 'object-fit: cover;';
       transition: -webkit-transform 1s ease-in-out;
       transition: transform 1s ease-in-out;
       transition: transform 1s ease-in-out, -webkit-transform 1s ease-in-out; }
@@ -3256,7 +3272,8 @@ textarea {
     .video__youtube-content img {
       width: 100%;
       height: 100%;
-      object-fit: cover; }
+      object-fit: cover;
+      font-family: 'object-fit: cover;'; }
   .video__item iframe {
     position: absolute;
     top: 0;
@@ -4398,7 +4415,8 @@ textarea {
     min-height: 100%;
     width: 0;
     margin: auto;
-    object-fit: cover; }
+    object-fit: cover;
+    font-family: 'object-fit: cover;'; }
   .about-donate__service_indiegogo {
     width: 261px;
     height: 539px; }
@@ -4672,21 +4690,22 @@ textarea {
 .tour-info-resume {
   margin-top: -197px; }
   .tour-info-resume__container {
-    padding-top: 27%;
-    padding-bottom: 23%; }
+    padding-top: 570px;
+    padding-bottom: 460px; }
   .tour-info-resume__text {
-    width: 40.5%; }
+    width: 41%; }
   .tour-info-resume__img {
     position: absolute;
-    width: 63%;
-    height: auto;
+    width: 62%;
+    height: 100%;
     top: 0;
-    left: 0; }
+    left: 0;
+    overflow: hidden; }
     .tour-info-resume__img img {
       object-fit: contain;
+      font-family: 'object-fit: contain;';
       width: 100%;
-      height: auto;
-      max-height: 1240px; }
+      height: 100%; }
 
 .tour-user-score__container {
   padding-top: 211px;
@@ -4705,6 +4724,7 @@ textarea {
     width: 100%;
     height: auto;
     object-fit: contain;
+    font-family: 'object-fit: contain;';
     max-height: 735px; }
   @media (max-width: 1690px){
   .container{
@@ -4767,6 +4787,9 @@ textarea {
   .tour-accounts__text_hero{
     padding-left: 44px;
     padding-right: 150px; }
+  .tour-dashboard__container{
+    padding-top: 175px;
+    padding-bottom: 175px; }
   .tour-dashboard__text{
     padding-left: 0;
     padding-right: 100px; }
@@ -4776,6 +4799,9 @@ textarea {
   .tour-search__text{
     padding-left: 78px;
     padding-right: 10px; }
+  .tour-search_employer .tour-search__container{
+    padding-top: 260px;
+    padding-bottom: 320px; }
   .tour-matching__container{
     padding-top: 10px;
     padding-bottom: 150px; }
@@ -4868,6 +4894,9 @@ textarea {
     margin-left: 100px; }
   .notfound__text{
     padding-bottom: 270px; }
+  .tour-info-resume__container{
+    padding-top: 320px;
+    padding-bottom: 290px; }
   .tour-user-score__container{
     padding-top: 110px;
     padding-bottom: 250px; } }
@@ -4918,7 +4947,7 @@ textarea {
   .lead__item_employer.js-employer-hover-none{
     padding-left: calc(9.5% - 130px); }
   .main-menu__item{
-    margin-right: 37px; }
+    margin-left: 37px; }
   .user-menu__item{
     margin-right: 34px; }
   .we-for-employer__container{
@@ -5008,9 +5037,6 @@ textarea {
     padding-right: 0; }
   .tour-accounts__img{
     top: -490px; }
-  .tour-dashboard__container{
-    padding-top: 212px;
-    padding-bottom: 290px; }
   .tour-dashboard__text{
     padding-right: 40px; }
   .tour-search__text{
@@ -5199,16 +5225,14 @@ textarea {
     left: 0;
     width: 100%;
     height: auto; }
-  .page-header_no-switch-btn .main-menu__list{
-    padding-left: 0; }
   .main-menu__item{
     width: 100%;
-    margin-right: 0;
+    margin-left: 0;
     opacity: 0;
     transition: all 0.5s ease-in-out; }
   .page-header_no-switch-btn .main-menu__item{
     width: 100%;
-    margin-right: 0; }
+    margin-left: 0; }
   .main-menu__link{
     width: 100%;
     text-align: center; }
@@ -5363,12 +5387,8 @@ textarea {
   .tour-dashboard{
     padding-bottom: 0px; }
   .tour-dashboard__container{
+    padding-top: 36px;
     padding-bottom: 40px; }
-  .tour-dashboard__container{
-    padding-top: 36px; }
-  .tour-dashboard__container_employer{
-    padding-bottom: 175px;
-    padding-top: 175px; }
   .tour-dashboard__text{
     -webkit-align-self: flex-start;
     -ms-flex-item-align: start;
@@ -5377,8 +5397,6 @@ textarea {
     -webkit-align-self: flex-end;
     -ms-flex-item-align: end;
     align-self: flex-end; }
-  .tour-search__bg_employer{
-    top: 0; }
   .tour-matching__container{
     padding-bottom: 90px;
     -webkit-flex-direction: row;
@@ -5525,8 +5543,7 @@ textarea {
   .tour-info-resume__container{
     -webkit-align-items: flex-end;
     -ms-flex-align: end;
-    align-items: flex-end;
-    padding-top: 300px; }
+    align-items: flex-end; }
   .tour-user-score__container{
     -webkit-align-items: flex-end;
     -ms-flex-align: end;
@@ -5548,7 +5565,8 @@ textarea {
   .logo__img_header{
     height: 35px; }
   .page-header__wrapper{
-    padding: 3px 5%; }
+    padding: 3px 5%;
+    min-height: 51px; }
   .page-content{
     padding-top: 51px; }
   .lead{
@@ -5952,6 +5970,7 @@ textarea {
   .tour-accounts__img{
     top: -568px; }
   .tour-dashboard__text{
+    padding-left: 0;
     width: 100%; }
   .tour-dashboard__text{
     padding-left: 32px;
@@ -5960,15 +5979,8 @@ textarea {
   .tour-dashboard__bg{
     position: relative;
     width: 90%;
-    margin-left: 10%; }
-  .tour-dashboard__bg::before{
-    width: 50%;
-    top: calc(100% + 10px);
-    height: 1px;
-    -webkit-filter: blur(2px);
-    filter: blur(2px); }
-  .tour-search{
-    padding-bottom: 0; }
+    margin-left: 10%;
+    top: 0; }
   .tour-search__container{
     padding-bottom: 40px;
     padding-top: 136px; }
@@ -5991,7 +6003,10 @@ textarea {
     height: 1px;
     -webkit-filter: blur(2px);
     filter: blur(2px); }
-  .tour-search__bg_employer{
+  .tour-search_employer .tour-search__container{
+    padding-top: 144px;
+    padding-bottom: 40px; }
+  .tour-search_employer .tour-search__bg{
     left: 0; }
   .tour-matching__container{
     padding-top: 144px;
@@ -7198,8 +7213,6 @@ textarea {
   .tour-dashboard__bg{
     width: 95%;
     margin-left: 5%; }
-  .tour-search{
-    padding-bottom: 0; }
   .tour-search__container{
     padding-top: 68px; }
   .tour-search__text{
@@ -7211,6 +7224,8 @@ textarea {
   .tour-search__bg{
     width: 95%;
     margin-right: 5%; }
+  .tour-search_employer .tour-search__container{
+    padding-top: 68px; }
   .tour-matching__container{
     padding-top: 68px; }
   .tour-matching__text{
@@ -7447,6 +7462,19 @@ textarea {
     left: auto;
     right: auto;
     margin-left: -43px; } }
+  @media (min-width: 1280px){
+  .page-header_no-switch-btn .main-menu{
+    position: absolute;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    left: 50%; }
+  .page-header_no-switch-btn .user-menu{
+    margin-left: auto; }
+  .crowdfunding__text{
+    padding-left: 48px; }
+  .intro_employer .intro__container{
+    padding-top: 140px;
+    padding-bottom: 20px; } }
   @media (min-width: 475px) and (max-width: 639px){
   .we-for-hero__bg{
     -webkit-transform: translate(60px, 0);
@@ -7463,6 +7491,12 @@ textarea {
   .we-for-hero__bg{
     -webkit-transform: translate(260px, -40px);
     transform: translate(260px, -40px); } }
+  @media (min-width: 1381px){
+  .hero-work__bg{
+    min-width: 1740px; } }
+  @media (min-width: 1025px) and (max-width: 1380px){
+  .hero-work__bg{
+    min-width: 1350px; } }
   @media (max-width: 450px){
   .crowdfunding__text{
     padding-right: 12px; }
@@ -7483,6 +7517,19 @@ textarea {
   @media (min-width: 460px) and (max-width: 639px){
   .tour-accounts__img{
     top: -100px; } }
+  @media (min-width: 640px){
+  .tour-dashboard__container_employer .text-block__content{
+    max-width: 75%; }
+  .tour-info-resume .text-block__content{
+    max-width: 65%; } }
+  @media (min-width: 1690px){
+  .tour-dashboard__bg{
+    top: -40px; } }
+  @media (min-width: 1024px){
+  .tour-search_employer .tour-search__text{
+    padding-left: 105px; }
+  .tour-matching__text_employer .text-block__content{
+    max-width: 85%; } }
   @media (max-width: 640px){
   .news-list{
     margin-top: 48px; }

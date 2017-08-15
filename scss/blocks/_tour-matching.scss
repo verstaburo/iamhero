@@ -33,6 +33,14 @@
     padding-left: 3%;
     padding-right: 3%;
 
+    &_employer {
+      .text-block__content {
+        @media (min-width: 1024px) {
+          max-width: 85%;
+        }
+      }
+    }
+
     @media (max-width: 1024px) {
       width: 100%;
       padding-left: 32px;

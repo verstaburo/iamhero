@@ -288,9 +288,15 @@
 
   <!--scroll animation-->
   <script src="js/vendors/scrollReveal.js"></script>
-
   <script src="js/main.min.js"></script>
   <script src="js/vendors/picturefill.min.js"></script>
+  <!--object-fit polyfill-->
+  <script src="js/vendors/ofi.min.js"></script>
+  <script>
+    $(function () {
+      objectFitImages();
+    });
+  </script>
 
   </body>
 </html>

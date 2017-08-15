@@ -16,20 +16,17 @@
 
 
   &__container {
-    padding-top: 280px;
-    padding-bottom: 362px;
+    padding-top: 220px;
+    padding-bottom: 220px;
 
-    @media (max-width: 1380px) {
-      padding-top: 212px;
-      padding-bottom: 290px;
-    }
-
-    @media (max-width: 1279px) {
-      padding-bottom: 40px;
+    @media (max-width: 1690px) {
+      padding-top: 175px;
+      padding-bottom: 175px;
     }
 
     @media (max-width: 1279px) {
       padding-top: 36px;
+      padding-bottom: 40px;
     }
 
     @media (max-width: 639px) {
@@ -39,9 +36,11 @@
     }
 
     &_employer {
-      @media (max-width: 1279px) {
-        padding-bottom: 175px;
-        padding-top: 175px;
+
+      .text-block__content {
+        @media (min-width: 640px) {
+          max-width: 75%;
+        }
       }
     }
   }
@@ -66,6 +65,7 @@
     }
 
     @media (max-width: 1024px) {
+      padding-left: 0;
       width: 100%;
     }
 
@@ -94,13 +94,18 @@
     top: 0;
     left: 0;
     width: 51%;
-    margin-left: 49%;
-    height: auto;
+    margin-left: 49.5%;
+    height: 100%;
+
+    @media (min-width: 1690px) {
+      top: -40px;
+    }
 
     @media (max-width: 1024px) {
       position: relative;
       width: 90%;
       margin-left: 10%;
+      top: 0;
     }
 
     @media (max-width: 639px) {
@@ -108,27 +113,34 @@
       margin-left: 5%;
     }
 
-    &::before {
-      position: absolute;
-      content: '';
-      top: calc(100% + 40px);
-      left: 50%;
-      transform: translate(-50%, 0);
-      width: 40%;
-      height: 2px;
-      border-radius: 50%;
-      background-color: rgba(0, 0, 0, 0.5);
-      filter: blur(5px);
+    // &::before {
+    //   position: absolute;
+    //   content: '';
+    //   top: calc(100% + 40px);
+    //   left: 50%;
+    //   transform: translate(-50%, 0);
+    //   width: 40%;
+    //   height: 2px;
+    //   border-radius: 50%;
+    //   background-color: rgba(0, 0, 0, 0.5);
+    //   filter: blur(5px);
+    //
+    //   @media (max-width: 1024px) {
+    //     width: 50%;
+    //     top: calc(100% + 10px);
+    //     height: 1px;
+    //     filter: blur(2px);
+    //   }
+    // }
 
-      @media (max-width: 1024px) {
-        width: 50%;
-        top: calc(100% + 10px);
-        height: 1px;
-        filter: blur(2px);
-      }
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      font-family: 'object-fit: contain;';
     }
 
-    img, video {
+    video {
       position: relative;
       top: 0;
       left: 0;
