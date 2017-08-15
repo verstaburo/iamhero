@@ -640,6 +640,8 @@ textarea {
   margin: 0 auto;
   height: 100vh;
   overflow: hidden; }
+  .lead .text-block__content {
+    transition: opacity .25s ease-in-out; }
   .lead_fixed {
     position: fixed;
     top: 0;
@@ -678,8 +680,6 @@ textarea {
       opacity: 0;
       transition: opacity .75s ease-in-out;
       z-index: 3; }
-    .lead__item:hover::before {
-      opacity: 0.55; }
     .lead__item::after {
       position: absolute;
       content: '';
@@ -690,8 +690,6 @@ textarea {
       opacity: 0;
       z-index: 3;
       transition: opacity 0.25s ease-in-out; }
-    .lead__item:hover::after {
-      opacity: 0; }
     .lead__item_hero::before {
       background-image: linear-gradient(to top, #1451ff 0, transparent 526px); }
     .lead__item_hero::after {
@@ -731,13 +729,6 @@ textarea {
     transition: transform .75s ease-in-out, opacity .75s ease-in-out, background 0.25s ease-in-out, color 0.25s ease-in-out;
     transition: transform .75s ease-in-out, opacity .75s ease-in-out, background 0.25s ease-in-out, color 0.25s ease-in-out, -webkit-transform .75s ease-in-out;
     z-index: 5; }
-    .lead__item_hero:hover .lead__btn,
-    .lead__item_employer:hover .lead__btn {
-      position: relative;
-      visibility: visible;
-      -webkit-transform: translateY(0);
-              transform: translateY(0);
-      opacity: 1; }
   .lead__bg {
     position: absolute;
     top: 0;
@@ -796,6 +787,19 @@ textarea {
     -webkit-transform: translate(-50%, 0);
             transform: translate(-50%, 0);
     z-index: 10; }
+
+.js-hero-hover-active::before, .js-employer-hover-active::before {
+  opacity: 0.55; }
+
+.js-hero-hover-active::after, .js-employer-hover-active::after {
+  opacity: 0 !important; }
+
+.js-hero-hover-active .lead__btn, .js-employer-hover-active .lead__btn {
+  position: relative;
+  visibility: visible;
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+  opacity: 1; }
 
 .main-menu {
   display: -webkit-flex;
@@ -5591,16 +5595,6 @@ textarea {
     width: 0;
     height: 0;
     overflow: hidden; }
-  .lead__item_hero:hover{
-    height: 872px;
-    min-height: 75%;
-    padding-right: 9.5%;
-    width: 100%; }
-  .lead__item_hero:hover .text-block__content{
-    opacity: 1;
-    width: 100%;
-    height: auto;
-    overflow: visible; }
   .lead__item_hero.js-hero-hover-active{
     height: 872px;
     min-height: 75%;
@@ -5642,11 +5636,6 @@ textarea {
     width: 0;
     height: 0;
     overflow: hidden; }
-  .lead__item_hero:hover .lead__btn,
-        .lead__item_employer:hover .lead__btn{
-    width: auto;
-    height: auto;
-    overflow: visible; }
   .lead__bg{
     height: 100%; }
   .lead__bg-img{
@@ -5660,6 +5649,20 @@ textarea {
     right: 8%;
     -webkit-transform: none;
     transform: none; }
+  .js-hero-hover-active, .js-employer-hover-active{
+    height: 872px;
+    min-height: 75%;
+    padding-right: 9.5%;
+    width: 100%; }
+  .js-hero-hover-active .text-block__content, .js-employer-hover-active .text-block__content{
+    opacity: 1;
+    width: 100%;
+    height: auto;
+    overflow: visible; }
+  .js-hero-hover-active .lead__btn, .js-employer-hover-active .lead__btn{
+    width: auto;
+    height: auto;
+    overflow: visible; }
   .main-menu__burger{
     width: 30px;
     height: 26px; }
@@ -6812,9 +6815,6 @@ textarea {
     z-index: 3; }
   .lead__item_hero::before{
     background-image: linear-gradient(to top, #1451ff 0, transparent 220px); }
-  .lead__item_hero:hover{
-    height: 438px;
-    min-height: 75%; }
   .lead__item_hero.js-hero-hover-active{
     height: 438px;
     min-height: 75%; }
@@ -6837,6 +6837,9 @@ textarea {
     bottom: calc(100% + 8px); }
   .lead__logo{
     top: 24px; }
+  .js-hero-hover-active, .js-employer-hover-active{
+    height: 438px;
+    min-height: 75%; }
   .main-menu__burger{
     width: 18px;
     height: 18px;

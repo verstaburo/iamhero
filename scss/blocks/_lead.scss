@@ -10,6 +10,10 @@
   height: 100vh;
   overflow: hidden;
 
+  .text-block__content {
+    transition: opacity .25s ease-in-out;
+  }
+
   @media (max-width: 1024px) {
     flex-direction: column;
     height: 100%;
@@ -82,9 +86,9 @@
       }
     }
 
-    &:hover::before {
-      opacity: 0.55;
-    }
+    // &:hover::before {
+    //   opacity: 0.55;
+    // }
 
     &::after {
       position: absolute;
@@ -106,9 +110,9 @@
       }
     }
 
-    &:hover::after {
-      opacity: 0;
-    }
+    // &:hover::after {
+    //   opacity: 0;
+    // }
 
     &_hero {
 
@@ -142,28 +146,28 @@
         }
       }
 
-      &:hover {
-        @media (max-width: 1024px) {
-          height: 872px;
-          min-height: 75%;
-          padding-right: 9.5%;
-          width: 100%;
-        }
-
-        @media (max-width: 639px) {
-          height: 438px;
-          min-height: 75%;
-        }
-
-        & .text-block__content {
-          @media (max-width: 1024px) {
-            opacity: 1;
-            width: 100%;
-            height: auto;
-            overflow: visible;
-          }
-        }
-      }
+      // &:hover {
+      //   @media (max-width: 1024px) {
+      //     height: 872px;
+      //     min-height: 75%;
+      //     padding-right: 9.5%;
+      //     width: 100%;
+      //   }
+      //
+      //   @media (max-width: 639px) {
+      //     height: 438px;
+      //     min-height: 75%;
+      //   }
+      //
+      //   & .text-block__content {
+      //     @media (max-width: 1024px) {
+      //       opacity: 1;
+      //       width: 100%;
+      //       height: auto;
+      //       overflow: visible;
+      //     }
+      //   }
+      // }
 
       &.js-hero-hover-active {
         width: calc(50% + 130px);
@@ -343,19 +347,19 @@
       overflow: hidden;
     }
 
-    .lead__item_hero:hover &,
-    .lead__item_employer:hover & {
-      position: relative;
-      visibility: visible;
-      transform: translateY(0);
-      opacity: 1;
-
-      @media (max-width: 1024px) {
-        width: auto;
-        height: auto;
-        overflow: visible;
-      }
-    }
+    // .lead__item_hero:hover &,
+    // .lead__item_employer:hover & {
+    //   position: relative;
+    //   visibility: visible;
+    //   transform: translateY(0);
+    //   opacity: 1;
+    //
+    //   @media (max-width: 1024px) {
+    //     width: auto;
+    //     height: auto;
+    //     overflow: visible;
+    //   }
+    // }
   }
 
   &__bg {
@@ -465,6 +469,52 @@
 
     @media (max-width: 639px) {
       top: 24px;
+    }
+  }
+}
+
+
+.js-hero-hover-active, .js-employer-hover-active {
+
+  &::before {
+    opacity: 0.55;
+  }
+
+  &::after {
+    opacity: 0 !important;
+  }
+
+  @media (max-width: 1024px) {
+    height: 872px;
+    min-height: 75%;
+    padding-right: 9.5%;
+    width: 100%;
+  }
+
+  @media (max-width: 639px) {
+    height: 438px;
+    min-height: 75%;
+  }
+
+  .text-block__content {
+    @media (max-width: 1024px) {
+      opacity: 1;
+      width: 100%;
+      height: auto;
+      overflow: visible;
+    }
+  }
+
+  .lead__btn {
+    position: relative;
+    visibility: visible;
+    transform: translateY(0);
+    opacity: 1;
+
+    @media (max-width: 1024px) {
+      width: auto;
+      height: auto;
+      overflow: visible;
     }
   }
 }

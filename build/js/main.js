@@ -76,19 +76,19 @@ $('.main-menu__burger').click(function () {
 });
 
 //user menu
-$('.user-menu__toggle').click(function () {
-  if ($(this).hasClass('js-user-opened')) {
-    $(this).removeClass('js-user-opened');
-    $('.user-menu__list').slideUp(1000, function () {
-      $(this).removeClass('js-user-opened');
-    });
-  } else {
-    $(this).addClass('js-user-opened');
-    $('.user-menu__list').slideDown(1000, function () {
-      $(this).css('display', 'flex');
-    }).addClass('js-user-opened');
-  }
-});
+// $('.user-menu__toggle').click(function () {
+//   if ($(this).hasClass('js-user-opened')) {
+//     $(this).removeClass('js-user-opened');
+//     $('.user-menu__list').slideUp(1000, function () {
+//       $(this).removeClass('js-user-opened');
+//     });
+//   } else {
+//     $(this).addClass('js-user-opened');
+//     $('.user-menu__list').slideDown(1000, function () {
+//       $(this).css('display', 'flex');
+//     }).addClass('js-user-opened');
+//   }
+// });
 
 //animation of the appearance of lines on hover at tour.html page
 var heroAccountElem = document.querySelector('.tour-accounts__text_hero');
@@ -358,4 +358,14 @@ $('.video__youtube-link').click(function (event) {
   setTimeout(function () {
     videoblockVip.find('iframe').attr('src', src + videoVip + '?autoplay=1');
   }, 250);
+});
+
+// Mobile registration scroll
+$('.user-menu__toggle').click(function (e) {
+  if(!$(this).length) {
+    return;
+  }
+  e.preventDefault();
+  var el = $(this).attr('href');
+  $('body, html').animate({ scrollTop: $(el).offset().top - 51 }, 1000);
 });

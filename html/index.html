@@ -8,17 +8,17 @@
     [snp tpl="html/blocks/form-prereg.html" special_class="noreveal"]
     [snp tpl="html/blocks/footer.html" special_class="noreveal"]
   </div>
-  
+
   <div class="page-wrapper">
 
   </div>
 [snp tpl="html/blocks/scripts.html" ]
- 
-  <script>
+
+  <!-- <script>
     $(document).on("click", ".lead__btn", function(e){
       e.preventDefault();
       var href = $(this).attr("href");
-      
+
       $.ajax({
         url: href,
         type:'GET',
@@ -28,18 +28,18 @@
         success:function(data){
             var newdata = $(data);
             newdata.find("meta, link, footer").remove();
-            $('.page-wrapper').html(newdata);              
+            $('.page-wrapper').html(newdata);
             var title = data.match(/<title>(.*?)<\/title>/);
-              
+
               $('.page-wrapper, .page_mainindex__container').addClass("active");
               $("title").text(title[0].replace(/(<([^>]+)>)/ig,""));
               setTimeout(function(){
                 $('.page_mainindex__container').remove();
                 $(".page-wrapper").css("transform", "none")
               }, 1000);
-              
+
               window.history.pushState(href, title[0], href);
-              
+
               setTimeout(function(){
                 var body = $("html, body");
                 body.stop().animate({scrollTop:1}, '500', 'swing', function() {});
@@ -49,6 +49,6 @@
         }
       });
     });
-  </script>
+  </script> -->
   </body>
 </html>
