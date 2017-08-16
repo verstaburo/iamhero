@@ -215,7 +215,9 @@ if (heroBlock && employerBlock) {
   }, false);
 
   employerBlock.addEventListener('mouseenter', function (event) {
+    employerBlock.classList.remove('js-employer-hover-none');
     heroBlock.classList.add('js-hero-hover-none');
+    heroBlock.classList.remove('js-hero-hover-active');
     employerBlock.classList.add('js-employer-hover-active');
   }, false);
 
