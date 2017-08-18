@@ -70,14 +70,17 @@
       font-size: $titleSizeH1;
       letter-spacing: -0.04em;
 
-      @media (max-width: 1380px) {
+      @media (max-width: 1024px) {
         font-size: $titleSizeH1*0.7;
+      }
+
+      @media (max-width: 1690px) {
         margin-bottom: 49px;
       }
 
       @media (max-width: 639px) {
-        margin-bottom: 35px;
         font-size: $titleSizeH1/2;
+        margin-bottom: 35px;
         letter-spacing: -0.04em;
       }
     }
@@ -87,7 +90,7 @@
       letter-spacing: -0.04em;
       margin-bottom: 24px;
 
-      @media (max-width: 1380px) {
+      @media (max-width: 1024px) {
         font-size: $titleSizeH2_big*0.7;
       }
 
@@ -113,7 +116,7 @@
     box-sizing: border-box;
     width: 100%;
 
-    @media (max-width: 1380px) {
+    @media (max-width: 1024px) {
       font-size: $textSizeSmaller;
     }
 
@@ -125,7 +128,7 @@
     &_small {
       font-size: $textSizeSmall;
 
-      @media (max-width: 1380px) {
+      @media (max-width: 1024px) {
         font-size: $textSizeTiny;
       }
     }
@@ -133,7 +136,7 @@
     &_big {
       font-size: $textSizeBig;
 
-      @media (max-width: 1380px) {
+      @media (max-width: 1024px) {
         font-size: $textSizeLitle;
       }
 
@@ -146,7 +149,7 @@
     &_huge {
       font-size: $textSizeHuge;
 
-      @media (max-width: 1380px) {
+      @media (max-width: 1024px) {
         font-size: $textSizeHuge*0.7;
       }
 
@@ -159,19 +162,32 @@
       font-size: $textSizeHuger;
       line-height: 1.2em;
 
-      @media (max-width: 1380px) {
+      @media (max-width: 1024px) {
         font-size: $textSizeHuger*0.7;
       }
 
       @media (max-width: 639px) {
-        font-size: ($textSizeHuger)/2;
+        font-size: $textSizeHuger/2;
       }
+      //
+      //
+      // @media (max-width: 1920px) {
+      //   font-size: $textSizeHuger*0.7;
+      // }
+      //
+      // @media (max-width: 1690px) {
+      //   font-size: $textSizeHuger/2;
+      // }
+      //
+      // @media (max-width: 639px) {
+      //   font-size: ($textSizeHuger)/3;
+      // }
     }
 
     &_hugest {
       font-size: $textSizeHugest;
 
-      @media (max-width: 1380px) {
+      @media (max-width: 1024px) {
         font-size: $textSizeHugest*0.7;
       }
 
@@ -185,7 +201,7 @@
       font-size: $textSizeGigantic;
       line-height: 1.2em;
 
-      @media (max-width: 1380px) {
+      @media (max-width: 1024px) {
         font-size: $textSizeGigantic*0.7;
       }
 
@@ -291,7 +307,7 @@
       font-size: $textSizeSlogan;
       line-height: 1.2em;
 
-      @media (max-width: 1380px) {
+      @media (max-width: 1024px) {
         font-size: $textSizeSlogan*0.7;
       }
 

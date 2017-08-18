@@ -28,9 +28,9 @@ gulp.task('style', function() {
       autoprefixer({browsers: [
         'last 2 versions', 'last 7 iOS version'
       ]}),
-      mqpacker({
-        sort: false
-      })
+      // mqpacker({
+      //   sort: false
+      // })
     ]))
     .pipe(gulp.dest('build/css'))
     .pipe(cssmin())
