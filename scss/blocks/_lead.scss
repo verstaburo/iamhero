@@ -43,6 +43,10 @@
     width: 50%;
     transition: height .75s ease-in-out, min-height .75s ease-in-out, max-height .75s ease-in-out, width .75s ease-in-out, opacity .75s ease-in-out, padding .75s ease-in-out;
 
+    @media (min-width: 1025px) {
+      justify-content: flex-start;
+    }
+
     @media (max-width: 1690px) {
       padding-right: 9.5%;
     }
@@ -424,6 +428,15 @@
     margin-bottom: 42px;
     z-index: 4;
     transition: padding .75s ease-in-out;
+
+
+    @media (min-width: 1025px) {
+      margin-top: 22vh;
+    }
+
+    @media (min-height: 825px) {
+      margin-top: 35vh;
+    }
 
     @media (max-width: 1279px) {
       margin-bottom: 20px;
