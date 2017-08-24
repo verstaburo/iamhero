@@ -4448,19 +4448,7 @@ textarea {
   clear: both; }
 
 .news-list {
-  margin-top: 130px; }
-  @media (max-width: 1690px) {
-    .news-list {
-      margin-top: 100px; } }
-  @media (max-width: 1380px) {
-    .news-list {
-      margin-top: 76px; } }
-  @media (max-width: 1024px) {
-    .news-list {
-      margin-top: 76px; } }
-  @media (max-width: 640px) {
-    .news-list {
-      margin-top: 48px; } }
+  margin-top: 25px; }
 
 .news-list h1 {
   margin-bottom: 20px; }
@@ -5278,7 +5266,7 @@ textarea {
   font-weight: 100;
   color: #374851;
   padding-bottom: 20px;
-  padding-top: 111px; }
+  padding-top: 15px; }
   @media (max-width: 1024px) {
     .news-detail h1.news_page {
       margin-top: 0;

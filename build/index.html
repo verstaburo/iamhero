@@ -220,7 +220,7 @@
   <div class="page-wrapper">
 
   </div>
-  <script src="js/vendors/jquery.min.js"></script>
+    <script src="js/vendors/jquery.min.js"></script>
 
   <!--[if lt IE 9]><script src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE9.js"></script><![endif]-->
   <!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
@@ -240,42 +240,5 @@
     });
   </script>
 
-
-  <!-- <script>
-    $(document).on("click", ".lead__btn", function(e){
-      e.preventDefault();
-      var href = $(this).attr("href");
-
-      $.ajax({
-        url: href,
-        type:'GET',
-        beforeSend:function(){
-        },
-        data:"",
-        success:function(data){
-            var newdata = $(data);
-            newdata.find("meta, link, footer").remove();
-            $('.page-wrapper').html(newdata);
-            var title = data.match(/<title>(.*?)<\/title>/);
-
-              $('.page-wrapper, .page_mainindex__container').addClass("active");
-              $("title").text(title[0].replace(/(<([^>]+)>)/ig,""));
-              setTimeout(function(){
-                $('.page_mainindex__container').remove();
-                $(".page-wrapper").css("transform", "none")
-              }, 1000);
-
-              window.history.pushState(href, title[0], href);
-
-              setTimeout(function(){
-                var body = $("html, body");
-                body.stop().animate({scrollTop:1}, '500', 'swing', function() {});
-              }, 300);
-            //setTimeout(function(){hidepreloader();},1000);
-            //setTimeout(function(){unfixscreen();},1010);
-        }
-      });
-    });
-  </script> -->
   </body>
 </html>

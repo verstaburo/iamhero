@@ -3,24 +3,9 @@
 }
 
 .news-list {
-  margin-top: 130px;
-
-  @media (max-width: 1690px) {
-    margin-top: 100px;
-  }
-
-  @media (max-width: 1380px) {
-    margin-top: 76px;
-  }
-
-  @media (max-width: 1024px) {
-    margin-top: 76px;
-  }
-
-  @media (max-width: 640px) {
-    margin-top: 48px;
-  }
+  margin-top: 25px;
 }
+
 .news-list h1 {
   margin-bottom: 20px;
 
