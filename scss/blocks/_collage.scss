@@ -44,6 +44,18 @@
       height: 668px;
       animation-delay: 0.01s;
 
+      &_employer {
+        width: 1245px;
+        height: 697px;
+        top: -13px;
+        left: -46px;
+
+        img {
+          width: 1245px;
+          height: 697px;
+        }
+      }
+
       @media (max-width: 639px) {
         width: 605px;
         height: 334px;
@@ -58,18 +70,6 @@
           height: 334px;
         }
       }
-
-      &_employer {
-        width: 1245px;
-        height: 697px;
-        top: -13px;
-        left: -46px;
-
-        img {
-          width: 1245px;
-          height: 697px;
-        }
-      }
     }
 
     &_resume2 {
@@ -79,23 +79,6 @@
       animation-delay: 0.5s;
       width: 895px;
       height: 803px;
-
-      @media (max-width: 639px) {
-        top: 24px;
-        left: 158px;
-        width: 447.5px;
-        height: 401.5px;
-      }
-
-      img {
-        width: 895px;
-        height: 803px;
-
-        @media (max-width: 639px) {
-          width: 447.5px;
-          height: 401.5px;
-        }
-      }
 
       &_employer {
         top: 164px;
@@ -111,6 +94,23 @@
         img {
           width: 971px;
           height: 939px;
+        }
+      }
+
+      @media (max-width: 639px) {
+        top: 24px;
+        left: 158px;
+        width: 447.5px;
+        height: 401.5px;
+      }
+
+      img {
+        width: 895px;
+        height: 803px;
+
+        @media (max-width: 639px) {
+          width: 447.5px;
+          height: 401.5px;
         }
       }
     }

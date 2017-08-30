@@ -3033,6 +3033,14 @@ textarea {
     height: 668px;
     -webkit-animation-delay: 0.01s;
             animation-delay: 0.01s; }
+    .collage__img_resume1_employer {
+      width: 1245px;
+      height: 697px;
+      top: -13px;
+      left: -46px; }
+      .collage__img_resume1_employer img {
+        width: 1245px;
+        height: 697px; }
     @media (max-width: 639px) {
       .collage__img_resume1 {
         width: 605px;
@@ -3044,14 +3052,6 @@ textarea {
         .collage__img_resume1 img {
           width: 605px;
           height: 334px; } }
-    .collage__img_resume1_employer {
-      width: 1245px;
-      height: 697px;
-      top: -13px;
-      left: -46px; }
-      .collage__img_resume1_employer img {
-        width: 1245px;
-        height: 697px; }
   .collage__img_resume2 {
     top: 48px;
     left: 316px;
@@ -3060,6 +3060,18 @@ textarea {
             animation-delay: 0.5s;
     width: 895px;
     height: 803px; }
+    .collage__img_resume2_employer {
+      top: 164px;
+      left: 240px;
+      width: 971px;
+      height: 939px; }
+      @media (max-width: 639px) {
+        .collage__img_resume2_employer {
+          top: 70px;
+          left: 122px; } }
+      .collage__img_resume2_employer img {
+        width: 971px;
+        height: 939px; }
     @media (max-width: 639px) {
       .collage__img_resume2 {
         top: 24px;
@@ -3073,18 +3085,6 @@ textarea {
         .collage__img_resume2 img {
           width: 447.5px;
           height: 401.5px; } }
-    .collage__img_resume2_employer {
-      top: 164px;
-      left: 240px;
-      width: 971px;
-      height: 939px; }
-      @media (max-width: 639px) {
-        .collage__img_resume2_employer {
-          top: 70px;
-          left: 122px; } }
-      .collage__img_resume2_employer img {
-        width: 971px;
-        height: 939px; }
   .collage__img_resume3 {
     top: 276px;
     left: 134px;
@@ -7077,6 +7077,9 @@ textarea {
       .page-footer__container {
         padding-left: 15px;
         padding-right: 15px; } }
+    @media (max-width: 639px) {
+      .page-footer__container {
+        overflow-x: hidden; } }
   .page-footer__logo {
     margin-right: 93px; }
     @media (max-width: 1279px) {
@@ -7099,10 +7102,10 @@ textarea {
     -webkit-flex: 1;
         -ms-flex: 1;
             flex: 1;
-    margin-right: 100px; }
+    margin-right: 60px; }
     @media (max-width: 1380px) {
       .page-footer__menu {
-        margin-right: 50px; } }
+        margin-right: 20px; } }
     @media (max-width: 1279px) {
       .page-footer__menu {
         width: 50%;

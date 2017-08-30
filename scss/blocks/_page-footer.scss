@@ -46,6 +46,10 @@
       padding-left: 15px;
       padding-right: 15px;
     }
+
+    @media (max-width: 639px) {
+      overflow-x: hidden;
+    }
   }
 
   &__logo {
@@ -70,10 +74,10 @@
 
   &__menu {
     flex: 1;
-    margin-right: 100px;
+    margin-right: 60px;
 
     @media (max-width: 1380px) {
-      margin-right: 50px;
+      margin-right: 20px;
     }
 
     @media (max-width: 1279px) {
