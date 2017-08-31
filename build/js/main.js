@@ -31,48 +31,49 @@ DropDown.prototype = {
     }
 }
 ;var somth;
-;$(function () {
+;$(function() {
   document.createElement("picture");
-  svg4everybody({polyfill: true});
+  svg4everybody({
+    polyfill: true
+  });
   objectFitImages();
-  console.log('fitImages');
+  window.sr = ScrollReveal();
+  $('[data-sr-id]').removeAttr('data-sr-id').removeAttr('style');
 
 
   //radio buttons in form_prereg
-  document.onload = (function () {
-    var radioElems = document.querySelectorAll('.switch__radio');
-    for (var i = 0; i < radioElems.length; i++) {
-      if (radioElems[i].checked) {
-        var elem = radioElems[i];
-        while (elem) {
-          if (elem.parentNode.classList.contains('switch__item')) {
-            elem.parentNode.classList.add('js-radio-checked');
-            break;
-          } else {
-            elem = elem.parentNode;
-          }
+  var radioElems = document.querySelectorAll('.switch__radio');
+  for (var i = 0; i < radioElems.length; i++) {
+    if (radioElems[i].checked) {
+      var elem = radioElems[i];
+      while (elem) {
+        if (elem.parentNode.classList.contains('switch__item')) {
+          elem.parentNode.classList.add('js-radio-checked');
+          break;
+        } else {
+          elem = elem.parentNode;
         }
       }
     }
-  })();
+  }
 
-  $(".switch__item").on("click", function () {
+  $(".switch__item").on("click", function() {
     $(this).find('input:radio')[0].checked = true;
     $('.js-radio-checked').toggleClass('js-radio-checked');
     $(this).toggleClass('js-radio-checked');
   });
 
   //hamburger menu
-  $('.main-menu__burger').click(function () {
+  $('.main-menu__burger').click(function() {
     var itemList = document.querySelectorAll('.main-menu__item:not(.hidden)');
     if ($(this).hasClass('js-menu-opened')) {
       $(this).removeClass('js-menu-opened');
-      $('.main-menu__list').slideUp(1000, function () {
+      $('.main-menu__list').slideUp(1000, function() {
         $(this).removeClass('js-menu-opened');
       });
     } else {
       $(this).addClass('js-menu-opened');
-      $('.main-menu__list').slideDown(1000, function () {
+      $('.main-menu__list').slideDown(1000, function() {
         $(this).css('display', 'flex');
       }).addClass('js-menu-opened');
     }
@@ -98,7 +99,7 @@ DropDown.prototype = {
   var superheroAccountElem = document.querySelector('.tour-accounts__text_superhero');
 
   if (heroAccountElem) {
-    heroAccountElem.addEventListener('mouseenter', function (event) {
+    heroAccountElem.addEventListener('mouseenter', function(event) {
       var heroLines = document.querySelectorAll('.collage__line_hero');
       if (heroLines) {
         for (var i = 0; i < heroLines.length; i++) {
@@ -106,7 +107,7 @@ DropDown.prototype = {
         }
       }
     }, false);
-    heroAccountElem.addEventListener('mouseleave', function (event) {
+    heroAccountElem.addEventListener('mouseleave', function(event) {
       var heroLines = document.querySelectorAll('.collage__line_hero');
       if (heroLines) {
         for (var i = 0; i < heroLines.length; i++) {
@@ -117,7 +118,7 @@ DropDown.prototype = {
   }
 
   if (superheroAccountElem) {
-    superheroAccountElem.addEventListener('mouseenter', function (event) {
+    superheroAccountElem.addEventListener('mouseenter', function(event) {
       var superheroLines = document.querySelectorAll('.collage__line_superhero');
       if (superheroLines) {
         for (var i = 0; i < superheroLines.length; i++) {
@@ -125,7 +126,7 @@ DropDown.prototype = {
         }
       }
     }, false);
-    superheroAccountElem.addEventListener('mouseleave', function (event) {
+    superheroAccountElem.addEventListener('mouseleave', function(event) {
       var superheroLines = document.querySelectorAll('.collage__line_superhero');
       if (superheroLines) {
         for (var i = 0; i < superheroLines.length; i++) {
@@ -136,7 +137,7 @@ DropDown.prototype = {
   }
 
 
-  window.sr = ScrollReveal();
+  // sr.destroy();
 
   //animation fall collage at tour.html page
   var tourCollageReveal1 = {
@@ -146,7 +147,10 @@ DropDown.prototype = {
     scale: 1,
     mobile: true,
     duration: 1000,
-    viewOffset: {right: -2000, left: -500}
+    viewOffset: {
+      right: -2000,
+      left: -500
+    }
   };
   var tourCollageReveal2 = {
     delay: 500,
@@ -155,7 +159,10 @@ DropDown.prototype = {
     scale: 1,
     mobile: true,
     duration: 1000,
-    viewOffset: {right: -2000, left: -500}
+    viewOffset: {
+      right: -2000,
+      left: -500
+    }
   };
   var tourCollageReveal3 = {
     delay: 1000,
@@ -164,7 +171,10 @@ DropDown.prototype = {
     scale: 1,
     mobile: true,
     duration: 1000,
-    viewOffset: {right: -2000, left: -500}
+    viewOffset: {
+      right: -2000,
+      left: -500
+    }
   };
   var tourCollageReveal4 = {
     delay: 1500,
@@ -173,7 +183,10 @@ DropDown.prototype = {
     scale: 1,
     mobile: true,
     duration: 1000,
-    viewOffset: {right: -2000, left: -500}
+    viewOffset: {
+      right: -2000,
+      left: -500
+    }
   };
 
   sr.reveal('.collage__img_resume1', tourCollageReveal1);
@@ -219,7 +232,11 @@ DropDown.prototype = {
     scale: 1,
     mobile: false,
     duration: 1000,
-    viewOffset: {right: -2000, left: -1000, top: -1000}
+    viewOffset: {
+      right: -2000,
+      left: -1000,
+      top: -1000
+    }
   };
   var fooReveal2 = {
     delay: 200,
@@ -228,11 +245,16 @@ DropDown.prototype = {
     scale: 1,
     mobile: false,
     duration: 1000,
-    viewOffset: {right: -2000, left: -1000, top: -1000}
+    viewOffset: {
+      right: -2000,
+      left: -1000,
+      top: -1000
+    }
   };
 
-  sr.reveal('.page-section ', fooReveal1);
-  sr.reveal('.text-block__title:not(.noreveal), .text-block__content:not(.noreveal) p, .text-block__link, .text-block__slogan, .text-block__item, .communication__img, .intro-video__item, .footer-menu__title:not(.noreveal), .footer-menu__item:not(.noreveal), .logo_footer:not(.noreveal), .pricing__header, .pricing__body, .pricing__footer:not(.noreveal), .note, .companies, .tour-working__img, .tour-accounts__img, .tour-dashboard__bg, .tour-search__bg, .tour-matching__img, .form__radiofield:not(.noreveal), .form__inputlabel:not(.noreveal), .about-slogan__text, .about-description__text, .about-description__comment, .about-partners__text, .about-partners__item, .about-team__title, .about-team__photo, .about-team__text, .about-donate__title, .about-donate__text, .about-donate__pics div, .video p, .video b, .page-section .btn, .video__youtube-content, .video__youtube-link, .video h2, .case h2, .case p, .case__inner-container, .versus-table h2, .versus-table p, .versus-table__t-row, .versus-table__r-row, .contacts__col, .contact__contact-link, .contacts__form-element, .news-detail h1, .news-category, .bread_crumbs, .images-block, .images-block h6, .images-block p, .images-block time, .text_page p, .text-bold p, .another-cathegory, .news_page, .follow', fooReveal2);
+  sr.reveal('.page-section', fooReveal1);
+
+  sr.reveal('.text-block__title:not(.noreveal), .text-block__content:not(.noreveal) p, .text-block__link, .text-block__slogan, .text-block__item, .communication__img, .intro-video__item, .footer-menu__title:not(.noreveal), .footer-menu__item:not(.noreveal), .logo_footer:not(.noreveal), .pricing__header, .pricing__body, .pricing__footer:not(.noreveal), .note, .companies, .tour-working__img, .tour-accounts__img, .tour-dashboard__bg, .tour-search__bg, .tour-matching__img, .form__radiofield:not(.noreveal), .form__inputlabel:not(.noreveal), .about-slogan__text, .about-description__text, .about-description__comment, .about-partners__text, .about-partners__item, .about-team__title, .about-team__photo, .about-team__text, .about-donate__title, .about-donate__text, .about-donate__pics div, .video p, .video b, .page-section .btn, .video__youtube-content, .video__youtube-link, .video h2, .case h2, .case p, .case__inner-container, .versus-table h2, .versus-table p, .versus-table__t-row, .versus-table__r-row, .contacts__col, .contact__contact-link, .contacts__form-element, .news-detail h1, .news-category, .bread_crumbs, .images-block, .images-block h6, .images-block p, .images-block time, .text_page p, .text-bold p, .another-cathegory, .news_page, .follow', fooReveal1);
 
   //animation increase blocks in header at index.html page
 
@@ -240,37 +262,37 @@ DropDown.prototype = {
   var employerBlock = document.querySelector('.lead__item_employer');
 
   if (heroBlock && employerBlock) {
-    heroBlock.addEventListener('mouseenter', function (event) {
+    heroBlock.addEventListener('mouseenter', function(event) {
       heroBlock.classList.add('js-hero-hover-active');
       employerBlock.classList.add('js-employer-hover-none');
     }, false);
 
-    heroBlock.addEventListener('mouseleave', function (event) {
+    heroBlock.addEventListener('mouseleave', function(event) {
       heroBlock.classList.remove('js-hero-hover-active');
       employerBlock.classList.remove('js-employer-hover-none');
     }, false);
 
-    employerBlock.addEventListener('mouseenter', function (event) {
+    employerBlock.addEventListener('mouseenter', function(event) {
       employerBlock.classList.remove('js-employer-hover-none');
       heroBlock.classList.add('js-hero-hover-none');
       heroBlock.classList.remove('js-hero-hover-active');
       employerBlock.classList.add('js-employer-hover-active');
     }, false);
 
-    employerBlock.addEventListener('mouseleave', function (event) {
+    employerBlock.addEventListener('mouseleave', function(event) {
       heroBlock.classList.remove('js-hero-hover-none');
       employerBlock.classList.remove('js-employer-hover-active');
     }, false);
 
-    if(/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)){
-      heroBlock.addEventListener('click', function () {
+    if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
+      heroBlock.addEventListener('click', function() {
         heroBlock.classList.add('js-hero-hover-active');
         employerBlock.classList.add('js-employer-hover-none');
         heroBlock.classList.remove('js-hero-hover-none');
         employerBlock.classList.remove('js-employer-hover-active');
       }, false);
 
-      employerBlock.addEventListener('click', function () {
+      employerBlock.addEventListener('click', function() {
         heroBlock.classList.add('js-hero-hover-none');
         employerBlock.classList.add('js-employer-hover-active');
         heroBlock.classList.remove('js-hero-hover-active');
@@ -281,26 +303,22 @@ DropDown.prototype = {
 
   //dropdown menu news-category
 
-  $(function () {
+  var dd = new DropDown($('.news-category'));
 
-    var dd = new DropDown($('.news-category'));
-
-    $(document).click(function () {
-      // all dropdowns
-      $('.news-category').removeClass('activated');
-    });
-
+  $(document).click(function() {
+    // all dropdowns
+    $('.news-category').removeClass('activated');
   });
 
   //fixed top menu
 
-  var StickyElement = function (node) {
+  var StickyElement = function(node) {
     var doc = $(document),
       fixed = false,
       anchor = node.find('.sticky__anchor'),
       content = node.find('.sticky__content');
 
-    var onScroll = function (e) {
+    var onScroll = function(e) {
       var docTop = doc.scrollTop(),
         anchorTop = anchor.offset().top;
 
@@ -333,19 +351,19 @@ DropDown.prototype = {
   src = 'https://www.youtube.com/embed/';
   videoblockIndex = $(document).find('.intro-video');
 
-  $(document).on("click", '.intro-video__btn', function () {
+  $(document).on("click", '.intro-video__btn', function() {
     videoIndex = $(this).parents('.intro-video').data('video');
     videoblockIndex.addClass('active'); // Добавляем активный класс, который увеличит блок по высоте и сделает видимым слой с видео
-    setTimeout(function () {
+    setTimeout(function() {
       videoblockIndex.find('iframe').attr('src', src + videoIndex + '?wmode=opaque&autoplay=1&showinfo=0');
     }, 250);
   });
 
-  $(document).on("click", '.intro-video__close', function (event) {
+  $(document).on("click", '.intro-video__close', function(event) {
     event.preventDefault();
     event.stopPropagation();
     videoblockIndex.removeClass('active');
-    setTimeout(function () {
+    setTimeout(function() {
       videoblockIndex.find('iframe').attr('src', '');
     }, 250);
   });
@@ -356,22 +374,24 @@ DropDown.prototype = {
   src = 'https://www.youtube.com/embed/';
   videoblockVip = $('.video__item');
 
-  $('.video__youtube-link').click(function (event) {
+  $('.video__youtube-link').click(function(event) {
     event.preventDefault();
     videoVip = $(this).parents('.video__item').data('video');
     videoblockVip.addClass('active'); // Добавляем активный класс, который увеличит блок по высоте и сделает видимым слой с видео
-    setTimeout(function () {
+    setTimeout(function() {
       videoblockVip.find('iframe').attr('src', src + videoVip + '?autoplay=1');
     }, 250);
   });
 
   // Mobile registration scroll
-  $('.user-menu__toggle').click(function (e) {
-    if(!$(this).length) {
+  $('.user-menu__toggle').click(function(e) {
+    if (!$(this).length) {
       return;
     }
     e.preventDefault();
     var el = $(this).attr('href');
-    $('body, html').animate({ scrollTop: $(el).offset().top - 51 }, 1000);
+    $('body, html').animate({
+      scrollTop: $(el).offset().top - 51
+    }, 1000);
   });
 });
