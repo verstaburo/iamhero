@@ -1,36 +1,4 @@
-function DropDown(el) {
-    this.dd = el;
-    this.placeholder = this.dd.children('span');
-    this.opts = this.dd.find('ul.news-category__list > li');
-    this.val = '';
-    this.index = -1;
-    this.initEvents();
-}
-
-DropDown.prototype = {
-    initEvents : function() {
-        var obj = this;
-
-        obj.dd.on('click', function(event){
-            $(this).toggleClass('activated');
-            return false;
-        });
-
-        obj.opts.on('click',function(){
-            var opt = $(this);
-            obj.val = opt.text();
-            obj.index = opt.index();
-            obj.placeholder.text(obj.val);
-        });
-    },
-    getValue : function() {
-        return this.val;
-    },
-    getIndex : function() {
-        return this.index;
-    }
-}
-;$(function() {
+$(function() {
   document.createElement("picture");
   svg4everybody({
     polyfill: true
@@ -39,6 +7,44 @@ DropDown.prototype = {
   window.sr = ScrollReveal();
   $('[data-sr-id]').removeAttr('data-sr-id').removeAttr('style');
 
+  function DropDown(el) {
+    this.dd = el;
+    this.placeholder = this.dd.children('span');
+    this.opts = this.dd.find('ul.news-category__list > li');
+    this.val = '';
+    this.index = -1;
+    this.initEvents();
+  }
+
+  DropDown.prototype = {
+    initEvents: function() {
+      var obj = this;
+
+      obj.dd.on('click', function(event) {
+        if ($(window).width() <= 1024) {
+          $(this).toggleClass('activated');
+          event.stopPropagation();
+        }
+      });
+
+      obj.opts.on('click', function() {
+        var opt = $(this);
+        obj.val = opt.text();
+        obj.index = opt.index();
+        obj.placeholder.text(obj.val);
+      });
+    },
+    getValue: function() {
+      return this.val;
+    },
+    getIndex: function() {
+      return this.index;
+    }
+  }
+
+  // dropdown menu news-category
+
+  var dd = new DropDown($('.news-category'));
 
   //radio buttons in form_prereg
   var radioElems = document.querySelectorAll('.switch__radio');
@@ -299,15 +305,6 @@ DropDown.prototype = {
       }, false);
     }
   }
-
-  //dropdown menu news-category
-
-  var dd = new DropDown($('.news-category'));
-
-  $(document).click(function() {
-    // all dropdowns
-    $('.news-category').removeClass('activated');
-  });
 
   //fixed top menu
 
