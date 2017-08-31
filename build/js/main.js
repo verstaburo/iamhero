@@ -30,7 +30,6 @@ DropDown.prototype = {
         return this.index;
     }
 }
-;var somth;
 ;$(function() {
   document.createElement("picture");
   svg4everybody({
