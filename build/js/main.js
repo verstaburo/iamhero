@@ -33,6 +33,10 @@ $(function() {
         obj.index = opt.index();
         obj.placeholder.text(obj.val);
       });
+
+      $(document).on('click', function() {
+        obj.dd.removeClass('activated');
+      })
     },
     getValue: function() {
       return this.val;
