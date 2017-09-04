@@ -149,6 +149,9 @@
       left: 0;
       width: 100%;
       height: auto;
+      background-color: $bgMenuColor;
+      background-image: $mainGradient;
+      z-index: 120;
     }
 
     .page-header_no-switch-btn &{
@@ -159,16 +162,6 @@
       // @media (max-width: 1279px) {
       //   padding-left: 0;
       // }
-    }
-
-    &.js-menu-opened {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      padding-left: 0;
-      background-color: $bgMenuColor;
-      background-image: $mainGradient;
-      z-index: 120;
     }
   }
 
@@ -213,7 +206,6 @@
     &:first-child {
       margin-left: 0;
     }
-
   }
 
   &__link {

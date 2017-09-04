@@ -335,20 +335,17 @@
     position: relative;
     margin-left: 5px;
     align-self: flex-start;
-    visibility: hidden;
-    opacity: 0;
-    transform: translateY(200px);
-    transition: transform .75s ease-in-out, opacity .75s ease-in-out, background 0.25s ease-in-out, color 0.25s ease-in-out;
+    transition: color 0.25s ease-in-out;
     z-index: 5;
 
     @media (max-width: 1024px) {
-      position: absolute;
-      top: 0;
-      left: 0;
+      // position: absolute;
+      // top: 0;
+      // left: 0;
       margin-left: 0;
-      width: 0;
-      height: 0;
-      overflow: hidden;
+      // width: auto;
+      // height: auto;
+      // overflow: visible;
     }
 
     // .lead__item_hero:hover &,
@@ -518,16 +515,16 @@
     }
   }
 
-  .lead__btn {
-    position: relative;
-    visibility: visible;
-    transform: translateY(0);
-    opacity: 1;
-
-    @media (max-width: 1024px) {
-      width: auto;
-      height: auto;
-      overflow: visible;
-    }
-  }
+  // .lead__btn {
+  //   position: relative;
+  //   visibility: visible;
+  //   transform: translateY(0);
+  //   opacity: 1;
+  //
+  //   @media (max-width: 1024px) {
+  //     width: auto;
+  //     height: auto;
+  //     overflow: visible;
+  //   }
+  // }
 }

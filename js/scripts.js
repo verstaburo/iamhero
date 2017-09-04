@@ -72,21 +72,12 @@ $(function() {
     $(this).toggleClass('js-radio-checked');
   });
 
-  //hamburger menu
-  $('.main-menu__burger').click(function() {
-    var itemList = document.querySelectorAll('.main-menu__item:not(.hidden)');
-    if ($(this).hasClass('js-menu-opened')) {
-      $(this).removeClass('js-menu-opened');
-      $('.main-menu__list').slideUp(1000, function() {
-        $(this).removeClass('js-menu-opened');
-      });
-    } else {
-      $(this).addClass('js-menu-opened');
-      $('.main-menu__list').slideDown(1000, function() {
-        $(this).css('display', 'flex');
-      }).addClass('js-menu-opened');
-    }
+  // hamburger menu
+  $(document).on('click', '.main-menu__burger', function () {
+    $(this).toggleClass('js-menu-opened');
+    $(this).siblings('.main-menu__list').stop().slideToggle().toggleClass('js-menu-opened');
   });
+
 
   //user menu
   // $('.user-menu__toggle').click(function () {
@@ -145,8 +136,6 @@ $(function() {
     }, false);
   }
 
-
-  // sr.destroy();
 
   //animation fall collage at tour.html page
   var tourCollageReveal1 = {
