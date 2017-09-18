@@ -1,5 +1,5 @@
 @media (max-width: 1279px) {
-  @for $i from 1 through 3 {
+  @for $i from 1 through 10 {
     .main-menu__item:nth-child(#{$i}) {
       transition-delay: 0.1s + 0.1s * $i;
     }
