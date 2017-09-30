@@ -1,4 +1,5 @@
 .text-page {
+
   &__container {
     box-sizing: border-box;
     display: block;
@@ -15,12 +16,12 @@
 
   h1 {
     font-size: $titleSizeH1;
-    letter-spacing: -0.04em;
+    letter-spacing: -.04em;
     margin-bottom: 70px;
 
     @media (max-width: 1380px) {
       margin-bottom: 49px;
-      font-size: $titleSizeH1*0.7;
+      font-size: $titleSizeH1*.7;
     }
 
     @media (max-width: 639px) {
@@ -31,14 +32,14 @@
 
   h2 {
     font-size: $titleSizeH2_big;
-    letter-spacing: -0.04em;
+    letter-spacing: -.04em;
     margin-top: 102px;
     margin-bottom: 26px;
 
     @media (max-width: 1380px) {
       margin-top: 64px;
       margin-bottom: 22px;
-      font-size: $titleSizeH2_big*0.7;
+      font-size: $titleSizeH2_big*.7;
     }
 
     @media (max-width: 639px) {
@@ -50,21 +51,21 @@
 
   h3 {
     font-size: $titleSizeH3;
-    letter-spacing: -0.04em;
+    letter-spacing: -.04em;
     margin-bottom: 26px;
 
     @media (max-width: 1380px) {
-      font-size: $titleSizeH3*0.7;
+      font-size: $titleSizeH3*.7;
     }
   }
 
   h4 {
     font-size: $titleSizeH4;
-    letter-spacing: -0.04em;
+    letter-spacing: -.04em;
     margin-bottom: 26px;
 
     @media (max-width: 1380px) {
-      font-size: $titleSizeH4*0.7;
+      font-size: $titleSizeH4*.7;
     }
 
     @media (max-width: 639px) {
@@ -74,7 +75,7 @@
 
   h5 {
     font-size: $titleSizeH5;
-    letter-spacing: -0.04em;
+    letter-spacing: -.04em;
     font-weight: 500;
     margin-bottom: 26px;
 
@@ -118,7 +119,7 @@
   p.huge {
     font-size: $textSizeHuge;
     line-height: 1.2em;
-    letter-spacing: -0.04em;
+    letter-spacing: -.04em;
 
     @media (max-width: 1380px) {
       line-height: 1.24em;
@@ -131,6 +132,10 @@
   }
 
   img {
+    max-width: 100%;
+  }
+
+  &__custom-image {
     float: left;
     align-self: flex-start;
     width: 603px;
@@ -168,7 +173,7 @@
       padding-left: 44px;
       font-family: $mainFontFamily;
       font-size: $textSize;
-      letter-spacing: -0.04em;
+      letter-spacing: -.04em;
       line-height: 1.64em;
       font-weight: 500;
       margin-bottom: 37px;
@@ -183,7 +188,6 @@
         padding-left: 24px;
         margin-bottom: 20px;
       }
-
 
       &::before {
         position: absolute;
@@ -290,7 +294,7 @@
         text-align: inherit;
 
         @media (max-width: 1024px) {
-          letter-spacing: -0.04em;
+          letter-spacing: -.04em;
         }
       }
 
