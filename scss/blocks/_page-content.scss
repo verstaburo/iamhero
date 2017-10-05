@@ -1,22 +1,13 @@
 .page-content {
-  padding-top: 52px;
+  padding-top: 51px;
   width: 100%;
   overflow: hidden;
 
-  @media (max-width: 1279px) {
-    //padding-top: 130px;
-  }
-
-  @media (max-width: 1024px) {
-    padding-top: 51px;
-    //padding-top: 82px;
-  }
-
-  @media (max-width: 639px) {
-    //padding-top: 48px;
-  }
-
   &_repair {
-    padding-top: 102px;
+    padding-top: 101px;
+
+    @media (max-width: 400px) {
+      padding-top: 111px;
+    }
   }
 }

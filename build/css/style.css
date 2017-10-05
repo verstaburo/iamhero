@@ -778,6 +778,9 @@ textarea {
     z-index: 1000; }
   .page-header_repair {
     top: 50px !important; }
+    @media (max-width: 400px) {
+      .page-header_repair {
+        top: 60px !important; } }
   .page-header_mainpage .page-header__wrapper,
   .page-header_mainpage .page-header__wrapper.fixed {
     display: none; }
@@ -833,14 +836,14 @@ textarea {
         background-color: transparent; } }
 
 .page-content {
-  padding-top: 52px;
+  padding-top: 51px;
   width: 100%;
   overflow: hidden; }
-  @media (max-width: 1024px) {
-    .page-content {
-      padding-top: 51px; } }
   .page-content_repair {
-    padding-top: 102px; }
+    padding-top: 101px; }
+    @media (max-width: 400px) {
+      .page-content_repair {
+        padding-top: 111px; } }
 
 .lead {
   position: relative;
@@ -8720,7 +8723,9 @@ textarea {
   box-sizing: border-box; }
   @media (max-width: 400px) {
     .tech-info {
-      height: 60px; } }
+      height: 60px;
+      padding-left: 10px;
+      padding-right: 10px; } }
   @media (max-width: 1120px) {
     .tech-info p {
       font-size: 18px; } }
