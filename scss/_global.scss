@@ -21,15 +21,28 @@ form {
       border-color: #e64418;
     }
 
+    &.error {
+
+      .errortext {
+        color: #df4116;
+      }
+    }
+
     &.validated > input, &.validated > textarea {
       border-color: #39d3a9;
+    }
+
+    &.validated {
+
+      .errortext {
+        color: #39d3a9;
+      }
     }
 
     .errortext {
       position: absolute;
       letter-spacing: -.04em;
       font-weight: 700;
-      color: #df4116;
       font-size: 14px;
       width: 100%;
       top: 105%;
@@ -386,7 +399,7 @@ textarea {
   font-size: 20px;
   letter-spacing: -0.04em;
   background-color: transparent;
-  &::hover {
+  &:hover {
     background-color: $additionalColorGreen;
   }
 }
