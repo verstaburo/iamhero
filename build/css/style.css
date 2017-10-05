@@ -740,6 +740,9 @@ textarea {
         overflow: hidden; }
       .page_mainindex__container_repair {
         top: 50px !important; }
+        @media (max-width: 400px) {
+          .page_mainindex__container_repair {
+            top: 60px !important; } }
 
 .page_mainindex__container {
   transition: all 1s ease-in-out;
@@ -1637,6 +1640,9 @@ textarea {
         overflow: hidden; }
       .page_mainindex__container_repair {
         top: 50px !important; }
+        @media (max-width: 400px) {
+          .page_mainindex__container_repair {
+            top: 60px !important; } }
 
 .page_mainindex__container {
   transition: all 1s ease-in-out;

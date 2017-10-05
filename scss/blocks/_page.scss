@@ -22,6 +22,10 @@
 
       &_repair {
         top: 50px !important;
+
+        @media (max-width: 400px) {
+          top: 60px !important;
+        }
       }
     }
   }
