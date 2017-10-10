@@ -51,23 +51,15 @@ $(function() {
   var dd = new DropDown($('.news-category'));
 
   //radio buttons in form_prereg
-  var radioElems = document.querySelectorAll('.switch__radio');
-  for (var i = 0; i < radioElems.length; i++) {
-    if (radioElems[i].checked) {
-      var elem = radioElems[i];
-      while (elem) {
-        if (elem.parentNode.classList.contains('switch__item')) {
-          elem.parentNode.classList.add('js-radio-checked');
-          break;
-        } else {
-          elem = elem.parentNode;
-        }
-      }
-    }
+
+  window.initSwitch = function () {
+    $('.switch__item').find('input:radio:checked').parent().addClass('js-radio-checked');
   }
 
-  $(".switch__item").on("click", function() {
-    $(this).find('input:radio')[0].checked = true;
+  initSwitch();
+
+  $(document).on('click', '.switch__item', function () {
+    $(this).find('input:radio').checked = true;
     $('.js-radio-checked').toggleClass('js-radio-checked');
     $(this).toggleClass('js-radio-checked');
   });
