@@ -65,10 +65,14 @@ $(function() {
   });
 
   // hamburger menu
-  $(document).on('click', '.main-menu__burger', function () {
-    $(this).toggleClass('js-menu-opened');
-    $(this).siblings('.main-menu__list').stop().slideToggle().toggleClass('js-menu-opened');
-  });
+  window.initBurger = function () {
+    $(document).on('click', '.main-menu__burger', function () {
+      $(this).toggleClass('js-menu-opened');
+      $(this).siblings('.main-menu__list').stop().slideToggle().toggleClass('js-menu-opened');
+    });
+  }
+
+  initBurger();
 
 
   //user menu
