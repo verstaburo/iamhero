@@ -353,15 +353,15 @@ $(function() {
     }, 250);
   });
 
-  // Mobile registration scroll
-  $('.user-menu__toggle').click(function(e) {
-    if (!$(this).length) {
-      return;
-    }
+  // Scrolling links
+  $(document).on('click', '.scroll-link', function (e) {
     e.preventDefault();
-    var el = $(this).attr('href');
+
+    var target = $(this).attr('href');
+
     $('body, html').animate({
-      scrollTop: $(el).offset().top - 51
+      scrollTop: $(target).offset().top - 51,
     }, 1000);
   });
+
 });
