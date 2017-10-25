@@ -8812,7 +8812,7 @@ textarea {
           content: none; } }
   .fullpage h3 {
     font-size: 45px;
-    letter-spacing: .165em;
+    letter-spacing: .05em;
     font-weight: 100; }
     @media (max-width: 1023px) {
       .fullpage h3 {
