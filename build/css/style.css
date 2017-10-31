@@ -807,7 +807,8 @@ textarea {
         -ms-flex-align: start;
             align-items: flex-start;
     box-sizing: border-box;
-    padding-left: 150px; }
+    padding-left: 150px;
+    height: 51px; }
     @media (max-width: 1279px) {
       .page-header__wrapper {
         padding-left: 0;
@@ -817,8 +818,7 @@ textarea {
         padding: 1px 5%; } }
     @media (max-width: 1024px) {
       .page-header__wrapper {
-        padding: 3px 5%;
-        min-height: 51px; } }
+        padding: 3px 5%; } }
     .page-header__wrapper.fixed {
       position: fixed;
       top: 0;
