@@ -321,7 +321,7 @@ $(function() {
   src = 'https://www.youtube.com/embed/';
   videoblockIndex = $(document).find('.intro-video');
 
-  $(document).on("click", '.intro-video__btn', function() {
+  $(document).on("click", '.intro-video__play-btn', function() {
     videoIndex = $(this).parents('.intro-video').data('video');
     videoblockIndex.addClass('active'); // Добавляем активный класс, который увеличит блок по высоте и сделает видимым слой с видео
     setTimeout(function() {
