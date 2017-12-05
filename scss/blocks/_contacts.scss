@@ -14,26 +14,15 @@
       padding-right: 8%;
     }
 	}
-	&__map-section {
-		z-index: -1;
-	}
 	&__top-line {
 		width: 100%;
 		padding-top: 94px;
-		margin-left: 220px;
 		display: flex;
-		flex-direction: row;
-		align-items: stretch;
-		max-width: 1156px;
 		justify-content: space-between;
 		position: relative;
 		z-index: 5;
-		@media (max-width: 1690px) {
-			margin-left: 100px;
-		}
 		@media (max-width: 1380px) {
-			margin-left: 0;
-			max-width: 100%;
+			flex-wrap: wrap;
 		}
 		@media (max-width: 1024px) {
 			flex-direction: column;
@@ -45,6 +34,10 @@
 	&__heading {
 		display: flex;
 		flex-direction: column;
+    @media (max-width: 1380px) {
+      width: 100%;
+      margin-bottom: 35px;
+    }
 		h1 {
 			font-size: 70px;
       letter-spacing: -0.04em;

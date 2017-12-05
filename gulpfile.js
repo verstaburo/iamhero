@@ -6,7 +6,7 @@ var plumber = require('gulp-plumber');
 var postcss = require('gulp-postcss');
 var autoprefixer = require('autoprefixer');
 var mqpacker = require('css-mqpacker');
-var cssmin = require('gulp-csso');
+var cssnano = require('gulp-cssnano');
 var server = require('browser-sync').create();
 var pagebuilder = require('gulp-pagebuilder');
 var rename = require('gulp-rename');
@@ -33,7 +33,7 @@ gulp.task('style', function() {
       // })
     ]))
     .pipe(gulp.dest('build/css'))
-    .pipe(cssmin())
+    .pipe(cssnano({ zIndex: false }))
     .pipe(rename('style.min.css'))
     .pipe(sourcemap.write('.'))
     .pipe(gulp.dest('build/css'))
