@@ -104,7 +104,7 @@ gulp.task('serve', function() {
     open: true,
     cors: true,
     ui: false,
-    tunnel: 'verstaiamhero'
+    // tunnel: 'verstaiamhero'
   });
 
   gulp.watch('scss/**/*.{scss,sass}', ['style']);
