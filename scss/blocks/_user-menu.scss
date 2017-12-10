@@ -12,10 +12,6 @@
   justify-content: space-between;
   align-items: flex-start;
 
-  @media (max-width: 1279px) {
-    order: 3;
-  }
-
   @media (min-width: 1280px) {
     .page-header_no-switch-btn & {
       margin-left: auto;
