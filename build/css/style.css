@@ -7871,11 +7871,32 @@ textarea {
       @media (max-width: 639px) {
         .about-team__photo span {
           font-size: 12px; } }
+    .about-team__photo p {
+      font-size: 15px;
+      margin-top: 20px;
+      font-weight: 300;
+      margin-bottom: 8px; }
+    .about-team__photo a {
+      color: #6d7f77;
+      font-size: 17px;
+      font-weight: 300;
+      display: block;
+      text-decoration: underline solid #25ffc4;
+      transition: color 0.25s ease-in-out, -webkit-text-decoration-color 0.25s ease-in-out;
+      transition: text-decoration-color 0.25s ease-in-out, color 0.25s ease-in-out;
+      transition: text-decoration-color 0.25s ease-in-out, color 0.25s ease-in-out, -webkit-text-decoration-color 0.25s ease-in-out; }
+      .about-team__photo a:hover {
+        -webkit-text-decoration-color: black;
+                text-decoration-color: black;
+        color: black; }
     .about-team__photo:nth-child(n+3) {
       margin-right: 0; }
     @media (max-width: 1690px) {
       .about-team__photo:nth-child(n+2) {
         margin-right: 0; } }
+  .about-team__link-dark {
+    -webkit-text-decoration-color: #0377b5 !important;
+            text-decoration-color: #0377b5 !important; }
 
 .about-donate__content {
   box-sizing: border-box;
