@@ -471,7 +471,11 @@ textarea {
     .text-block__title_mainpage {
       margin-bottom: 70px;
       font-size: 70px;
-      letter-spacing: -0.04em; }
+      letter-spacing: -0.04em;
+      white-space: nowrap; }
+      @media (max-width: 1400px) {
+        .text-block__title_mainpage {
+          font-size: 59.5px; } }
       @media (max-width: 1024px) {
         .text-block__title_mainpage {
           font-size: 49px; } }
@@ -1173,8 +1177,8 @@ textarea {
     position: absolute;
     top: 214px;
     left: 50%;
-    -webkit-transform: translate(-50%, 0);
-            transform: translate(-50%, 0);
+    -webkit-transform: translateX(-50%) translateZ(0);
+            transform: translateX(-50%) translateZ(0);
     z-index: 10; }
     @media (max-width: 1024px) {
       .lead__logo {
@@ -1419,7 +1423,9 @@ textarea {
           justify-content: space-between;
   -webkit-align-items: flex-start;
       -ms-flex-align: start;
-          align-items: flex-start; }
+          align-items: flex-start;
+  max-height: 100%;
+  overflow-y: hidden; }
   @media (min-width: 1280px) {
     .page-header_no-switch-btn .user-menu {
       margin-left: auto; } }

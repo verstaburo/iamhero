@@ -407,7 +407,7 @@
     position: absolute;
     top: 214px;
     left: 50%;
-    transform: translate(-50%, 0);
+    transform: translateX(-50%) translateZ(0);
     z-index: 10;
 
     @media (max-width: 1024px) {

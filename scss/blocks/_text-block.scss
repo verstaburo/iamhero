@@ -69,6 +69,11 @@
       margin-bottom: 70px;
       font-size: $titleSizeH1;
       letter-spacing: -0.04em;
+      white-space: nowrap;
+
+      @media (max-width: 1400px) {
+        font-size: $titleSizeH1*0.85;
+      }
 
       @media (max-width: 1024px) {
         font-size: $titleSizeH1*0.7;
